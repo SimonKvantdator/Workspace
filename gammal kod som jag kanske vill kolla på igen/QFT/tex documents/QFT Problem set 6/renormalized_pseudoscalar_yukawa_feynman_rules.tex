@@ -1,0 +1,66 @@
+\begin{align}
+	\feynmandiagram[small, inline=(o.base), horizontal=a to o]{
+		a [particle=$\phi$]-- [scalar] o [particle=$\phi$],
+	};
+	&= \frac{i}{p^2 - m_{\phi_r}^2} \label{eq:renormalized_phi_to_phi_feynman_rule}\\
+	%
+	\feynmandiagram[small, inline=(o.base), horizontal=a to o]{
+		a [particle=$\psi$] -- [fermion] o [particle=$\mathbar{\psi}$],
+	};
+	&= \frac{i (\slashed{p} + m_{\psi_r})}{p^2 - m_{\psi_r}^2} \label{eq:renormalized_psi_to_psibar_feynman_rule}\\
+	%
+	\feynmandiagram[small, inline=(o.base), horizontal=o to a]{
+		o [dot],
+		o -- [scalar] a,
+		o -- [fermion] b,
+		c -- [fermion] o,
+	};
+	&= g_r \gamma^5
+	\label{eq:renormalized_phi_psi_psibar_vertex_feynman_rule}\\
+	%
+	\feynmandiagram[small, inline=(o.base), vertical=a to b]{
+		o [dot],
+		a [particle=$\phi$] -- [scalar] o,
+		b [particle=$\phi$] -- [scalar] o,
+		c [particle=$\phi$] -- [scalar] o,
+		d [particle=$\phi$] -- [scalar] o,
+		a -- [draw=none] b,
+		c -- [draw=none] d,
+	};
+	&= -i \lambda_r
+	\label{eq:renormalized_phi^4_vertex_feynman_rule}\\
+	%
+	\feynmandiagram[small, inline=(o.base), horizontal=a to o]{
+		o [crossed dot],
+		a [particle=$\phi$] -- [scalar] o,
+		o -- [scalar] b [particle=$\phi$],
+	};
+	&= i (p^2 \delta_{Z_\phi} - \delta_{m_\phi})\\
+	%
+	\feynmandiagram[small, inline=(o.base), horizontal=a to o]{
+		o [crossed dot],
+		a [particle=$\psi$] -- [fermion] o,
+		o -- [fermion] b [particle=$\mathbar{\psi}$],
+	};
+	&= i (\slashed{p} \delta_{Z_\psi} - \delta_{m_\psi})
+	\label{eq:renormalized_counterterm_phi_phi_feynman_rule}\\
+	%
+	\feynmandiagram[small, inline=(o.base), vertical=a to b]{
+		o [crossed dot],
+		a [particle=$\phi$] -- [scalar] o,
+		b [particle=$\phi$] -- [scalar] o,
+		c [particle=$\phi$] -- [scalar] o,
+		d [particle=$\phi$] -- [scalar] o,
+		a -- [draw=none] b,
+		c -- [draw=none] d,
+	};
+	&= -i \delta_\lambda\\
+	%
+	\feynmandiagram[small, inline=(o.base), horizontal=o to a]{
+		o [crossed dot],
+		o -- [scalar] a,
+		o -- [fermion] b,
+		c -- [fermion] o,
+	};
+	&= g_r \delta_{g} \gamma^5 \label{eq:renormalized_counterterm_psi_psibar_phi_vertex_feynman_rule}
+\end{align}

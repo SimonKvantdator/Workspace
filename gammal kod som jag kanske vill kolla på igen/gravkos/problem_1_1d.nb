@@ -1,0 +1,191 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      6497,        183]
+NotebookOptionsPosition[      5785,        161]
+NotebookOutlinePosition[      6323,        181]
+CellTagsIndexPosition[      6280,        178]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"ClearAll", "[", "\"\<Global`*\>\"", "]"}], "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{"Define", " ", "metric"}], "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"\[Eta]", "=", 
+    RowBox[{"(", GridBox[{
+       {
+        RowBox[{"-", "1"}], "0", "0", "0"},
+       {"0", "1", "0", "0"},
+       {"0", "0", "1", "0"},
+       {"0", "0", "0", "1"}
+      }], ")"}]}], ";"}], "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{"Define", " ", "electromagnetic", " ", "tensor", " ", 
+    RowBox[{"w", "/", " ", "upper"}], " ", "indices"}], 
+   "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"F", "=", 
+    RowBox[{"(", GridBox[{
+       {"0", "E1", "E2", "E3"},
+       {"0", "0", "B3", "0"},
+       {"0", "0", "0", "B1"},
+       {"0", "B2", "0", "0"}
+      }], ")"}]}], ";", 
+   RowBox[{"F", "=", 
+    RowBox[{"F", "-", 
+     RowBox[{"Transpose", "[", "F", "]"}]}]}], ";"}], 
+  RowBox[{"(*", "Antisymmetric", "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"FLowered", "=", 
+   RowBox[{
+    RowBox[{"Transpose", "[", "\[Eta]", "]"}], ".", "F", ".", "\[Eta]"}]}], 
+  ";"}]}], "Input",
+ CellChangeTimes->{{3.7891270474101677`*^9, 3.789127216178583*^9}, {
+  3.789127297407167*^9, 3.7891275088378553`*^9}, {3.78912758897163*^9, 
+  3.789127593111239*^9}, {3.78913100327385*^9, 3.789131008879694*^9}, {
+  3.789131039719511*^9, 3.789131049520543*^9}, {3.7891313277906857`*^9, 
+  3.7891313326463547`*^9}, {3.78913139049231*^9, 3.789131440363407*^9}, {
+  3.7891315051568823`*^9, 3.789131540852862*^9}, {3.7891316106600533`*^9, 
+  3.78913164766054*^9}, {3.789131693808868*^9, 3.7891317032342777`*^9}, {
+  3.7891317742159653`*^9, 3.7891318520879803`*^9}, {3.789132025329932*^9, 
+  3.789132045742201*^9}, {3.789132128469805*^9, 3.789132144333437*^9}, {
+  3.789132180495298*^9, 3.789132303854796*^9}, {3.789132351717493*^9, 
+  3.789132365842927*^9}, {3.789134033396955*^9, 3.789134036569673*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"75a7a850-6bca-422c-bbfa-23886ae814fe"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{
+    RowBox[{"--", 
+     RowBox[{"--", 
+      RowBox[{"--", 
+       RowBox[{"--", 
+        RowBox[{"--", 
+         RowBox[{"--", 
+          RowBox[{"--", 
+           RowBox[{"--", 
+            RowBox[{"--", 
+             RowBox[{"--", " ", "Check"}]}]}]}]}]}]}]}]}]}], " ", "that", " ",
+     "j", " ", "is", " ", "divergence", " ", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{
+        RowBox[{"free", " ", "--"}], "--"}], "--"}], "--"}], "--"}], 
+    RowBox[{"--", 
+     RowBox[{"--", 
+      RowBox[{"--", 
+       RowBox[{"--", "--"}]}]}]}]}], "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"r", "=", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", "y", ",", "z"}], "}"}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"Off", "[", 
+     RowBox[{"General", "::", "ivar"}], "]"}], 
+    RowBox[{"(*", 
+     RowBox[{"Turn", " ", "off", " ", "some", " ", "warnings"}], "*)"}], 
+    ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"j", "[", "\[Beta]_", "]"}], ":=", 
+    RowBox[{"-", 
+     RowBox[{"Sum", "[", 
+      RowBox[{
+       RowBox[{"D", "[", 
+        RowBox[{
+         RowBox[{"F", "[", 
+          RowBox[{"[", 
+           RowBox[{
+            RowBox[{"\[Alpha]", "+", "1"}], ",", 
+            RowBox[{"\[Beta]", "+", "1"}]}], "]"}], "]"}], ",", "\[Alpha]"}], 
+        "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"\[Alpha]", ",", "0", ",", "3"}], "}"}]}], "]"}]}]}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"jDivergence", "=", 
+     RowBox[{"Sum", "[", 
+      RowBox[{
+       RowBox[{"D", "[", 
+        RowBox[{
+         RowBox[{"j", "[", "\[Beta]", "]"}], ",", 
+         RowBox[{"r", "[", 
+          RowBox[{"[", "\[Beta]", "]"}], "]"}]}], "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"\[Beta]", ",", "0", ",", "3"}], "}"}]}], "]"}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"Print", "[", 
+     RowBox[{"FullSimplify", "[", "jDivergence", "]"}], "]"}], 
+    ";"}]}]}]], "Input",
+ CellChangeTimes->{{3.78913431628817*^9, 3.789134376174651*^9}, {
+   3.789134437272416*^9, 3.789134534710136*^9}, 3.7891345894714518`*^9, {
+   3.789134639763359*^9, 3.789134641977129*^9}, {3.789134886857996*^9, 
+   3.789134887138232*^9}, {3.789135002739085*^9, 3.789135003068503*^9}, {
+   3.789135474295353*^9, 3.789135529564934*^9}, {3.7891364579887123`*^9, 
+   3.789136464763453*^9}, {3.7891374268788157`*^9, 3.7891374308396893`*^9}, {
+   3.789137891724266*^9, 3.7891379291252947`*^9}, {3.789140567853544*^9, 
+   3.789140581601365*^9}, {3.7891406248949738`*^9, 3.789140743673829*^9}, {
+   3.789140780991912*^9, 3.789140781483838*^9}, {3.7891409004733543`*^9, 
+   3.789140952723692*^9}},
+ CellLabel->"In[39]:=",ExpressionUUID->"fadb794b-83d7-429d-be9b-64e907e06b64"],
+
+Cell[BoxData["0"], "Print",
+ CellChangeTimes->{{3.789135509040367*^9, 3.789135530222239*^9}, {
+   3.7891374353172913`*^9, 3.789137452687084*^9}, 3.789140744245166*^9, 
+   3.789140807558487*^9, {3.789140904986423*^9, 3.7891409544719753`*^9}},
+ CellLabel->
+  "During evaluation of \
+In[39]:=",ExpressionUUID->"f50f12d2-a589-4e92-97c6-e8ceb37fd131"]
+}, Open  ]]
+},
+WindowSize->{767, 843},
+WindowMargins->{{Automatic, 0}, {0, Automatic}},
+PrintingCopies->1,
+PrintingPageRange->{Automatic, Automatic},
+PrintingOptions->{"PaperOrientation"->"Portrait",
+"PaperSize"->{Automatic, Automatic},
+"PostScriptOutputFile"->"/home/simon/problem_1_1b.pdf"},
+FrontEndVersion->"12.0 for Linux x86 (64-bit) (April 8, 2019)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 2040, 48, 271, "Input",ExpressionUUID->"75a7a850-6bca-422c-bbfa-23886ae814fe"],
+Cell[CellGroupData[{
+Cell[2623, 72, 2797, 78, 170, "Input",ExpressionUUID->"fadb794b-83d7-429d-be9b-64e907e06b64"],
+Cell[5423, 152, 346, 6, 25, "Print",ExpressionUUID->"f50f12d2-a589-4e92-97c6-e8ceb37fd131"]
+}, Open  ]]
+}
+]
+*)
+

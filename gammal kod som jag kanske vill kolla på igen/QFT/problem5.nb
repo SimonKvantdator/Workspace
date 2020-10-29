@@ -1,0 +1,294 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      9049,        286]
+NotebookOptionsPosition[      7989,        257]
+NotebookOutlinePosition[      8523,        277]
+CellTagsIndexPosition[      8480,        274]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{"ClearAll", "[", "\"\<Global`*\>\"", "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"\[Eta]", "=", 
+   RowBox[{"(", GridBox[{
+      {"1", "0", "0", "0"},
+      {"0", 
+       RowBox[{"-", "1"}], "0", "0"},
+      {"0", "0", 
+       RowBox[{"-", "1"}], "0"},
+      {"0", "0", "0", 
+       RowBox[{"-", "1"}]}
+     }], ")"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"pVec", "=", 
+   RowBox[{"(", GridBox[{
+      {"p"},
+      {"0"},
+      {"0"},
+      {"p"}
+     }], ")"}]}], ";", 
+  RowBox[{"pPrimVec", "=", 
+   RowBox[{"(", GridBox[{
+      {"p"},
+      {"0"},
+      {"0"},
+      {
+       RowBox[{"-", "p"}]}
+     }], ")"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"kPrimVec", "=", 
+   RowBox[{"(", GridBox[{
+      {"p"},
+      {"0"},
+      {
+       RowBox[{
+        RowBox[{"-", 
+         RowBox[{"Sin", "[", "\[Theta]", "]"}]}], "p"}]},
+      {
+       RowBox[{
+        RowBox[{"-", 
+         RowBox[{"Cos", "[", "\[Theta]", "]"}]}], "p"}]}
+     }], ")"}]}], ";", 
+  RowBox[{"kVec", "=", 
+   RowBox[{"(", GridBox[{
+      {"p"},
+      {"0"},
+      {
+       RowBox[{
+        RowBox[{"Sin", "[", "\[Theta]", "]"}], "p"}]},
+      {
+       RowBox[{
+        RowBox[{"Cos", "[", "\[Theta]", "]"}], "p"}]}
+     }], ")"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"u", "=", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{
+       SuperscriptBox[
+        RowBox[{"(", 
+         RowBox[{"pVec", "-", "kPrimVec"}], ")"}], "\[Transpose]"], ".", 
+       "\[Eta]", ".", 
+       RowBox[{"(", 
+        RowBox[{"pVec", "-", "kPrimVec"}], ")"}]}], ")"}], "[", 
+     RowBox[{"[", 
+      RowBox[{"1", ",", "1"}], "]"}], "]"}], "//", "FullSimplify"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Print", "[", 
+  RowBox[{"\"\<u = \>\"", ",", "u"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"s", "=", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{
+       SuperscriptBox[
+        RowBox[{"(", 
+         RowBox[{"pVec", "+", "pPrimVec"}], ")"}], "\[Transpose]"], ".", 
+       "\[Eta]", ".", 
+       RowBox[{"(", 
+        RowBox[{"pVec", "+", "pPrimVec"}], ")"}]}], ")"}], "[", 
+     RowBox[{"[", 
+      RowBox[{"1", ",", "1"}], "]"}], "]"}], "//", "FullSimplify"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Print", "[", 
+  RowBox[{"\"\<s = \>\"", ",", "s"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"t", "=", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{
+       SuperscriptBox[
+        RowBox[{"(", 
+         RowBox[{"pVec", "-", "kVec"}], ")"}], "\[Transpose]"], ".", "\[Eta]",
+        ".", 
+       RowBox[{"(", 
+        RowBox[{"pVec", "-", "kVec"}], ")"}]}], ")"}], "[", 
+     RowBox[{"[", 
+      RowBox[{"1", ",", "1"}], "]"}], "]"}], "//", "FullSimplify"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Print", "[", 
+  RowBox[{"\"\<t = \>\"", ",", "t"}], "]"}]}], "Input",
+ CellChangeTimes->{{3.798437987843377*^9, 3.798438175181065*^9}, {
+  3.798438219059627*^9, 3.7984383746321583`*^9}, {3.798438464466708*^9, 
+  3.79843856411007*^9}, {3.798438671047181*^9, 3.798438730333206*^9}, {
+  3.798439125108403*^9, 3.798439129397415*^9}, {3.798439316909648*^9, 
+  3.7984393217252703`*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"665533e6-0c2d-4066-85ee-c515c3e0ffbb"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"u = \"\>", "\[InvisibleSpace]", 
+   RowBox[{
+    RowBox[{"-", "2"}], " ", 
+    SuperscriptBox["p", "2"], " ", 
+    RowBox[{"(", 
+     RowBox[{"1", "+", 
+      RowBox[{"Cos", "[", "\[Theta]", "]"}]}], ")"}]}]}],
+  SequenceForm["u = ", (-2) $CellContext`p^2 (1 + Cos[$CellContext`\[Theta]])],
+  Editable->False]], "Print",
+ CellChangeTimes->{
+  3.7984390412683764`*^9, 3.7984391351578503`*^9, {3.7984393076438437`*^9, 
+   3.798439325115334*^9}, 3.798439407549115*^9},
+ CellLabel->
+  "During evaluation of \
+In[1]:=",ExpressionUUID->"8660202b-0c67-448d-8daf-e5476f7ce522"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"s = \"\>", "\[InvisibleSpace]", 
+   RowBox[{"4", " ", 
+    SuperscriptBox["p", "2"]}]}],
+  SequenceForm["s = ", 4 $CellContext`p^2],
+  Editable->False]], "Print",
+ CellChangeTimes->{
+  3.7984390412683764`*^9, 3.7984391351578503`*^9, {3.7984393076438437`*^9, 
+   3.798439325115334*^9}, 3.798439407552186*^9},
+ CellLabel->
+  "During evaluation of \
+In[1]:=",ExpressionUUID->"458b5b41-d695-4060-a117-8002bf4c4c1e"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"t = \"\>", "\[InvisibleSpace]", 
+   RowBox[{"2", " ", 
+    SuperscriptBox["p", "2"], " ", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"-", "1"}], "+", 
+      RowBox[{"Cos", "[", "\[Theta]", "]"}]}], ")"}]}]}],
+  SequenceForm["t = ", 2 $CellContext`p^2 (-1 + Cos[$CellContext`\[Theta]])],
+  Editable->False]], "Print",
+ CellChangeTimes->{
+  3.7984390412683764`*^9, 3.7984391351578503`*^9, {3.7984393076438437`*^9, 
+   3.798439325115334*^9}, 3.798439407579447*^9},
+ CellLabel->
+  "During evaluation of \
+In[1]:=",ExpressionUUID->"80062eae-29a8-477f-ab83-c03e3863be66"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"differentialCrossSection", "=", 
+   RowBox[{
+    RowBox[{
+     FractionBox[
+      RowBox[{"\[Pi]", " ", 
+       SuperscriptBox["\[Alpha]", "2"]}], "s"], 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{
+        SuperscriptBox["u", "2"], 
+        SuperscriptBox[
+         RowBox[{"(", 
+          RowBox[{
+           FractionBox["1", "s"], "+", 
+           FractionBox["1", "t"]}], ")"}], "2"]}], "+", 
+       SuperscriptBox[
+        RowBox[{"(", 
+         FractionBox["t", "s"], ")"}], "2"], "+", 
+       SuperscriptBox[
+        RowBox[{"(", 
+         FractionBox["s", "t"], ")"}], "2"]}], ")"}]}], "//", 
+    "FullSimplify"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Print", "[", 
+  RowBox[{
+  "\"\<\!\(\*FractionBox[\(d\[Sigma]\), \(d \((cos\\\ \[Theta])\)\)]\)=\>\"", 
+   ",", "differentialCrossSection"}], "]"}]}], "Input",
+ CellChangeTimes->{{3.798438565976239*^9, 3.798438594745721*^9}, {
+  3.79843873267197*^9, 3.7984387756486263`*^9}, {3.79843882428734*^9, 
+  3.798438825522566*^9}, {3.798438862574068*^9, 3.7984389147801647`*^9}, {
+  3.798439008747505*^9, 3.798439047822188*^9}, {3.798439246168022*^9, 
+  3.798439302132298*^9}},
+ CellLabel->"In[11]:=",ExpressionUUID->"3a48f84a-47b9-447e-9c7c-75d05c8aaa57"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\\!\\(\\*FractionBox[\\(d\[Sigma]\\), \\(d \\((cos\\\\ \
+\[Theta])\\)\\)]\\)=\"\>", "\[InvisibleSpace]", 
+   FractionBox[
+    RowBox[{"\[Pi]", " ", 
+     SuperscriptBox["\[Alpha]", "2"], " ", 
+     SuperscriptBox[
+      RowBox[{"(", 
+       RowBox[{"7", "+", 
+        RowBox[{"Cos", "[", 
+         RowBox[{"2", " ", "\[Theta]"}], "]"}]}], ")"}], "2"]}], 
+    RowBox[{"32", " ", 
+     SuperscriptBox["p", "2"], " ", 
+     SuperscriptBox[
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"-", "1"}], "+", 
+        RowBox[{"Cos", "[", "\[Theta]", "]"}]}], ")"}], "2"]}]]}],
+  SequenceForm[
+  "\!\(\*FractionBox[\(d\[Sigma]\), \(d \((cos\\ \[Theta])\)\)]\)=", 
+   Rational[1, 32] $CellContext`p^(-2) 
+   Pi $CellContext`\[Alpha]^2 (-1 + Cos[$CellContext`\[Theta]])^(-2) (7 + 
+     Cos[2 $CellContext`\[Theta]])^2],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.798439307693741*^9, 3.798439325176634*^9}, 
+   3.798439407762072*^9},
+ CellLabel->
+  "During evaluation of \
+In[11]:=",ExpressionUUID->"ac3500a4-5cb5-4d54-a519-e9958b870907"]
+}, Open  ]]
+},
+WindowSize->{764, 836},
+WindowMargins->{{Automatic, 0}, {0, Automatic}},
+PrintingCopies->1,
+PrintingPageRange->{Automatic, Automatic},
+PrintingOptions->{"PaperOrientation"->"Portrait",
+"PaperSize"->{Automatic, Automatic},
+"PostScriptOutputFile"->"/home/simon/ploblem5.pdf"},
+FrontEndVersion->"12.0 for Linux x86 (64-bit) (April 8, 2019)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 3270, 110, 446, "Input",ExpressionUUID->"665533e6-0c2d-4066-85ee-c515c3e0ffbb"],
+Cell[CellGroupData[{
+Cell[3875, 136, 618, 16, 27, "Print",ExpressionUUID->"8660202b-0c67-448d-8daf-e5476f7ce522"],
+Cell[4496, 154, 460, 12, 27, "Print",ExpressionUUID->"458b5b41-d695-4060-a117-8002bf4c4c1e"],
+Cell[4959, 168, 618, 16, 27, "Print",ExpressionUUID->"80062eae-29a8-477f-ab83-c03e3863be66"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5626, 190, 1255, 33, 101, "Input",ExpressionUUID->"3a48f84a-47b9-447e-9c7c-75d05c8aaa57"],
+Cell[6884, 225, 1089, 29, 51, "Print",ExpressionUUID->"ac3500a4-5cb5-4d54-a519-e9958b870907"]
+}, Open  ]]
+}
+]
+*)
+

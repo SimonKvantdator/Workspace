@@ -1,0 +1,201 @@
+\documentclass[english, a4paper, 11pt]{article}
+
+
+%%%%%%%%%%% LANGUAGE %%%%%%%%%%%
+
+% For correct hyphenation in swedish
+\usepackage[T1]{fontenc}
+
+% For interpreting non-ASCII characters
+\usepackage[utf8]{inputenc}
+
+% International language support
+% Fetches language from documentclass options. Most other packages do this as well
+\usepackage{babel}
+
+
+%%%%%%%%%%% FORMAL STUFF %%%%%%%%%%%
+
+% Smaller margins
+\usepackage[margin=2.5cm]{geometry}
+
+% Clickable urls
+\usepackage[hyphens]{url} % Does not want to be loaded after physics package
+
+% Fancy chapter headers
+\usepackage{titlesec}
+\titleformat{\chapter}{\normalfont\huge}{\thechapter.}{20pt}{\huge\it}
+
+% Dates & time
+\usepackage{datetime} % Useful when referencing websites
+
+% What to display in table of contents
+\setcounter{tocdepth}{1}
+\setcounter{secnumdepth}{2}
+
+% Lists
+\usepackage{enumerate} % Determines the style in which the counter is printed
+\usepackage{enumitem} % Provides user control over the layout of the three basic list environments
+
+% Citing & bibliography
+\usepackage{csquotes} % For \enquote command for proper quotation marks, also biblatex recommends this
+%\usepackage[backend=biber, style=numeric, sorting=none]{biblatex}
+%\bibliography{bibliography} % A file named bibliography.bib containing the bibTeX entries should be placed beside the main.tex file
+
+
+%%%%%%%%%%% GRAPHICS %%%%%%%%%%%
+
+\usepackage{graphics,color,xcolor}
+
+% Figures
+\usepackage{epsfig} % Solves some problems in \includegraphics{<.eps-file>}
+\usepackage{graphicx} % More options for \includegraphics
+\usepackage{wrapfig} % Figure environment that lets text wrap around figure
+\usepackage{float} % Figure placement
+\usepackage{caption} % More options for \caption
+\usepackage{subcaption} % Subfigures
+
+% Tikz
+\usepackage{tikz}
+\usepackage{pgf,pgfplots} % Pgfplot
+\pgfplotsset{compat=1.15}
+
+% För alduslöv
+\usepackage{pifont}
+
+
+%%%%%%%%%%% PHYSICS %%%%%%%%%%%
+
+% SI units
+\usepackage{siunitx}
+
+% Physics macros
+\usepackage{physics} % Defines lots of nice commands like \derivative, \norm, \evaluated, etc. It is recommended to use these as much as possible for nice spacing and readable LaTeX code.
+\usepackage{braket} % Defines \bra, \ket, \braket, and \set
+\usepackage{slashed} % For Feynman slash notation
+\usepackage{simpler-wick} % Wick contractions (may require sty-file)
+% \usepackage[compat=1.1.0]{tikz-feynman} % Feynman diagrams (has to be compiled with LuaTeX)
+
+
+%%%%%%%%%%% CODING %%%%%%%%%%%
+
+% For nice code insertions
+\usepackage{listings}
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+\lstdefinestyle{mystyle}{
+	backgroundcolor=\color{backcolour},   
+	commentstyle=\color{codegreen},
+	keywordstyle=\color{magenta},
+	numberstyle=\tiny\color{codegray},
+	stringstyle=\color{codepurple},
+	basicstyle=\ttfamily\footnotesize,
+	breakatwhitespace=false,         
+	breaklines=true,                 
+	captionpos=b,                    
+	keepspaces=true,                 
+	numbers=left,                    
+	numbersep=5pt,                  
+	showspaces=false,                
+	showstringspaces=false,
+	showtabs=false,                  
+	tabsize=2
+}
+\lstset{style=mystyle}
+
+
+%%%%%%%%%%% MATHEMATICS %%%%%%%%%%%
+
+% AMS packages
+\usepackage{amsmath,amsfonts,amsthm,amssymb}
+
+% Theorem and proof environments
+\iflanguage{swedish}{
+	\newtheorem{theorem}{Sats}
+	\newtheorem*{theorem*}{Sats}
+	\newtheorem{proposition}{Proposition}
+	\newtheorem*{proposition*}{Proposition}
+	\newtheorem{corollary}{Följdsats}[theorem]
+	\newtheorem{corollary*}{Följdsats}
+	\newtheorem{lemma}{Lemma}
+	\newtheorem*{lemma*}{Lemma}
+	\theoremstyle{definition}
+	\newtheorem{definition}{Definition}
+	\newtheorem*{definition*}{Definition}
+}{}
+\iflanguage{english}{
+	\newtheorem{theorem}{Theorem}
+	\newtheorem*{theorem*}{Theorem}
+	\newtheorem{proposition}{Proposition}
+	\newtheorem*{proposition*}{Proposition}
+	\newtheorem{corollary}{Corollary}[theorem]
+	\newtheorem{corollary*}{Corollary}
+	\newtheorem{lemma}{Lemma}
+	\newtheorem*{lemma*}{Lemma}
+	\theoremstyle{definition}
+	\newtheorem{definition}{Definition}
+	\newtheorem*{definition*}{Definition}
+}{}
+
+% Better version of the \not command
+\usepackage{cancel}
+
+% Vectors are upright boldface. I think this definition is better than the physics package's \vectorbold.
+\renewcommand{\Vec}[1]{{\boldsymbol{\mathrm{#1}}}}
+\renewcommand{\vec}[1]{{\boldsymbol{\mathrm{#1}}}}
+
+% Redefine \exp
+% Errors occur if this definition is made before some of the packages are loaded
+\let\oldexp\exp
+\newcommand{\Exp}[1]{\oldexp{#1}}
+\renewcommand{\exp}[1]{\mathrm{e}^{#1}}
+
+% Main number systems
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+
+% Some of my own shorthands for correct spacing in math environments
+\newcommand{\from}{\colon} % Proper spacing of colon in functions f:A→B
+\newcommand{\divides}{\mid} % Proper spacing of vertical bar in division x|y
+\newcommand{\union}{\cup}
+\newcommand{\intersection}{\cap}
+
+% Bar, tilde, and hat that scales with what is under them. Basically I just want these to have consistent names
+\newcommand{\mathbar}[1]{\overline{#1}}
+\newcommand{\mathtilde}[1]{\widetilde{#1}}
+\newcommand{\mathhat}[1]{\widehat{#1}}
+
+
+%%%%%%%%%%% MISCELLANEOUS %%%%%%%%%%%
+
+% In-pdf comments through \todo command
+\setlength{\marginparwidth}{2cm} % Silence warning about margin size
+\usepackage{todonotes}
+
+% Clickable links and refs
+\usepackage[hidelinks]{hyperref} 
+
+% Cleverref automatically detects if you are referencing a figure, table, or equation etc
+% Cleverref has to be loaded last I think, after babel and hyperref etc
+\usepackage[noabbrev, nameinlink]{cleveref}
+\crefname{equation}{}{}
+\iflanguage{swedish}{ % Tell cleverref to use Oxford comma
+	\newcommand{\creflastconjunction}{, och\nobreakspace}
+}{}
+\iflanguage{english}{
+	\newcommand{\creflastconjunction}{, and\nobreakspace}
+}{}
+
+
+% Tag only referenced equations (this is not an ideal package, as it requires etextools, which is buggy and abandoned by its author)
+\expandafter\def\csname ver@etex.sty\endcsname{3000/12/31}
+\let\globcount\newcount
+\usepackage{autonum}
+
+% For writing \overset{text}&{=} in align environment
+\usepackage{aligned-overset} 

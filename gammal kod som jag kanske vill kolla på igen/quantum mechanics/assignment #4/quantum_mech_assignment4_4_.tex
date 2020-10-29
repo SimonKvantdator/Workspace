@@ -1,0 +1,170 @@
+%% AMS-LaTeX Created with the Wolfram Language for Students - Personal Use Only : www.wolfram.com
+
+\documentclass{article}
+\usepackage{amsmath, amssymb, graphics, setspace}
+
+\newcommand{\mathsym}[1]{{}}
+\newcommand{\unicode}[1]{{}}
+
+\newcounter{mathematicapage}
+\begin{document}
+
+\begin{doublespace}
+\noindent\(\pmb{\text{ClearAll}[\text{{``}Global$\grave{ }$*{''}}]}\\
+\pmb{\text{$\$$Assumptions}=(a\in \text{Reals}\&\&a>0\&\&\text{(*Bohr radius*)}}\\
+\pmb{e\in \text{Reals}\&\&e>0\&\&\text{(*elementary charge*)}}\\
+\pmb{\text{me}\in \text{Reals}\&\&\text{me}>0\&\&\text{(*mass of electron*)}}\\
+\pmb{\text{$\epsilon $0}\in \text{Reals}\&\&\text{$\epsilon $0}>0\&\&\text{(*vacuum permittivity*)}}\\
+\pmb{\hbar \in \text{Reals}\&\&\hbar >0\&\&\text{(*}\text{Planck}'s \text{reducedconstant}\text{*)}}\\
+\pmb{c\in \text{Reals}\&\&c>0);\text{(*speed of light*)}}\\
+\pmb{}\\
+\pmb{\text{(*Write down analytical solutions to the hydrogen SE*)}}\\
+\pmb{Z=1;}\\
+\pmb{\text{R10}[\text{r$\_$}]\text{:=}2 e^{-\frac{r}{a}} \left(\frac{Z}{a}\right)^{3/2}}\\
+\pmb{\text{R20}[\text{r$\_$}]\text{:=}\frac{e^{-\frac{r}{2 a}} \left(\frac{Z}{a}\right)^{3/2} \left(2-\frac{r Z}{2}\right)}{2 \sqrt{2}}}\\
+\pmb{\text{R21}[\text{r$\_$}]\text{:=}\frac{e^{-\frac{r}{2 a}} r \left(\frac{Z}{a}\right)^{3/2}}{2 \sqrt{6} a}}\\
+\pmb{}\\
+\pmb{\text{Y00}[\theta \_, \varphi \_]\text{:=}\frac{1}{\sqrt{4\pi }}}\\
+\pmb{\text{Y10}[\theta \_, \varphi \_]\text{:=}\frac{1}{2} \sqrt{\frac{3}{\pi }} \text{Cos}[\theta ]}\\
+\pmb{\text{Y11}[\theta \_, \varphi \_]\text{:=}- e^{i \varphi } \sqrt{\frac{3}{8 \pi }} \text{Sin}[\theta ]}\\
+\pmb{\text{Y1m1}[\theta \_, \varphi \_]\text{:=}e^{-i \varphi } \sqrt{\frac{3}{8 \pi }} \text{Sin}[\theta ]}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\pmb{\text{(*}\text{Define} \text{some} \text{factors} \text{appearing} \text{in} \text{the} \text{integrand} \text{in} \text{Fermi}'s
+\text{golden} \text{rule}\text{*)}}\\
+\pmb{\text{dipole}[\text{r$\_$},\theta \_,\varphi \_]\text{:=}-e r (\text{Sin}[\theta ]\text{Cos}[\varphi ]+\text{Sin}[\theta ]\text{Sin}[\varphi
+]+\text{Cos}[\theta ]) \text{(*}-\mathbf{d}\cdot 1\_\epsilon \text{*)}}\\
+\pmb{\text{jacobian}[\text{r$\_$},\theta \_,\varphi \_]\text{:=}r^2 \text{Sin}[\theta ]\text{(*Spherical coordinates Jacobian*)}}\\
+\pmb{\rho [\omega \_]\text{:=}\frac{\omega ^2}{c^3 \pi ^2}\text{(*Density of states*)}}\\
+\pmb{\text{(*}\text{Loop} \text{through} \text{different} \text{possible} \text{decays} \text{and} \text{calculate} \text{their} }\\
+\pmb{\text{transition} \text{rates}\text{*)}}\\
+\pmb{\text{uiList}=\{\text{R21}[r]\text{Y10}[\theta ,\varphi ],}\\
+\pmb{\text{R21}[r]\text{Y10}[\theta ,\varphi ],}\\
+\pmb{\text{R21}[r]\text{Y10}[\theta ,\varphi ],}\\
+\pmb{\text{R21}[r]\text{Y10}[\theta ,\varphi ],}\\
+\pmb{\text{R21}[r]\text{Y11}[\theta ,\varphi ],}\\
+\pmb{\text{R21}[r]\text{Y11}[\theta ,\varphi ],}\\
+\pmb{\text{R21}[r]\text{Y11}[\theta ,\varphi ],}\\
+\pmb{\text{R21}[r]\text{Y11}[\theta ,\varphi ],}\\
+\pmb{\text{R21}[r]\text{Y1m1}[\theta ,\varphi ],}\\
+\pmb{\text{R21}[r]\text{Y1m1}[\theta ,\varphi ],}\\
+\pmb{\text{R21}[r]\text{Y1m1}[\theta ,\varphi ],}\\
+\pmb{\text{R21}[r]\text{Y1m1}[\theta ,\varphi ]\};}\\
+\pmb{\text{nlmInitialList}=\{\{2,1,0\},}\\
+\pmb{\{2,1,0\},}\\
+\pmb{\{2,1,0\},}\\
+\pmb{\{2,1,0\},}\\
+\pmb{\{2,1,1\},}\\
+\pmb{\{2,1,1\},}\\
+\pmb{\{2,1,1\},}\\
+\pmb{\{2,1,1\},}\\
+\pmb{\{2,1,-1\},}\\
+\pmb{\{2,1,-1\},}\\
+\pmb{\{2,1,-1\},}\\
+\pmb{\{2,1,-1\}\};}\\
+\pmb{\text{ufList}=\{\text{R10}[r]\text{Y00}[\theta ,\varphi ],}\\
+\pmb{\text{R20}[r]\text{Y00}[\theta ,\varphi ],}\\
+\pmb{\text{R21}[r]\text{Y11}[\theta ,\varphi ],}\\
+\pmb{\text{R21}[r]\text{Y1m1}[\theta ,\varphi ],}\\
+\pmb{\text{R10}[r]\text{Y00}[\theta ,\varphi ],}\\
+\pmb{\text{R20}[r]\text{Y00}[\theta ,\varphi ],}\\
+\pmb{\text{R21}[r]\text{Y10}[\theta ,\varphi ],}\\
+\pmb{\text{R21}[r]\text{Y1m1}[\theta ,\varphi ],}\\
+\pmb{\text{R10}[r]\text{Y00}[\theta ,\varphi ],}\\
+\pmb{\text{R20}[r]\text{Y00}[\theta ,\varphi ],}\\
+\pmb{\text{R21}[r]\text{Y10}[\theta ,\varphi ],}\\
+\pmb{\text{R21}[r]\text{Y11}[\theta ,\varphi ]\};}\\
+\pmb{\text{nlmFinalList}=\{\{1,0,0\},}\\
+\pmb{\{2,0,0\},}\\
+\pmb{\{2,1,1\},}\\
+\pmb{\{2,1,-1\},}\\
+\pmb{\{1,0,0\},}\\
+\pmb{\{2,0,0\},}\\
+\pmb{\{2,1,0\},}\\
+\pmb{\{2,1,-1\},}\\
+\pmb{\{1,0,0\},}\\
+\pmb{\{2,0,0\},}\\
+\pmb{\{2,1,0\},}\\
+\pmb{\{2,1,1\}\};}\\
+\pmb{}\\
+\pmb{\text{$\Gamma $List}=\text{Range}[\text{Length}[\text{uiList}]];\text{(*}\text{Initiate}\text{*)}}\\
+\pmb{\text{For}[i=1,i\text{$<$=}\text{Length}[\text{uiList}],i\text{++},}\\
+\pmb{\text{(*Define initial and final wavefunctions*)}}\\
+\pmb{\text{ui}[\text{r$\_$},\theta \_,\varphi \_]=\text{uiList}[[i]];}\\
+\pmb{\text{nlmInitial}=\text{nlmInitialList}[[i]];}\\
+\pmb{\text{nInitial}=\text{nlmInitial}[[1]];}\\
+\pmb{\text{Ei}=-\frac{e^4 \text{me}}{2 (4\pi  \text{$\epsilon $0})^2 \hbar ^2}\frac{1}{\text{nInitial}^2};\text{(*energy of initial state*)}}\\
+\pmb{\text{uf}[\text{r$\_$},\theta \_,\varphi \_]=\text{ufList}[[i]];}\\
+\pmb{\text{nlmFinal}=\text{nlmFinalList}[[i]];}\\
+\pmb{\text{nFinal}=\text{nlmFinal}[[1]];}\\
+\pmb{\text{Ef}=-\frac{e^4 \text{me}}{2 (4\pi  \text{$\epsilon $0})^2 \hbar ^2}\frac{1}{\text{nFinal}^2};\text{(*energy of final state*)}}\\
+\pmb{\omega =(\text{Ei}-\text{Ef})/\hbar  ;}\\
+\pmb{}\\
+\pmb{\text{(*}\text{Calculate} \text{the} \text{braket} \text{appearing} \text{in} \text{Fermi}'s \text{golden} \text{rule}\text{*)}}\\
+\pmb{\text{integrand}[\text{r$\_$},\theta \_,\varphi \_]\text{:=}\text{uf}[r,\theta ,\varphi ] \text{dipole}[r,\theta ,\varphi ]\text{ui}[r,\theta
+,\varphi ];}\\
+\pmb{\text{braket} = \text{Integrate}[}\\
+\pmb{\text{Integrate}[}\\
+\pmb{\text{Integrate}[}\\
+\pmb{\text{integrand}[r,\theta ,\varphi ]\text{jacobian}[r,\theta ,\varphi ],}\\
+\pmb{\{\varphi ,0, 2\pi \}],}\\
+\pmb{\{\theta ,0, \pi \}],}\\
+\pmb{\{r,0, \text{Infinity}\}];}\\
+\pmb{}\\
+\pmb{\text{(*Calculate and print transition rates*)}}\\
+\pmb{\Gamma = \frac{1}{4 \pi  \text{$\epsilon $0}}\omega \frac{2 \pi }{\hbar }\text{Abs}[\text{braket}]^2\rho [\omega ];}\\
+\pmb{\text{$\Gamma $List}[[i]]=\Gamma ;}\\
+\pmb{\text{Print}[\text{{``}from $|$ui$>$=$|${''}},\text{nlmInitial}[[1]],\text{nlmInitial}[[2]],\text{nlmInitial}[[3]],}\\
+\pmb{\text{{``}$>$ to $|$uf$>$=$|${''}},\text{nlmFinal}[[1]],\text{nlmFinal}[[2]],\text{nlmFinal}[[3]],\text{{``}$>$, $\Gamma $={''}},}\\
+\pmb{\text{FullSimplify}[\Gamma ]]}\\
+\pmb{}\\
+\pmb{]}\)
+\end{doublespace}
+
+\noindent\(\text{from $|$ui$>$=$|$}210\text{$>$ to $|$uf$>$=$|$}100\text{$>$, $\Gamma $=}\frac{a^2 e^{14} \text{me}^3}{279936 c^3 \pi ^8 \text{$\epsilon
+$0}^7 \hbar ^{10}}\)
+
+\noindent\(\text{from $|$ui$>$=$|$}210\text{$>$ to $|$uf$>$=$|$}200\text{$>$, $\Gamma $=}0\)
+
+\noindent\(\text{from $|$ui$>$=$|$}210\text{$>$ to $|$uf$>$=$|$}211\text{$>$, $\Gamma $=}0\)
+
+\noindent\(\text{from $|$ui$>$=$|$}210\text{$>$ to $|$uf$>$=$|$}21-1\text{$>$, $\Gamma $=}0\)
+
+\noindent\(\text{from $|$ui$>$=$|$}211\text{$>$ to $|$uf$>$=$|$}100\text{$>$, $\Gamma $=}\frac{a^2 e^{14} \text{me}^3}{279936 c^3 \pi ^8 \text{$\epsilon
+$0}^7 \hbar ^{10}}\)
+
+\noindent\(\text{from $|$ui$>$=$|$}211\text{$>$ to $|$uf$>$=$|$}200\text{$>$, $\Gamma $=}0\)
+
+\noindent\(\text{from $|$ui$>$=$|$}211\text{$>$ to $|$uf$>$=$|$}210\text{$>$, $\Gamma $=}0\)
+
+\noindent\(\text{from $|$ui$>$=$|$}211\text{$>$ to $|$uf$>$=$|$}21-1\text{$>$, $\Gamma $=}0\)
+
+\noindent\(\text{from $|$ui$>$=$|$}21-1\text{$>$ to $|$uf$>$=$|$}100\text{$>$, $\Gamma $=}\frac{a^2 e^{14} \text{me}^3}{279936 c^3 \pi ^8 \text{$\epsilon
+$0}^7 \hbar ^{10}}\)
+
+\noindent\(\text{from $|$ui$>$=$|$}21-1\text{$>$ to $|$uf$>$=$|$}200\text{$>$, $\Gamma $=}0\)
+
+\noindent\(\text{from $|$ui$>$=$|$}21-1\text{$>$ to $|$uf$>$=$|$}210\text{$>$, $\Gamma $=}0\)
+
+\noindent\(\text{from $|$ui$>$=$|$}21-1\text{$>$ to $|$uf$>$=$|$}211\text{$>$, $\Gamma $=}0\)
+
+\begin{doublespace}
+\noindent\(\pmb{\text{(*Evaluate expression in SI units*)}}\\
+\pmb{\text{(*}\text{Half} \text{life} \text{should} \text{be} \sim 1.6 \text{ns}\text{*)}}\\
+\pmb{a=\text{Quantity}[\text{{``}BohrRadius{''}}];}\\
+\pmb{e=\text{Quantity}[\text{{``}ElementaryCharge{''}}];}\\
+\pmb{\text{me}=\text{Quantity}[\text{{``}ElectronMass{''}}];}\\
+\pmb{c=\text{Quantity}[\text{{``}SpeedOfLight{''}}];}\\
+\pmb{\text{$\epsilon $0}=\text{Quantity}[\text{{``}VacuumPermittivity{''}}];}\\
+\pmb{\hbar =\text{Quantity}[\text{{``}hbar{''}}];}\\
+\pmb{}\\
+\pmb{\text{Print}[\text{{``}$\Gamma $ = {''}},\text{UnitConvert}[\text{$\Gamma $List}[[1]]]]}\\
+\pmb{\text{Print}\left[\text{$\texttt{"}\tau $ = }\frac{1}{2\Gamma }\text{ =$\texttt{"}$},\text{UnitConvert}\left[\frac{1}{2\text{$\Gamma $List}[[1]]}\right]\right]}\)
+\end{doublespace}
+
+\noindent\(\text{$\Gamma $ = }\)
+
+\noindent\(\text{$\tau $ = }\frac{1}{2\Gamma }\text{ =}\)
+
+\end{document}

@@ -1,0 +1,2 @@
+gcc -o run langevin_verlet.c -lm -lgsl -lgslcblas 
+

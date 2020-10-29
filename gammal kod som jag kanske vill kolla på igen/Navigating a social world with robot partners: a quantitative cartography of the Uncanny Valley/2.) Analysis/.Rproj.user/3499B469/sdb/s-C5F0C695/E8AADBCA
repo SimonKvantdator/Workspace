@@ -1,0 +1,17 @@
+{
+    "contents" : "\n################################# CREATING SNAPSHOT #################################\n\n# you do NOT run this section\n\n# setwd(\"~/Dropbox/a.Uncanny Valley Projects II/2014-12-26 Re-analyses/Daz shared folder (UV)/TIME CAPSULE for OSF/2.) Analysis\")\n# \n# library(pkgsnap)\n# snap(to = paste(Sys.Date(), \"packages.csv\", sep=\"_\") , recommended = FALSE)\n\n\n################################# READ IN DATA #################################\n\n# if you don't already use packrat, run these\ninstall.packages(\"packrat\")\ninstall.packages(\"devtools\")\ndevtools::install_github(\"rstudio/packrat\")\n\n# recreate MM's libraries\nsnapshot = read.csv(\"2017-02-19_packages.csv\")\nrestore(snapshot)\n\n# for more info: https://github.com/MangoTheCat/pkgsnap",
+    "created" : 1487508713685.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3460031338",
+    "id" : "E8AADBCA",
+    "lastKnownWriteTime" : 1487509925,
+    "path" : "~/Dropbox/a.Uncanny Valley Projects II/2014-12-26 Re-analyses/Daz shared folder (UV)/TIME CAPSULE for OSF/2.) Analysis/Recreate our package versions.R",
+    "project_path" : "Recreate our package versions.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

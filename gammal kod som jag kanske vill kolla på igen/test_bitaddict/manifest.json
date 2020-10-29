@@ -1,0 +1,28 @@
+{
+
+  "manifest_version": 2,
+  "name": "test",
+  "version": "1.0",
+
+  "description": "test",
+  "homepage_url": "http://example.com",
+  "icons": {
+    "48": "border-48.png"
+  },
+
+  "permissions": [
+    "activeTab",
+    "bookmarks",
+    "tabs"
+  ],
+
+  "browser_action": {
+    "default_icon": "darkmode.png",
+    "default_title": "test"
+  },
+
+  "background": {
+    "scripts": ["background.js"]
+  }
+
+}

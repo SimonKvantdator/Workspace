@@ -1,0 +1,17 @@
+\begin{align}
+	\feynmandiagram[small, inline=(o.base), horizontal=a to o]{
+		a [particle=$\phi$]-- [scalar] o [particle=$\phi$],
+	};
+	&= \frac{i}{p^2 - m_\phi^2} \label{eq:phi_to_phi_feynman_rule}\\
+	\feynmandiagram[small, inline=(o.base), horizontal=a to o]{
+		a [particle=$\psi$] -- [fermion] o [particle=$\mathbar{\psi}$],
+	};
+	&= \frac{i (\slashed{p} + m_\psi)}{p^2 - m_\psi^2} \label{eq:psi_to_psibar_feynman_rule}\\
+	\feynmandiagram[small, inline=(o.base), horizontal=o to a]{
+		o [dot],
+		o -- [scalar] a,
+		o -- [fermion] b,
+		c -- [fermion] o,
+	};
+	&= g \gamma^5.\label{eq:phi_psi_psibar_vertex_feynman_rule}
+\end{align}

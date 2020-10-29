@@ -1,0 +1,111 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{Nielsen:2011}{book}{}
+      \name{author}{2}{}{%
+        {{hash=afe17482fc813e497188aee3b3783879}{%
+           family={Nielsen},
+           familyi={N\bibinitperiod},
+           given={Michael\bibnamedelima A.},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=415ddff2f58b25977b1a2dedf18f4501}{%
+           family={Chuang},
+           familyi={C\bibinitperiod},
+           given={Isaac\bibnamedelima L.},
+           giveni={I\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York, NY, USA}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{456599bb4a61c2e997e2a7e1a21b25b4}
+      \strng{fullhash}{456599bb4a61c2e997e2a7e1a21b25b4}
+      \strng{bibnamehash}{456599bb4a61c2e997e2a7e1a21b25b4}
+      \strng{authorbibnamehash}{456599bb4a61c2e997e2a7e1a21b25b4}
+      \strng{authornamehash}{456599bb4a61c2e997e2a7e1a21b25b4}
+      \strng{authorfullhash}{456599bb4a61c2e997e2a7e1a21b25b4}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{10th}
+      \field{isbn}{9781107002173}
+      \field{title}{Quantum Computation and Quantum Information: 10th Anniversary Edition}
+      \field{year}{2011}
+    \endentry
+    \entry{Wolfram|Alpha}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=ee82c41bd9fdbe2adafdbf5f5e0d6e3d}{%
+           family={Wolfram\bibnamedelima Research},
+           familyi={W\bibinitperiod\bibinitdelim R\bibinitperiod},
+           given={Inc.},
+           giveni={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{ee82c41bd9fdbe2adafdbf5f5e0d6e3d}
+      \strng{fullhash}{ee82c41bd9fdbe2adafdbf5f5e0d6e3d}
+      \strng{bibnamehash}{ee82c41bd9fdbe2adafdbf5f5e0d6e3d}
+      \strng{authorbibnamehash}{ee82c41bd9fdbe2adafdbf5f5e0d6e3d}
+      \strng{authornamehash}{ee82c41bd9fdbe2adafdbf5f5e0d6e3d}
+      \strng{authorfullhash}{ee82c41bd9fdbe2adafdbf5f5e0d6e3d}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed on \currenttime ~\today}
+      \field{title}{Wolfram|Alpha}
+      \verb{urlraw}
+      \verb https://www.wolframalpha.com/input/?i=%28plancks+constant%29+%2F+%28plancks+reduced+constant%29
+      \endverb
+      \verb{url}
+      \verb https://www.wolframalpha.com/input/?i=%28plancks+constant%29+%2F+%28plancks+reduced+constant%29
+      \endverb
+    \endentry
+    \entry{Physics_handbook}{inbook}{}
+      \name{author}{1}{}{%
+        {{hash=30c9600eb2284b6223156be6b78de108}{%
+           family={Carl\bibnamedelima Nordling},
+           familyi={C\bibinitperiod\bibinitdelim N\bibinitperiod},
+           given={Jonny\bibnamedelima Österman},
+           giveni={J\bibinitperiod\bibinitdelim Ö\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Studentlitteratur}%
+      }
+      \strng{namehash}{30c9600eb2284b6223156be6b78de108}
+      \strng{fullhash}{30c9600eb2284b6223156be6b78de108}
+      \strng{bibnamehash}{30c9600eb2284b6223156be6b78de108}
+      \strng{authorbibnamehash}{30c9600eb2284b6223156be6b78de108}
+      \strng{authornamehash}{30c9600eb2284b6223156be6b78de108}
+      \strng{authorfullhash}{30c9600eb2284b6223156be6b78de108}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{chapter}{CU1}
+      \field{title}{Physics Handbook for Science and Engineering}
+      \field{year}{2015}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

@@ -1,0 +1,152 @@
+%% AMS-LaTeX Created with the Wolfram Language for Students - Personal Use Only : www.wolfram.com
+
+\documentclass{article}
+\usepackage{amsmath, amssymb, graphics, setspace}
+
+\newcommand{\mathsym}[1]{{}}
+\newcommand{\unicode}[1]{{}}
+
+\newcounter{mathematicapage}
+\begin{document}
+
+\begin{doublespace}
+\noindent\(\pmb{\text{ClearAll}[\text{{``}Global$\grave{ }$*{''}}]}\\
+\pmb{\text{lieBracket}[\text{A$\_$},\text{B$\_$}]\text{:=}A.B-B.A}\\
+\pmb{\text{A1}=\left(
+\begin{array}{cccc}
+ 0 & 0 & 0 & 0 \\
+ 0 & 0 & -1 & 0 \\
+ 0 & 1 & 0 & 0 \\
+ 0 & 0 & 0 & 0 \\
+\end{array}
+\right);\text{A2}=\left(
+\begin{array}{cccc}
+ 0 & 0 & 1 & 0 \\
+ 0 & 0 & 0 & 0 \\
+ -1 & 0 & 0 & 0 \\
+ 0 & 0 & 0 & 0 \\
+\end{array}
+\right);\text{A3}=\left(
+\begin{array}{cccc}
+ 0 & -1 & 0 & 0 \\
+ 1 & 0 & 0 & 0 \\
+ 0 & 0 & 0 & 0 \\
+ 0 & 0 & 0 & 0 \\
+\end{array}
+\right);}\\
+\pmb{\text{B1}=\left(
+\begin{array}{cccc}
+ 0 & 0 & 0 & -1 \\
+ 0 & 0 & 0 & 0 \\
+ 0 & 0 & 0 & 0 \\
+ 1 & 0 & 0 & 0 \\
+\end{array}
+\right);\text{B2}=\left(
+\begin{array}{cccc}
+ 0 & 0 & 0 & 0 \\
+ 0 & 0 & 0 & -1 \\
+ 0 & 0 & 0 & 0 \\
+ 0 & 1 & 0 & 0 \\
+\end{array}
+\right);\text{B3}=\left(
+\begin{array}{cccc}
+ 0 & 0 & 0 & 0 \\
+ 0 & 0 & 0 & 0 \\
+ 0 & 0 & 0 & -1 \\
+ 0 & 0 & 1 & 0 \\
+\end{array}
+\right);}\\
+\pmb{\text{X1}=(1/2)(\text{A1}+\text{B1});\text{X2}=(1/2)(\text{A2}+\text{B2});\text{X3}=(1/2)(\text{A3}+\text{B3});}\\
+\pmb{\text{Y1}=(1/2)(\text{A1}-\text{B1});\text{Y2}=(1/2)(\text{A2}-\text{B2});\text{Y3}=(1/2)(\text{A3}-\text{B3});}\\
+\pmb{\text{so4BasisList}=\{\text{X1},\text{X2},\text{X3},\text{Y1},\text{Y2},\text{Y3}\};}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\pmb{\text{(*}\text{Write} \text{down} \text{su}(2)\oplus \text{su}(2) \text{structure} \text{constants}\text{*)}}\\
+\pmb{\text{su2StructureConstants}[\text{i$\_$},\text{j$\_$},\text{k$\_$}]\text{:=}\text{LeviCivitaTensor}[3][[i,j,k]]}\\
+\pmb{}\\
+\pmb{\text{(*}\text{Check} \text{if} \text{the} \text{same} \text{structure} \text{constants} \text{hold} \text{for} \text{so}(4)\text{*)}}\\
+\pmb{\text{For}[i=1,i\leq 3,i\text{++},}\\
+\pmb{\text{For}[j=1,j\leq 3,j\text{++},}\\
+\pmb{\text{bool}=(\text{lieBracket}[\text{so4BasisList}[[i]],\text{so4BasisList}[[j]]]==}\\
+\pmb{\text{Sum}[\text{su2StructureConstants}[i,j,k]\text{so4BasisList}[[k]],\{k,1,3\}]);}\\
+\pmb{\text{Print}[\text{bool},\text{{``} for ij={''}},i,j];}\\
+\pmb{]}\\
+\pmb{]}\)
+\end{doublespace}
+
+\noindent\(\text{True}\text{ for ij=}11\)
+
+\noindent\(\text{True}\text{ for ij=}12\)
+
+\noindent\(\text{True}\text{ for ij=}13\)
+
+\noindent\(\text{True}\text{ for ij=}21\)
+
+\noindent\(\text{True}\text{ for ij=}22\)
+
+\noindent\(\text{True}\text{ for ij=}23\)
+
+\noindent\(\text{True}\text{ for ij=}31\)
+
+\noindent\(\text{True}\text{ for ij=}32\)
+
+\noindent\(\text{True}\text{ for ij=}33\)
+
+\begin{doublespace}
+\noindent\(\pmb{\text{For}[i=1,i\leq 3,i\text{++},}\\
+\pmb{\text{For}[j=1,j\leq 3,j\text{++},}\\
+\pmb{\text{bool}=(\text{lieBracket}[\text{so4BasisList}[[i+3]],\text{so4BasisList}[[j+3]]]==}\\
+\pmb{\text{Sum}[\text{su2StructureConstants}[i,j,k]\text{so4BasisList}[[k+3]],\{k,1,3\}]);}\\
+\pmb{\text{Print}[\text{bool},\text{{``} for ij={''}},i+3,j+3];}\\
+\pmb{]}\\
+\pmb{]}\)
+\end{doublespace}
+
+\noindent\(\text{True}\text{ for ij=}44\)
+
+\noindent\(\text{True}\text{ for ij=}45\)
+
+\noindent\(\text{True}\text{ for ij=}46\)
+
+\noindent\(\text{True}\text{ for ij=}54\)
+
+\noindent\(\text{True}\text{ for ij=}55\)
+
+\noindent\(\text{True}\text{ for ij=}56\)
+
+\noindent\(\text{True}\text{ for ij=}64\)
+
+\noindent\(\text{True}\text{ for ij=}65\)
+
+\noindent\(\text{True}\text{ for ij=}66\)
+
+\begin{doublespace}
+\noindent\(\pmb{\text{For}[i=1,i\leq 3,i\text{++},}\\
+\pmb{\text{For}[j=1,j\leq 3,j\text{++},}\\
+\pmb{\text{bool}=(\text{lieBracket}[\text{so4BasisList}[[i]],\text{so4BasisList}[[j+3]]]==}\\
+\pmb{\text{ConstantArray}[0,\{4,4\}]);}\\
+\pmb{\text{Print}[\text{bool},\text{{``} for ij={''}},i,j+3];}\\
+\pmb{]}\\
+\pmb{]}\)
+\end{doublespace}
+
+\noindent\(\text{True}\text{ for ij=}14\)
+
+\noindent\(\text{True}\text{ for ij=}15\)
+
+\noindent\(\text{True}\text{ for ij=}16\)
+
+\noindent\(\text{True}\text{ for ij=}24\)
+
+\noindent\(\text{True}\text{ for ij=}25\)
+
+\noindent\(\text{True}\text{ for ij=}26\)
+
+\noindent\(\text{True}\text{ for ij=}34\)
+
+\noindent\(\text{True}\text{ for ij=}35\)
+
+\noindent\(\text{True}\text{ for ij=}36\)
+
+\end{document}

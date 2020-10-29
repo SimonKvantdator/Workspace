@@ -1,0 +1,16 @@
+[0] Config.pm:304> INFO - This is Biber 2.14
+[0] Config.pm:307> INFO - Logfile is 'inlamning6.blg'
+[78] biber:322> INFO - === sön maj 31, 2020, 22:59:20
+[92] Biber.pm:415> INFO - Reading 'inlamning6.bcf'
+[168] Biber.pm:943> INFO - Found 9 citekeys in bib section 0
+[182] Biber.pm:4256> INFO - Processing section 0
+[183] Utils.pm:75> INFO - Globbing data source 'bibliography.bib'
+[183] Utils.pm:91> INFO - Globbed data source 'bibliography.bib' to bibliography.bib
+[193] Biber.pm:4455> INFO - Looking for bibtex format file 'bibliography.bib' for section 0
+[194] bibtex.pm:1653> INFO - LaTeX decoding ...
+[206] bibtex.pm:1471> INFO - Found BibTeX data source 'bibliography.bib'
+[281] UCollate.pm:68> INFO - Overriding locale 'sv-SE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[282] UCollate.pm:68> INFO - Overriding locale 'sv-SE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[282] Biber.pm:4084> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'sv-SE'
+[291] bbl.pm:652> INFO - Writing 'inlamning6.bbl' with encoding 'UTF-8'
+[295] bbl.pm:755> INFO - Output to inlamning6.bbl

@@ -1,0 +1,243 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      7726,        234]
+NotebookOptionsPosition[      7309,        214]
+NotebookOutlinePosition[      7647,        229]
+CellTagsIndexPosition[      7604,        226]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{"ClearAll", "[", "\"\<Global`*\>\"", "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"$Assumptions", "=", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"x", "\[Element]", "Reals"}], "&&", "\[IndentingNewLine]", 
+      "\t\t\t", 
+      RowBox[{"y", "\[Element]", "Reals"}], "&&", "\[IndentingNewLine]", 
+      "\t\t\t", 
+      RowBox[{"z", "\[Element]", "Reals"}]}], ")"}]}], ";"}], 
+  "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{"Define", " ", "some", " ", "shorthands"}], 
+   "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"r", "=", 
+   SuperscriptBox[
+    RowBox[{"(", 
+     RowBox[{
+      SuperscriptBox["x", "2"], "+", 
+      SuperscriptBox["y", "2"], "+", 
+      SuperscriptBox["z", "2"]}], ")"}], 
+    RowBox[{"1", "/", "2"}]]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"cos\[Theta]", "=", 
+   FractionBox["z", "r"]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"sin\[Theta]", "=", 
+   FractionBox[
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{
+       SuperscriptBox["x", "2"], "+", 
+       SuperscriptBox["y", "2"]}], ")"}], 
+     RowBox[{"1", "/", "2"}]], "r"]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"cos\[Phi]", "=", 
+   FractionBox["x", 
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{
+       SuperscriptBox["x", "2"], "+", 
+       SuperscriptBox["y", "2"]}], ")"}], 
+     RowBox[{"1", "/", "2"}]]]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"sin\[Phi]", "=", 
+    FractionBox["y", 
+     SuperscriptBox[
+      RowBox[{"(", 
+       RowBox[{
+        SuperscriptBox["x", "2"], "+", 
+        SuperscriptBox["y", "2"]}], ")"}], 
+      RowBox[{"1", "/", "2"}]]]}], ";"}], "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{"Make", " ", "a", " ", "qualified", " ", "guess"}], 
+   "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Ax", "=", 
+   RowBox[{
+    RowBox[{"-", 
+     FractionBox[
+      RowBox[{"1", "-", "cos\[Theta]"}], 
+      RowBox[{"r", " ", "sin\[Theta]"}]]}], "sin\[Phi]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Ay", "=", 
+   RowBox[{
+    FractionBox[
+     RowBox[{"1", "-", "cos\[Theta]"}], 
+     RowBox[{"r", " ", "sin\[Theta]"}]], "cos\[Phi]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"Az", "=", "0"}], ";"}], "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{"Check", " ", "guess"}], "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Fyz", "=", 
+   FractionBox[
+    RowBox[{" ", "x"}], 
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{
+       SuperscriptBox["x", "2"], "+", 
+       SuperscriptBox["y", "2"], "+", 
+       SuperscriptBox["z", "2"]}], ")"}], 
+     RowBox[{"3", "/", "2"}]]]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Fzx", "=", 
+   FractionBox[
+    RowBox[{" ", "y"}], 
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{
+       SuperscriptBox["x", "2"], "+", 
+       SuperscriptBox["y", "2"], "+", 
+       SuperscriptBox["z", "2"]}], ")"}], 
+     RowBox[{"3", "/", "2"}]]]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"Fxy", "=", 
+    FractionBox[
+     RowBox[{" ", "z"}], 
+     SuperscriptBox[
+      RowBox[{"(", 
+       RowBox[{
+        SuperscriptBox["x", "2"], "+", 
+        SuperscriptBox["y", "2"], "+", 
+        SuperscriptBox["z", "2"]}], ")"}], 
+      RowBox[{"3", "/", "2"}]]]}], ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Print", "[", 
+   RowBox[{"\"\<''\[PartialD]y(Az) - \[PartialD]z(Ay) == Fyz'' = \>\"", ",", 
+    RowBox[{
+     RowBox[{"FullSimplify", "[", 
+      RowBox[{
+       RowBox[{"D", "[", 
+        RowBox[{"Az", ",", "y"}], "]"}], "-", 
+       RowBox[{"D", "[", 
+        RowBox[{"Ay", ",", "z"}], "]"}]}], "]"}], "\[Equal]", "Fyz"}]}], 
+   "]"}], ";", 
+  RowBox[{"Print", "[", 
+   RowBox[{"\"\<''\[PartialD]z(Ax) - \[PartialD]x(Az) == Fzx'' = \>\"", ",", 
+    RowBox[{
+     RowBox[{"FullSimplify", "[", 
+      RowBox[{
+       RowBox[{"D", "[", 
+        RowBox[{"Ax", ",", "z"}], "]"}], "-", 
+       RowBox[{"D", "[", 
+        RowBox[{"Az", ",", "x"}], "]"}]}], "]"}], "\[Equal]", "Fzx"}]}], 
+   "]"}], ";", 
+  RowBox[{"Print", "[", 
+   RowBox[{"\"\<''\[PartialD]x(Az) - \[PartialD]y(Ax) == Fxy'' = \>\"", ",", 
+    RowBox[{
+     RowBox[{"FullSimplify", "[", 
+      RowBox[{
+       RowBox[{"D", "[", 
+        RowBox[{"Ay", ",", "x"}], "]"}], "-", 
+       RowBox[{"D", "[", 
+        RowBox[{"Ax", ",", "y"}], "]"}]}], "]"}], "\[Equal]", "Fxy"}]}], 
+   "]"}], ";"}]}], "Input",
+ CellChangeTimes->{{3.783676089869289*^9, 3.7836760954463377`*^9}, {
+   3.783676193572955*^9, 3.7836762026251163`*^9}, {3.783676238334468*^9, 
+   3.78367638717404*^9}, {3.783676483402506*^9, 3.7836766254989862`*^9}, {
+   3.784883081152732*^9, 3.784883283771453*^9}, {3.784883314868321*^9, 
+   3.784883334055797*^9}, {3.784883952337007*^9, 3.7848839560550203`*^9}, {
+   3.78488402373628*^9, 3.784884030853675*^9}, {3.7848841300525923`*^9, 
+   3.7848841576502132`*^9}, {3.784884396593822*^9, 3.784884439407755*^9}, {
+   3.7848845157606087`*^9, 3.784884630531101*^9}, {3.784884764448225*^9, 
+   3.784884772872264*^9}, {3.784884941188266*^9, 3.784884952145092*^9}, {
+   3.7848855095074577`*^9, 3.784885791159009*^9}, {3.784885830313802*^9, 
+   3.7848858968355227`*^9}, {3.784885960312456*^9, 3.784885966054318*^9}, {
+   3.784886057449007*^9, 3.784886098324912*^9}, 3.784886556153627*^9, {
+   3.784886631339785*^9, 3.7848869954924097`*^9}, {3.784887080932637*^9, 
+   3.784887101722806*^9}, {3.784887173114259*^9, 3.784887204467908*^9}, {
+   3.784887249590691*^9, 3.784887251771184*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"''\[PartialD]y(Az) - \[PartialD]z(Ay) == Fyz'' = \"\>", 
+   "\[InvisibleSpace]", "True"}],
+  SequenceForm["''\[PartialD]y(Az) - \[PartialD]z(Ay) == Fyz'' = ", True],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.7848869120293016`*^9, 3.7848869508704977`*^9}, 
+   3.784886996559472*^9, 3.7848872071084623`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"''\[PartialD]z(Ax) - \[PartialD]x(Az) == Fzx'' = \"\>", 
+   "\[InvisibleSpace]", "True"}],
+  SequenceForm["''\[PartialD]z(Ax) - \[PartialD]x(Az) == Fzx'' = ", True],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.7848869120293016`*^9, 3.7848869508704977`*^9}, 
+   3.784886996559472*^9, 3.784887207109646*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"''\[PartialD]x(Az) - \[PartialD]y(Ax) == Fxy'' = \"\>", 
+   "\[InvisibleSpace]", "True"}],
+  SequenceForm["''\[PartialD]x(Az) - \[PartialD]y(Ax) == Fxy'' = ", True],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.7848869120293016`*^9, 3.7848869508704977`*^9}, 
+   3.784886996559472*^9, 3.784887207110486*^9}]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{767, 843},
+WindowMargins->{{Automatic, -10}, {Automatic, -8}},
+FrontEndVersion->"10.0 for Linux x86 (64-bit) (December 4, 2014)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 5582, 159, 845, "Input"],
+Cell[CellGroupData[{
+Cell[6187, 185, 364, 7, 23, "Print"],
+Cell[6554, 194, 362, 7, 23, "Print"],
+Cell[6919, 203, 362, 7, 23, "Print"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

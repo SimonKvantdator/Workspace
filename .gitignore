@@ -1,0 +1,395 @@
+
+# LaTeX
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+
+# Python
+__pycache__
+tempCodeRunnerFile.py
+*.pyc
+
+# Some other people's projects
+/vqe
+/tif285
+/'manim-master (3Blue1Brown)'
+/'Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley'
+
+*/.git
+
+gammal kod som jag kanske vill kolla på igen/subatomär fysik/tenta 2020-10-09/uppg2/uppg2.jpg
+gammal kod som jag kanske vill kolla på igen/subatomär fysik/tenta 2020-10-09/uppg6/uppg6.jpg
+gammal kod som jag kanske vill kolla på igen/subatomär fysik/tenta 2020-10-09/uppg5/uppg5.jpg
+gammal kod som jag kanske vill kolla på igen/subatomär fysik/tenta 2020-10-09/uppg4/uppg4.jpg
+gammal kod som jag kanske vill kolla på igen/subatomär fysik/tenta 2020-10-09/FUF050_tenta2020-10-09.zip
+gammal kod som jag kanske vill kolla på igen/subatomär fysik/tenta 2020-10-09/uppg1/uppg1.jpg
+gammal kod som jag kanske vill kolla på igen/tifx04-19-80/not code/PDFs/mikeandike.pdf
+gammal kod som jag kanske vill kolla på igen/tifx04-19-80/not code/PDFs/Dickhoff-W-Many-Body-Theory-Exposed-Ch1-2.pdf
+gammal kod som jag kanske vill kolla på igen/tifx04-19-80/.git/objects/pack/pack-4c4bcfa96f754e56457c516ff2456bd26a6d9484.pack
+gammal kod som jag kanske vill kolla på igen/gravkos/IMG_20200305_202401.jpg
+gammal kod som jag kanske vill kolla på igen/gravkos/IMG_20200305_200510.jpg
+gammal kod som jag kanske vill kolla på igen/gravkos/problem_1_5b.jpg
+gammal kod som jag kanske vill kolla på igen/gravkos/gravcos_home_problems_set_3.pdf
+gammal kod som jag kanske vill kolla på igen/gravkos/IMG_20200305_194234.jpg
+gammal kod som jag kanske vill kolla på igen/gravkos/IMG_20200306_110938.jpg
+gammal kod som jag kanske vill kolla på igen/quantum mechanics/Sakurai_and_Napolitano_Modern_Quantum_Me.pdf
+gammal kod som jag kanske vill kolla på igen/quantum mechanics/handwritten assignments/IMG_20191025_205227.jpg
+gammal kod som jag kanske vill kolla på igen/quantum mechanics/handwritten assignments/IMG_20191025_205435.jpg
+gammal kod som jag kanske vill kolla på igen/quantum mechanics/handwritten assignments/IMG_20191025_205932.jpg
+gammal kod som jag kanske vill kolla på igen/quantum mechanics/handwritten assignments/IMG_20191025_204432.jpg
+gammal kod som jag kanske vill kolla på igen/quantum mechanics/handwritten assignments/IMG_20191025_205355.jpg
+gammal kod som jag kanske vill kolla på igen/quantum mechanics/handwritten assignments/IMG_20191025_204356.jpg
+gammal kod som jag kanske vill kolla på igen/quantum mechanics/handwritten assignments/IMG_20191025_204403.jpg
+gammal kod som jag kanske vill kolla på igen/quantum mechanics/handwritten assignments/IMG_20191025_205631.jpg
+gammal kod som jag kanske vill kolla på igen/quantum mechanics/handwritten assignments/IMG_20191025_205152.jpg
+gammal kod som jag kanske vill kolla på igen/quantum mechanics/handwritten assignments/IMG_20191025_205503.jpg
+gammal kod som jag kanske vill kolla på igen/quantum mechanics/handwritten assignments/IMG_20191025_205715.jpg
+gammal kod som jag kanske vill kolla på igen/quantum mechanics/handwritten assignments/IMG_20191025_205208.jpg
+gammal kod som jag kanske vill kolla på igen/quantum mechanics/handwritten assignments/IMG_20191025_205411.jpg
+gammal kod som jag kanske vill kolla på igen/quantum mechanics/handwritten assignments/IMG_20191025_205524.jpg
+gammal kod som jag kanske vill kolla på igen/quantum mechanics/handwritten assignments/IMG_20191025_205839.jpg
+gammal kod som jag kanske vill kolla på igen/quantum mechanics/handwritten assignments/IMG_20191025_204448.jpg
+gammal kod som jag kanske vill kolla på igen/quantum mechanics/handwritten assignments/IMG_20191025_205220.jpg
+gammal kod som jag kanske vill kolla på igen/quantum mechanics/handwritten assignments/IMG_20191025_205830.jpg
+gammal kod som jag kanske vill kolla på igen/quantum mechanics/handwritten assignments/IMG_20191025_205329.jpg
+gammal kod som jag kanske vill kolla på igen/quantum mechanics/handwritten assignments/IMG_20191025_205905.jpg
+gammal kod som jag kanske vill kolla på igen/quantum mechanics/handwritten assignments/IMG_20191025_205448.jpg
+gammal kod som jag kanske vill kolla på igen/quantum mechanics/handwritten assignments/IMG_20191025_204909.jpg
+gammal kod som jag kanske vill kolla på igen/quantum mechanics/handwritten assignments/IMG_20191025_205138.jpg
+gammal kod som jag kanske vill kolla på igen/quantum mechanics/handwritten assignments/IMG_20191025_204831.jpg
+gammal kod som jag kanske vill kolla på igen/quantum mechanics/handwritten assignments/IMG_20191025_205917.jpg
+gammal kod som jag kanske vill kolla på igen/quantum mechanics/handwritten assignments/IMG_20191025_205404.jpg
+gammal kod som jag kanske vill kolla på igen/quantum mechanics/handwritten assignments/IMG_20191025_205419.jpg
+gammal kod som jag kanske vill kolla på igen/quantum mechanics/handwritten assignments/IMG_20191025_205810.jpg
+gammal kod som jag kanske vill kolla på igen/quantum mechanics/handwritten assignments/IMG_20191025_205457.jpg
+gammal kod som jag kanske vill kolla på igen/quantum mechanics/handwritten assignments/IMG_20191025_205314.jpg
+gammal kod som jag kanske vill kolla på igen/quantum mechanics/handwritten assignments/IMG_20191025_205611.jpg
+gammal kod som jag kanske vill kolla på igen/quantum mechanics/handwritten assignments/IMG_20191025_205900.jpg
+gammal kod som jag kanske vill kolla på igen/quantum mechanics/handwritten assignments/IMG_20191025_205337.jpg
+gammal kod som jag kanske vill kolla på igen/quantum mechanics/handwritten assignments/IMG_20191025_205344.jpg
+gammal kod som jag kanske vill kolla på igen/quantum mechanics/handwritten assignments/IMG_20191025_205441.jpg
+gammal kod som jag kanske vill kolla på igen/quantum mechanics/handwritten assignments/IMG_20191025_205851.jpg
+gammal kod som jag kanske vill kolla på igen/quantum mechanics/handwritten assignments/IMG_20191025_205126.jpg
+gammal kod som jag kanske vill kolla på igen/quantum mechanics/handwritten assignments/IMG_20191025_205428.jpg
+gammal kod som jag kanske vill kolla på igen/quantum mechanics/handwritten assignments/IMG_20191025_205816.jpg
+gammal kod som jag kanske vill kolla på igen/quantum mechanics/handwritten assignments/IMG_20191025_205249.jpg
+gammal kod som jag kanske vill kolla på igen/quantum mechanics/handwritten assignments/IMG_20191025_205940.jpg
+gammal kod som jag kanske vill kolla på igen/quantum mechanics/handwritten assignments/IMG_20191025_205824.jpg
+gammal kod som jag kanske vill kolla på igen/quantum mechanics/handwritten assignments/IMG_20191025_204412.jpg
+gammal kod som jag kanske vill kolla på igen/quantum mechanics/handwritten assignments/IMG_20191025_205518.jpg
+gammal kod som jag kanske vill kolla på igen/quantum mechanics/handwritten assignments/IMG_20191025_204749.jpg
+gammal kod som jag kanske vill kolla på igen/quantum mechanics/handwritten assignments/IMG_20191025_204940.jpg
+gammal kod som jag kanske vill kolla på igen/quantum mechanics/handwritten assignments/IMG_20191025_205756.jpg
+gammal kod som jag kanske vill kolla på igen/quantum mechanics/handwritten assignments/IMG_20191025_205701.jpg
+gammal kod som jag kanske vill kolla på igen/quantum mechanics/handwritten assignments/IMG_20191025_205646.jpg
+gammal kod som jag kanske vill kolla på igen/quantum mechanics/handwritten assignments/IMG_20191025_205726.jpg
+gammal kod som jag kanske vill kolla på igen/quantum mechanics/handwritten assignments/IMG_20191025_205511.jpg
+gammal kod som jag kanske vill kolla på igen/quantum mechanics/handwritten assignments/IMG_20191025_205303.jpg
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Robot"/Screen Shot 2015-04-19 at 5.04.48 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Robot"/Screen Shot 2015-04-19 at 4.45.46 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Robot"/Screen Shot 2015-04-19 at 3.53.11 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Robot"/Screen Shot 2015-04-19 at 5.53.05 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Robot"/Screen Shot 2015-04-19 at 3.57.47 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Robot"/Screen Shot 2015-04-19 at 5.35.59 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Robot"/Screen Shot 2015-04-19 at 5.05.24 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Robot"/Screen Shot 2015-04-19 at 5.59.49 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Robot"/Screen Shot 2015-04-19 at 5.11.18 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Robot"/Screen Shot 2015-04-19 at 5.17.47 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Interactive Robot"/Screen Shot 2015-04-19 at 8.10.54 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Interactive Robot"/Screen Shot 2015-04-19 at 8.04.46 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Interactive Robot"/Screen Shot 2015-04-19 at 7.09.24 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Interactive Robot"/Screen Shot 2015-04-19 at 8.35.12 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Interactive Robot"/Screen Shot 2015-04-19 at 8.07.13 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Interactive Robot"/Screen Shot 2015-04-19 at 7.28.06 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Interactive Robot"/Screen Shot 2015-04-19 at 8.23.01 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Interactive Robot"/Screen Shot 2015-04-19 at 8.03.01 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Interactive Robot"/Screen Shot 2015-04-19 at 8.32.09 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Interactive Robot"/Screen Shot 2015-04-19 at 6.59.46 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Interactive Robot"/Screen Shot 2015-04-19 at 7.44.45 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Interactive Robot"/Screen Shot 2015-04-19 at 8.14.05 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Interactive Robot"/Screen Shot 2015-04-19 at 7.25.50 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Interactive Robot"/Screen Shot 2015-04-19 at 7.23.14 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Interactive Robot"/Screen Shot 2015-04-19 at 8.32.51 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Interactive Robot"/Screen Shot 2015-04-19 at 8.22.17 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Interactive Robot"/Screen Shot 2015-04-19 at 6.33.24 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Interactive Robot"/Screen Shot 2015-04-19 at 8.20.46 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Interactive Robot"/Screen Shot 2015-04-19 at 8.45.28 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Interactive Robot"/Screen Shot 2015-04-19 at 8.30.27 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Interactive Robot"/Screen Shot 2015-04-19 at 8.17.46 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Interactive Robot"/Screen Shot 2015-04-19 at 7.21.58 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Interactive Robot"/Screen Shot 2015-04-19 at 8.34.35 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Interactive Robot"/Screen Shot 2015-04-19 at 8.06.34 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Interactive Robot"/Screen Shot 2015-04-19 at 7.58.59 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Interactive Robot"/Screen Shot 2015-04-19 at 8.42.40 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Interactive Robot"/Screen Shot 2015-04-19 at 8.21.17 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Interactive Robot"/Screen Shot 2015-04-19 at 8.13.05 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Interactive Robot"/Screen Shot 2015-04-19 at 8.38.30 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Interactive Robot"/Screen Shot 2015-04-19 at 8.19.08 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Interactive Robot"/Screen Shot 2015-04-19 at 6.09.57 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Human Robot"/Screen Shot 2015-04-20 at 7.43.13 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Human Robot"/Screen Shot 2015-04-19 at 10.45.30 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Human Robot"/Screen Shot 2015-04-20 at 7.33.06 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Human Robot"/Screen Shot 2015-04-19 at 8.55.28 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Human Robot"/Screen Shot 2015-04-19 at 10.42.28 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Human Robot"/Screen Shot 2015-04-20 at 7.27.53 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Human Robot"/Screen Shot 2015-04-20 at 7.50.08 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Human Robot"/Screen Shot 2015-04-19 at 10.53.17 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Human Robot"/Screen Shot 2015-04-20 at 7.01.02 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Human Robot"/Screen Shot 2015-04-20 at 7.49.33 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Human Robot"/Screen Shot 2015-04-19 at 10.40.01 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Human Robot"/Screen Shot 2015-04-20 at 8.20.20 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Human Robot"/Screen Shot 2015-04-20 at 7.15.08 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Human Robot"/Screen Shot 2015-04-20 at 8.54.23 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Human Robot"/Screen Shot 2015-04-20 at 7.22.58 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Human Robot"/Screen Shot 2015-04-20 at 8.13.48 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Human Robot"/Screen Shot 2015-04-20 at 8.55.15 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Human Robot"/Screen Shot 2015-04-20 at 8.15.14 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Human Robot"/Screen Shot 2015-04-20 at 8.05.00 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Human Robot"/Screen Shot 2015-04-19 at 9.15.25 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Human Robot"/Screen Shot 2015-04-20 at 8.54.51 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Human Robot"/Screen Shot 2015-04-19 at 8.54.57 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Human Robot"/Screen Shot 2015-04-20 at 8.42.04 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Human Robot"/Screen Shot 2015-04-19 at 8.56.01 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Human Robot"/Screen Shot 2015-04-19 at 10.57.25 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Human Robot"/Screen Shot 2015-04-20 at 8.56.31 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Human Robot"/Screen Shot 2015-04-19 at 8.51.35 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Human Robot"/Screen Shot 2015-04-20 at 7.18.29 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Human Robot"/Screen Shot 2015-04-20 at 8.47.17 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Human Robot"/Screen Shot 2015-04-20 at 8.08.59 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Human Robot"/Screen Shot 2015-04-20 at 8.48.17 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Human Robot"/Screen Shot 2015-04-20 at 7.44.54 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Human Robot"/Screen Shot 2015-04-19 at 9.16.01 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Human Robot"/Screen Shot 2015-04-20 at 8.47.52 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Human Robot"/Screen Shot 2015-04-19 at 8.53.43 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Human Robot"/Screen Shot 2015-04-19 at 9.13.49 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Robot Face"/Screen Shot 2015-04-19 at 2.13.18 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Robot Face"/Screen Shot 2015-04-19 at 11.03.08 AM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Robot Face"/Screen Shot 2015-04-19 at 10.54.27 AM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Robot Face"/Screen Shot 2015-04-19 at 10.49.46 AM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Robot Face"/Screen Shot 2015-04-19 at 2.10.46 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Robot Face"/Screen Shot 2015-04-19 at 10.53.02 AM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Robot Face"/Screen Shot 2015-04-19 at 2.03.24 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Robot Face"/Screen Shot 2015-04-19 at 2.05.15 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Robot Face"/Screen Shot 2015-04-19 at 10.59.00 AM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Robot Face"/Screen Shot 2015-04-19 at 10.45.03 AM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Robot Face"/Screen Shot 2015-04-19 at 2.15.55 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Robot Face"/Screen Shot 2015-04-19 at 10.48.07 AM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Robot Face"/Screen Shot 2015-04-19 at 10.52.43 AM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Robot Face"/Screen Shot 2015-04-19 at 11.01.48 AM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Robot Face"/Screen Shot 2015-04-19 at 2.18.45 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Robot Face"/Screen Shot 2015-04-19 at 1.58.01 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Robot Face"/Screen Shot 2015-04-19 at 2.01.24 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Robot Face"/Screen Shot 2015-04-19 at 2.00.51 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Robot Face"/Screen Shot 2015-04-19 at 10.49.26 AM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Robot Face"/Screen Shot 2015-04-19 at 2.20.21 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Robot Face"/Screen Shot 2015-04-19 at 2.01.36 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Robot Face"/Screen Shot 2015-04-19 at 10.53.19 AM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Robot Face"/Screen Shot 2015-04-19 at 11.02.13 AM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Robot Face"/Screen Shot 2015-04-19 at 10.54.04 AM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Robot Face"/Screen Shot 2015-04-19 at 2.20.52 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Robot Face"/Screen Shot 2015-04-19 at 10.47.04 AM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Robot Face"/Screen Shot 2015-04-19 at 10.57.54 AM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Robot Face"/Screen Shot 2015-04-19 at 11.04.48 AM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Robot Face"/Screen Shot 2015-04-19 at 10.53.39 AM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Robot Face"/Screen Shot 2015-04-19 at 2.12.05 PM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli/Experiment 1 (wild-type)/All screened faces/"Robot Face"/Screen Shot 2015-04-19 at 10.55.22 AM.png
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/1.) Materials/Stimuli.zip
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/High-resolution manuscript figures/Fig1 (Mori).jpeg
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/High-resolution manuscript figures/Fig4 (Series).jpeg
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/High-resolution manuscript figures/Fig5 (New Series-Gray).jpg
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/High-resolution manuscript figures/Fig3 (Population).jpeg
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/High-resolution manuscript figures/Fig2 (Matrix).jpeg
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/High-resolution manuscript figures/Fig5 (New Series-Color).jpeg
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/2.) Analysis/0. Raw data/1B-1C/2015_05-04_qualtrics_raw.csv
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/2.) Analysis/0. Raw data/1B-1C/2015_05-04_qualtrics_raw_no_header.csv
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/2.) Analysis/2. Prepped data/2A/packrat/lib-R/tools/R/tools.rdb
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/2.) Analysis/2. Prepped data/2A/packrat/lib-R/mgcv/R/mgcv.rdb
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/2.) Analysis/2. Prepped data/2A/packrat/lib-R/matrix/R/matrix.rdb
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/2.) Analysis/2. Prepped data/2A/packrat/lib-R/grdevices/libs/cairo.so
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/2.) Analysis/2. Prepped data/2A/packrat/lib-R/base/help/base.rdb
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/2.) Analysis/2. Prepped data/2A/packrat/lib-R/survival/data/rdata.rdb
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/2.) Analysis/2. Prepped data/2A/packrat/lib-R/stats/R/stats.rdb
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/2.) Analysis/2. Prepped data/2A/packrat/lib-R/stats/help/stats.rdb
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/2.) Analysis/.RData
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/My own analysis/.git/objects/b2/0125bfe7fdcf061583ba8450c3dbf2c3838bf1
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/My own analysis/.git/objects/62/98489ae3bc1f77da8a310885addd238ca433da
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/My own analysis/.git/objects/94/b1ea59f75e9fa512bf44a9764800de414de1cc
+gammal kod som jag kanske vill kolla på igen/Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley/My own analysis/.git/objects/2e/d56fdc727f6e27df1a66844342ceba5b8f170a
+gammal kod som jag kanske vill kolla på igen/computational physics/H1/velocities_task6.bin
+gammal kod som jag kanske vill kolla på igen/computational physics/H1/MD_LectureNotes.pdf
+gammal kod som jag kanske vill kolla på igen/computational physics/H1/utility_funcs
+gammal kod som jag kanske vill kolla på igen/computational physics/E2/powerspectrums.dat
+gammal kod som jag kanske vill kolla på igen/computational physics/E2/mode_energies.dat
+gammal kod som jag kanske vill kolla på igen/computational physics/E2/displacements.dat
+gammal kod som jag kanske vill kolla på igen/computational physics/E2/energies.dat
+gammal kod som jag kanske vill kolla på igen/computational physics/H2/r1_list_task1.bin
+gammal kod som jag kanske vill kolla på igen/computational physics/H2/r2_list_task1.bin
+gammal kod som jag kanske vill kolla på igen/computational physics/H2/theta_list_task1.bin
+gammal kod som jag kanske vill kolla på igen/computational physics/H2/E_local_list_task1.bin
+gammal kod som jag kanske vill kolla på igen/computational physics/E3/MC.txt
+gammal kod som jag kanske vill kolla på igen/computational physics/E3/utility_funcs
+gammal kod som jag kanske vill kolla på igen/computational physics/H3 (copy)/data/real_psi2_x_list_c=0.10_T0=0.10_task5.bin
+gammal kod som jag kanske vill kolla på igen/computational physics/H3 (copy)/data/real_psi_p_list_task2.bin
+gammal kod som jag kanske vill kolla på igen/computational physics/H3 (copy)/data/imag_psi_p_list_task2.bin
+gammal kod som jag kanske vill kolla på igen/computational physics/H3 (copy)/data/real_psi1_x_list_c=0.10_T0=0.10_task5.bin
+gammal kod som jag kanske vill kolla på igen/computational physics/H3 (copy)/data/real_psi2_x_list_c=0.10_T0=0.50_task5.bin
+gammal kod som jag kanske vill kolla på igen/computational physics/H3 (copy)/data/imag_psi2_x_list_c=0.10_T0=0.10_task5.bin
+gammal kod som jag kanske vill kolla på igen/computational physics/H3 (copy)/data/real_psi1_x_list_c=0.10_T0=0.50_task5.bin
+gammal kod som jag kanske vill kolla på igen/computational physics/H3 (copy)/data/imag_psi_x_list_task2.bin
+gammal kod som jag kanske vill kolla på igen/computational physics/H3 (copy)/data/imag_psi1_x_list_c=0.10_T0=0.50_task5.bin
+gammal kod som jag kanske vill kolla på igen/computational physics/H3 (copy)/data/imag_psi2_x_list_c=0.10_T0=0.50_task5.bin
+gammal kod som jag kanske vill kolla på igen/computational physics/H3 (copy)/data/imag_psi1_x_list_c=0.10_T0=0.10_task5.bin
+gammal kod som jag kanske vill kolla på igen/computational physics/H3 (copy)/data/real_psi_x_list_task2.bin
+gammal kod som jag kanske vill kolla på igen/computational physics/H3 (copy)/figures/c=0,10_T0=0,5_task5.pdf
+gammal kod som jag kanske vill kolla på igen/computational physics/H3 (copy)/figures/alpha=0,5_p0=5,0_task3.pdf
+gammal kod som jag kanske vill kolla på igen/computational physics/H3 (copy)/figures/alpha=0,5_p0=4,6_task3.pdf
+gammal kod som jag kanske vill kolla på igen/computational physics/H3 (copy)/figures/alpha=2,0_p0=4,1_task3.pdf
+gammal kod som jag kanske vill kolla på igen/computational physics/H3 (copy)/figures/alpha=2,0_p0=4,6_task3.pdf
+gammal kod som jag kanske vill kolla på igen/computational physics/H3 (copy)/figures/alpha=0,5_p0=4,1_task3.pdf
+gammal kod som jag kanske vill kolla på igen/computational physics/H3 (copy)/figures/c=0,10_T0=0,1_task5.pdf
+gammal kod som jag kanske vill kolla på igen/computational physics/H3 (copy)/figures/alpha=2,0_p0=5,0_task3.pdf
+gammal kod som jag kanske vill kolla på igen/computational physics/H3 (copy)/figures/task2.pdf
+gammal kod som jag kanske vill kolla på igen/computational physics/E1/Task6/powerspectrums.dat
+gammal kod som jag kanske vill kolla på igen/computational physics/E1/Task6/displacements.dat
+gammal kod som jag kanske vill kolla på igen/computational physics/E1/Task6/energies.dat
+gammal kod som jag kanske vill kolla på igen/computational physics/E1/Task5/disp.dat
+gammal kod som jag kanske vill kolla på igen/computational physics/E1/Task7/powerspectrums.dat
+gammal kod som jag kanske vill kolla på igen/computational physics/E1/Task7/displacements.dat
+gammal kod som jag kanske vill kolla på igen/computational physics/E1/Task7/energies.dat
+gammal kod som jag kanske vill kolla på igen/computational physics/E4/mean_tau_48/trajactory3.dat
+gammal kod som jag kanske vill kolla på igen/computational physics/E4/mean_tau_48/trajactory5.dat
+gammal kod som jag kanske vill kolla på igen/computational physics/E4/mean_tau_48/trajactory4.dat
+gammal kod som jag kanske vill kolla på igen/computational physics/E4/mean_tau_48/trajactory1.dat
+gammal kod som jag kanske vill kolla på igen/computational physics/E4/mean_tau_48/trajactory2.dat
+gammal kod som jag kanske vill kolla på igen/computational physics/E4/mean_tau_48/mean_trajactory.dat
+gammal kod som jag kanske vill kolla på igen/computational physics/E4/tau_48/trajactory3.dat
+gammal kod som jag kanske vill kolla på igen/computational physics/E4/tau_48/trajactory5.dat
+gammal kod som jag kanske vill kolla på igen/computational physics/E4/tau_48/trajactory4.dat
+gammal kod som jag kanske vill kolla på igen/computational physics/E4/tau_48/trajactory1.dat
+gammal kod som jag kanske vill kolla på igen/computational physics/E4/tau_48/trajactory2.dat
+gammal kod som jag kanske vill kolla på igen/computational physics/E4/tau_147/trajactory3.dat
+gammal kod som jag kanske vill kolla på igen/computational physics/E4/tau_147/trajactory5.dat
+gammal kod som jag kanske vill kolla på igen/computational physics/E4/tau_147/trajactory4.dat
+gammal kod som jag kanske vill kolla på igen/computational physics/E4/tau_147/trajactory1.dat
+gammal kod som jag kanske vill kolla på igen/computational physics/E4/tau_147/trajactory2.dat
+gammal kod som jag kanske vill kolla på igen/computational physics/E4/trajactory3.dat
+gammal kod som jag kanske vill kolla på igen/computational physics/E4/trajactory5.dat
+gammal kod som jag kanske vill kolla på igen/computational physics/E4/trajactory4.dat
+gammal kod som jag kanske vill kolla på igen/computational physics/E4/trajactory1.dat
+gammal kod som jag kanske vill kolla på igen/computational physics/E4/trajactory2.dat
+gammal kod som jag kanske vill kolla på igen/computational physics/E4/mean_trajactory.dat
+gammal kod som jag kanske vill kolla på igen/computational physics/E4/mean_tau_147/trajactory3.dat
+gammal kod som jag kanske vill kolla på igen/computational physics/E4/mean_tau_147/trajactory5.dat
+gammal kod som jag kanske vill kolla på igen/computational physics/E4/mean_tau_147/trajactory4.dat
+gammal kod som jag kanske vill kolla på igen/computational physics/E4/mean_tau_147/trajactory1.dat
+gammal kod som jag kanske vill kolla på igen/computational physics/E4/mean_tau_147/trajactory2.dat
+gammal kod som jag kanske vill kolla på igen/computational physics/E4/mean_tau_147/mean_trajactory.dat
+gammal kod som jag kanske vill kolla på igen/computational physics/H3/figures/c=0,10_T0=0,5_task5.pdf
+gammal kod som jag kanske vill kolla på igen/computational physics/H3/figures/alpha=0,5_p0=5,0_task3.pdf
+gammal kod som jag kanske vill kolla på igen/computational physics/H3/figures/c=0,10_T0=15,0_task5.pdf
+gammal kod som jag kanske vill kolla på igen/computational physics/H3/figures/alpha=0,5_p0=4,6_task3.pdf
+gammal kod som jag kanske vill kolla på igen/computational physics/H3/figures/alpha=2,0_p0=4,1_task3.pdf
+gammal kod som jag kanske vill kolla på igen/computational physics/H3/figures/alpha=2,0_p0=4,6_task3.pdf
+gammal kod som jag kanske vill kolla på igen/computational physics/H3/figures/alpha=0,5_p0=4,1_task3.pdf
+gammal kod som jag kanske vill kolla på igen/computational physics/H3/figures/c=0,10_T0=0,3_task5.pdf
+gammal kod som jag kanske vill kolla på igen/computational physics/H3/figures/c=0,10_T0=150000,0_task5.pdf
+gammal kod som jag kanske vill kolla på igen/computational physics/H3/figures/c=0,10_T0=0,1_task5.pdf
+gammal kod som jag kanske vill kolla på igen/computational physics/H3/figures/c=0,10_T0=1,5_task5.pdf
+gammal kod som jag kanske vill kolla på igen/computational physics/H3/figures/alpha=2,0_p0=5,0_task3.pdf
+gammal kod som jag kanske vill kolla på igen/computational physics/H3/figures/task2.pdf
+gammal kod som jag kanske vill kolla på igen/computational physics/H1.zip
+gammal kod som jag kanske vill kolla på igen/computational physics/H2.zip
+gammal kod som jag kanske vill kolla på igen/efficiently-exploring-systembolaget/products_descriptions_2020-09-29.json
+gammal kod som jag kanske vill kolla på igen/efficiently-exploring-systembolaget/products_descriptions.json
+gammal kod som jag kanske vill kolla på igen/efficiently-exploring-systembolaget/products_of_interest.json
+gammal kod som jag kanske vill kolla på igen/efficiently-exploring-systembolaget/.git/objects/0d/0a9642861f061413306a970f77c4cd7ba691c2
+gammal kod som jag kanske vill kolla på igen/efficiently-exploring-systembolaget/.git/objects/59/d608d35a018b2c3339a8bd51adf38057cba635
+gammal kod som jag kanske vill kolla på igen/standard model/homework 1/latex/main.pdf
+gammal kod som jag kanske vill kolla på igen/standard model/homework 1/hw1_3iii_calculation.jpg
+gammal kod som jag kanske vill kolla på igen/standard model/homework 1/.git/objects/9c/01d4cd628c39f827c0f1b6ee937fbad0c8f3bb
+gammal kod som jag kanske vill kolla på igen/standard model/homework 1/.git/objects/ef/9d3a2c4d317dab2a5525106744ca543c9ad704
+gammal kod som jag kanske vill kolla på igen/standard model/homework 1/.git/objects/4a/89d0862a6b89ef90a360b9fe072e8c1bff9e5e
+gammal kod som jag kanske vill kolla på igen/standard model/homework 1/.git/objects/d7/b7f03c94d27e55bf59843d0ad1600e52597ebf
+gammal kod som jag kanske vill kolla på igen/standard model/homework 1/.git/objects/33/bffdb6759e8aeae62a0dfb5003b62575dc3e7f
+gammal kod som jag kanske vill kolla på igen/standard model/homework 1/.git/objects/73/e0f17c69458cde7ee3fb6aeb88cc8304fb6c48
+gammal kod som jag kanske vill kolla på igen/probabilities-from-reviews/Miles Reid - undergraduate commutative algebra/mcmc_histogram_corner_plot.pdf
+gammal kod som jag kanske vill kolla på igen/probabilities-from-reviews/mcdonalds nordstan/mcmc_histogram_corner_plot.pdf
+gammal kod som jag kanske vill kolla på igen/probabilities-from-reviews/David J.C. MacKay - Information Theory, Inference and Learning Algorithms/mcmc_histogram_corner_plot.pdf
+gammal kod som jag kanske vill kolla på igen/probabilities-from-reviews/Kingston USB 3.0 DataTraveler 100 G3 32GB/mcmc_histogram_corner_plot.pdf
+gammal kod som jag kanske vill kolla på igen/probabilities-from-reviews/SanDisk USB Cruzer Glide 32GB/mcmc_histogram_corner_plot.pdf
+gammal kod som jag kanske vill kolla på igen/probabilities-from-reviews/Sjömagasinet/mcmc_histogram_corner_plot.pdf
+gammal kod som jag kanske vill kolla på igen/Learning from Data/demo-GaussianProcesses.ipynb
+gammal kod som jag kanske vill kolla på igen/Learning from Data/.ipynb_checkpoints/demo-GaussianProcesses-checkpoint.ipynb
+gammal kod som jag kanske vill kolla på igen/Learning from Data/TIF285_ProblemSet2.ipynb
+gammal kod som jag kanske vill kolla på igen/Learning from Data/Learning_from_data___Project_2.pdf
+gammal kod som jag kanske vill kolla på igen/Learning from Data/tif285/doc/src/GaussianProcesses/demo-GaussianProcesses.ipynb
+gammal kod som jag kanske vill kolla på igen/Learning from Data/tif285/doc/src/Exercises/Week1/handson-ml-notebooks/tools_matplotlib.ipynb
+gammal kod som jag kanske vill kolla på igen/Learning from Data/tif285/doc/pub/GaussianProcesses/ipynb/demo-GaussianProcesses.ipynb
+gammal kod som jag kanske vill kolla på igen/Learning from Data/tif285/doc/pub/Exercises/Week1/handson-ml-notebooks/tools_matplotlib.ipynb
+gammal kod som jag kanske vill kolla på igen/Learning from Data/tif285/.git/objects/pack/pack-dfe93504c2a080bc8912228ccad4ccabc3d259ba.pack
+gammal kod som jag kanske vill kolla på igen/Learning from Data/tif285/.git/objects/pack/pack-e3a098ae8ee6e46756239dd1fc7fffbdb31914f7.pack
+gammal kod som jag kanske vill kolla på igen/Learning from Data/tif285/.git/objects/pack/pack-8b02db322e3b888119a0a4bdd5de95c5c0cf34f6.pack
+gammal kod som jag kanske vill kolla på igen/expfys/expfys_surface_physics/Real_surface_area_measurements_in_electrochemistry.pdf
+gammal kod som jag kanske vill kolla på igen/expfys/expfys_surface_physics/experiment 2 cutoff plot.ipynb
+gammal kod som jag kanske vill kolla på igen/expfys/expfys_surface_physics/capacitance_distribution_positive_dEdt.txt
+gammal kod som jag kanske vill kolla på igen/expfys/expfys_surface_physics/data/CV Pt ACID2.mpt
+gammal kod som jag kanske vill kolla på igen/expfys/expfys_surface_physics/data/C1b.mpr
+gammal kod som jag kanske vill kolla på igen/expfys/expfys_surface_physics/data/C3b_formated.mpt
+gammal kod som jag kanske vill kolla på igen/expfys/expfys_surface_physics/data/C1b_formated.mpt
+gammal kod som jag kanske vill kolla på igen/expfys/expfys_surface_physics/data/C2b.mpt
+gammal kod som jag kanske vill kolla på igen/expfys/expfys_surface_physics/data/C1.mpr
+gammal kod som jag kanske vill kolla på igen/expfys/expfys_surface_physics/data/C2_formated.mpt
+gammal kod som jag kanske vill kolla på igen/expfys/expfys_surface_physics/data/C2b_formated.mpt
+gammal kod som jag kanske vill kolla på igen/expfys/expfys_surface_physics/data/C1b.mpt
+gammal kod som jag kanske vill kolla på igen/expfys/expfys_surface_physics/data/CV Pt ACID 1.mpt
+gammal kod som jag kanske vill kolla på igen/expfys/expfys_surface_physics/data/C3.mpt
+gammal kod som jag kanske vill kolla på igen/expfys/expfys_surface_physics/data/C1_formated.mpt
+gammal kod som jag kanske vill kolla på igen/expfys/expfys_surface_physics/data/C3_formated.mpt
+gammal kod som jag kanske vill kolla på igen/expfys/expfys_surface_physics/data/CV Pt ACID1.mpr
+gammal kod som jag kanske vill kolla på igen/expfys/expfys_surface_physics/data/C3b.mpt
+gammal kod som jag kanske vill kolla på igen/expfys/expfys_surface_physics/data/C1.mpt
+gammal kod som jag kanske vill kolla på igen/expfys/expfys_surface_physics/data/C2.mpr
+gammal kod som jag kanske vill kolla på igen/expfys/expfys_surface_physics/data/C2b.mpr
+gammal kod som jag kanske vill kolla på igen/expfys/expfys_surface_physics/data/CV Pt ACID2.mpr
+gammal kod som jag kanske vill kolla på igen/expfys/expfys_surface_physics/data/C2.mpt
+gammal kod som jag kanske vill kolla på igen/expfys/expfys_surface_physics/Gerards_data/CV Pt ACID2.mpt
+gammal kod som jag kanske vill kolla på igen/expfys/expfys_surface_physics/Gerards_data/CV Pt ACID2_modified.mpt
+gammal kod som jag kanske vill kolla på igen/expfys/expfys_surface_physics/Gerards_data/CV Pt ACID 1.mpt
+gammal kod som jag kanske vill kolla på igen/expfys/expfys_surface_physics/Gerards_data/CV Pt ACID1.mpr
+gammal kod som jag kanske vill kolla på igen/expfys/expfys_surface_physics/Gerards_data/CV Pt ACID1_modified.mpt
+gammal kod som jag kanske vill kolla på igen/expfys/expfys_surface_physics/Gerards_data/CV Pt ACID2.mpr
+gammal kod som jag kanske vill kolla på igen/expfys/expfys_surface_physics/.ipynb_checkpoints/experiment 2 cutoff plot-checkpoint.ipynb
+gammal kod som jag kanske vill kolla på igen/expfys/expfys_surface_physics/.ipynb_checkpoints/experiment 1 data analysis (both positive and negative scan rates)-checkpoint.ipynb
+gammal kod som jag kanske vill kolla på igen/expfys/expfys_surface_physics/capacitance_distribution_negative_dEdt.txt
+gammal kod som jag kanske vill kolla på igen/expfys/expfys_surface_physics/.git/objects/7e/3b83a828ba0db50f98a1b5aa1cccf32cc5d772
+gammal kod som jag kanske vill kolla på igen/expfys/expfys_surface_physics/.git/objects/21/166422152d10565ddabe1ea84861fa463f7377
+gammal kod som jag kanske vill kolla på igen/expfys/expfys_surface_physics/.git/objects/19/efcb46db24a43ce809a0c7cbd5fd28dd9c662a
+gammal kod som jag kanske vill kolla på igen/expfys/expfys_surface_physics/.git/objects/pack/pack-2bdd05075ca66705dddf1a429ea3fccc9c3af65a.pack
+gammal kod som jag kanske vill kolla på igen/expfys/expfys_surface_physics/.git/objects/pack/pack-cac365212194f88d3c817fe60c0f33f58ad9339b.pack
+gammal kod som jag kanske vill kolla på igen/expfys/expfys_surface_physics/.git/objects/a4/3cbc3f4d5edfddf069f6c101d9d292138f9f32
+gammal kod som jag kanske vill kolla på igen/expfys/expfys_surface_physics/.git/objects/f8/e2edb92f4e65facad5c2ecba14564c2294f6ee
+gammal kod som jag kanske vill kolla på igen/expfys/expfys_surface_physics/.git/objects/b0/a0827f5ed49fd3a458c0fc31e9183104635168
+gammal kod som jag kanske vill kolla på igen/expfys/expfys_surface_physics/.git/objects/23/332262da1de376e25c9634190b90ada6433b2f
+gammal kod som jag kanske vill kolla på igen/expfys/expfys_surface_physics/.git/objects/30/2728f0f8de328848f9ef0f22b926247249eb85
+gammal kod som jag kanske vill kolla på igen/expfys/expfys_surface_physics/.git/objects/c5/88a9669806f8a08046b9b866316ff5a3deacf0
+gammal kod som jag kanske vill kolla på igen/expfys/expfys_surface_physics/.git/objects/29/fbb69f662cc3c8012325e540f2c0dc629e692e
+gammal kod som jag kanske vill kolla på igen/expfys/expfys_surface_physics/.git/objects/12/9b46a67e0573c1b5a6990eaba1dc6ee190247d
+gammal kod som jag kanske vill kolla på igen/expfys/expfys_surface_physics/.git/objects/67/6ac14a639a015e7e0df51c30bb1697f817d49a
+gammal kod som jag kanske vill kolla på igen/expfys/expfys_surface_physics/.git/objects/92/4d40fc09279cf7c0d9afc5f87b72a629c4f615
+gammal kod som jag kanske vill kolla på igen/expfys/expfys_surface_physics/.git/objects/46/f505eae77f89d80ae711ee8d48ce85ee3a4087
+gammal kod som jag kanske vill kolla på igen/expfys/expfys_surface_physics/.git/objects/79/dfbcae0dcaaa90a9e65975756077b65f861ba1
+gammal kod som jag kanske vill kolla på igen/expfys/expfys_surface_physics/.git/objects/a7/59c8cd20843559b35798fa73fed5ffe6e76543
+gammal kod som jag kanske vill kolla på igen/expfys/expfys_surface_physics/.git/objects/e2/ea2f8bae18fa55e22c32ed6988d43a97aed002
+gammal kod som jag kanske vill kolla på igen/expfys/expfys_surface_physics/.git/objects/93/6b8d1e5c5e51cdd719b02806d5127c4576dce1
+gammal kod som jag kanske vill kolla på igen/expfys/expfys_surface_physics/experiment 1 data analysis (both positive and negative scan rates).ipynb
+gammal kod som jag kanske vill kolla på igen/expfys/Expfys 2 Termo/Lablogg.pdf
+gammal kod som jag kanske vill kolla på igen/expfys/Expfys 2 Termo/testTempDistr.mat
+gammal kod som jag kanske vill kolla på igen/LaTeX template/murre.jpg
+gammal kod som jag kanske vill kolla på igen/LaTeX template/main.pdf
+gammal kod som jag kanske vill kolla på igen/qz_summer_2019/sample_QTM-OR-ZED_data/ORtracking_PositionAccelerationRotationData.txt
+gammal kod som jag kanske vill kolla på igen/qz_summer_2019/sample_QTM-OR-ZED_data/QTM_HMD_trajectory_6D.tsv
+gammal kod som jag kanske vill kolla på igen/qz_summer_2019/Find M/data_filesORtracking_PositionAccelerationRotationData.txt
+gammal kod som jag kanske vill kolla på igen/qz_summer_2019/.git/objects/pack/pack-84db20bc8c2e0c9550bd594ff09412dd0c6a8aa3.pack

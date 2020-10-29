@@ -1,0 +1,9 @@
+{
+    "files.associations": {
+        "gsl_rng.h": "c",
+        "my_fft_func.h": "c",
+        "cmath": "c",
+        "complex": "c",
+        "*.tcc": "c"
+    }
+}

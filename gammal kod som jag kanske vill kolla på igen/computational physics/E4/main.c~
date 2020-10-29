@@ -1,0 +1,173 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <gsl/gsl_rng.h>
+#include <gsl/gsl_randist.h>
+#include <time.h>
+
+#include "utility_funcs.h"
+#include "langevin_verlet.h"
+
+int main(){
+	int i,j;
+	double one_trajectory_time = 5; /*[ms]*/
+	double dt=1e-4;
+
+	int nbr_steps = ceil(one_trajectory_time/dt);
+	double x = 0.1; /*[micro m]*/ 
+	double v = 2.0; /* [micro m// ms]*/
+	double a;
+
+	double tau = 147.3 * 1e-3; /* [ms] */
+
+	/*G1, G2  Gaussisk probability*/
+		/* setup RNG */
+		const gsl_rng_type *Type;
+		gsl_rng *q;
+		gsl_rng_env_setup();
+		Type = gsl_rng_default;
+		q = gsl_rng_alloc(Type);
+		gsl_rng_set(q, time(NULL));
+
+	double sigma =1.0;
+	double G1; /* Gaussian distribution mean 0 and deviation sigma */
+	double G2;
+
+	double current_time;	
+
+
+/************************************************************************/
+	int N=1e3 ;/*amount of trajactories to make mean */
+	double x_traj[N];
+		double x2_traj[N];
+	double v_traj[N];
+		double v2_traj[N];
+	double a_traj[N];
+
+	double x_mean;
+		double sigma_x;
+	double v_mean;
+		double sigma_v;
+
+
+for(i=0; i<N; i++){
+	x_traj[i] = 0.1; /*[micro m]*/ 
+	v_traj[i] = 2.0; /* [micro m// ms]*/
+	a_traj[i] = acc_calc(x,v,tau);
+}
+
+	FILE* file1;
+	file1 = fopen("trajactory1.dat","w");
+	FILE* file2;
+	file2 = fopen("trajactory2.dat","w");
+	FILE* file3;
+	file3 = fopen("trajactory3.dat","w");
+	FILE* file4;
+	file4 = fopen("trajactory4.dat","w");
+	FILE* file5;
+	file5 = fopen("trajactory5.dat","w");
+	FILE* file6;
+	file6 = fopen("mean_trajactory.dat","w");
+	FILE* file7;
+	file7 = fopen("histo_x.dat","w");
+	FILE* file8;
+	file8 = fopen("histo_v.dat","w");
+	current_time=0.0; 
+	for(i=0 ; i<nbr_steps; i++){
+		x_mean = 0.0;
+		sigma_x = 0.0;
+		v_mean = 0.0;
+		sigma_v = 0.0;
+
+		for(j=0; j<N; j++){
+			G1 = gsl_ran_gaussian(q,sigma); /* Gaussian distribution mean 0 and deviation sigma */
+			G2 = gsl_ran_gaussian(q,sigma);		
+				
+			langevin_verlet(&x_traj[j], &v_traj[j], &a_traj[j], dt, tau, G1, G2);	
+			
+			if(j==1){	
+		
+				fprintf(file1,"%f \t %f \t %f \n",current_time,x_traj[j],v_traj[j]);
+			}
+			if(j==2){
+				
+				fprintf(file2,"%f \t %f \t %f \n",current_time,x_traj[j],v_traj[j]);
+			}
+			if(j==3){		
+
+				fprintf(file3,"%f \t %f \t %f \n",current_time,x_traj[j],v_traj[j]);
+			}
+			if(j==4){		
+
+				fprintf(file4,"%f \t %f \t %f \n",current_time,x_traj[j],v_traj[j]);
+			}		
+			if(j==5){		
+
+				fprintf(file5,"%f \t %f \t %f \n",current_time,x_traj[j],v_traj[j]);
+
+			}
+
+			
+			x2_traj[j] = x_traj[j]*x_traj[j];
+			v2_traj[j] = v_traj[j]*v_traj[j];
+	
+		}
+		
+		if( i == floor(0.1/dt) /*|| i == floor(0.5/dt) || i == floor(1/dt) || i == floor(5/dt))*/{
+			for(j=0; j<N ; j++){
+				fprintf(file7, "%f \t ", x_traj[j] );
+				fprintf(file8, "%f \t ", v_traj[j] );
+			}
+			fprintf(file7, "\n");
+			fprintf(file8, "\n");
+		}		
+
+		x_mean = mean(x_traj,N);
+		v_mean = mean(v_traj,N);
+		
+		sigma_x = sqrt(mean(x2_traj,N) - x_mean*x_mean);
+		sigma_v = sqrt(mean(v2_traj,N) - v_mean*v_mean);
+
+		fprintf(file6 ,"%f \t %f \t %f \t %f \t %f \n",current_time,x_mean,sigma_x,v_mean,sigma_v);	
+		current_time += dt;
+	}
+	fclose(file1);
+	fclose(file2);
+	fclose(file3);
+	fclose(file4);
+	fclose(file5);
+	fclose(file6);
+	fclose(file7);
+	fclose(file8);
+
+	gsl_rng_free(q);
+return 0;
+}
+
+
+/*****************************************************************************/
+/*	FILE* file1;
+	file1 = fopen("trajactory1.dat","w");
+	current_time=0.0; 
+	for(i=0 ; i<nbr_steps; i++){
+		G1 = gsl_ran_gaussian(q,sigma); *//* Gaussian distribution mean 0 and deviation sigma */
+/*		G2 = gsl_ran_gaussian(q,sigma);		
+
+		langevin_verlet(&x, &v, &a, dt, tau, G1, G2);	
+		fprintf(file1 ,"%f \t %f \t %f \n",current_time,x,v);
+		current_time += dt;	
+	}
+	fclose(file1);*/
+
+
+
+
+
+
+
+
+
+
+
+
+

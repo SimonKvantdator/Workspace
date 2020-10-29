@@ -1,0 +1,46 @@
+\input{settings.tex}
+
+\begin{document}
+
+
+\begin{align*}
+	\ket{\psi_1} &= \frac{1}{2} \ket{0} \otimes \ket{0} + \frac{\sqrt{3}}{2} \ket{1} \otimes \ket{1}\\
+	\ket{\psi_2} &= \frac{1}{4} \ket{0} \otimes \ket{0} + \frac{3}{4} \ket{0} \otimes \ket{1} + \frac{\sqrt{3}}{4} \ket{1} \otimes \ket{0} - \frac{\sqrt{3}}{4} \ket{1} \otimes \ket{1}.
+\end{align*}
+
+\begin{align*}
+	U \otimes I \ket{\psi_1} = \frac{1}{2} (U \ket{0}) \otimes \ket{0} + \frac{\sqrt{3}}{2} (U \ket{1}) \otimes \ket{1},
+\end{align*}
+so $U \otimes I \ket{\psi_1} = \ket{\psi_2}$ implies
+\begin{align*}
+	\frac{1}{2} U \ket{0} &= \frac{1}{4} \ket{0} + \frac{\sqrt{3}}{4} \ket{1}\\
+	%
+	\frac{\sqrt{3}}{2} U \ket{1} &= \frac{3}{4} \ket{0} - \frac{\sqrt{3}}{4} \ket{1}
+\end{align*}
+and hence, in the $\{\ket{0}, \ket{1} \}$ basis,
+\begin{align*}
+	U &=
+	\begin{bmatrix}
+		\frac{1}{2} & \frac{\sqrt{3}}{2}\\
+		\frac{\sqrt{3}}{2} & -\frac{1}{2}
+	\end{bmatrix}\\
+	%
+	U^{-1} &=
+	\begin{bmatrix}
+		\frac{1}{2} & \frac{\sqrt{3}}{2}\\
+		\frac{\sqrt{3}}{2} & -\frac{1}{2}
+	\end{bmatrix}.
+\end{align*}
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}

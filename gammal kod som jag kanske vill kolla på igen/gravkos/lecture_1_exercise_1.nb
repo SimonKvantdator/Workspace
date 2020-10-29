@@ -1,0 +1,177 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      5901,        169]
+NotebookOptionsPosition[      5267,        149]
+NotebookOutlinePosition[      5599,        164]
+CellTagsIndexPosition[      5556,        161]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{"ClearAll", "[", "\"\<Global`*\>\"", "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"G", "=", 
+   RowBox[{"Quantity", "[", "\"\<GravitationalConstant\>\"", "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"\[Epsilon]0", "=", 
+   RowBox[{"Quantity", "[", "\"\<vaccuum permittivity\>\"", "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"Fg", "[", 
+    RowBox[{"m1_", ",", "m2_", ",", "r_"}], "]"}], ":=", 
+   FractionBox[
+    RowBox[{"G", " ", "m1", " ", "m2"}], 
+    SuperscriptBox["r", "2"]]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"Fe", "[", 
+    RowBox[{"q1_", ",", "q2_", ",", "r_"}], "]"}], ":=", 
+   FractionBox[
+    RowBox[{"q1", " ", "q2"}], 
+    RowBox[{"4", " ", "\[Pi]", " ", 
+     SuperscriptBox["r", "2"], " ", "\[Epsilon]0"}]]}], ";"}]}], "Input",
+ CellChangeTimes->{{3.788842697000965*^9, 3.788842738143652*^9}, {
+  3.788842974414909*^9, 3.788843023605006*^9}, {3.788843074083459*^9, 
+  3.788843172768787*^9}, {3.78884327223999*^9, 3.788843437580181*^9}, {
+  3.788843584153467*^9, 3.78884366999179*^9}, {3.7888440409085617`*^9, 
+  3.788844107901873*^9}, {3.7888442588406076`*^9, 3.788844280824276*^9}},
+ CellLabel->"In[97]:=",ExpressionUUID->"956c1387-deed-40c9-97d4-6e212ab21909"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"r", "=", 
+     RowBox[{
+      RowBox[{"10", "^", 
+       RowBox[{"(", 
+        RowBox[{"-", "10"}], ")"}]}], 
+      RowBox[{"Quantity", "[", "\"\<Meters\>\"", "]"}]}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"m1", "=", 
+     RowBox[{"Quantity", "[", "\"\<ProtonMass\>\"", "]"}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"m2", "=", 
+     RowBox[{"Quantity", "[", "\"\<ProtonMass\>\"", "]"}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"q1", "=", 
+     RowBox[{"Quantity", "[", "\"\<ElementaryCharge\>\"", "]"}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"q2", "=", 
+     RowBox[{"Quantity", "[", "\"\<ElementaryCharge\>\"", "]"}]}], ";"}], 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{"Print", "[", 
+    RowBox[{"\"\<Fg = \>\"", ",", 
+     RowBox[{"UnitConvert", "[", 
+      RowBox[{"Fg", "[", 
+       RowBox[{"m1", ",", "m2", ",", "r"}], "]"}], "]"}]}], "]"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"Print", "[", 
+    RowBox[{"\"\<Fe = \>\"", ",", 
+     RowBox[{"UnitConvert", "[", 
+      RowBox[{"Fe", "[", 
+       RowBox[{"q1", ",", "q2", ",", "r"}], "]"}], "]"}]}], 
+    "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.788843674486306*^9, 3.788843747890938*^9}, {
+   3.7888440980511503`*^9, 3.788844136754665*^9}, {3.788844173303575*^9, 
+   3.788844182821102*^9}, 3.788844278278763*^9},
+ CellLabel->
+  "In[102]:=",ExpressionUUID->"ef2661ce-d683-4d6a-a236-8304d8559cad"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Fg = \"\>", "\[InvisibleSpace]", 
+   TemplateBox[{
+    "1.867244950001658591321977072416016`4.3565352854123836*^-44",
+     RowBox[{"\"kg\"", "\[ThinSpace]", "\"m\"", "\[InvisibleSpace]", "\"/\"", 
+       "\[InvisibleSpace]", 
+       SuperscriptBox["\"s\"", "2"]}],"kilogram meters per second squared",
+     FractionBox[
+      RowBox[{"\"Kilograms\"", " ", "\"Meters\""}], 
+      SuperscriptBox["\"Seconds\"", "2"]]},
+    "Quantity"]}],
+  SequenceForm["Fg = ", 
+   Quantity[
+   1.867244950001658591321977072416016`4.3565352854123836*^-44, "Kilograms" 
+    "Meters" "Seconds"^(-2)]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.788843748408965*^9, 3.788844139805491*^9, 
+  3.788844174171156*^9, 3.788844262733423*^9, 3.7888443046410007`*^9},
+ CellLabel->
+  "During evaluation of \
+In[102]:=",ExpressionUUID->"e04e13d8-9196-4ca8-83be-7ce8a892796d"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Fe = \"\>", "\[InvisibleSpace]", 
+   TemplateBox[{
+    "2.307077552341736130188419932504`9.532175381914792*^-8",
+     RowBox[{"\"kg\"", "\[ThinSpace]", "\"m\"", "\[InvisibleSpace]", "\"/\"", 
+       "\[InvisibleSpace]", 
+       SuperscriptBox["\"s\"", "2"]}],"kilogram meters per second squared",
+     FractionBox[
+      RowBox[{"\"Kilograms\"", " ", "\"Meters\""}], 
+      SuperscriptBox["\"Seconds\"", "2"]]},
+    "Quantity"]}],
+  SequenceForm["Fe = ", 
+   Quantity[
+   2.307077552341736130188419932504`9.532175381914792*^-8, "Kilograms" 
+    "Meters" "Seconds"^(-2)]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.788843748408965*^9, 3.788844139805491*^9, 
+  3.788844174171156*^9, 3.788844262733423*^9, 3.7888443046485157`*^9},
+ CellLabel->
+  "During evaluation of \
+In[102]:=",ExpressionUUID->"6dbb042e-b467-4664-ac6d-b94dee7f0d3a"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{767, 845},
+WindowMargins->{{Automatic, 0}, {0, Automatic}},
+FrontEndVersion->"12.0 for Linux x86 (64-bit) (April 8, 2019)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 1290, 30, 163, "Input",ExpressionUUID->"956c1387-deed-40c9-97d4-6e212ab21909"],
+Cell[CellGroupData[{
+Cell[1873, 54, 1546, 43, 216, "Input",ExpressionUUID->"ef2661ce-d683-4d6a-a236-8304d8559cad"],
+Cell[CellGroupData[{
+Cell[3444, 101, 901, 21, 35, "Print",ExpressionUUID->"e04e13d8-9196-4ca8-83be-7ce8a892796d"],
+Cell[4348, 124, 891, 21, 35, "Print",ExpressionUUID->"6dbb042e-b467-4664-ac6d-b94dee7f0d3a"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+

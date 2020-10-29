@@ -1,0 +1,1 @@
+double h(double t, double f, double a, double phi);

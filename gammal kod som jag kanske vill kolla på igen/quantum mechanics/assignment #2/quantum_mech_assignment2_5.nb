@@ -1,0 +1,117 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3678,        108]
+NotebookOptionsPosition[      3370,         92]
+NotebookOutlinePosition[      3708,        107]
+CellTagsIndexPosition[      3665,        104]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{"ClearAll", "[", "\"\<Global`*\>\"", "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"$Assumptions", " ", "=", " ", 
+    RowBox[{
+     RowBox[{"q", " ", "\[Element]", "Reals"}], " ", "&&", " ", 
+     RowBox[{"q", ">", "0"}], " ", "&&", " ", 
+     RowBox[{"R", "\[Element]", "Reals"}], " ", "&&", " ", 
+     RowBox[{"R", ">", "0"}]}]}], " ", ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"integrand", "[", 
+   RowBox[{"r_", ",", "\[Theta]_"}], "]"}], " ", ":=", " ", 
+  RowBox[{
+   RowBox[{"Exp", "[", 
+    RowBox[{"I", " ", "q", " ", "r", " ", 
+     RowBox[{"Cos", "[", "\[Theta]", "]"}]}], "]"}], " ", "2", " ", "V0", " ", 
+   RowBox[{"r", "^", "2"}], " ", 
+   RowBox[{"Sin", "[", "\[Theta]", "]"}]}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"-", " ", 
+   RowBox[{"(", 
+    RowBox[{"m", "/", 
+     RowBox[{"hbar", "^", "2"}]}], ")"}]}], 
+  RowBox[{"Integrate", "[", 
+   RowBox[{
+    RowBox[{"Integrate", "[", 
+     RowBox[{
+      RowBox[{"integrand", "[", 
+       RowBox[{"r", ",", "\[Theta]"}], "]"}], ",", " ", 
+      RowBox[{"{", 
+       RowBox[{"r", ",", "0", ",", " ", "R"}], "}"}]}], "]"}], 
+    "\[IndentingNewLine]", ",", " ", 
+    RowBox[{"{", 
+     RowBox[{"\[Theta]", ",", " ", "0", ",", " ", "Pi"}], "}"}]}], 
+   "]"}]}]}], "Input",
+ CellChangeTimes->{{3.778856641679943*^9, 3.778856678863948*^9}, {
+   3.778856721293356*^9, 3.7788567397886763`*^9}, {3.778856997604437*^9, 
+   3.778857001260077*^9}, 3.778859147497664*^9, {3.7788592022361927`*^9, 
+   3.778859232113596*^9}, {3.7788593091121273`*^9, 3.7788593758132772`*^9}, {
+   3.7788594825597973`*^9, 3.778859572624494*^9}, {3.778859751692429*^9, 
+   3.77885976056542*^9}, {3.778859815527318*^9, 3.778859833484194*^9}, {
+   3.778860047751786*^9, 3.77886009025633*^9}, {3.7788610252041283`*^9, 
+   3.778861040627058*^9}, {3.778861090543895*^9, 3.778861090814436*^9}, {
+   3.7788611810776653`*^9, 3.778861186001395*^9}}],
+
+Cell[BoxData[
+ RowBox[{"-", 
+  FractionBox[
+   RowBox[{"4", " ", "m", " ", "V0", " ", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"-", "q"}], " ", "R", " ", 
+       RowBox[{"Cos", "[", 
+        RowBox[{"q", " ", "R"}], "]"}]}], "+", 
+      RowBox[{"Sin", "[", 
+       RowBox[{"q", " ", "R"}], "]"}]}], ")"}]}], 
+   RowBox[{
+    SuperscriptBox["hbar", "2"], " ", 
+    SuperscriptBox["q", "3"]}]]}]], "Output",
+ CellChangeTimes->{
+  3.778856692880422*^9, {3.7788567264852057`*^9, 3.7788567409122543`*^9}, 
+   3.778859178352195*^9, 3.778859373092825*^9, 3.778859436266975*^9, 
+   3.778859578367853*^9, 3.778859763206684*^9, 3.7788598383687077`*^9, {
+   3.7788600478581657`*^9, 3.778860051586164*^9}, 3.778860094249918*^9, 
+   3.7788610454012938`*^9, 3.778861103692717*^9, 3.778861194990737*^9}]
+}, Open  ]]
+},
+WindowSize->{767, 845},
+WindowMargins->{{-10, Automatic}, {Automatic, -8}},
+FrontEndVersion->"10.0 for Linux x86 (64-bit) (December 4, 2014)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 1961, 45, 143, "Input"],
+Cell[2544, 69, 810, 20, 59, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

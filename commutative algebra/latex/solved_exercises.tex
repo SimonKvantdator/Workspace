@@ -1,0 +1,179 @@
+\input{preamble.tex}
+\title{{\Huge \ding{166}}
+	\parbox{0.85\textwidth}{
+		\centering
+		Solved exercises in Miles Reid's Undergraduate Commutative Algebra
+	}
+	{\Huge \ding{166}}}
+\author{Simon Stefanus Jacobsson}
+\date{\today}
+
+	
+\begin{document}
+\maketitle
+
+\subsection{}
+
+Let $A$ be a ring and consider the polynomial ring $A[T]$. Prove that $T$ is not a zero-divisor in $A[T]$. Generalize the argument to prove that a monic polynomial
+\begin{align}
+	f = T^n + a_{n - 1} T^{n - 1} + \ldots + a_0
+\end{align}
+is not a zero-divisor in $A[T]$.
+
+\subsubsection*{Solution}
+Let $g = a_n T^n + \ldots + a_1 T + a_0 \in A[T]$ and let $g T = 0$. Then
+\begin{align}
+	a_n T^{n + 1} + \ldots + a_1 T^2 + a_0 T = 0
+\end{align}
+implies $a_n, \ldots, a_1, a_0 = 0$ by uniqueness of polynomial coefficients.
+
+Similarly, if $g (T^n + b_{n-1} T^{n - 1} + \ldots + b_1 T + b_0)$, the $T^{2 n}$-term gives that $a_n = 0$, the $T^{2 n -1}$-term gives that $a_{n - 1} = 0$, and so on. Hence $g = 0$ and any monic polynomial will not be a zero-divisor.
+
+
+\subsection{}
+
+Let $A$ be a ring, $a \in A$, and $f \in A[T]$. Prove that there exists an expression $f = (T - a) q + r$ with $q \in A[T]$ and $r \in A$. [Hint: subtract off a suitable multiple of $(T - a)$ to cancel the leading term, then use induction on $\operatorname{deg} f$.] By substituting $T = a$, show that $r = f(a)$. (this result is often called the \emph{remainder theorem} in algebra textbooks.)
+
+\subsubsection*{Solution}
+
+For induction, assume it holds for $\operatorname{deg} f = p$. Then, for $f = c_{p + 1} T ^{p + 1} + \ldots + c_0$, we have $\operatorname{deg} \left( f - c_{p + 1} (T - a) \right) = p$. Hence
+\begin{align}
+	f - c_{p + 1} (T - a) &= (T - a) q' + r \quad \text{ for some } q' \in A[T] \text{ and } r \in A\\
+	f &= (T - a) (q' + c_{p + 1}) + r
+\end{align}
+and hence it is true for $\operatorname{deg} f = p + 1$ (with $q = q' + c_{p + 1}$).
+
+For $\operatorname{deg} f = 0$, it is obviously true with $q = 0$ and $r = f$.
+
+
+\addtocounter{subsection}{1}
+
+
+\subsection{}
+
+Let $A[T]$ be the polynomial ring over a ring $A$, and let $B$ be a ring. Suppose that $\varphi \from A \to B$ is a given ring homomorphism; show that ring homomorphisms $\psi \from A[T] \to B$ extending $\varphi$ are in one-to-one correspondence with elements in $B$.
+
+\subsubsection*{Solution}
+
+This is clear since in
+\begin{align}
+	\psi\left( f(T) \right) &= \psi\left( c_n T^n + \ldots + c_1 T + c_0 \right)\\
+	&=  c_n \psi(T)^n + \ldots + c_1 \psi(T) + c_0,
+\end{align}
+if we know $\psi(T)$, we know the whole expression, and $\psi(T)$ can be any element in $B$.
+
+\addtocounter{subsection}{2}
+
+\subsection{}
+TODO
+
+
+
+
+
+\section{}
+\subsection{}
+
+Give an example of a ring $A$ and ideals $I$, $J$ such that $I \cup J$ is not an ideal; in your example, what is the smallest ideal containing $I$ and $J$?
+
+\subsubsection*{Solution}
+
+Consider $(6)$ and $(10)$ in $\Z$. $10 \in (10)$ and $6 \in (6)$, but $10 + 6 = 16 \not\in (10) \union (6)$, so $(10) \union (6)$ is not even a subring of $\Z$. The smallest ideal containing $(10) \union (6)$ is $\left( \operatorname{gcd}(6, 10) \right) = (2)$.
+
+
+\subsection{}
+
+The \emph{product} of two ideals $I$ and $J$ is the set of all sums $\sum_i f_i g_i$ with $f_i \in I$ and $g_i \in J$. Give an example in which $I J \neq I \intersection I$.
+
+\subsubsection*{Solution}
+
+$I = J = (2)$ gives $I J = (4) \neq (2) = I \intersection J$.
+
+
+\subsection{}
+
+Let $A = k[X, Y] / (X Y)$. Show that any element of $A$ has a unique representation in the form
+\begin{align}
+	a + f(X) X + g(Y) Y \qq{with} a \in k \text{, } f \in k[X] \text{, and } g \in k[Y].
+\end{align}
+How do you multiply two such elements?
+
+Prove that $A$ has exactly two minimal prime ideals. If possible, find ideals $I$, $J$, and $K$ to contradict each of the following statements:
+\begin{enumerate}
+	\item $I J = I \intersection J$
+	\item $(I + J) (I \intersection J) = I J$
+	\item $I \intersection (J + K) = (I \intersection J) + (I \intersection K)$.
+\end{enumerate}
+
+\subsubsection*{Solution}
+
+TODO
+
+
+\subsection{}
+
+Two ideals $I$ and $J$ are \emph{strongly coprime} if $I + J = A$. Check that this is the usual notion for coprime $A = \Z$ or $k[X]$. Prove that if $I$ and $J$ are strongly coprime, then
+\begin{align}
+	I J = I \intersection J \qq{and} A / I J \sim (A / I) \times (A / J).
+\end{align}
+Prove also that if $I$ and $J$ are strongly coprime then so are $I^n$ and $J^n$ for $n \geq 1$.
+
+\subsubsection*{Solution}
+
+Since $\Z$ is a PID, let $I = (a)$ and $J = (b)$. Then
+\begin{align}
+	I + J = (a) + (b) = (a, b) = \left( \operatorname{gcd}(a, b) \right) =
+	\begin{cases}
+		(1) = A &\text{ if $a$ and $b$ coprime in the usual sense}\\
+		\text{not } (1) &\text{ if $a$ and $b$ not coprime in the usual sense}
+	\end{cases}.
+\end{align}
+Similarly for $k[X]$.
+
+In general, $I J \subset I \intersection J$ since $I J \subset I A = I$ and $I J \subset A J = J$. TODO
+
+
+\subsection{}
+
+Let $\varphi \from A \to B$ be a ring homomorphism. Prove that $\varphi^{-1}$ takes prime ideals of $B$ to prime ideals of $A$. In particular, if $A \subset B$, and $P$ is a prime ideal of $B$ then $A \intersection P$ is a prime ideal of $A$.
+
+\subsubsection*{Solution}
+
+If $P$ is a prime ideal in $B$, then $\varphi^{-1}(P)$ is an ideal since if $\varphi(a) \in P$, then $\varphi(a b) = \varphi(a) \varphi(b) \in P$ by $P$ being an ideal. Furthermore, $\varphi^{-1}(P)$ is prime since if $\varphi(a)$, $\varphi(b) \in P^\complement$, then $\varphi(a b) = \varphi(a) \varphi(b) \in P^\complement$ by $P$ being prime.
+
+
+
+\subsection{}
+
+Prove or give a counterexample to
+\begin{enumerate}
+	\item the intersection of two prime ideals is prime \label{item:intersection_of_primes_is_prime}
+	\item the ideal $P_1 + P_2$ generated by two prime ideals $P_1$ and $P_2$ is prime \label{item:sum_of_primes_is_prime}
+	\item if $\varphi \from A \to B$ is a ring homomorphism then $\varphi^{-1}$ takes maximal ideals of $B$ to maximal ideals of $A$ \label{item:phi_inv_takes_maximals_to_maximals}
+	\item the map $\varphi^{-1}$ of Proposition 1.2 (quotient homomorphism) takes maximal ideals of $A / I$ to maximal ideals of $A$. \label{item:prop1.2_phi_inv_takes_maximals_to_maximals}
+\end{enumerate}
+
+\subsubsection*{Solution}
+
+\Cref{item:intersection_of_primes_is_prime} is false since $(2)$ and $(3)$ in $\Z_6$ is a counterexample. $(2) \intersection (3) = (0)$ is not prime in $\Z_6$ since $[2] [3] = [0]$.
+
+\Cref{item:sum_of_primes_is_prime} is false since $(2)$ and $(x^2 + 3)$ in $\Z[X]$ is a counterexample. Both $2$ and $x^2 + 3$ are irreducible in $\Z[X]$, but $(2) + (x^2 + 3) = (2, x^2 + 3)$ is not prime since $x^2 - 1 \in (2, x^2 + 3)$ but $x^2 - 1 = (x + 1) (x - 1)$ while neither of those factors are in $(2, x^2 + 3)$.
+
+\Cref{item:phi_inv_takes_maximals_to_maximals,item:prop1.2_phi_inv_takes_maximals_to_maximals} are also false by the same counterexample. Let $A = \Z[X, Y]$, let $I = (X - 2, Y - 3)$, and let $\varphi$ be the quotient homomorphism. We can identify $A / I$ with $\Z$ and say that $\varphi \from X \mapsto 2$ and $Y \mapsto 3$. Then $(2)$ is maximal in $\Z$ but $\varphi^{-1}\left( (2) \right) = (2, X)$ is not maximal in $\Z[X, Y]$.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}

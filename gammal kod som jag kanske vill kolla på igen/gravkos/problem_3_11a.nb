@@ -1,0 +1,223 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      7350,        215]
+NotebookOptionsPosition[      6936,        199]
+NotebookOutlinePosition[      7268,        214]
+CellTagsIndexPosition[      7225,        211]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{"ClearAll", "[", "\"\<Global`*\>\"", "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"$Assumptions", "=", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"L", "\[Element]", "Reals"}], "&&", 
+     RowBox[{"L", ">", "0"}]}], ")"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"g", "=", 
+    RowBox[{"(", GridBox[{
+       {
+        RowBox[{"-", "1"}], "0", "0", "0"},
+       {"0", 
+        RowBox[{"-", "1"}], "0", "0"},
+       {"0", "0", "1", "0"},
+       {"0", "0", "0", "1"}
+      }], ")"}]}], ";"}], 
+  RowBox[{"(*", " ", 
+   RowBox[{
+    SuperscriptBox["ds", "2"], " ", "=", " ", 
+    RowBox[{
+     RowBox[{"-", 
+      SuperscriptBox["du", "2"]}], " ", "-", " ", 
+     SuperscriptBox["dv", "2"], " ", "+", " ", 
+     SuperscriptBox["dx", "2"], " ", "+", " ", 
+     SuperscriptBox["dy", "2"]}]}], " ", "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"u", "=", 
+   RowBox[{
+    SqrtBox[
+     RowBox[{
+      SuperscriptBox["L", "2"], "+", 
+      SuperscriptBox[
+       RowBox[{"r", "[", "\[FilledSmallCircle]", "]"}], "2"]}]], 
+    RowBox[{"Cos", "[", 
+     FractionBox[
+      RowBox[{"t", "[", "\[FilledSmallCircle]", "]"}], "L"], "]"}]}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"v", "=", 
+   RowBox[{
+    SqrtBox[
+     RowBox[{
+      SuperscriptBox["L", "2"], "+", 
+      SuperscriptBox[
+       RowBox[{"r", "[", "\[FilledSmallCircle]", "]"}], "2"]}]], 
+    RowBox[{"Sin", "[", 
+     FractionBox[
+      RowBox[{"t", "[", "\[FilledSmallCircle]", "]"}], "L"], "]"}]}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"x", "=", 
+   RowBox[{
+    RowBox[{"r", "[", "\[FilledSmallCircle]", "]"}], 
+    RowBox[{"Cos", "[", 
+     RowBox[{"\[Phi]", "[", "\[FilledSmallCircle]", "]"}], "]"}]}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"y", "=", 
+   RowBox[{
+    RowBox[{"r", "[", "\[FilledSmallCircle]", "]"}], 
+    RowBox[{"Sin", "[", 
+     RowBox[{"\[Phi]", "[", "\[FilledSmallCircle]", "]"}], "]"}]}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Print", "[", 
+  RowBox[{"\"\<\!\(\*SuperscriptBox[\(ds\), \(2\)]\) = \>\"", ",", 
+   RowBox[{
+    RowBox[{"FullSimplify", "[", 
+     TagBox[
+      RowBox[{
+       RowBox[{"(", "\[NoBreak]", GridBox[{
+          {
+           RowBox[{
+            SubscriptBox["\[PartialD]", "\[FilledSmallCircle]"], "u"}], 
+           RowBox[{
+            SubscriptBox["\[PartialD]", "\[FilledSmallCircle]"], "v"}], 
+           RowBox[{
+            SubscriptBox["\[PartialD]", "\[FilledSmallCircle]"], "x"}], 
+           RowBox[{
+            SubscriptBox["\[PartialD]", "\[FilledSmallCircle]"], "y"}]}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Baseline}}},
+         GridBoxSpacings->{"Columns" -> {
+             Offset[0.27999999999999997`], {
+              Offset[0.7]}, 
+             Offset[0.27999999999999997`]}, "Rows" -> {
+             Offset[0.2], {
+              Offset[0.4]}, 
+             Offset[0.2]}}], "\[NoBreak]", ")"}], ".", "g", ".", 
+       RowBox[{"(", GridBox[{
+          {
+           RowBox[{
+            SubscriptBox["\[PartialD]", "\[FilledSmallCircle]"], "u"}]},
+          {
+           RowBox[{
+            SubscriptBox["\[PartialD]", "\[FilledSmallCircle]"], "v"}]},
+          {
+           RowBox[{
+            SubscriptBox["\[PartialD]", "\[FilledSmallCircle]"], "x"}]},
+          {
+           RowBox[{
+            SubscriptBox["\[PartialD]", "\[FilledSmallCircle]"], "y"}]}
+         }], ")"}]}],
+      Function[BoxForm`e$, 
+       MatrixForm[BoxForm`e$]]], "]"}], "[", 
+    RowBox[{"[", 
+     RowBox[{"1", ",", "1"}], "]"}], "]"}]}], "]"}]}], "Input",
+ CellChangeTimes->{
+  3.7918046311903343`*^9, {3.791804704193022*^9, 3.7918047111643744`*^9}, {
+   3.791804813214057*^9, 3.791804844409968*^9}, {3.791805003804665*^9, 
+   3.791805056935852*^9}, {3.791805108041133*^9, 3.791805166478907*^9}, {
+   3.7918055002112083`*^9, 3.7918055077101507`*^9}, {3.791805674437999*^9, 
+   3.79180569004626*^9}, {3.7918057581278543`*^9, 3.791805810816168*^9}, {
+   3.79180593135036*^9, 3.79180612327719*^9}, {3.791806160657632*^9, 
+   3.791806313045884*^9}, {3.7918081039300137`*^9, 3.79180810748643*^9}, {
+   3.7918696259559813`*^9, 3.791869683746098*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"1027a525-742e-4f47-8b17-0cd84deb75d8"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\\!\\(\\*SuperscriptBox[\\(ds\\), \\(2\\)]\\) = \"\>", 
+   "\[InvisibleSpace]", 
+   RowBox[{
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["L", "2"], " ", 
+      SuperscriptBox[
+       RowBox[{
+        SuperscriptBox["r", "\[Prime]",
+         MultilineFunction->None], "[", "\[FilledSmallCircle]", "]"}], "2"]}], 
+     RowBox[{
+      SuperscriptBox["L", "2"], "+", 
+      SuperscriptBox[
+       RowBox[{"r", "[", "\[FilledSmallCircle]", "]"}], "2"]}]], "-", 
+    FractionBox[
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        SuperscriptBox["L", "2"], "+", 
+        SuperscriptBox[
+         RowBox[{"r", "[", "\[FilledSmallCircle]", "]"}], "2"]}], ")"}], " ", 
+      
+      SuperscriptBox[
+       RowBox[{
+        SuperscriptBox["t", "\[Prime]",
+         MultilineFunction->None], "[", "\[FilledSmallCircle]", "]"}], "2"]}], 
+     SuperscriptBox["L", "2"]], "+", 
+    RowBox[{
+     SuperscriptBox[
+      RowBox[{"r", "[", "\[FilledSmallCircle]", "]"}], "2"], " ", 
+     SuperscriptBox[
+      RowBox[{
+       SuperscriptBox["\[Phi]", "\[Prime]",
+        MultilineFunction->None], "[", "\[FilledSmallCircle]", "]"}], 
+      "2"]}]}]}],
+  SequenceForm[
+  "\!\(\*SuperscriptBox[\(ds\), \(2\)]\) = ", $CellContext`L^2 \
+($CellContext`L^2 + $CellContext`r[$CellContext`\[FilledSmallCircle]]^2)^(-1) 
+    Derivative[
+      1][$CellContext`r][$CellContext`\[FilledSmallCircle]]^2 - \
+$CellContext`L^(-2) ($CellContext`L^2 + $CellContext`r[$CellContext`\
+\[FilledSmallCircle]]^2) 
+   Derivative[
+     1][$CellContext`t][$CellContext`\[FilledSmallCircle]]^2 + \
+$CellContext`r[$CellContext`\[FilledSmallCircle]]^2 
+    Derivative[1][$CellContext`\[Phi]][$CellContext`\[FilledSmallCircle]]^2],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.791806295420885*^9, 3.791806313923242*^9}, 
+   3.7918079663719263`*^9, 3.791869587644931*^9, 3.791869684373827*^9, 
+   3.792474255306263*^9},
+ CellLabel->
+  "During evaluation of \
+In[1]:=",ExpressionUUID->"1c0ef2e2-7c57-421e-bbc2-e63289175853"]
+}, Open  ]]
+},
+WindowSize->{767, 843},
+WindowMargins->{{Automatic, 1}, {0, Automatic}},
+FrontEndVersion->"12.0 for Linux x86 (64-bit) (April 8, 2019)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 4294, 118, 354, "Input",ExpressionUUID->"1027a525-742e-4f47-8b17-0cd84deb75d8"],
+Cell[4877, 142, 2043, 54, 52, "Print",ExpressionUUID->"1c0ef2e2-7c57-421e-bbc2-e63289175853"]
+}, Open  ]]
+}
+]
+*)
+

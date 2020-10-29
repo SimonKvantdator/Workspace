@@ -1,0 +1,147 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      4806,        138]
+NotebookOptionsPosition[      4499,        122]
+NotebookOutlinePosition[      4835,        137]
+CellTagsIndexPosition[      4792,        134]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"ClearAll", "[", "\"\<Global`*\>\"", "]"}], "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{
+    RowBox[{"$Assumptions", " ", "=", " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"q", " ", "\[Element]", "Reals"}], " ", "&&", " ", 
+       RowBox[{"q", ">", "0"}], "\[IndentingNewLine]", "\t\t\t", "&&", " ", 
+       RowBox[{"m", " ", "\[Element]", "Reals"}], " ", "&&", " ", 
+       RowBox[{"m", ">", "0"}], "\[IndentingNewLine]", "\t\t\t", "&&", " ", 
+       RowBox[{"\[Rho]", " ", "\[Element]", "Reals"}], " ", "&&", " ", 
+       RowBox[{"\[Rho]", ">", "0"}], "\[IndentingNewLine]", "\t\t\t", "&&", 
+       " ", 
+       RowBox[{"B0", " ", "\[Element]", "Reals"}], " ", "&&", " ", 
+       RowBox[{"B0", ">", "0"}], "\[IndentingNewLine]", "\t\t\t", "&&", " ", 
+       RowBox[{"En", " ", "\[Element]", "Reals"}]}], ")"}]}], ";"}], 
+   "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"equation", " ", "=", " ", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"I", " ", "En", " ", 
+      RowBox[{"\[Psi]", "[", "x", "]"}]}], "==", " ", 
+     RowBox[{
+      FractionBox[
+       RowBox[{
+        SuperscriptBox["B0", "2"], " ", 
+        SuperscriptBox["q", "2"], " ", 
+        SuperscriptBox["\[Rho]", "2"], " ", 
+        RowBox[{"\[Psi]", "[", "x", "]"}]}], 
+       RowBox[{"8", " ", "m"}]], "+", 
+      RowBox[{"I", 
+       FractionBox[
+        RowBox[{"B0", " ", "q", " ", 
+         RowBox[{
+          RowBox[{"\[Psi]", "'"}], "[", "x", "]"}]}], 
+        RowBox[{"2", " ", "m"}]]}], "-", 
+      FractionBox[
+       RowBox[{
+        RowBox[{"\[Psi]", "''"}], "[", "x", "]"}], 
+       RowBox[{"2", " ", "m", " ", 
+        SuperscriptBox["\[Rho]", "2"]}]]}]}], "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"DSolve", "[", 
+  RowBox[{"equation", ",", 
+   RowBox[{"\[Psi]", "[", "x", "]"}], ",", "x"}], "]"}]}], "Input",
+ CellChangeTimes->{{3.7796813447653933`*^9, 3.7796814410324497`*^9}, {
+   3.779681501891756*^9, 3.779681828265897*^9}, {3.7796819159579*^9, 
+   3.7796819271945543`*^9}, 3.779682025230629*^9, {3.779682103306366*^9, 
+   3.779682118780664*^9}, 3.7796868440291653`*^9, {3.77968702014786*^9, 
+   3.779687031808084*^9}, {3.77968737149965*^9, 3.779687472924761*^9}, {
+   3.779687777525053*^9, 3.779687781932479*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"\[Psi]", "[", "x", "]"}], "\[Rule]", 
+    RowBox[{
+     RowBox[{
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        FractionBox["1", "2"], " ", "\[ImaginaryI]", " ", "x", " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{"2", "+", 
+             RowBox[{"2", " ", "\[ImaginaryI]"}]}], ")"}], " ", 
+           SqrtBox["En"], " ", 
+           SqrtBox["m"], " ", "\[Rho]"}], "+", 
+          RowBox[{"B0", " ", "q", " ", 
+           SuperscriptBox["\[Rho]", "2"]}]}], ")"}]}]], " ", 
+      RowBox[{"C", "[", "1", "]"}]}], "+", 
+     RowBox[{
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"-", 
+         FractionBox["1", "2"]}], " ", "\[ImaginaryI]", " ", "x", " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{"2", "+", 
+             RowBox[{"2", " ", "\[ImaginaryI]"}]}], ")"}], " ", 
+           SqrtBox["En"], " ", 
+           SqrtBox["m"], " ", "\[Rho]"}], "-", 
+          RowBox[{"B0", " ", "q", " ", 
+           SuperscriptBox["\[Rho]", "2"]}]}], ")"}]}]], " ", 
+      RowBox[{"C", "[", "2", "]"}]}]}]}], "}"}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.7796814415639544`*^9, {3.7796815115045424`*^9, 3.779681586810697*^9}, 
+   3.779681659650034*^9, 3.7796818536671658`*^9, 3.77968192838763*^9, {
+   3.779682114998439*^9, 3.7796821197309217`*^9}, 3.779686853061817*^9, {
+   3.779687469984715*^9, 3.7796874734184303`*^9}, 3.779687699508451*^9, 
+   3.7796877828564453`*^9, 3.779688462101931*^9}]
+}, Open  ]]
+},
+WindowSize->{1533, 845},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"10.0 for Linux x86 (64-bit) (December 4, 2014)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 2276, 53, 221, "Input"],
+Cell[2859, 77, 1624, 42, 48, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

@@ -1,0 +1,74 @@
+\input{settings}
+\begin{document}
+
+
+
+\section*{subfigures}
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}{.5\linewidth}
+        \includegraphics[width=\textwidth]{osmium.jpg}
+        \caption{}
+        \label{fig:a}
+    \end{subfigure}%
+    \begin{subfigure}{.5\linewidth}
+        \includegraphics[width=\textwidth]{murre.jpg}
+        \caption{}
+        \label{fig:b}
+    \end{subfigure}
+    \caption{}
+\end{figure}
+
+
+\section*{Tikz figure}
+\begin{figure}[H]
+    \centering
+    \begin{tikzpicture}
+            % Coordinate axii
+            \draw[-latex,black] (-3,0) -- (3,0) {};
+            \draw[-latex,black] (0,-3) -- (0,3) {};
+            
+            % Vector arrows
+            \draw[-latex,black,thick] (0,0) -- (2,0) node[label=90:$\alpha$] {};
+            \draw[-latex,black,thick] (0,0) -- (-1,1.73205) node[label=180:$\beta$] {};
+            
+            % Place some circles
+            \filldraw[color=black, fill=white] (0,0) circle (4pt);
+            \filldraw[color=black, fill=white] (0,0) circle (2pt);
+            
+            \filldraw[color=black, fill=white] (-1, -1.73205) circle (2pt);
+            \filldraw[color=black, fill=white] (1, 1.73205) circle (2pt);
+            \filldraw[color=black, fill=white] (1, -1.73205) circle (2pt);
+            \filldraw[color=black, fill=white] (-2, 0) circle (2pt);
+    \end{tikzpicture}
+    \caption{}
+    \label{fig:}
+\end{figure}
+
+\section*{Code insert}
+\lstinputlisting[language=C]{kahan_summation_algorithm.c}
+
+
+\section*{Mathematica code insert}
+
+There are two ways of inserting Mathematica code into a document that don't suck as much as the other. Firstly, just save the Mathematica notebook as a pdf ans include:
+%\input{file}
+\\
+TODO
+
+
+
+\section*{Cite}
+For learning about quantum computing, see \cite{Nielsen:2011}.
+
+If we want to know what Planck's constant divided by Planck's reduced constant is, we can plug ''(plancks constant) / (plancks reduced constant)'' into Wolfram Alpha and get $2 \pi$ \cite{Wolfram|Alpha}.
+
+The speed of light is, according to my physics handbook, \SI{2.99792458e8}{\meter \per \second} \cite{Physics_handbook}.
+
+
+
+\newpage
+\appendix
+\printbibliography
+
+\end{document}

@@ -1,0 +1,162 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      5025,        154]
+NotebookOptionsPosition[      4611,        138]
+NotebookOutlinePosition[      4943,        153]
+CellTagsIndexPosition[      4900,        150]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{"ClearAll", "[", "\"\<Global`*\>\"", "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"$Assumptions", "=", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"r", "\[Element]", "Reals"}], "\[IndentingNewLine]", "&&", 
+      RowBox[{"\[Rho]", "\[Element]", "Reals"}], "\[IndentingNewLine]", "&&", 
+      
+      RowBox[{"\[Lambda]", "\[Element]", "Reals"}], "\[IndentingNewLine]", "&&", 
+      RowBox[{"0", "\[LessEqual]", "r"}], "&&", 
+      RowBox[{"r", "\[LessEqual]", "1"}], "\[IndentingNewLine]", "&&", 
+      RowBox[{"0", "\[LessEqual]", "\[Rho]"}], "&&", 
+      RowBox[{"\[Rho]", "\[LessEqual]", "1"}]}], ")"}]}], ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{"Reduce", "[", 
+  RowBox[{"{", 
+   RowBox[{"$Assumptions", ",", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"1", "-", 
+        SuperscriptBox["r", 
+         RowBox[{"2", 
+          RowBox[{"(", 
+           RowBox[{"1", "-", "\[Lambda]"}], ")"}]}]]}], ")"}], 
+      RowBox[{"(", 
+       RowBox[{"1", "-", 
+        SuperscriptBox["\[Rho]", 
+         RowBox[{"2", "\[Lambda]"}]]}], ")"}]}], "\[LessEqual]", 
+     RowBox[{"(", 
+      RowBox[{"1", "-", 
+       RowBox[{
+        SuperscriptBox["r", 
+         RowBox[{"2", 
+          RowBox[{"(", 
+           RowBox[{"1", "-", "\[Lambda]"}], ")"}]}]], 
+        SuperscriptBox["\[Rho]", 
+         RowBox[{"2", "\[Lambda]"}]]}]}], ")"}]}]}], "}"}], "]"}]}], "Input",
+ CellChangeTimes->{{3.796474093818282*^9, 3.796474093827683*^9}, {
+  3.796474145481276*^9, 3.796474167244157*^9}, {3.796474226298601*^9, 
+  3.7964743700141277`*^9}, {3.796474450277686*^9, 3.796474535920352*^9}, {
+  3.796474569931185*^9, 3.796474588607955*^9}, {3.796474650647072*^9, 
+  3.796474682083932*^9}, {3.796474787684214*^9, 3.796474804469499*^9}, {
+  3.796474858320019*^9, 3.796474929284453*^9}, {3.796475045458126*^9, 
+  3.796475074980049*^9}, {3.7964751234329357`*^9, 
+  3.7964751572412*^9}},ExpressionUUID->"026b3c45-7661-42fb-a6eb-2704ee9c051d"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   SuperscriptBox["\[Rho]", 
+    RowBox[{"2", " ", "\[Lambda]"}]], "\[Element]", 
+   TemplateBox[{},
+    "Reals"]}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{
+       SuperscriptBox["r", 
+        RowBox[{"2", " ", 
+         RowBox[{"(", 
+          RowBox[{"1", "-", "\[Lambda]"}], ")"}]}]], "<", 
+       FractionBox["1", "2"]}], "&&", 
+      RowBox[{
+       SuperscriptBox["\[Rho]", 
+        RowBox[{"2", " ", "\[Lambda]"}]], "\[GreaterEqual]", 
+       FractionBox[
+        SuperscriptBox["r", 
+         RowBox[{"2", " ", 
+          RowBox[{"(", 
+           RowBox[{"1", "-", "\[Lambda]"}], ")"}]}]], 
+        RowBox[{
+         RowBox[{"-", "1"}], "+", 
+         RowBox[{"2", " ", 
+          SuperscriptBox["r", 
+           RowBox[{"2", " ", 
+            RowBox[{"(", 
+             RowBox[{"1", "-", "\[Lambda]"}], ")"}]}]]}]}]]}]}], ")"}], "||", 
+    
+    RowBox[{
+     SuperscriptBox["r", 
+      RowBox[{"2", " ", 
+       RowBox[{"(", 
+        RowBox[{"1", "-", "\[Lambda]"}], ")"}]}]], "\[Equal]", 
+     FractionBox["1", "2"]}], "||", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{
+       SuperscriptBox["r", 
+        RowBox[{"2", " ", 
+         RowBox[{"(", 
+          RowBox[{"1", "-", "\[Lambda]"}], ")"}]}]], ">", 
+       FractionBox["1", "2"]}], "&&", 
+      RowBox[{
+       SuperscriptBox["\[Rho]", 
+        RowBox[{"2", " ", "\[Lambda]"}]], "\[LessEqual]", 
+       FractionBox[
+        SuperscriptBox["r", 
+         RowBox[{"2", " ", 
+          RowBox[{"(", 
+           RowBox[{"1", "-", "\[Lambda]"}], ")"}]}]], 
+        RowBox[{
+         RowBox[{"-", "1"}], "+", 
+         RowBox[{"2", " ", 
+          SuperscriptBox["r", 
+           RowBox[{"2", " ", 
+            RowBox[{"(", 
+             RowBox[{"1", "-", "\[Lambda]"}], ")"}]}]]}]}]]}]}], ")"}]}], 
+   ")"}]}]], "Output",
+ CellChangeTimes->{3.796474538918873*^9, 3.7964745896232653`*^9},
+ CellLabel->"Out[5]=",ExpressionUUID->"b5f8a8de-c102-4553-9e8e-5d1909dce3e3"]
+}, Open  ]]
+},
+WindowSize->{767, 845},
+WindowMargins->{{Automatic, 0}, {0, Automatic}},
+FrontEndVersion->"12.0 for Linux x86 (64-bit) (April 8, 2019)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 2005, 47, 200, "Input",ExpressionUUID->"026b3c45-7661-42fb-a6eb-2704ee9c051d"],
+Cell[2588, 71, 2007, 64, 115, "Output",ExpressionUUID->"b5f8a8de-c102-4553-9e8e-5d1909dce3e3"]
+}, Open  ]]
+}
+]
+*)
+

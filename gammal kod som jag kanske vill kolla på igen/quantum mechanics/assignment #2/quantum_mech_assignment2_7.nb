@@ -1,0 +1,271 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      9309,        262]
+NotebookOptionsPosition[      8883,        242]
+NotebookOutlinePosition[      9221,        257]
+CellTagsIndexPosition[      9178,        254]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{"ClearAll", "[", "\"\<Global`*\>\"", "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"$Assumptions", " ", "=", " ", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"q", " ", "\[Element]", "Reals"}], " ", "&&", " ", 
+      RowBox[{"q", ">", "0"}], " ", "\[IndentingNewLine]", "&&", " ", 
+      RowBox[{"R", "\[Element]", "Reals"}], " ", "&&", " ", 
+      RowBox[{"R", ">", "0"}], " ", "\[IndentingNewLine]", "&&", " ", 
+      RowBox[{"a", " ", "\[Element]", "Reals"}], " ", "&&", " ", 
+      RowBox[{"a", ">", "0"}], "  ", "\[IndentingNewLine]", "&&", " ", 
+      RowBox[{"\[Epsilon]0", " ", "\[Element]", "Reals"}], " ", "&&", " ", 
+      RowBox[{"\[Epsilon]0", ">", "0"}], " ", "\[IndentingNewLine]", "&&", 
+      " ", 
+      RowBox[{"r", " ", "\[Element]", "Reals"}], " ", "&&", " ", 
+      RowBox[{"r", ">", "0"}], " ", "\[IndentingNewLine]", "&&", " ", 
+      RowBox[{"rp", "\[Element]", "Reals"}], " ", "&&", " ", 
+      RowBox[{"rp", ">", "0"}], "\[IndentingNewLine]", "&&", " ", 
+      RowBox[{"r", "\[NotEqual]", "rp"}], " ", "\[IndentingNewLine]", "&&", 
+      " ", 
+      RowBox[{"\[Theta]", "\[Element]", "Reals"}], " ", "&&", " ", 
+      RowBox[{"\[Theta]", ">", "0"}], " ", "\[IndentingNewLine]", "&&", " ", 
+      RowBox[{"\[Theta]p", "\[Element]", "Reals"}], " ", "&&", " ", 
+      RowBox[{"\[Theta]p", ">", "0"}]}], ")"}]}], ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"V", "[", 
+   RowBox[{"r_", ",", "\[Theta]_", ",", "rp_", ",", "\[Theta]p_"}], "]"}], 
+  " ", ":=", " ", 
+  FractionBox[
+   RowBox[{
+    RowBox[{"-", 
+     FractionBox[
+      SuperscriptBox["e", "2"], "r"]}], "+", 
+    FractionBox[
+     SuperscriptBox["e", "2"], 
+     SqrtBox[
+      RowBox[{
+       SuperscriptBox["r", "2"], "+", 
+       SuperscriptBox["rp", "2"], "-", 
+       RowBox[{"2", " ", "r", " ", "rp", " ", 
+        RowBox[{"Cos", "[", "\[Theta]p", "]"}]}]}]]]}], 
+   RowBox[{
+   "4", " ", "\[Pi]", " ", "\[Epsilon]0"}]]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"groundState", "[", 
+   RowBox[{"rp_", ",", "\[Theta]p_"}], "]"}], ":=", 
+  FractionBox[
+   SuperscriptBox["\[ExponentialE]", 
+    RowBox[{"-", 
+     FractionBox[
+      RowBox[{"2", "rp"}], "a"]}]], 
+   RowBox[{"\[Pi]", " ", 
+    SuperscriptBox["a", "3"], " "}]]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"freeParticle", "[", 
+    RowBox[{"r_", ",", "\[Theta]_"}], "]"}], ":=", 
+   FractionBox[
+    SuperscriptBox["\[ExponentialE]", 
+     RowBox[{
+      RowBox[{"-", "\[ImaginaryI]"}], " ", "q", " ", "r", " ", 
+      RowBox[{"Cos", "[", "\[Theta]", "]"}]}]], 
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{"2", " ", "\[Pi]"}], ")"}], "3"]]}], 
+  RowBox[{"(*", 
+   RowBox[{"q", "=", 
+    RowBox[{"|", 
+     RowBox[{
+      RowBox[{"k", "'"}], "-", "k"}], "|"}]}], 
+   "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"jacobian", "[", 
+    RowBox[{"r_", ",", "\[Theta]_"}], "]"}], ":=", 
+   RowBox[{"2", " ", "\[Pi]", " ", 
+    SuperscriptBox["r", "2"], " ", 
+    RowBox[{"Sin", "[", "\[Theta]", "]"}]}]}], 
+  RowBox[{"(*", 
+   RowBox[{"integral", " ", "over", " ", "phi", " ", "trivial"}], "*)"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"integrand", "[", 
+    RowBox[{"r_", ",", "\[Theta]_", ",", "rp_", ",", "\[Theta]p_"}], "]"}], 
+   " ", ":=", 
+   RowBox[{
+    RowBox[{"groundState", "[", 
+     RowBox[{"rp", ",", "\[Theta]p"}], "]"}], " ", 
+    RowBox[{"V", "[", 
+     RowBox[{"r", ",", "\[Theta]", ",", "rp", ",", "\[Theta]p"}], "]"}], " ", 
+    
+    RowBox[{"freeParticle", "[", 
+     RowBox[{"r", ",", "\[Theta]"}], "]"}], 
+    RowBox[{"jacobian", "[", 
+     RowBox[{"r", ",", "\[Theta]"}], "]"}], " ", 
+    RowBox[{"jacobian", "[", 
+     RowBox[{"rp", ",", "\[Theta]p"}], "]"}]}]}], "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{"print", " ", "integrand", " ", "for", " ", "clarity"}], 
+   "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"integrand", "[", 
+   RowBox[{"r", ",", "\[Theta]", ",", "rp", ",", "\[Theta]p"}], "]"}], 
+  " "}]}], "Input",
+ CellChangeTimes->CompressedData["
+1:eJxTTMoPSmViYGAQA2IQXTM75esa9TeOG+Ynyq0F0kwJm5VBtHTpeW0Qve6T
+phWIrmRNtwbReapFezcAaY+O1ftAdL5W3RkQrSj88CqIXrCk6BGIvpJT8hJE
+91UWvQfRpaXe38Din7NsNwLpuV8+u4BoH8kWTxA9wyTJD0QXLDQKBdGa05an
+gOj0f0pZINpIpgNMH9ovWgKi/Q6rloNojY97G0D0B2O7FhBds2NtB4g+LXhk
+IZj/+MJuEG14UOEwiE7LuHcCRPPoLDgLonNubrgFom3EX4BpF83jnJtA9Ex+
+LhC9aEm5AIhWC8gWAtFWvpmaIHrCPh0tED3x3y1/EF0noRgIomOyoj+AaFuz
+M2AaAJbhrrs=
+  "]],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{
+   SuperscriptBox["\[ExponentialE]", 
+    RowBox[{
+     RowBox[{"-", 
+      FractionBox[
+       RowBox[{"2", " ", "rp"}], "a"]}], "-", 
+     RowBox[{"\[ImaginaryI]", " ", "q", " ", "r", " ", 
+      RowBox[{"Cos", "[", "\[Theta]", "]"}]}]}]], " ", 
+   SuperscriptBox["r", "2"], " ", 
+   SuperscriptBox["rp", "2"], " ", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"-", 
+      FractionBox[
+       SuperscriptBox["e", "2"], "r"]}], "+", 
+     FractionBox[
+      SuperscriptBox["e", "2"], 
+      SqrtBox[
+       RowBox[{
+        SuperscriptBox["r", "2"], "+", 
+        SuperscriptBox["rp", "2"], "-", 
+        RowBox[{"2", " ", "r", " ", "rp", " ", 
+         RowBox[{"Cos", "[", "\[Theta]p", "]"}]}]}]]]}], ")"}], " ", 
+   RowBox[{"Sin", "[", "\[Theta]", "]"}], " ", 
+   RowBox[{"Sin", "[", "\[Theta]p", "]"}]}], 
+  RowBox[{"8", " ", 
+   SuperscriptBox["a", "3"], " ", 
+   SuperscriptBox["\[Pi]", "3"], " ", "\[Epsilon]0"}]]], "Output",
+ CellChangeTimes->{3.778907674511923*^9, 3.778907720755219*^9, 
+  3.778907864017702*^9, 3.778908241369898*^9, 3.778908308629385*^9, 
+  3.778908499549014*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"(", 
+  RowBox[{"Integrate", "[", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"Integrate", "[", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"Integrate", "[", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"Integrate", "[", "\[IndentingNewLine]", 
+         RowBox[{
+          RowBox[{"integrand", "[", 
+           RowBox[{"r", ",", "\[Theta]", ",", "rp", ",", "\[Theta]p"}], "]"}],
+           ",", "\[IndentingNewLine]", 
+          RowBox[{"{", 
+           RowBox[{"\[Theta]p", ",", "0", ",", " ", "Pi"}], "}"}]}], "]"}], 
+        ",", "\[IndentingNewLine]", 
+        RowBox[{"{", 
+         RowBox[{"\[Theta]", ",", "0", ",", " ", "Pi"}], "}"}]}], "]"}], ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{"{", 
+       RowBox[{"r", ",", "0", ",", " ", "Infinity"}], "}"}]}], "]"}], ",", 
+    "\[IndentingNewLine]", 
+    RowBox[{"{", 
+     RowBox[{"rp", ",", "0", ",", " ", "Infinity"}], "}"}]}], "]"}], 
+  ")"}]], "Input",
+ CellChangeTimes->{{3.7788982785151043`*^9, 3.778898343072397*^9}, 
+   3.778898422041507*^9, {3.778905802240098*^9, 3.7789058221414557`*^9}, {
+   3.77890585301329*^9, 3.7789058665115633`*^9}, {3.778906128372686*^9, 
+   3.778906141090691*^9}, {3.778906439404943*^9, 3.7789065045027933`*^9}, {
+   3.778907431070224*^9, 3.778907464186743*^9}, {3.778907503695249*^9, 
+   3.778907556670001*^9}, {3.7789076183636208`*^9, 3.778907619519148*^9}, {
+   3.778909246214826*^9, 3.778909247203045*^9}, {3.7789099039449387`*^9, 
+   3.7789099041029797`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"-", 
+  FractionBox[
+   RowBox[{
+    SuperscriptBox["a", "2"], " ", 
+    SuperscriptBox["e", "2"], " ", 
+    RowBox[{"(", 
+     RowBox[{"8", "+", 
+      RowBox[{
+       SuperscriptBox["a", "2"], " ", 
+       SuperscriptBox["q", "2"]}]}], ")"}]}], 
+   RowBox[{"8", " ", 
+    SuperscriptBox["\[Pi]", "3"], " ", 
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{"4", "+", 
+       RowBox[{
+        SuperscriptBox["a", "2"], " ", 
+        SuperscriptBox["q", "2"]}]}], ")"}], "2"], " ", 
+    "\[Epsilon]0"}]]}]], "Output",
+ CellChangeTimes->{
+  3.778898172977668*^9, {3.778898317632189*^9, 3.7788983457923717`*^9}, 
+   3.7788984011521873`*^9, {3.77890580965685*^9, 3.778905822685985*^9}, {
+   3.7789060109831047`*^9, 3.7789060408556623`*^9}, 3.778906510645824*^9, {
+   3.778907389091279*^9, 3.778907411734127*^9}, 3.778907468621372*^9, 
+   3.778907560762779*^9, {3.778907697878169*^9, 3.778907726813415*^9}, 
+   3.778907870267212*^9, 3.778908247818301*^9, 3.7789083139833593`*^9, 
+   3.77890850532835*^9, 3.778909251277285*^9, 3.778909908522168*^9}]
+}, Open  ]]
+},
+WindowSize->{767, 845},
+WindowMargins->{{Automatic, -10}, {Automatic, -8}},
+FrontEndVersion->"10.0 for Linux x86 (64-bit) (December 4, 2014)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 4538, 117, 645, "Input"],
+Cell[5121, 141, 1128, 32, 89, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6286, 178, 1507, 32, 209, "Input"],
+Cell[7796, 212, 1071, 27, 69, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

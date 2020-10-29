@@ -1,0 +1,156 @@
+%% AMS-LaTeX Created with the Wolfram Language for Students - Personal Use Only : www.wolfram.com
+
+\documentclass{article}
+\usepackage{amsmath, amssymb, graphics, setspace}
+
+\newcommand{\mathsym}[1]{{}}
+\newcommand{\unicode}[1]{{}}
+
+\newcounter{mathematicapage}
+\begin{document}
+
+\begin{doublespace}
+\noindent\(\pmb{\text{ClearAll}[\text{{``}Global$\grave{ }$*{''}}]}\\
+\pmb{\text{(*Write down basis elements*)}}\\
+\pmb{\text{LLket}=\text{KroneckerProduct}\left[\left(
+\begin{array}{c}
+ 1 \\
+ 0 \\
+\end{array}
+\right),\left(
+\begin{array}{c}
+ 1 \\
+ 0 \\
+\end{array}
+\right)\right];\text{LLbra}=\text{Transpose}[\text{LLket}];}\\
+\pmb{\text{LRket}=\text{KroneckerProduct}\left[\left(
+\begin{array}{c}
+ 1 \\
+ 0 \\
+\end{array}
+\right),\left(
+\begin{array}{c}
+ 0 \\
+ 1 \\
+\end{array}
+\right)\right];\text{LRbra}=\text{Transpose}[\text{LRket}];}\\
+\pmb{\text{RLket}=\text{KroneckerProduct}\left[\left(
+\begin{array}{c}
+ 0 \\
+ 1 \\
+\end{array}
+\right),\left(
+\begin{array}{c}
+ 1 \\
+ 0 \\
+\end{array}
+\right)\right];\text{RLbra}=\text{Transpose}[\text{RLket}];}\\
+\pmb{\text{RRket}=\text{KroneckerProduct}\left[\left(
+\begin{array}{c}
+ 0 \\
+ 1 \\
+\end{array}
+\right),\left(
+\begin{array}{c}
+ 0 \\
+ 1 \\
+\end{array}
+\right)\right];\text{RRbra}=\text{Transpose}[\text{RRket}];}\\
+\pmb{}\\
+\pmb{\text{(*Write down destiny operators*)}}\\
+\pmb{\text{$\rho $1}=\frac{1}{2}(\text{LLket}.\text{LLbra}+\text{RRket}.\text{RRbra});}\\
+\pmb{\text{$\rho $2}=\frac{1}{2}(\text{LLket}+\text{RRket}).(\text{LLbra}+\text{RRbra});}\\
+\pmb{\text{Print}\left[\text{$\texttt{"}\rho $1 = }\frac{1}{2}\texttt{"},\text{MatrixForm}[2\text{$\rho $1}]\right];}\\
+\pmb{\text{Print}\left[\text{$\texttt{"}\rho $2 = }\frac{1}{2}\texttt{"},\text{MatrixForm}[2\text{$\rho $2}]\right];}\)
+\end{doublespace}
+
+\noindent\(\text{$\rho $1 = }\frac{1}{2}\left(
+\begin{array}{cccc}
+ 1 & 0 & 0 & 0 \\
+ 0 & 0 & 0 & 0 \\
+ 0 & 0 & 0 & 0 \\
+ 0 & 0 & 0 & 1 \\
+\end{array}
+\right)\)
+
+\noindent\(\text{$\rho $2 = }\frac{1}{2}\left(
+\begin{array}{cccc}
+ 1 & 0 & 0 & 1 \\
+ 0 & 0 & 0 & 0 \\
+ 0 & 0 & 0 & 0 \\
+ 1 & 0 & 0 & 1 \\
+\end{array}
+\right)\)
+
+\begin{doublespace}
+\noindent\(\pmb{\text{(*Check if $\rho $1 is a mixed state*)}}\\
+\pmb{\text{$\rho $1}.\text{$\rho $1}==\text{$\rho $1}}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\text{False}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\pmb{\text{(*Check if $\rho $2 is a mixed state*)}}\\
+\pmb{\text{$\rho $2}.\text{$\rho $2}\text{==}\text{$\rho $2}}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\text{True}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\pmb{\text{(*Calculate probability that Filip measures L*)}}\\
+\pmb{\text{OF}=\text{KroneckerProduct}\left[\left(
+\begin{array}{cc}
+ 1 & 0 \\
+ 0 & 0 \\
+\end{array}
+\right),\text{IdentityMatrix}[2]\right];}\\
+\pmb{\text{Print}[\text{{``}$<$OF$>$ = {''}},\text{Tr}[\text{$\rho $1}.\text{OF}],\text{{``} for ensemble 1{''}}]}\\
+\pmb{\text{Print}[\text{{``}$<$OF$>$ = {''}},\text{Tr}[\text{$\rho $2}.\text{OF}],\text{{``} for ensemble 2{''}}]}\)
+\end{doublespace}
+
+\noindent\(\text{$<$OF$>$ = }\frac{1}{2}\text{ for ensemble 1}\)
+
+\noindent\(\text{$<$OF$>$ = }\frac{1}{2}\text{ for ensemble 2}\)
+
+\begin{doublespace}
+\noindent\(\pmb{\text{(*Define my own operator and calculate its ensemble average*)}}\\
+\pmb{A=\text{LLket}.\text{RRbra}+\text{RRket}.\text{LLbra};}\\
+\pmb{\text{MatrixForm}[A]}\\
+\pmb{\text{Print}[\text{{``}$<$A$>$ = {''}},\text{Tr}[\text{$\rho $1}.A],\text{{``} for ensemble 1{''}}]}\\
+\pmb{\text{Print}[\text{{``}$<$A$>$ = {''}},\text{Tr}[\text{$\rho $2}.A],\text{{``} for ensemble 2{''}}]}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\left(
+\begin{array}{cccc}
+ 0 & 0 & 0 & 1 \\
+ 0 & 0 & 0 & 0 \\
+ 0 & 0 & 0 & 0 \\
+ 1 & 0 & 0 & 0 \\
+\end{array}
+\right)\)
+\end{doublespace}
+
+\noindent\(\text{$<$A$>$ = }0\text{ for ensemble 1}\)
+
+\noindent\(\text{$<$A$>$ = }1\text{ for ensemble 2}\)
+
+\begin{doublespace}
+\noindent\(\pmb{\text{(*Calculate eigenvectors and eigenvalues of A*)}}\\
+\pmb{\text{MatrixForm}[\text{Eigensystem}[A]]}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\left(
+\begin{array}{cccc}
+ -1 & 1 & 0 & 0 \\
+ \{-1,0,0,1\} & \{-1,0,0,-1\} & \{0,0,1,0\} & \{0,1,0,0\} \\
+\end{array}
+\right)\)
+\end{doublespace}
+
+\end{document}

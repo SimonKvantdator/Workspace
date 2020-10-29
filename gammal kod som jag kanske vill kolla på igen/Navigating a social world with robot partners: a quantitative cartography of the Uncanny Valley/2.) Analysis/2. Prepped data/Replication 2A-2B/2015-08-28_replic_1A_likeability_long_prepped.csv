@@ -1,0 +1,631 @@
+"","id","experiment","problems","age","educ","caucasian","hisp","black","middle.east","pacific.isl","native.am","south.asian","east.asian","southeast.asian","female","face","time","seen","main.rating","time.spent","seen.before"
+"78548732.1",78548732,"likeability","None",19,"b.HS.only",0,0,0,0,0,1,0,0,0,1,"a.Cog",1,1,-44,4.402,2
+"78553569.1",78553569,"likeability","Nope",30,"d.4.Yr.Coll",0,0,0,0,0,0,0,0,1,0,"a.Cog",1,1,-72,6.183,2
+"78560586.1",78560586,"likeability","",30,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"a.Cog",1,1,-100,8.942,1
+"78598420.1",78598420,"likeability","None.",36,"Post.Grad.Degree",1,0,0,0,0,0,0,0,0,1,"a.Cog",1,1,-6,5.357,2
+"78595018.1",78595018,"likeability","",21,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"a.Cog",1,1,-86,4.07,2
+"78567686.1",78567686,"likeability","None",41,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"a.Cog",1,1,-48,6.602,2
+"78592807.1",78592807,"likeability","",31,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"a.Cog",1,1,12,7.608,1
+"78567132.1",78567132,"likeability","There were no issues.",28,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"a.Cog",1,1,35,10.423,2
+"78577037.1",78577037,"likeability","No",34,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"a.Cog",1,1,-70,12.318,2
+"78562382.1",78562382,"likeability","none",33,"d.4.Yr.Coll",0,0,0,0,0,1,0,0,0,0,"a.Cog",1,1,21,6.468,2
+"78587011.1",78587011,"likeability","No.",28,"b.HS.only",1,0,0,0,0,0,0,0,0,1,"a.Cog",1,1,-100,5.286,2
+"78598192.1",78598192,"likeability","no",43,"b.HS.only",1,0,0,0,0,0,0,0,0,1,"a.Cog",1,1,-100,15.131,2
+"78505451.1",78505451,"likeability","none",43,"d.4.Yr.Coll",0,0,0,0,1,0,0,0,0,1,"a.Cog",1,1,34,9.17,2
+"78541780.1",78541780,"likeability","No",36,"b.HS.only",1,0,0,0,0,0,0,0,0,1,"a.Cog",1,1,43,27.065,2
+"78506673.1",78506673,"likeability","no",40,"c.2.Yr.Coll",1,0,0,0,0,0,1,0,0,1,"a.Cog",1,1,-80,6.301,2
+"78553493.1",78553493,"likeability","None.",25,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"a.Cog",1,1,-63,17.592,1
+"78516276.1",78516276,"likeability","",23,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"a.Cog",1,1,-100,6.375,1
+"78579435.1",78579435,"likeability","No",29,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"a.Cog",1,1,61,4.254,2
+"78510069.1",78510069,"likeability","No.",30,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"a.Cog",1,1,19,6.082,2
+"78557263.1",78557263,"likeability","No. Movement (GIFs) of the robots would be more telling, I think. ",28,"c.2.Yr.Coll",1,0,0,0,1,0,0,0,0,0,"a.Cog",1,1,-40,9.926,2
+"78575386.1",78575386,"likeability","",32,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"a.Cog",1,1,-41,10.089,2
+"78519815.1",78519815,"likeability","",24,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"a.Cog",1,1,-63,5.555,2
+"78516834.1",78516834,"likeability","Not _exactly, but there was an iFrame error and this popped up inside the turk window, which is mildly awkward.",43,"Post.Grad.Degree",1,0,0,0,0,0,0,0,0,0,"a.Cog",1,1,-34,8.977,2
+"78575643.1",78575643,"likeability","no",61,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"a.Cog",1,1,-84,14.141,2
+"78574455.1",78574455,"likeability","No",28,"b.HS.only",1,0,0,0,0,0,0,0,0,1,"a.Cog",1,1,-20,10.586,2
+"78594280.1",78594280,"likeability","no.",20,"b.HS.only",0,0,0,0,0,0,0,0,1,0,"a.Cog",1,1,28,7.494,2
+"78538917.1",78538917,"likeability","None",26,"Post.Grad.Degree",1,0,0,0,0,0,0,0,0,0,"a.Cog",1,1,-39,10.8,2
+"78533169.1",78533169,"likeability","nope",43,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"a.Cog",1,1,-17,6.301,2
+"78569058.1",78569058,"likeability","no did not experince any confution or problems",28,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"a.Cog",1,1,-97,9.55,2
+"78590439.1",78590439,"likeability","No",36,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"a.Cog",1,1,-20,30.049,2
+"78557521.1",78557521,"likeability","no",34,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"a.Cog",1,1,-63,6.663,2
+"78551923.1",78551923,"likeability","NO",41,"b.HS.only",1,0,0,0,0,0,0,0,0,1,"a.Cog",1,1,-63,9.955,2
+"78571036.1",78571036,"likeability","No.",66,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"a.Cog",1,1,-62,17.837,2
+"78569640.1",78569640,"likeability","No confusion or tech problems.",33,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"a.Cog",1,1,0,16.77,2
+"78546738.1",78546738,"likeability","No technical problems occurred and verything in the survey was clearly written. Thank you",40,"d.4.Yr.Coll",0,0,0,0,0,0,0,0,1,1,"a.Cog",1,1,-33,11.692,2
+"78507849.1",78507849,"likeability","no",33,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"a.Cog",1,1,-79,30.72,2
+"78564825.1",78564825,"likeability","",24,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"a.Cog",1,1,-71,3.884,2
+"78577557.1",78577557,"likeability","not at all",40,"d.4.Yr.Coll",0,0,0,0,0,0,1,0,0,1,"a.Cog",1,1,-100,6.099,2
+"78570947.1",78570947,"likeability","No",25,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"a.Cog",1,1,0,3.747,2
+"78509538.1",78509538,"likeability","nope, very well done.",19,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"a.Cog",1,1,-72,8.035,2
+"78566517.1",78566517,"likeability","",25,"b.HS.only",1,0,0,0,0,0,0,0,0,1,"a.Cog",1,1,-100,6.165,2
+"78505382.1",78505382,"likeability","no",35,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"a.Cog",1,1,-29,20.057,2
+"78593656.1",78593656,"likeability","no / ",23,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"a.Cog",1,1,-5,8.063,2
+"78522761.1",78522761,"likeability","No",31,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"a.Cog",1,1,-28,13.595,2
+"78557792.1",78557792,"likeability","no",37,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"a.Cog",1,1,-73,4.205,2
+"78547367.1",78547367,"likeability","No, not at all.  Everything went super smooth !!",39,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"a.Cog",1,1,16,49.897,2
+"78509567.1",78509567,"likeability","none",32,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"a.Cog",1,1,-100,6.04,2
+"78500446.1",78500446,"likeability","Nothing at all.",19,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"a.Cog",1,1,-56,5.757,2
+"78575348.1",78575348,"likeability","No",29,"Post.Grad.Degree",0,0,0,0,0,1,0,0,0,0,"a.Cog",1,1,-56,18.826,1
+"78507364.1",78507364,"likeability","no",22,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"a.Cog",1,1,-92,5.578,2
+"78548361.1",78548361,"likeability","no",28,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,1,1,"a.Cog",1,1,8,6.074,2
+"78599218.1",78599218,"likeability","No, everything went great for me, thanks!",36,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"a.Cog",1,1,0,11.681,2
+"78599540.1",78599540,"likeability","",28,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"a.Cog",1,1,-8,4.12,2
+"78521692.1",78521692,"likeability","No.",21,"d.4.Yr.Coll",0,0,0,0,0,1,0,0,0,0,"a.Cog",1,1,-84,6.15,2
+"78549967.1",78549967,"likeability","no",33,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"a.Cog",1,1,18,9.328,2
+"78542590.1",78542590,"likeability","",27,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"a.Cog",1,1,40,4.202,2
+"78504649.1",78504649,"likeability","",24,"b.HS.only",1,0,0,0,0,0,0,0,1,1,"a.Cog",1,1,9,6.037,2
+"78505107.1",78505107,"likeability","No",30,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"a.Cog",1,1,-100,4.78,2
+"78571006.1",78571006,"likeability","no",28,"d.4.Yr.Coll",0,1,0,0,0,0,0,0,0,1,"a.Cog",1,1,-63,35.114,2
+"78577730.1",78577730,"likeability","",29,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"a.Cog",1,1,0,109.147,2
+"78518449.1",78518449,"likeability","There was no confusions, or technical issues experienced. ",28,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"a.Cog",1,1,-65,2.862,2
+"78500266.1",78500266,"likeability","no",52,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"a.Cog",1,1,22,6.166,2
+"78526036.1",78526036,"likeability","",29,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"a.Cog",1,1,50,7.575,1
+"78520386.1",78520386,"likeability","No.",29,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"a.Cog",1,1,-60,6.465,2
+"78583315.1",78583315,"likeability","none",60,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"a.Cog",1,1,-39,11.189,2
+"78574033.1",78574033,"likeability","no, everything was very clear",31,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"a.Cog",1,1,26,8.018,2
+"78567619.1",78567619,"likeability","No",47,"b.HS.only",1,0,0,0,0,0,0,0,0,1,"a.Cog",1,1,-100,3.764,2
+"78512986.1",78512986,"likeability","no",22,"b.HS.only",0,0,0,0,0,0,0,0,1,0,"a.Cog",1,1,-74,3.011,2
+"78565068.1",78565068,"likeability","no",40,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"a.Cog",1,1,-1,5.598,2
+"78542649.1",78542649,"likeability","Nah, but theres no way any robot looks as good as that last one currently though!",28,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"a.Cog",1,1,-41,11.23,2
+"78559416.1",78559416,"likeability","",28,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"a.Cog",1,1,-60,5.517,2
+"78570194.1",78570194,"likeability","no",42,"Post.Grad.Degree",1,0,0,0,0,0,0,1,0,0,"a.Cog",1,1,-40,22.751,2
+"78501226.1",78501226,"likeability","no",51,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"a.Cog",1,1,-4,15.188,1
+"78556306.1",78556306,"likeability","No",28,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"a.Cog",1,1,-90,10.277,2
+"78535296.1",78535296,"likeability","no, the pictures loaded up normally",34,"d.4.Yr.Coll",0,0,0,0,0,0,0,0,1,0,"a.Cog",1,1,-7,4.746,2
+"78522611.1",78522611,"likeability","",24,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"a.Cog",1,1,20,8.534,2
+"78515824.1",78515824,"likeability","none",25,"b.HS.only",1,0,0,0,0,0,0,0,0,1,"a.Cog",1,1,-79,7.289,2
+"78514000.1",78514000,"likeability","",25,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"a.Cog",1,1,-100,3.08,2
+"78536587.1",78536587,"likeability","Not at all",25,"b.HS.only",1,0,0,0,0,0,0,0,0,1,"a.Cog",1,1,15,7.523,2
+"78540881.1",78540881,"likeability","No",39,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"a.Cog",1,1,-100,3.696,2
+"78553448.1",78553448,"likeability","no problems, short and sweet, good pay",34,"Post.Grad.Degree",1,1,0,0,0,0,0,0,0,1,"a.Cog",1,1,-24,5.869,2
+"78557270.1",78557270,"likeability","",27,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"a.Cog",1,1,-30,6.079,2
+"78553832.1",78553832,"likeability","No.",28,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"a.Cog",1,1,-54,37.467,2
+"78589337.1",78589337,"likeability","No.",30,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"a.Cog",1,1,-60,8.355,2
+"78533910.1",78533910,"likeability","No, I think everything was well laid out and easy to understand. ",33,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"a.Cog",1,1,-78,15.502,2
+"78575891.1",78575891,"likeability","no",31,"c.2.Yr.Coll",0,1,0,0,0,0,0,0,0,1,"a.Cog",1,1,-100,15.118,2
+"78585024.1",78585024,"likeability","I did not!",48,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"a.Cog",1,1,-73,5.664,2
+"78565830.1",78565830,"likeability","",28,"a.No.HS",1,0,0,0,0,0,0,0,0,0,"a.Cog",1,1,-47,4.089,2
+"78509275.1",78509275,"likeability","No. ",29,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"a.Cog",1,1,50,9.597,2
+"78599818.1",78599818,"likeability","No ",36,"b.HS.only",0,1,0,0,0,0,0,0,0,0,"a.Cog",1,1,-81,11.758,2
+"78563358.1",78563358,"likeability","no",45,"b.HS.only",1,0,0,0,0,0,0,0,0,1,"a.Cog",1,1,-42,7.016,2
+"78589170.1",78589170,"likeability","No, everything functioned perfectly.",43,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"a.Cog",1,1,-90,13.857,2
+"78581243.1",78581243,"likeability","Nothing thanks!",54,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"a.Cog",1,1,-100,5.905,2
+"78526599.1",78526599,"likeability","I didn't experience any confusion or technical problems. ",29,"d.4.Yr.Coll",0,0,0,0,0,1,0,0,0,1,"a.Cog",1,1,19,5.949,2
+"78590012.1",78590012,"likeability","no",33,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"a.Cog",1,1,-11,527.545,2
+"78558626.1",78558626,"likeability","Nope, everything worked just fine.",45,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"a.Cog",1,1,-85,11.68,1
+"78597626.1",78597626,"likeability","no",40,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"a.Cog",1,1,-23,14.556,2
+"78562641.1",78562641,"likeability","No.",29,"b.HS.only",0,0,0,0,0,0,0,1,0,1,"a.Cog",1,1,-100,5.19,2
+"78584093.1",78584093,"likeability","no. Everything ran smoothly.",33,"Post.Grad.Degree",0,0,0,0,0,0,0,1,0,1,"a.Cog",1,1,-9,9.467,2
+"78519827.1",78519827,"likeability","None",33,"d.4.Yr.Coll",0,0,0,0,0,1,0,0,0,1,"a.Cog",1,1,0,26.76,1
+"78599803.1",78599803,"likeability","no",39,"b.HS.only",1,0,0,0,0,0,0,0,0,1,"a.Cog",1,1,-22,8.631,2
+"78554236.1",78554236,"likeability","No.",52,"d.4.Yr.Coll",1,0,0,0,0,1,0,0,0,1,"a.Cog",1,1,-86,13.484,2
+"78591991.1",78591991,"likeability","none",27,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"a.Cog",1,1,-1,3.106,2
+"78536356.1",78536356,"likeability","Not at all",31,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"a.Cog",1,1,-75,2.02,2
+"78546224.1",78546224,"likeability","none",37,"Post.Grad.Degree",0,1,0,0,0,0,0,0,0,0,"a.Cog",1,1,-11,7.401,2
+"78548732.2",78548732,"likeability","None",19,"b.HS.only",0,0,0,0,0,1,0,0,0,1,"b.Plastic",2,2,42,5.701,2
+"78553569.2",78553569,"likeability","Nope",30,"d.4.Yr.Coll",0,0,0,0,0,0,0,0,1,0,"b.Plastic",2,2,93,6.183,2
+"78560586.2",78560586,"likeability","",30,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"b.Plastic",2,2,-100,5.29,1
+"78598420.2",78598420,"likeability","None.",36,"Post.Grad.Degree",1,0,0,0,0,0,0,0,0,1,"b.Plastic",2,2,54,8.45,2
+"78595018.2",78595018,"likeability","",21,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"b.Plastic",2,2,9,5.809,2
+"78567686.2",78567686,"likeability","None",41,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"b.Plastic",2,2,60,4.737,2
+"78592807.2",78592807,"likeability","",31,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"b.Plastic",2,2,47,5.741,2
+"78567132.2",78567132,"likeability","There were no issues.",28,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"b.Plastic",2,2,10,6.51,2
+"78577037.2",78577037,"likeability","No",34,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"b.Plastic",2,2,15,10.105,2
+"78562382.2",78562382,"likeability","none",33,"d.4.Yr.Coll",0,0,0,0,0,1,0,0,0,0,"b.Plastic",2,2,7,5.886,2
+"78587011.2",78587011,"likeability","No.",28,"b.HS.only",1,0,0,0,0,0,0,0,0,1,"b.Plastic",2,2,20,10.556,2
+"78598192.2",78598192,"likeability","no",43,"b.HS.only",1,0,0,0,0,0,0,0,0,1,"b.Plastic",2,2,45,16.789,2
+"78505451.2",78505451,"likeability","none",43,"d.4.Yr.Coll",0,0,0,0,1,0,0,0,0,1,"b.Plastic",2,2,84,6.661,2
+"78541780.2",78541780,"likeability","No",36,"b.HS.only",1,0,0,0,0,0,0,0,0,1,"b.Plastic",2,2,74,9.852,2
+"78506673.2",78506673,"likeability","no",40,"c.2.Yr.Coll",1,0,0,0,0,0,1,0,0,1,"b.Plastic",2,2,31,6.996,2
+"78553493.2",78553493,"likeability","None.",25,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"b.Plastic",2,2,0,9.312,2
+"78516276.2",78516276,"likeability","",23,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"b.Plastic",2,2,21,9.456,2
+"78579435.2",78579435,"likeability","No",29,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"b.Plastic",2,2,-61,10.357,2
+"78510069.2",78510069,"likeability","No.",30,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"b.Plastic",2,2,44,6.496,2
+"78557263.2",78557263,"likeability","No. Movement (GIFs) of the robots would be more telling, I think. ",28,"c.2.Yr.Coll",1,0,0,0,1,0,0,0,0,0,"b.Plastic",2,2,60,15.327,2
+"78575386.2",78575386,"likeability","",32,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"b.Plastic",2,2,-2,6.246,2
+"78519815.2",78519815,"likeability","",24,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"b.Plastic",2,2,-62,5.191,2
+"78516834.2",78516834,"likeability","Not _exactly, but there was an iFrame error and this popped up inside the turk window, which is mildly awkward.",43,"Post.Grad.Degree",1,0,0,0,0,0,0,0,0,0,"b.Plastic",2,2,-14,11.343,2
+"78575643.2",78575643,"likeability","no",61,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"b.Plastic",2,2,30,13.037,2
+"78574455.2",78574455,"likeability","No",28,"b.HS.only",1,0,0,0,0,0,0,0,0,1,"b.Plastic",2,2,60,11.822,2
+"78594280.2",78594280,"likeability","no.",20,"b.HS.only",0,0,0,0,0,0,0,0,1,0,"b.Plastic",2,2,96,8.42,2
+"78538917.2",78538917,"likeability","None",26,"Post.Grad.Degree",1,0,0,0,0,0,0,0,0,0,"b.Plastic",2,2,18,6.902,2
+"78533169.2",78533169,"likeability","nope",43,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"b.Plastic",2,2,60,6.297,2
+"78569058.2",78569058,"likeability","no did not experince any confution or problems",28,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"b.Plastic",2,2,30,7.522,2
+"78590439.2",78590439,"likeability","No",36,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"b.Plastic",2,2,60,19.776,2
+"78557521.2",78557521,"likeability","no",34,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"b.Plastic",2,2,41,8.928,2
+"78551923.2",78551923,"likeability","NO",41,"b.HS.only",1,0,0,0,0,0,0,0,0,1,"b.Plastic",2,2,-27,6.833,2
+"78571036.2",78571036,"likeability","No.",66,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"b.Plastic",2,2,19,11.3,2
+"78569640.2",78569640,"likeability","No confusion or tech problems.",33,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"b.Plastic",2,2,40,14.95,2
+"78546738.2",78546738,"likeability","No technical problems occurred and verything in the survey was clearly written. Thank you",40,"d.4.Yr.Coll",0,0,0,0,0,0,0,0,1,1,"b.Plastic",2,2,12,11.297,2
+"78507849.2",78507849,"likeability","no",33,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"b.Plastic",2,2,43,4.428,2
+"78564825.2",78564825,"likeability","",24,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"b.Plastic",2,2,-53,2.826,2
+"78577557.2",78577557,"likeability","not at all",40,"d.4.Yr.Coll",0,0,0,0,0,0,1,0,0,1,"b.Plastic",2,2,40,6.063,2
+"78570947.2",78570947,"likeability","No",25,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"b.Plastic",2,2,1,3.128,2
+"78509538.2",78509538,"likeability","nope, very well done.",19,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"b.Plastic",2,2,36,6.243,2
+"78566517.2",78566517,"likeability","",25,"b.HS.only",1,0,0,0,0,0,0,0,0,1,"b.Plastic",2,2,85,8.591,2
+"78505382.2",78505382,"likeability","no",35,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"b.Plastic",2,2,64,5.819,2
+"78593656.2",78593656,"likeability","no / ",23,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"b.Plastic",2,2,-100,14.515,2
+"78522761.2",78522761,"likeability","No",31,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"b.Plastic",2,2,40,21.087,2
+"78557792.2",78557792,"likeability","no",37,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"b.Plastic",2,2,11,3.751,2
+"78547367.2",78547367,"likeability","No, not at all.  Everything went super smooth !!",39,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"b.Plastic",2,2,58,8.011,2
+"78509567.2",78509567,"likeability","none",32,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"b.Plastic",2,2,65,21.581,2
+"78500446.2",78500446,"likeability","Nothing at all.",19,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"b.Plastic",2,2,21,5.013,2
+"78575348.2",78575348,"likeability","No",29,"Post.Grad.Degree",0,0,0,0,0,1,0,0,0,0,"b.Plastic",2,2,79,3.84,2
+"78507364.2",78507364,"likeability","no",22,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"b.Plastic",2,2,42,7.317,2
+"78548361.2",78548361,"likeability","no",28,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,1,1,"b.Plastic",2,2,38,4.801,2
+"78599218.2",78599218,"likeability","No, everything went great for me, thanks!",36,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"b.Plastic",2,2,60,10.504,2
+"78599540.2",78599540,"likeability","",28,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"b.Plastic",2,2,-15,6.433,2
+"78521692.2",78521692,"likeability","No.",21,"d.4.Yr.Coll",0,0,0,0,0,1,0,0,0,0,"b.Plastic",2,2,40,6.817,2
+"78549967.2",78549967,"likeability","no",33,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"b.Plastic",2,2,58,2.992,2
+"78542590.2",78542590,"likeability","",27,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"b.Plastic",2,2,-79,4.858,2
+"78504649.2",78504649,"likeability","",24,"b.HS.only",1,0,0,0,0,0,0,0,1,1,"b.Plastic",2,2,8,54.726,2
+"78505107.2",78505107,"likeability","No",30,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"b.Plastic",2,2,20,7.339,2
+"78571006.2",78571006,"likeability","no",28,"d.4.Yr.Coll",0,1,0,0,0,0,0,0,0,1,"b.Plastic",2,2,21,13.948,2
+"78577730.2",78577730,"likeability","",29,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"b.Plastic",2,2,30,7.322,1
+"78518449.2",78518449,"likeability","There was no confusions, or technical issues experienced. ",28,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"b.Plastic",2,2,-42,6.417,2
+"78500266.2",78500266,"likeability","no",52,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"b.Plastic",2,2,28,5.663,2
+"78526036.2",78526036,"likeability","",29,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"b.Plastic",2,2,80,22.931,2
+"78520386.2",78520386,"likeability","No.",29,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"b.Plastic",2,2,-11,4.327,2
+"78583315.2",78583315,"likeability","none",60,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"b.Plastic",2,2,39,5.498,2
+"78574033.2",78574033,"likeability","no, everything was very clear",31,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"b.Plastic",2,2,72,5.316,2
+"78567619.2",78567619,"likeability","No",47,"b.HS.only",1,0,0,0,0,0,0,0,0,1,"b.Plastic",2,2,-30,8.713,2
+"78512986.2",78512986,"likeability","no",22,"b.HS.only",0,0,0,0,0,0,0,0,1,0,"b.Plastic",2,2,59,7.019,2
+"78565068.2",78565068,"likeability","no",40,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"b.Plastic",2,2,66,7.408,2
+"78542649.2",78542649,"likeability","Nah, but theres no way any robot looks as good as that last one currently though!",28,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"b.Plastic",2,2,61,9.605,2
+"78559416.2",78559416,"likeability","",28,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"b.Plastic",2,2,7,5.297,2
+"78570194.2",78570194,"likeability","no",42,"Post.Grad.Degree",1,0,0,0,0,0,0,1,0,0,"b.Plastic",2,2,-40,11.393,2
+"78501226.2",78501226,"likeability","no",51,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"b.Plastic",2,2,-1,10.927,2
+"78556306.2",78556306,"likeability","No",28,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"b.Plastic",2,2,-40,9.521,2
+"78535296.2",78535296,"likeability","no, the pictures loaded up normally",34,"d.4.Yr.Coll",0,0,0,0,0,0,0,0,1,0,"b.Plastic",2,2,73,5.203,2
+"78522611.2",78522611,"likeability","",24,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"b.Plastic",2,2,71,5.455,2
+"78515824.2",78515824,"likeability","none",25,"b.HS.only",1,0,0,0,0,0,0,0,0,1,"b.Plastic",2,2,-50,2.766,1
+"78514000.2",78514000,"likeability","",25,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"b.Plastic",2,2,-30,5.386,2
+"78536587.2",78536587,"likeability","Not at all",25,"b.HS.only",1,0,0,0,0,0,0,0,0,1,"b.Plastic",2,2,44,9.566,2
+"78540881.2",78540881,"likeability","No",39,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"b.Plastic",2,2,-100,5.41,2
+"78553448.2",78553448,"likeability","no problems, short and sweet, good pay",34,"Post.Grad.Degree",1,1,0,0,0,0,0,0,0,1,"b.Plastic",2,2,82,6.625,2
+"78557270.2",78557270,"likeability","",27,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"b.Plastic",2,2,21,3.702,2
+"78553832.2",78553832,"likeability","No.",28,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"b.Plastic",2,2,-21,11.843,2
+"78589337.2",78589337,"likeability","No.",30,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"b.Plastic",2,2,40,31.006,2
+"78533910.2",78533910,"likeability","No, I think everything was well laid out and easy to understand. ",33,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"b.Plastic",2,2,27,32.387,2
+"78575891.2",78575891,"likeability","no",31,"c.2.Yr.Coll",0,1,0,0,0,0,0,0,0,1,"b.Plastic",2,2,100,8.285,2
+"78585024.2",78585024,"likeability","I did not!",48,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"b.Plastic",2,2,50,4.787,2
+"78565830.2",78565830,"likeability","",28,"a.No.HS",1,0,0,0,0,0,0,0,0,0,"b.Plastic",2,2,56,3.385,2
+"78509275.2",78509275,"likeability","No. ",29,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"b.Plastic",2,2,49,4.837,2
+"78599818.2",78599818,"likeability","No ",36,"b.HS.only",0,1,0,0,0,0,0,0,0,0,"b.Plastic",2,2,42,22.817,2
+"78563358.2",78563358,"likeability","no",45,"b.HS.only",1,0,0,0,0,0,0,0,0,1,"b.Plastic",2,2,-10,7.862,2
+"78589170.2",78589170,"likeability","No, everything functioned perfectly.",43,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"b.Plastic",2,2,-5,8.497,2
+"78581243.2",78581243,"likeability","Nothing thanks!",54,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"b.Plastic",2,2,-16,7.281,2
+"78526599.2",78526599,"likeability","I didn't experience any confusion or technical problems. ",29,"d.4.Yr.Coll",0,0,0,0,0,1,0,0,0,1,"b.Plastic",2,2,34,7.827,2
+"78590012.2",78590012,"likeability","no",33,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"b.Plastic",2,2,-24,6.475,2
+"78558626.2",78558626,"likeability","Nope, everything worked just fine.",45,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"b.Plastic",2,2,50,12.05,2
+"78597626.2",78597626,"likeability","no",40,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"b.Plastic",2,2,24,99.902,2
+"78562641.2",78562641,"likeability","No.",29,"b.HS.only",0,0,0,0,0,0,0,1,0,1,"b.Plastic",2,2,-100,8.954,2
+"78584093.2",78584093,"likeability","no. Everything ran smoothly.",33,"Post.Grad.Degree",0,0,0,0,0,0,0,1,0,1,"b.Plastic",2,2,40,11.108,2
+"78519827.2",78519827,"likeability","None",33,"d.4.Yr.Coll",0,0,0,0,0,1,0,0,0,1,"b.Plastic",2,2,1,4.552,1
+"78599803.2",78599803,"likeability","no",39,"b.HS.only",1,0,0,0,0,0,0,0,0,1,"b.Plastic",2,2,65,15.724,2
+"78554236.2",78554236,"likeability","No.",52,"d.4.Yr.Coll",1,0,0,0,0,1,0,0,0,1,"b.Plastic",2,2,60,14.93,2
+"78591991.2",78591991,"likeability","none",27,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"b.Plastic",2,2,61,4.17,2
+"78536356.2",78536356,"likeability","Not at all",31,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"b.Plastic",2,2,-61,318.232,2
+"78546224.2",78546224,"likeability","none",37,"Post.Grad.Degree",0,1,0,0,0,0,0,0,0,0,"b.Plastic",2,2,-1,7.313,2
+"78548732.3",78548732,"likeability","None",19,"b.HS.only",0,0,0,0,0,1,0,0,0,1,"c.Printed",3,3,-33,3.272,2
+"78553569.3",78553569,"likeability","Nope",30,"d.4.Yr.Coll",0,0,0,0,0,0,0,0,1,0,"c.Printed",3,3,-13,4.785,2
+"78560586.3",78560586,"likeability","",30,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"c.Printed",3,3,-62,7.634,2
+"78598420.3",78598420,"likeability","None.",36,"Post.Grad.Degree",1,0,0,0,0,0,0,0,0,1,"c.Printed",3,3,-46,6.263,2
+"78595018.3",78595018,"likeability","",21,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"c.Printed",3,3,-61,4.933,2
+"78567686.3",78567686,"likeability","None",41,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"c.Printed",3,3,8,5.926,2
+"78592807.3",78592807,"likeability","",31,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"c.Printed",3,3,43,9.977,2
+"78567132.3",78567132,"likeability","There were no issues.",28,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"c.Printed",3,3,-51,6.849,2
+"78577037.3",78577037,"likeability","No",34,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"c.Printed",3,3,-73,8.981,2
+"78562382.3",78562382,"likeability","none",33,"d.4.Yr.Coll",0,0,0,0,0,1,0,0,0,0,"c.Printed",3,3,-74,4.769,2
+"78587011.3",78587011,"likeability","No.",28,"b.HS.only",1,0,0,0,0,0,0,0,0,1,"c.Printed",3,3,-100,5.863,2
+"78598192.3",78598192,"likeability","no",43,"b.HS.only",1,0,0,0,0,0,0,0,0,1,"c.Printed",3,3,-92,9.535,2
+"78505451.3",78505451,"likeability","none",43,"d.4.Yr.Coll",0,0,0,0,1,0,0,0,0,1,"c.Printed",3,3,-42,7.418,2
+"78541780.3",78541780,"likeability","No",36,"b.HS.only",1,0,0,0,0,0,0,0,0,1,"c.Printed",3,3,-41,8.372,2
+"78506673.3",78506673,"likeability","no",40,"c.2.Yr.Coll",1,0,0,0,0,0,1,0,0,1,"c.Printed",3,3,-17,3.551,2
+"78553493.3",78553493,"likeability","None.",25,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"c.Printed",3,3,-20,11.383,1
+"78516276.3",78516276,"likeability","",23,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"c.Printed",3,3,-76,7.826,1
+"78579435.3",78579435,"likeability","No",29,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"c.Printed",3,3,7,7.623,2
+"78510069.3",78510069,"likeability","No.",30,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"c.Printed",3,3,-55,9.454,2
+"78557263.3",78557263,"likeability","No. Movement (GIFs) of the robots would be more telling, I think. ",28,"c.2.Yr.Coll",1,0,0,0,1,0,0,0,0,0,"c.Printed",3,3,-80,8.9,2
+"78575386.3",78575386,"likeability","",32,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"c.Printed",3,3,39,8.069,2
+"78519815.3",78519815,"likeability","",24,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"c.Printed",3,3,-52,4.372,2
+"78516834.3",78516834,"likeability","Not _exactly, but there was an iFrame error and this popped up inside the turk window, which is mildly awkward.",43,"Post.Grad.Degree",1,0,0,0,0,0,0,0,0,0,"c.Printed",3,3,-36,8.756,2
+"78575643.3",78575643,"likeability","no",61,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"c.Printed",3,3,32,10.831,2
+"78574455.3",78574455,"likeability","No",28,"b.HS.only",1,0,0,0,0,0,0,0,0,1,"c.Printed",3,3,-100,8.569,2
+"78594280.3",78594280,"likeability","no.",20,"b.HS.only",0,0,0,0,0,0,0,0,1,0,"c.Printed",3,3,11,8.66,2
+"78538917.3",78538917,"likeability","None",26,"Post.Grad.Degree",1,0,0,0,0,0,0,0,0,0,"c.Printed",3,3,-41,8.108,2
+"78533169.3",78533169,"likeability","nope",43,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"c.Printed",3,3,-10,7.028,2
+"78569058.3",78569058,"likeability","no did not experince any confution or problems",28,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"c.Printed",3,3,-29,7.75,2
+"78590439.3",78590439,"likeability","No",36,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"c.Printed",3,3,-20,20,2
+"78557521.3",78557521,"likeability","no",34,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"c.Printed",3,3,-41,10.355,2
+"78551923.3",78551923,"likeability","NO",41,"b.HS.only",1,0,0,0,0,0,0,0,0,1,"c.Printed",3,3,-91,6.012,2
+"78571036.3",78571036,"likeability","No.",66,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"c.Printed",3,3,-14,9.143,2
+"78569640.3",78569640,"likeability","No confusion or tech problems.",33,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"c.Printed",3,3,-30,13.963,2
+"78546738.3",78546738,"likeability","No technical problems occurred and verything in the survey was clearly written. Thank you",40,"d.4.Yr.Coll",0,0,0,0,0,0,0,0,1,1,"c.Printed",3,3,-46,26.988,2
+"78507849.3",78507849,"likeability","no",33,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"c.Printed",3,3,-63,137.847,2
+"78564825.3",78564825,"likeability","",24,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"c.Printed",3,3,-14,3.149,2
+"78577557.3",78577557,"likeability","not at all",40,"d.4.Yr.Coll",0,0,0,0,0,0,1,0,0,1,"c.Printed",3,3,-64,7.854,2
+"78570947.3",78570947,"likeability","No",25,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"c.Printed",3,3,0,4.388,2
+"78509538.3",78509538,"likeability","nope, very well done.",19,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"c.Printed",3,3,1,5.064,2
+"78566517.3",78566517,"likeability","",25,"b.HS.only",1,0,0,0,0,0,0,0,0,1,"c.Printed",3,3,-39,22.698,2
+"78505382.3",78505382,"likeability","no",35,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"c.Printed",3,3,-2,4.481,2
+"78593656.3",78593656,"likeability","no / ",23,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"c.Printed",3,3,14,20.605,2
+"78522761.3",78522761,"likeability","No",31,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"c.Printed",3,3,-22,10.073,2
+"78557792.3",78557792,"likeability","no",37,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"c.Printed",3,3,-39,7.747,2
+"78547367.3",78547367,"likeability","No, not at all.  Everything went super smooth !!",39,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"c.Printed",3,3,-70,12.758,2
+"78509567.3",78509567,"likeability","none",32,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"c.Printed",3,3,-43,13.723,1
+"78500446.3",78500446,"likeability","Nothing at all.",19,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"c.Printed",3,3,-14,5.297,2
+"78575348.3",78575348,"likeability","No",29,"Post.Grad.Degree",0,0,0,0,0,1,0,0,0,0,"c.Printed",3,3,-100,3.451,2
+"78507364.3",78507364,"likeability","no",22,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"c.Printed",3,3,-88,7.061,2
+"78548361.3",78548361,"likeability","no",28,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,1,1,"c.Printed",3,3,-8,5.952,2
+"78599218.3",78599218,"likeability","No, everything went great for me, thanks!",36,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"c.Printed",3,3,-30,8.244,2
+"78599540.3",78599540,"likeability","",28,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"c.Printed",3,3,-2,7.98,2
+"78521692.3",78521692,"likeability","No.",21,"d.4.Yr.Coll",0,0,0,0,0,1,0,0,0,0,"c.Printed",3,3,-40,13.449,2
+"78549967.3",78549967,"likeability","no",33,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"c.Printed",3,3,1,30.303,2
+"78542590.3",78542590,"likeability","",27,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"c.Printed",3,3,-61,4.971,2
+"78504649.3",78504649,"likeability","",24,"b.HS.only",1,0,0,0,0,0,0,0,1,1,"c.Printed",3,3,14,3.618,2
+"78505107.3",78505107,"likeability","No",30,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"c.Printed",3,3,-20,6.979,2
+"78571006.3",78571006,"likeability","no",28,"d.4.Yr.Coll",0,1,0,0,0,0,0,0,0,1,"c.Printed",3,3,-18,16.913,2
+"78577730.3",78577730,"likeability","",29,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"c.Printed",3,3,0,12.133,2
+"78518449.3",78518449,"likeability","There was no confusions, or technical issues experienced. ",28,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"c.Printed",3,3,-43,260.72,2
+"78500266.3",78500266,"likeability","no",52,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"c.Printed",3,3,-39,13.492,2
+"78526036.3",78526036,"likeability","",29,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"c.Printed",3,3,-20,6.818,2
+"78520386.3",78520386,"likeability","No.",29,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"c.Printed",3,3,-81,12.638,2
+"78583315.3",78583315,"likeability","none",60,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"c.Printed",3,3,3,8.678,2
+"78574033.3",78574033,"likeability","no, everything was very clear",31,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"c.Printed",3,3,11,7.928,2
+"78567619.3",78567619,"likeability","No",47,"b.HS.only",1,0,0,0,0,0,0,0,0,1,"c.Printed",3,3,-100,2.533,2
+"78512986.3",78512986,"likeability","no",22,"b.HS.only",0,0,0,0,0,0,0,0,1,0,"c.Printed",3,3,-79,3.06,2
+"78565068.3",78565068,"likeability","no",40,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"c.Printed",3,3,22,15.642,2
+"78542649.3",78542649,"likeability","Nah, but theres no way any robot looks as good as that last one currently though!",28,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"c.Printed",3,3,-20,13.778,2
+"78559416.3",78559416,"likeability","",28,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"c.Printed",3,3,-15,5.947,2
+"78570194.3",78570194,"likeability","no",42,"Post.Grad.Degree",1,0,0,0,0,0,0,1,0,0,"c.Printed",3,3,-80,10.518,2
+"78501226.3",78501226,"likeability","no",51,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"c.Printed",3,3,-64,8.989,2
+"78556306.3",78556306,"likeability","No",28,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"c.Printed",3,3,-60,11.984,2
+"78535296.3",78535296,"likeability","no, the pictures loaded up normally",34,"d.4.Yr.Coll",0,0,0,0,0,0,0,0,1,0,"c.Printed",3,3,-15,5.982,2
+"78522611.3",78522611,"likeability","",24,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"c.Printed",3,3,-4,15.847,2
+"78515824.3",78515824,"likeability","none",25,"b.HS.only",1,0,0,0,0,0,0,0,0,1,"c.Printed",3,3,-20,3.32,2
+"78514000.3",78514000,"likeability","",25,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"c.Printed",3,3,-18,11.071,2
+"78536587.3",78536587,"likeability","Not at all",25,"b.HS.only",1,0,0,0,0,0,0,0,0,1,"c.Printed",3,3,64,4.453,2
+"78540881.3",78540881,"likeability","No",39,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"c.Printed",3,3,-100,13.977,2
+"78553448.3",78553448,"likeability","no problems, short and sweet, good pay",34,"Post.Grad.Degree",1,1,0,0,0,0,0,0,0,1,"c.Printed",3,3,30,5.338,2
+"78557270.3",78557270,"likeability","",27,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"c.Printed",3,3,-14,9.318,2
+"78553832.3",78553832,"likeability","No.",28,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"c.Printed",3,3,-60,10.214,2
+"78589337.3",78589337,"likeability","No.",30,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"c.Printed",3,3,10,7.433,2
+"78533910.3",78533910,"likeability","No, I think everything was well laid out and easy to understand. ",33,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"c.Printed",3,3,-70,15.088,2
+"78575891.3",78575891,"likeability","no",31,"c.2.Yr.Coll",0,1,0,0,0,0,0,0,0,1,"c.Printed",3,3,-20,13.253,2
+"78585024.3",78585024,"likeability","I did not!",48,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"c.Printed",3,3,-17,4.835,2
+"78565830.3",78565830,"likeability","",28,"a.No.HS",1,0,0,0,0,0,0,0,0,0,"c.Printed",3,3,-52,9.322,2
+"78509275.3",78509275,"likeability","No. ",29,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"c.Printed",3,3,-85,4.792,2
+"78599818.3",78599818,"likeability","No ",36,"b.HS.only",0,1,0,0,0,0,0,0,0,0,"c.Printed",3,3,-81,9.177,2
+"78563358.3",78563358,"likeability","no",45,"b.HS.only",1,0,0,0,0,0,0,0,0,1,"c.Printed",3,3,-10,6.507,2
+"78589170.3",78589170,"likeability","No, everything functioned perfectly.",43,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"c.Printed",3,3,-75,14.045,2
+"78581243.3",78581243,"likeability","Nothing thanks!",54,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"c.Printed",3,3,-86,8.065,2
+"78526599.3",78526599,"likeability","I didn't experience any confusion or technical problems. ",29,"d.4.Yr.Coll",0,0,0,0,0,1,0,0,0,1,"c.Printed",3,3,-12,10.014,2
+"78590012.3",78590012,"likeability","no",33,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"c.Printed",3,3,-42,13.559,2
+"78558626.3",78558626,"likeability","Nope, everything worked just fine.",45,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"c.Printed",3,3,-20,16.275,2
+"78597626.3",78597626,"likeability","no",40,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"c.Printed",3,3,-26,6.527,2
+"78562641.3",78562641,"likeability","No.",29,"b.HS.only",0,0,0,0,0,0,0,1,0,1,"c.Printed",3,3,-100,6.354,2
+"78584093.3",78584093,"likeability","no. Everything ran smoothly.",33,"Post.Grad.Degree",0,0,0,0,0,0,0,1,0,1,"c.Printed",3,3,59,26.283,2
+"78519827.3",78519827,"likeability","None",33,"d.4.Yr.Coll",0,0,0,0,0,1,0,0,0,1,"c.Printed",3,3,1,9.412,1
+"78599803.3",78599803,"likeability","no",39,"b.HS.only",1,0,0,0,0,0,0,0,0,1,"c.Printed",3,3,-1,11.397,1
+"78554236.3",78554236,"likeability","No.",52,"d.4.Yr.Coll",1,0,0,0,0,1,0,0,0,1,"c.Printed",3,3,-50,13.582,2
+"78591991.3",78591991,"likeability","none",27,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"c.Printed",3,3,-36,5.523,2
+"78536356.3",78536356,"likeability","Not at all",31,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"c.Printed",3,3,-17,2.105,2
+"78546224.3",78546224,"likeability","none",37,"Post.Grad.Degree",0,1,0,0,0,0,0,0,0,0,"c.Printed",3,3,-55,6.094,2
+"78548732.4",78548732,"likeability","None",19,"b.HS.only",0,0,0,0,0,1,0,0,0,1,"d.Whiteface",4,4,-78,2.957,2
+"78553569.4",78553569,"likeability","Nope",30,"d.4.Yr.Coll",0,0,0,0,0,0,0,0,1,0,"d.Whiteface",4,4,47,9.408,1
+"78560586.4",78560586,"likeability","",30,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"d.Whiteface",4,4,-100,5.333,1
+"78598420.4",78598420,"likeability","None.",36,"Post.Grad.Degree",1,0,0,0,0,0,0,0,0,1,"d.Whiteface",4,4,-21,5.623,2
+"78595018.4",78595018,"likeability","",21,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"d.Whiteface",4,4,-40,10.478,2
+"78567686.4",78567686,"likeability","None",41,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"d.Whiteface",4,4,66,8.073,2
+"78592807.4",78592807,"likeability","",31,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"d.Whiteface",4,4,12,9.3,2
+"78567132.4",78567132,"likeability","There were no issues.",28,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"d.Whiteface",4,4,-76,9.042,2
+"78577037.4",78577037,"likeability","No",34,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"d.Whiteface",4,4,-50,9.971,2
+"78562382.4",78562382,"likeability","none",33,"d.4.Yr.Coll",0,0,0,0,0,1,0,0,0,0,"d.Whiteface",4,4,10,7.372,2
+"78587011.4",78587011,"likeability","No.",28,"b.HS.only",1,0,0,0,0,0,0,0,0,1,"d.Whiteface",4,4,-15,12.541,2
+"78598192.4",78598192,"likeability","no",43,"b.HS.only",1,0,0,0,0,0,0,0,0,1,"d.Whiteface",4,4,-87,8.043,2
+"78505451.4",78505451,"likeability","none",43,"d.4.Yr.Coll",0,0,0,0,1,0,0,0,0,1,"d.Whiteface",4,4,-15,7.4,1
+"78541780.4",78541780,"likeability","No",36,"b.HS.only",1,0,0,0,0,0,0,0,0,1,"d.Whiteface",4,4,0,9.87,2
+"78506673.4",78506673,"likeability","no",40,"c.2.Yr.Coll",1,0,0,0,0,0,1,0,0,1,"d.Whiteface",4,4,-17,7.033,1
+"78553493.4",78553493,"likeability","None.",25,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"d.Whiteface",4,4,-62,9.879,2
+"78516276.4",78516276,"likeability","",23,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"d.Whiteface",4,4,-60,12.015,1
+"78579435.4",78579435,"likeability","No",29,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"d.Whiteface",4,4,18,3.464,2
+"78510069.4",78510069,"likeability","No.",30,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"d.Whiteface",4,4,-13,8.448,2
+"78557263.4",78557263,"likeability","No. Movement (GIFs) of the robots would be more telling, I think. ",28,"c.2.Yr.Coll",1,0,0,0,1,0,0,0,0,0,"d.Whiteface",4,4,-60,6.253,2
+"78575386.4",78575386,"likeability","",32,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"d.Whiteface",4,4,-48,5.2,2
+"78519815.4",78519815,"likeability","",24,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"d.Whiteface",4,4,-44,6.893,2
+"78516834.4",78516834,"likeability","Not _exactly, but there was an iFrame error and this popped up inside the turk window, which is mildly awkward.",43,"Post.Grad.Degree",1,0,0,0,0,0,0,0,0,0,"d.Whiteface",4,4,-20,11.078,1
+"78575643.4",78575643,"likeability","no",61,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"d.Whiteface",4,4,-33,8.717,2
+"78574455.4",78574455,"likeability","No",28,"b.HS.only",1,0,0,0,0,0,0,0,0,1,"d.Whiteface",4,4,80,10.446,2
+"78594280.4",78594280,"likeability","no.",20,"b.HS.only",0,0,0,0,0,0,0,0,1,0,"d.Whiteface",4,4,-49,5.313,2
+"78538917.4",78538917,"likeability","None",26,"Post.Grad.Degree",1,0,0,0,0,0,0,0,0,0,"d.Whiteface",4,4,42,7.153,2
+"78533169.4",78533169,"likeability","nope",43,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"d.Whiteface",4,4,15,13.334,2
+"78569058.4",78569058,"likeability","no did not experince any confution or problems",28,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"d.Whiteface",4,4,-18,6.785,2
+"78590439.4",78590439,"likeability","No",36,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"d.Whiteface",4,4,40,35.629,2
+"78557521.4",78557521,"likeability","no",34,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"d.Whiteface",4,4,2,12.865,2
+"78551923.4",78551923,"likeability","NO",41,"b.HS.only",1,0,0,0,0,0,0,0,0,1,"d.Whiteface",4,4,-72,8.212,2
+"78571036.4",78571036,"likeability","No.",66,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"d.Whiteface",4,4,1,15.882,2
+"78569640.4",78569640,"likeability","No confusion or tech problems.",33,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"d.Whiteface",4,4,-20,10.909,2
+"78546738.4",78546738,"likeability","No technical problems occurred and verything in the survey was clearly written. Thank you",40,"d.4.Yr.Coll",0,0,0,0,0,0,0,0,1,1,"d.Whiteface",4,4,-9,17.064,2
+"78507849.4",78507849,"likeability","no",33,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"d.Whiteface",4,4,-22,4.038,2
+"78564825.4",78564825,"likeability","",24,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"d.Whiteface",4,4,12,4.474,2
+"78577557.4",78577557,"likeability","not at all",40,"d.4.Yr.Coll",0,0,0,0,0,0,1,0,0,1,"d.Whiteface",4,4,-84,5.515,2
+"78570947.4",78570947,"likeability","No",25,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"d.Whiteface",4,4,0,4.104,2
+"78509538.4",78509538,"likeability","nope, very well done.",19,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"d.Whiteface",4,4,77,5.052,2
+"78566517.4",78566517,"likeability","",25,"b.HS.only",1,0,0,0,0,0,0,0,0,1,"d.Whiteface",4,4,-20,28.489,2
+"78505382.4",78505382,"likeability","no",35,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"d.Whiteface",4,4,19,3.88,2
+"78593656.4",78593656,"likeability","no / ",23,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"d.Whiteface",4,4,-16,14.832,2
+"78522761.4",78522761,"likeability","No",31,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"d.Whiteface",4,4,0,14.211,2
+"78557792.4",78557792,"likeability","no",37,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"d.Whiteface",4,4,66,4.379,2
+"78547367.4",78547367,"likeability","No, not at all.  Everything went super smooth !!",39,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"d.Whiteface",4,4,-47,802.283,2
+"78509567.4",78509567,"likeability","none",32,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"d.Whiteface",4,4,-21,4.495,2
+"78500446.4",78500446,"likeability","Nothing at all.",19,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"d.Whiteface",4,4,-43,6.065,2
+"78575348.4",78575348,"likeability","No",29,"Post.Grad.Degree",0,0,0,0,0,1,0,0,0,0,"d.Whiteface",4,4,-42,3.855,1
+"78507364.4",78507364,"likeability","no",22,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"d.Whiteface",4,4,-23,4.399,2
+"78548361.4",78548361,"likeability","no",28,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,1,1,"d.Whiteface",4,4,23,14.569,2
+"78599218.4",78599218,"likeability","No, everything went great for me, thanks!",36,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"d.Whiteface",4,4,10,9.815,2
+"78599540.4",78599540,"likeability","",28,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"d.Whiteface",4,4,-1,7.61,2
+"78521692.4",78521692,"likeability","No.",21,"d.4.Yr.Coll",0,0,0,0,0,1,0,0,0,0,"d.Whiteface",4,4,40,7.188,2
+"78549967.4",78549967,"likeability","no",33,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"d.Whiteface",4,4,-12,5.473,2
+"78542590.4",78542590,"likeability","",27,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"d.Whiteface",4,4,85,7.187,2
+"78504649.4",78504649,"likeability","",24,"b.HS.only",1,0,0,0,0,0,0,0,1,1,"d.Whiteface",4,4,44,9.929,2
+"78505107.4",78505107,"likeability","No",30,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"d.Whiteface",4,4,-75,9.827,2
+"78571006.4",78571006,"likeability","no",28,"d.4.Yr.Coll",0,1,0,0,0,0,0,0,0,1,"d.Whiteface",4,4,-65,40.353,2
+"78577730.4",78577730,"likeability","",29,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"d.Whiteface",4,4,9,55.692,2
+"78518449.4",78518449,"likeability","There was no confusions, or technical issues experienced. ",28,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"d.Whiteface",4,4,-95,4.823,2
+"78500266.4",78500266,"likeability","no",52,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"d.Whiteface",4,4,0,21.235,2
+"78526036.4",78526036,"likeability","",29,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"d.Whiteface",4,4,60,8.718,2
+"78520386.4",78520386,"likeability","No.",29,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"d.Whiteface",4,4,27,9.131,2
+"78583315.4",78583315,"likeability","none",60,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"d.Whiteface",4,4,-62,7.67,2
+"78574033.4",78574033,"likeability","no, everything was very clear",31,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"d.Whiteface",4,4,-20,14.515,2
+"78567619.4",78567619,"likeability","No",47,"b.HS.only",1,0,0,0,0,0,0,0,0,1,"d.Whiteface",4,4,-70,6.17,2
+"78512986.4",78512986,"likeability","no",22,"b.HS.only",0,0,0,0,0,0,0,0,1,0,"d.Whiteface",4,4,-65,4.104,2
+"78565068.4",78565068,"likeability","no",40,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"d.Whiteface",4,4,-42,6.485,2
+"78542649.4",78542649,"likeability","Nah, but theres no way any robot looks as good as that last one currently though!",28,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"d.Whiteface",4,4,-69,21.275,2
+"78559416.4",78559416,"likeability","",28,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"d.Whiteface",4,4,-100,7.136,2
+"78570194.4",78570194,"likeability","no",42,"Post.Grad.Degree",1,0,0,0,0,0,0,1,0,0,"d.Whiteface",4,4,-84,22.171,2
+"78501226.4",78501226,"likeability","no",51,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"d.Whiteface",4,4,-55,5.704,2
+"78556306.4",78556306,"likeability","No",28,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"d.Whiteface",4,4,20,6.689,2
+"78535296.4",78535296,"likeability","no, the pictures loaded up normally",34,"d.4.Yr.Coll",0,0,0,0,0,0,0,0,1,0,"d.Whiteface",4,4,-30,119.983,2
+"78522611.4",78522611,"likeability","",24,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"d.Whiteface",4,4,-40,6.272,2
+"78515824.4",78515824,"likeability","none",25,"b.HS.only",1,0,0,0,0,0,0,0,0,1,"d.Whiteface",4,4,-11,122.357,2
+"78514000.4",78514000,"likeability","",25,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"d.Whiteface",4,4,-100,14.485,2
+"78536587.4",78536587,"likeability","Not at all",25,"b.HS.only",1,0,0,0,0,0,0,0,0,1,"d.Whiteface",4,4,70,3.952,2
+"78540881.4",78540881,"likeability","No",39,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"d.Whiteface",4,4,-35,8.839,2
+"78553448.4",78553448,"likeability","no problems, short and sweet, good pay",34,"Post.Grad.Degree",1,1,0,0,0,0,0,0,0,1,"d.Whiteface",4,4,20,7.098,2
+"78557270.4",78557270,"likeability","",27,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"d.Whiteface",4,4,17,9.624,2
+"78553832.4",78553832,"likeability","No.",28,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"d.Whiteface",4,4,0,12.573,2
+"78589337.4",78589337,"likeability","No.",30,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"d.Whiteface",4,4,-50,10.928,2
+"78533910.4",78533910,"likeability","No, I think everything was well laid out and easy to understand. ",33,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"d.Whiteface",4,4,-100,33.502,2
+"78575891.4",78575891,"likeability","no",31,"c.2.Yr.Coll",0,1,0,0,0,0,0,0,0,1,"d.Whiteface",4,4,-41,20.081,2
+"78585024.4",78585024,"likeability","I did not!",48,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"d.Whiteface",4,4,-58,5.946,2
+"78565830.4",78565830,"likeability","",28,"a.No.HS",1,0,0,0,0,0,0,0,0,0,"d.Whiteface",4,4,60,4.133,2
+"78509275.4",78509275,"likeability","No. ",29,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"d.Whiteface",4,4,-100,5.323,2
+"78599818.4",78599818,"likeability","No ",36,"b.HS.only",0,1,0,0,0,0,0,0,0,0,"d.Whiteface",4,4,-80,39.863,2
+"78563358.4",78563358,"likeability","no",45,"b.HS.only",1,0,0,0,0,0,0,0,0,1,"d.Whiteface",4,4,0,8.229,2
+"78589170.4",78589170,"likeability","No, everything functioned perfectly.",43,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"d.Whiteface",4,4,-20,10.824,2
+"78581243.4",78581243,"likeability","Nothing thanks!",54,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"d.Whiteface",4,4,-100,4.763,2
+"78526599.4",78526599,"likeability","I didn't experience any confusion or technical problems. ",29,"d.4.Yr.Coll",0,0,0,0,0,1,0,0,0,1,"d.Whiteface",4,4,-63,4.941,2
+"78590012.4",78590012,"likeability","no",33,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"d.Whiteface",4,4,17,8.937,2
+"78558626.4",78558626,"likeability","Nope, everything worked just fine.",45,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"d.Whiteface",4,4,65,56.01,2
+"78597626.4",78597626,"likeability","no",40,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"d.Whiteface",4,4,-24,10.225,1
+"78562641.4",78562641,"likeability","No.",29,"b.HS.only",0,0,0,0,0,0,0,1,0,1,"d.Whiteface",4,4,-100,6.789,1
+"78584093.4",78584093,"likeability","no. Everything ran smoothly.",33,"Post.Grad.Degree",0,0,0,0,0,0,0,1,0,1,"d.Whiteface",4,4,-13,19.936,2
+"78519827.4",78519827,"likeability","None",33,"d.4.Yr.Coll",0,0,0,0,0,1,0,0,0,1,"d.Whiteface",4,4,0,6.252,1
+"78599803.4",78599803,"likeability","no",39,"b.HS.only",1,0,0,0,0,0,0,0,0,1,"d.Whiteface",4,4,12,8.211,2
+"78554236.4",78554236,"likeability","No.",52,"d.4.Yr.Coll",1,0,0,0,0,1,0,0,0,1,"d.Whiteface",4,4,-75,10.127,2
+"78591991.4",78591991,"likeability","none",27,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"d.Whiteface",4,4,38,3.708,2
+"78536356.4",78536356,"likeability","Not at all",31,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"d.Whiteface",4,4,-46,2.507,2
+"78546224.4",78546224,"likeability","none",37,"Post.Grad.Degree",0,1,0,0,0,0,0,0,0,0,"d.Whiteface",4,4,-18,7.588,2
+"78548732.5",78548732,"likeability","None",19,"b.HS.only",0,0,0,0,0,1,0,0,0,1,"e.Hanson",5,5,13,4.365,2
+"78553569.5",78553569,"likeability","Nope",30,"d.4.Yr.Coll",0,0,0,0,0,0,0,0,1,0,"e.Hanson",5,5,87,6.33,2
+"78560586.5",78560586,"likeability","",30,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"e.Hanson",5,5,1,5.403,2
+"78598420.5",78598420,"likeability","None.",36,"Post.Grad.Degree",1,0,0,0,0,0,0,0,0,1,"e.Hanson",5,5,-73,6.969,2
+"78595018.5",78595018,"likeability","",21,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"e.Hanson",5,5,62,3.632,2
+"78567686.5",78567686,"likeability","None",41,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"e.Hanson",5,5,18,5.375,2
+"78592807.5",78592807,"likeability","",31,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"e.Hanson",5,5,61,7.674,2
+"78567132.5",78567132,"likeability","There were no issues.",28,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"e.Hanson",5,5,-62,11.646,1
+"78577037.5",78577037,"likeability","No",34,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"e.Hanson",5,5,74,15.222,2
+"78562382.5",78562382,"likeability","none",33,"d.4.Yr.Coll",0,0,0,0,0,1,0,0,0,0,"e.Hanson",5,5,61,8.563,2
+"78587011.5",78587011,"likeability","No.",28,"b.HS.only",1,0,0,0,0,0,0,0,0,1,"e.Hanson",5,5,-81,8.398,2
+"78598192.5",78598192,"likeability","no",43,"b.HS.only",1,0,0,0,0,0,0,0,0,1,"e.Hanson",5,5,61,24.571,2
+"78505451.5",78505451,"likeability","none",43,"d.4.Yr.Coll",0,0,0,0,1,0,0,0,0,1,"e.Hanson",5,5,0,15.022,2
+"78541780.5",78541780,"likeability","No",36,"b.HS.only",1,0,0,0,0,0,0,0,0,1,"e.Hanson",5,5,-15,9.296,2
+"78506673.5",78506673,"likeability","no",40,"c.2.Yr.Coll",1,0,0,0,0,0,1,0,0,1,"e.Hanson",5,5,-39,7.353,2
+"78553493.5",78553493,"likeability","None.",25,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"e.Hanson",5,5,42,14.233,2
+"78516276.5",78516276,"likeability","",23,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"e.Hanson",5,5,40,7.969,2
+"78579435.5",78579435,"likeability","No",29,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"e.Hanson",5,5,-84,5.365,2
+"78510069.5",78510069,"likeability","No.",30,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"e.Hanson",5,5,-17,7.472,2
+"78557263.5",78557263,"likeability","No. Movement (GIFs) of the robots would be more telling, I think. ",28,"c.2.Yr.Coll",1,0,0,0,1,0,0,0,0,0,"e.Hanson",5,5,-20,13.774,2
+"78575386.5",78575386,"likeability","",32,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"e.Hanson",5,5,-70,6.204,2
+"78519815.5",78519815,"likeability","",24,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"e.Hanson",5,5,44,6.596,2
+"78516834.5",78516834,"likeability","Not _exactly, but there was an iFrame error and this popped up inside the turk window, which is mildly awkward.",43,"Post.Grad.Degree",1,0,0,0,0,0,0,0,0,0,"e.Hanson",5,5,-14,9.021,2
+"78575643.5",78575643,"likeability","no",61,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"e.Hanson",5,5,-60,11.138,2
+"78574455.5",78574455,"likeability","No",28,"b.HS.only",1,0,0,0,0,0,0,0,0,1,"e.Hanson",5,5,80,10.339,2
+"78594280.5",78594280,"likeability","no.",20,"b.HS.only",0,0,0,0,0,0,0,0,1,0,"e.Hanson",5,5,-43,8.357,2
+"78538917.5",78538917,"likeability","None",26,"Post.Grad.Degree",1,0,0,0,0,0,0,0,0,0,"e.Hanson",5,5,42,5.844,2
+"78533169.5",78533169,"likeability","nope",43,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"e.Hanson",5,5,-66,6.033,2
+"78569058.5",78569058,"likeability","no did not experince any confution or problems",28,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"e.Hanson",5,5,82,11.938,2
+"78590439.5",78590439,"likeability","No",36,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"e.Hanson",5,5,70,27.186,2
+"78557521.5",78557521,"likeability","no",34,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"e.Hanson",5,5,0,7.778,2
+"78551923.5",78551923,"likeability","NO",41,"b.HS.only",1,0,0,0,0,0,0,0,0,1,"e.Hanson",5,5,8,15.819,2
+"78571036.5",78571036,"likeability","No.",66,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"e.Hanson",5,5,44,7.266,2
+"78569640.5",78569640,"likeability","No confusion or tech problems.",33,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"e.Hanson",5,5,-40,15.966,2
+"78546738.5",78546738,"likeability","No technical problems occurred and verything in the survey was clearly written. Thank you",40,"d.4.Yr.Coll",0,0,0,0,0,0,0,0,1,1,"e.Hanson",5,5,-76,16.471,2
+"78507849.5",78507849,"likeability","no",33,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"e.Hanson",5,5,-44,278.5,2
+"78564825.5",78564825,"likeability","",24,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"e.Hanson",5,5,-9,4.858,2
+"78577557.5",78577557,"likeability","not at all",40,"d.4.Yr.Coll",0,0,0,0,0,0,1,0,0,1,"e.Hanson",5,5,0,17.548,2
+"78570947.5",78570947,"likeability","No",25,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"e.Hanson",5,5,61,5.348,2
+"78509538.5",78509538,"likeability","nope, very well done.",19,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"e.Hanson",5,5,32,26.226,2
+"78566517.5",78566517,"likeability","",25,"b.HS.only",1,0,0,0,0,0,0,0,0,1,"e.Hanson",5,5,90,15.663,2
+"78505382.5",78505382,"likeability","no",35,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"e.Hanson",5,5,-100,5.896,2
+"78593656.5",78593656,"likeability","no / ",23,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"e.Hanson",5,5,-17,13.621,2
+"78522761.5",78522761,"likeability","No",31,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"e.Hanson",5,5,22,14.747,2
+"78557792.5",78557792,"likeability","no",37,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"e.Hanson",5,5,-5,4.893,2
+"78547367.5",78547367,"likeability","No, not at all.  Everything went super smooth !!",39,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"e.Hanson",5,5,-30,10.129,2
+"78509567.5",78509567,"likeability","none",32,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"e.Hanson",5,5,82,5.178,2
+"78500446.5",78500446,"likeability","Nothing at all.",19,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"e.Hanson",5,5,-43,5.737,2
+"78575348.5",78575348,"likeability","No",29,"Post.Grad.Degree",0,0,0,0,0,1,0,0,0,0,"e.Hanson",5,5,45,7.397,2
+"78507364.5",78507364,"likeability","no",22,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"e.Hanson",5,5,-30,8.324,2
+"78548361.5",78548361,"likeability","no",28,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,1,1,"e.Hanson",5,5,73,5.393,2
+"78599218.5",78599218,"likeability","No, everything went great for me, thanks!",36,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"e.Hanson",5,5,-85,22.216,2
+"78599540.5",78599540,"likeability","",28,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"e.Hanson",5,5,-17,6.134,2
+"78521692.5",78521692,"likeability","No.",21,"d.4.Yr.Coll",0,0,0,0,0,1,0,0,0,0,"e.Hanson",5,5,40,5.579,2
+"78549967.5",78549967,"likeability","no",33,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"e.Hanson",5,5,31,3.692,2
+"78542590.5",78542590,"likeability","",27,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"e.Hanson",5,5,-11,10.415,2
+"78504649.5",78504649,"likeability","",24,"b.HS.only",1,0,0,0,0,0,0,0,1,1,"e.Hanson",5,5,7,399.802,2
+"78505107.5",78505107,"likeability","No",30,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"e.Hanson",5,5,85,6.765,2
+"78571006.5",78571006,"likeability","no",28,"d.4.Yr.Coll",0,1,0,0,0,0,0,0,0,1,"e.Hanson",5,5,-22,38.017,2
+"78577730.5",78577730,"likeability","",29,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"e.Hanson",5,5,14,311.537,2
+"78518449.5",78518449,"likeability","There was no confusions, or technical issues experienced. ",28,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"e.Hanson",5,5,89,48.389,2
+"78500266.5",78500266,"likeability","no",52,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"e.Hanson",5,5,-21,8.871,2
+"78526036.5",78526036,"likeability","",29,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"e.Hanson",5,5,-100,6.853,2
+"78520386.5",78520386,"likeability","No.",29,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"e.Hanson",5,5,60,6.417,2
+"78583315.5",78583315,"likeability","none",60,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"e.Hanson",5,5,-25,6.147,2
+"78574033.5",78574033,"likeability","no, everything was very clear",31,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"e.Hanson",5,5,-63,8.139,2
+"78567619.5",78567619,"likeability","No",47,"b.HS.only",1,0,0,0,0,0,0,0,0,1,"e.Hanson",5,5,100,8.589,2
+"78512986.5",78512986,"likeability","no",22,"b.HS.only",0,0,0,0,0,0,0,0,1,0,"e.Hanson",5,5,16,73.757,2
+"78565068.5",78565068,"likeability","no",40,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"e.Hanson",5,5,-23,5.281,2
+"78542649.5",78542649,"likeability","Nah, but theres no way any robot looks as good as that last one currently though!",28,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"e.Hanson",5,5,75,8.233,2
+"78559416.5",78559416,"likeability","",28,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"e.Hanson",5,5,82,12.373,2
+"78570194.5",78570194,"likeability","no",42,"Post.Grad.Degree",1,0,0,0,0,0,0,1,0,0,"e.Hanson",5,5,-60,14.221,2
+"78501226.5",78501226,"likeability","no",51,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"e.Hanson",5,5,21,7.747,2
+"78556306.5",78556306,"likeability","No",28,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"e.Hanson",5,5,95,8.602,2
+"78535296.5",78535296,"likeability","no, the pictures loaded up normally",34,"d.4.Yr.Coll",0,0,0,0,0,0,0,0,1,0,"e.Hanson",5,5,6,6.872,2
+"78522611.5",78522611,"likeability","",24,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"e.Hanson",5,5,-57,4.665,2
+"78515824.5",78515824,"likeability","none",25,"b.HS.only",1,0,0,0,0,0,0,0,0,1,"e.Hanson",5,5,-17,21.919,2
+"78514000.5",78514000,"likeability","",25,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"e.Hanson",5,5,9,6.915,2
+"78536587.5",78536587,"likeability","Not at all",25,"b.HS.only",1,0,0,0,0,0,0,0,0,1,"e.Hanson",5,5,89,8.241,2
+"78540881.5",78540881,"likeability","No",39,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"e.Hanson",5,5,37,5.254,2
+"78553448.5",78553448,"likeability","no problems, short and sweet, good pay",34,"Post.Grad.Degree",1,1,0,0,0,0,0,0,0,1,"e.Hanson",5,5,-100,5.563,2
+"78557270.5",78557270,"likeability","",27,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"e.Hanson",5,5,18,4.216,2
+"78553832.5",78553832,"likeability","No.",28,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"e.Hanson",5,5,20,8.065,2
+"78589337.5",78589337,"likeability","No.",30,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"e.Hanson",5,5,-40,22.212,2
+"78533910.5",78533910,"likeability","No, I think everything was well laid out and easy to understand. ",33,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"e.Hanson",5,5,80,24.413,2
+"78575891.5",78575891,"likeability","no",31,"c.2.Yr.Coll",0,1,0,0,0,0,0,0,0,1,"e.Hanson",5,5,-41,31.435,2
+"78585024.5",78585024,"likeability","I did not!",48,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"e.Hanson",5,5,51,3.941,2
+"78565830.5",78565830,"likeability","",28,"a.No.HS",1,0,0,0,0,0,0,0,0,0,"e.Hanson",5,5,51,3.742,2
+"78509275.5",78509275,"likeability","No. ",29,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"e.Hanson",5,5,-90,4.951,2
+"78599818.5",78599818,"likeability","No ",36,"b.HS.only",0,1,0,0,0,0,0,0,0,0,"e.Hanson",5,5,74,17.979,2
+"78563358.5",78563358,"likeability","no",45,"b.HS.only",1,0,0,0,0,0,0,0,0,1,"e.Hanson",5,5,10,7.794,2
+"78589170.5",78589170,"likeability","No, everything functioned perfectly.",43,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"e.Hanson",5,5,20,18.362,2
+"78581243.5",78581243,"likeability","Nothing thanks!",54,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"e.Hanson",5,5,-71,12.419,2
+"78526599.5",78526599,"likeability","I didn't experience any confusion or technical problems. ",29,"d.4.Yr.Coll",0,0,0,0,0,1,0,0,0,1,"e.Hanson",5,5,-62,5.098,2
+"78590012.5",78590012,"likeability","no",33,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"e.Hanson",5,5,25,34.18,2
+"78558626.5",78558626,"likeability","Nope, everything worked just fine.",45,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"e.Hanson",5,5,-20,11.832,2
+"78597626.5",78597626,"likeability","no",40,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"e.Hanson",5,5,-27,6.659,2
+"78562641.5",78562641,"likeability","No.",29,"b.HS.only",0,0,0,0,0,0,0,1,0,1,"e.Hanson",5,5,-55,7.24,2
+"78584093.5",78584093,"likeability","no. Everything ran smoothly.",33,"Post.Grad.Degree",0,0,0,0,0,0,0,1,0,1,"e.Hanson",5,5,-13,14.222,2
+"78519827.5",78519827,"likeability","None",33,"d.4.Yr.Coll",0,0,0,0,0,1,0,0,0,1,"e.Hanson",5,5,1,17.238,1
+"78599803.5",78599803,"likeability","no",39,"b.HS.only",1,0,0,0,0,0,0,0,0,1,"e.Hanson",5,5,5,11.641,2
+"78554236.5",78554236,"likeability","No.",52,"d.4.Yr.Coll",1,0,0,0,0,1,0,0,0,1,"e.Hanson",5,5,-50,20.244,2
+"78591991.5",78591991,"likeability","none",27,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"e.Hanson",5,5,-37,4.356,2
+"78536356.5",78536356,"likeability","Not at all",31,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"e.Hanson",5,5,-17,5.237,2
+"78546224.5",78546224,"likeability","none",37,"Post.Grad.Degree",0,1,0,0,0,0,0,0,0,0,"e.Hanson",5,5,24,8.761,2
+"78548732.6",78548732,"likeability","None",19,"b.HS.only",0,0,0,0,0,1,0,0,0,1,"f.Human",6,6,95,5.4,2
+"78553569.6",78553569,"likeability","Nope",30,"d.4.Yr.Coll",0,0,0,0,0,0,0,0,1,0,"f.Human",6,6,82,5.629,2
+"78560586.6",78560586,"likeability","",30,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"f.Human",6,6,100,12.319,2
+"78598420.6",78598420,"likeability","None.",36,"Post.Grad.Degree",1,0,0,0,0,0,0,0,0,1,"f.Human",6,6,52,9.599,2
+"78595018.6",78595018,"likeability","",21,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"f.Human",6,6,63,4.166,2
+"78567686.6",78567686,"likeability","None",41,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"f.Human",6,6,100,6.406,2
+"78592807.6",78592807,"likeability","",31,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"f.Human",6,6,82,15.53,2
+"78567132.6",78567132,"likeability","There were no issues.",28,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"f.Human",6,6,85,18.846,2
+"78577037.6",78577037,"likeability","No",34,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"f.Human",6,6,79,19.592,2
+"78562382.6",78562382,"likeability","none",33,"d.4.Yr.Coll",0,0,0,0,0,1,0,0,0,0,"f.Human",6,6,94,4.247,2
+"78587011.6",78587011,"likeability","No.",28,"b.HS.only",1,0,0,0,0,0,0,0,0,1,"f.Human",6,6,100,14.834,2
+"78598192.6",78598192,"likeability","no",43,"b.HS.only",1,0,0,0,0,0,0,0,0,1,"f.Human",6,6,60,9.854,2
+"78505451.6",78505451,"likeability","none",43,"d.4.Yr.Coll",0,0,0,0,1,0,0,0,0,1,"f.Human",6,6,-3,8.552,2
+"78541780.6",78541780,"likeability","No",36,"b.HS.only",1,0,0,0,0,0,0,0,0,1,"f.Human",6,6,80,11.99,2
+"78506673.6",78506673,"likeability","no",40,"c.2.Yr.Coll",1,0,0,0,0,0,1,0,0,1,"f.Human",6,6,-2,7.763,2
+"78553493.6",78553493,"likeability","None.",25,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"f.Human",6,6,42,10.924,2
+"78516276.6",78516276,"likeability","",23,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"f.Human",6,6,82,6.735,2
+"78579435.6",78579435,"likeability","No",29,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"f.Human",6,6,-74,6.099,2
+"78510069.6",78510069,"likeability","No.",30,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"f.Human",6,6,85,7.853,2
+"78557263.6",78557263,"likeability","No. Movement (GIFs) of the robots would be more telling, I think. ",28,"c.2.Yr.Coll",1,0,0,0,1,0,0,0,0,0,"f.Human",6,6,40,12.586,2
+"78575386.6",78575386,"likeability","",32,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"f.Human",6,6,-40,8.8,2
+"78519815.6",78519815,"likeability","",24,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"f.Human",6,6,61,5.782,2
+"78516834.6",78516834,"likeability","Not _exactly, but there was an iFrame error and this popped up inside the turk window, which is mildly awkward.",43,"Post.Grad.Degree",1,0,0,0,0,0,0,0,0,0,"f.Human",6,6,-19,19.847,2
+"78575643.6",78575643,"likeability","no",61,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"f.Human",6,6,-63,14.32,2
+"78574455.6",78574455,"likeability","No",28,"b.HS.only",1,0,0,0,0,0,0,0,0,1,"f.Human",6,6,40,28.529,2
+"78594280.6",78594280,"likeability","no.",20,"b.HS.only",0,0,0,0,0,0,0,0,1,0,"f.Human",6,6,100,6.568,2
+"78538917.6",78538917,"likeability","None",26,"Post.Grad.Degree",1,0,0,0,0,0,0,0,0,0,"f.Human",6,6,70,7.153,2
+"78533169.6",78533169,"likeability","nope",43,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"f.Human",6,6,-100,7.087,2
+"78569058.6",78569058,"likeability","no did not experince any confution or problems",28,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"f.Human",6,6,37,7.576,2
+"78590439.6",78590439,"likeability","No",36,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"f.Human",6,6,80,33.782,2
+"78557521.6",78557521,"likeability","no",34,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"f.Human",6,6,-2,10.97,2
+"78551923.6",78551923,"likeability","NO",41,"b.HS.only",1,0,0,0,0,0,0,0,0,1,"f.Human",6,6,100,8.939,2
+"78571036.6",78571036,"likeability","No.",66,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"f.Human",6,6,41,13.641,2
+"78569640.6",78569640,"likeability","No confusion or tech problems.",33,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"f.Human",6,6,-15,22.706,2
+"78546738.6",78546738,"likeability","No technical problems occurred and verything in the survey was clearly written. Thank you",40,"d.4.Yr.Coll",0,0,0,0,0,0,0,0,1,1,"f.Human",6,6,100,27.516,2
+"78507849.6",78507849,"likeability","no",33,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"f.Human",6,6,-22,13.632,2
+"78564825.6",78564825,"likeability","",24,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"f.Human",6,6,72,3.259,2
+"78577557.6",78577557,"likeability","not at all",40,"d.4.Yr.Coll",0,0,0,0,0,0,1,0,0,1,"f.Human",6,6,95,9.692,2
+"78570947.6",78570947,"likeability","No",25,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"f.Human",6,6,100,3.957,2
+"78509538.6",78509538,"likeability","nope, very well done.",19,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"f.Human",6,6,0,8.7,2
+"78566517.6",78566517,"likeability","",25,"b.HS.only",1,0,0,0,0,0,0,0,0,1,"f.Human",6,6,100,9.105,2
+"78505382.6",78505382,"likeability","no",35,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"f.Human",6,6,-100,4.604,2
+"78593656.6",78593656,"likeability","no / ",23,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"f.Human",6,6,81,37.893,2
+"78522761.6",78522761,"likeability","No",31,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"f.Human",6,6,62,16.607,2
+"78557792.6",78557792,"likeability","no",37,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"f.Human",6,6,5,7.716,2
+"78547367.6",78547367,"likeability","No, not at all.  Everything went super smooth !!",39,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"f.Human",6,6,51,28.383,2
+"78509567.6",78509567,"likeability","none",32,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"f.Human",6,6,100,6.566,2
+"78500446.6",78500446,"likeability","Nothing at all.",19,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"f.Human",6,6,-9,8.202,2
+"78575348.6",78575348,"likeability","No",29,"Post.Grad.Degree",0,0,0,0,0,1,0,0,0,0,"f.Human",6,6,100,2.684,2
+"78507364.6",78507364,"likeability","no",22,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"f.Human",6,6,50,11.991,2
+"78548361.6",78548361,"likeability","no",28,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,1,1,"f.Human",6,6,64,7.887,2
+"78599218.6",78599218,"likeability","No, everything went great for me, thanks!",36,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"f.Human",6,6,35,27.071,2
+"78599540.6",78599540,"likeability","",28,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"f.Human",6,6,23,7.234,2
+"78521692.6",78521692,"likeability","No.",21,"d.4.Yr.Coll",0,0,0,0,0,1,0,0,0,0,"f.Human",6,6,60,4.613,2
+"78549967.6",78549967,"likeability","no",33,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"f.Human",6,6,24,6.019,2
+"78542590.6",78542590,"likeability","",27,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"f.Human",6,6,100,9.257,2
+"78504649.6",78504649,"likeability","",24,"b.HS.only",1,0,0,0,0,0,0,0,1,1,"f.Human",6,6,-10,53.072,2
+"78505107.6",78505107,"likeability","No",30,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"f.Human",6,6,100,4.2,2
+"78571006.6",78571006,"likeability","no",28,"d.4.Yr.Coll",0,1,0,0,0,0,0,0,0,1,"f.Human",6,6,0,30.994,2
+"78577730.6",78577730,"likeability","",29,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"f.Human",6,6,-9,7.816,2
+"78518449.6",78518449,"likeability","There was no confusions, or technical issues experienced. ",28,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"f.Human",6,6,85,3.668,2
+"78500266.6",78500266,"likeability","no",52,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"f.Human",6,6,100,16.972,2
+"78526036.6",78526036,"likeability","",29,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"f.Human",6,6,42,7.615,2
+"78520386.6",78520386,"likeability","No.",29,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"f.Human",6,6,90,7.032,2
+"78583315.6",78583315,"likeability","none",60,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"f.Human",6,6,22,6.657,2
+"78574033.6",78574033,"likeability","no, everything was very clear",31,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"f.Human",6,6,-65,13.288,2
+"78567619.6",78567619,"likeability","No",47,"b.HS.only",1,0,0,0,0,0,0,0,0,1,"f.Human",6,6,100,12.033,2
+"78512986.6",78512986,"likeability","no",22,"b.HS.only",0,0,0,0,0,0,0,0,1,0,"f.Human",6,6,90,16.031,2
+"78565068.6",78565068,"likeability","no",40,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"f.Human",6,6,-21,5.911,2
+"78542649.6",78542649,"likeability","Nah, but theres no way any robot looks as good as that last one currently though!",28,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"f.Human",6,6,95,12.343,2
+"78559416.6",78559416,"likeability","",28,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"f.Human",6,6,89,8.085,2
+"78570194.6",78570194,"likeability","no",42,"Post.Grad.Degree",1,0,0,0,0,0,0,1,0,0,"f.Human",6,6,80,7.842,2
+"78501226.6",78501226,"likeability","no",51,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"f.Human",6,6,28,57.39,2
+"78556306.6",78556306,"likeability","No",28,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"f.Human",6,6,100,6.156,2
+"78535296.6",78535296,"likeability","no, the pictures loaded up normally",34,"d.4.Yr.Coll",0,0,0,0,0,0,0,0,1,0,"f.Human",6,6,37,8.173,2
+"78522611.6",78522611,"likeability","",24,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"f.Human",6,6,-61,9.565,2
+"78515824.6",78515824,"likeability","none",25,"b.HS.only",1,0,0,0,0,0,0,0,0,1,"f.Human",6,6,36,23.263,2
+"78514000.6",78514000,"likeability","",25,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"f.Human",6,6,85,19.238,2
+"78536587.6",78536587,"likeability","Not at all",25,"b.HS.only",1,0,0,0,0,0,0,0,0,1,"f.Human",6,6,99,4.914,2
+"78540881.6",78540881,"likeability","No",39,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"f.Human",6,6,100,16.975,2
+"78553448.6",78553448,"likeability","no problems, short and sweet, good pay",34,"Post.Grad.Degree",1,1,0,0,0,0,0,0,0,1,"f.Human",6,6,-62,6.682,2
+"78557270.6",78557270,"likeability","",27,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"f.Human",6,6,47,6.509,2
+"78553832.6",78553832,"likeability","No.",28,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"f.Human",6,6,50,8.763,2
+"78589337.6",78589337,"likeability","No.",30,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"f.Human",6,6,0,6.71,2
+"78533910.6",78533910,"likeability","No, I think everything was well laid out and easy to understand. ",33,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"f.Human",6,6,100,25.856,2
+"78575891.6",78575891,"likeability","no",31,"c.2.Yr.Coll",0,1,0,0,0,0,0,0,0,1,"f.Human",6,6,41,8.748,2
+"78585024.6",78585024,"likeability","I did not!",48,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"f.Human",6,6,92,5.037,2
+"78565830.6",78565830,"likeability","",28,"a.No.HS",1,0,0,0,0,0,0,0,0,0,"f.Human",6,6,77,4.019,2
+"78509275.6",78509275,"likeability","No. ",29,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"f.Human",6,6,-100,4.769,2
+"78599818.6",78599818,"likeability","No ",36,"b.HS.only",0,1,0,0,0,0,0,0,0,0,"f.Human",6,6,100,24.674,2
+"78563358.6",78563358,"likeability","no",45,"b.HS.only",1,0,0,0,0,0,0,0,0,1,"f.Human",6,6,20,9.935,2
+"78589170.6",78589170,"likeability","No, everything functioned perfectly.",43,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"f.Human",6,6,-20,11.874,2
+"78581243.6",78581243,"likeability","Nothing thanks!",54,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"f.Human",6,6,-100,7.595,2
+"78526599.6",78526599,"likeability","I didn't experience any confusion or technical problems. ",29,"d.4.Yr.Coll",0,0,0,0,0,1,0,0,0,1,"f.Human",6,6,36,14.02,2
+"78590012.6",78590012,"likeability","no",33,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"f.Human",6,6,48,821.413,2
+"78558626.6",78558626,"likeability","Nope, everything worked just fine.",45,"c.2.Yr.Coll",1,0,0,0,0,0,0,0,0,1,"f.Human",6,6,100,18.422,2
+"78597626.6",78597626,"likeability","no",40,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"f.Human",6,6,48,6.514,2
+"78562641.6",78562641,"likeability","No.",29,"b.HS.only",0,0,0,0,0,0,0,1,0,1,"f.Human",6,6,0,7.554,2
+"78584093.6",78584093,"likeability","no. Everything ran smoothly.",33,"Post.Grad.Degree",0,0,0,0,0,0,0,1,0,1,"f.Human",6,6,16,9.004,2
+"78519827.6",78519827,"likeability","None",33,"d.4.Yr.Coll",0,0,0,0,0,1,0,0,0,1,"f.Human",6,6,2,5.478,1
+"78599803.6",78599803,"likeability","no",39,"b.HS.only",1,0,0,0,0,0,0,0,0,1,"f.Human",6,6,37,8.693,2
+"78554236.6",78554236,"likeability","No.",52,"d.4.Yr.Coll",1,0,0,0,0,1,0,0,0,1,"f.Human",6,6,-100,8.122,2
+"78591991.6",78591991,"likeability","none",27,"d.4.Yr.Coll",1,0,0,0,0,0,0,0,0,0,"f.Human",6,6,74,4.255,2
+"78536356.6",78536356,"likeability","Not at all",31,"b.HS.only",1,0,0,0,0,0,0,0,0,0,"f.Human",6,6,55,2.969,2
+"78546224.6",78546224,"likeability","none",37,"Post.Grad.Degree",0,1,0,0,0,0,0,0,0,0,"f.Human",6,6,100,6.739,2

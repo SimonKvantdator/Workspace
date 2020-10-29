@@ -1,0 +1,176 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      5799,        168]
+NotebookOptionsPosition[      5345,        151]
+NotebookOutlinePosition[      5717,        167]
+CellTagsIndexPosition[      5674,        164]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{"Betrakta", " ", "reaktionen", " ", 
+       SuperscriptBox["K", "-"]}], "+", 
+      SuperscriptBox["p", "+"]}], "\[Rule]", 
+     RowBox[{
+      SuperscriptBox["Omega", "-"], "+", 
+      SuperscriptBox["K", "+"], "+", 
+      RowBox[{
+       RowBox[{
+        SuperscriptBox["K", "0"], ".", " ", "Om"}], " ", "protonen", " ", 
+       "befinner", " ", "sig", " ", "i", " ", "vila", " ", "i", " ", 
+       "labbsystemet"}]}]}], ",", 
+    RowBox[{"vilken", " ", "kinetisk", " ", "energi"}], ",", 
+    RowBox[{"i", " ", "labbsystemet"}], ",", 
+    RowBox[{
+    "beh\[ODoubleDot]ver", " ", "den", " ", "inkommande", " ", "kaonen", " ", 
+     "minst", " ", "ha", " ", "f\[ODoubleDot]r", " ", "att", " ", 
+     "reaktionen", " ", "skall", " ", "kunna", " ", 
+     RowBox[{"ske", "?"}]}]}], " ", "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"ClearAll", "[", "\"\<Global`*\>\"", "]"}], "\[IndentingNewLine]", 
+   
+   RowBox[{"Remove", "[", "\"\<Global`*\>\"", "]"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"c", "=", 
+     RowBox[{"Quantity", "[", "\"\<SpeedOfLight\>\"", "]"}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     SubscriptBox["m", "Ommegaminus"], "=", 
+     RowBox[{
+      RowBox[{"Entity", "[", 
+       RowBox[{"\"\<Particle\>\"", ",", "\"\<Omega\>\""}], "]"}], "[", 
+      RowBox[{"EntityProperty", "[", 
+       RowBox[{"\"\<Particle\>\"", ",", "\"\<Mass\>\""}], "]"}], "]"}]}], 
+    ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     SubscriptBox["m", "KaonPlus"], "=", 
+     RowBox[{
+      RowBox[{"Entity", "[", 
+       RowBox[{"\"\<Particle\>\"", ",", "\"\<KPlus\>\""}], "]"}], "[", 
+      RowBox[{"EntityProperty", "[", 
+       RowBox[{"\"\<Particle\>\"", ",", "\"\<Mass\>\""}], "]"}], "]"}]}], 
+    ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     SubscriptBox["m", "Kaon0"], "=", 
+     RowBox[{
+      RowBox[{"Entity", "[", 
+       RowBox[{"\"\<Particle\>\"", ",", "\"\<KZero\>\""}], "]"}], "[", 
+      RowBox[{"EntityProperty", "[", 
+       RowBox[{"\"\<Particle\>\"", ",", "\"\<Mass\>\""}], "]"}], "]"}]}], 
+    ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     SubscriptBox["m", "KaonMinus"], "=", 
+     RowBox[{
+      RowBox[{"Entity", "[", 
+       RowBox[{"\"\<Particle\>\"", ",", "\"\<KMinus\>\""}], "]"}], "[", 
+      RowBox[{"EntityProperty", "[", 
+       RowBox[{"\"\<Particle\>\"", ",", "\"\<Mass\>\""}], "]"}], "]"}]}], 
+    ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     SubscriptBox["m", "p"], "=", 
+     RowBox[{
+      RowBox[{"Entity", "[", 
+       RowBox[{"\"\<Particle\>\"", ",", "\"\<Proton\>\""}], "]"}], "[", 
+      RowBox[{"EntityProperty", "[", 
+       RowBox[{"\"\<Particle\>\"", ",", "\"\<Mass\>\""}], "]"}], "]"}]}], 
+    ";"}], "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"sol", "=", 
+     RowBox[{
+      RowBox[{"Solve", "[", 
+       RowBox[{
+        RowBox[{
+         SuperscriptBox[
+          SubscriptBox["p", "KaonMinus"], "2"], "==", 
+         RowBox[{
+          RowBox[{
+           SuperscriptBox[
+            RowBox[{"(", 
+             RowBox[{
+              SubscriptBox["m", "Ommegaminus"], "+", 
+              SubscriptBox["m", "KaonPlus"], "+", 
+              SubscriptBox["m", "Kaon0"]}], ")"}], "2"], 
+           SuperscriptBox["c", "2"]}], "-", 
+          RowBox[{
+           SuperscriptBox[
+            RowBox[{"(", 
+             RowBox[{
+              SubscriptBox["m", "KaonMinus"], "+", 
+              SubscriptBox["m", "p"]}], ")"}], "2"], 
+           SuperscriptBox["c", "2"]}]}]}], ",", 
+        SubscriptBox["p", "KaonMinus"]}], "]"}], "[", 
+      RowBox[{"[", "2", "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{"UnitConvert", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       SubscriptBox["p", "KaonMinus"], " ", "c"}], "/.", "sol"}], ",", 
+     "\"\<Electronvolts\>\""}], "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.8073495087135077`*^9, 3.807349568970447*^9}, {
+  3.8073496477122602`*^9, 3.807349933607871*^9}, {3.8073499639510193`*^9, 
+  3.807350293261299*^9}, {3.8073503458009377`*^9, 3.807350528381919*^9}, {
+  3.8073511639066563`*^9, 
+  3.8073512271076508`*^9}},ExpressionUUID->"b0fd540f-cb7b-4370-b4a7-\
+4f5c5435fb56"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "2.2461126332417272414172531241`5.509596237020739*^9","\"eV\"",
+   "electronvolts","\"Electronvolts\""},
+  "Quantity"]], "Output",
+ CellChangeTimes->{
+  3.807350027219062*^9, {3.807350074318891*^9, 3.807350183867807*^9}, {
+   3.8073502605103197`*^9, 3.807350294359811*^9}, 3.807350348915803*^9, 
+   3.807350530130865*^9},
+ CellLabel->
+  "Out[234]=",ExpressionUUID->"f7146b5f-ca1b-41d6-8731-6b820b8b93d6"]
+}, Open  ]]
+},
+WindowSize->{764, 836},
+WindowMargins->{{Automatic, 0}, {0, Automatic}},
+TaggingRules->{"TryRealOnly" -> False},
+FrontEndVersion->"12.0 for Linux x86 (64-bit) (April 8, 2019)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 4311, 114, 417, "Input",ExpressionUUID->"b0fd540f-cb7b-4370-b4a7-4f5c5435fb56"],
+Cell[4894, 138, 435, 10, 41, "Output",ExpressionUUID->"f7146b5f-ca1b-41d6-8731-6b820b8b93d6"]
+}, Open  ]]
+}
+]
+*)
+

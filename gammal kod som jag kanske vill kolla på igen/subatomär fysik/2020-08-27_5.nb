@@ -1,0 +1,126 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3878,        118]
+NotebookOptionsPosition[      3371,        101]
+NotebookOutlinePosition[      3705,        116]
+CellTagsIndexPosition[      3662,        113]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{"Beh\[ODoubleDot]ver", " ", "ej", " ", "vara", " ", "med"}], " ", 
+   "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"E1", "=", 
+     RowBox[{
+      RowBox[{"Quantity", "[", 
+       RowBox[{"2.", ",", "\"\<Electronvolts\>\""}], "]"}], "+", "T"}]}], 
+    ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"E2", "=", 
+     RowBox[{
+      RowBox[{"Quantity", "[", 
+       RowBox[{"3.", ",", "\"\<Electronvolts\>\""}], "]"}], "+", "T"}]}], 
+    ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"theta12", "=", 
+     RowBox[{"34.", 
+      RowBox[{"(", 
+       RowBox[{"Pi", "/", "180"}], ")"}]}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{"hbar", "=", 
+    RowBox[{"Quantity", "[", "\"\<hbar\>\"", "]"}]}], "\[IndentingNewLine]", 
+   "\[IndentingNewLine]", 
+   RowBox[{"NSolve", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       SuperscriptBox[
+        RowBox[{"Sin", "[", "theta12", "]"}], "2"], 
+       SuperscriptBox[
+        RowBox[{"Cos", "[", "theta12", "]"}], "2"], "2", 
+       SuperscriptBox[
+        RowBox[{"Sin", "[", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"E2", "-", "E1"}], ")"}], 
+          RowBox[{"t", "/", "hbar"}]}], "]"}], "2"]}], "\[Equal]", 
+      RowBox[{"1", "/", "2"}]}], ",", "t"}], "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.8075268667814503`*^9, 3.807527195781517*^9}, 
+   3.8075274031458187`*^9, {3.807527679930193*^9, 
+   3.8075276910602827`*^9}},ExpressionUUID->"413a77ff-9738-47da-b80b-\
+3ed53cf9feaa"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "1","\"\[HBar]\"","reduced Planck constant","\"ReducedPlanckConstant\""},
+  "Quantity"]], "Output",
+ CellChangeTimes->{{3.8075269406356897`*^9, 3.807526951569523*^9}, {
+   3.807527078842577*^9, 3.8075271970242*^9}, 3.80752740437788*^9},
+ CellLabel->
+  "Out[116]=",ExpressionUUID->"34370346-da4d-455e-a8f0-853780d309d8"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"t", "\[Rule]", 
+     TemplateBox[{RowBox[{"(", 
+         RowBox[{
+           RowBox[{"-", "1.0339169242309646`*^-15"}], "+", 
+           RowBox[{"2.5918476504336312`*^-16", " ", "\[ImaginaryI]"}]}], 
+         ")"}],"\"s\"","seconds","\"Seconds\""},
+      "Quantity"]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"t", "\[Rule]", 
+     TemplateBox[{RowBox[{"(", 
+         RowBox[{"1.0339169242309646`*^-15", "-", 
+           RowBox[{"2.5918476504336312`*^-16", " ", "\[ImaginaryI]"}]}], 
+         ")"}],"\"s\"","seconds","\"Seconds\""},
+      "Quantity"]}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{{3.8075269406356897`*^9, 3.807526951569523*^9}, {
+   3.807527078842577*^9, 3.8075271970242*^9}, 3.80752740441063*^9},
+ CellLabel->
+  "Out[117]=",ExpressionUUID->"b91bfaf9-0a43-46b4-b31e-09620b68f161"]
+}, Open  ]]
+},
+WindowSize->{764, 836},
+WindowMargins->{{150, Automatic}, {0, Automatic}},
+FrontEndVersion->"12.0 for Linux x86 (64-bit) (April 8, 2019)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 1547, 44, 177, "Input",ExpressionUUID->"413a77ff-9738-47da-b80b-3ed53cf9feaa"],
+Cell[2130, 68, 350, 7, 35, "Output",ExpressionUUID->"34370346-da4d-455e-a8f0-853780d309d8"],
+Cell[2483, 77, 872, 21, 85, "Output",ExpressionUUID->"b91bfaf9-0a43-46b4-b31e-09620b68f161"]
+}, Open  ]]
+}
+]
+*)
+

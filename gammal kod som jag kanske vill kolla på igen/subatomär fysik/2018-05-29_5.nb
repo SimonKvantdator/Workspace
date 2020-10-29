@@ -1,0 +1,191 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      5776,        183]
+NotebookOptionsPosition[      5361,        167]
+NotebookOutlinePosition[      5693,        182]
+CellTagsIndexPosition[      5650,        179]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{
+    RowBox[{"Visa", " ", "att"}], ",", " ", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{
+        RowBox[{
+         RowBox[{
+          RowBox[{"om", " ", "reaktionen", " ", "A"}], "\[Rule]", 
+          RowBox[{"B", "\[Rule]", 
+           RowBox[{
+           "C", " ", "har", " ", "s\[ODoubleDot]nderfallskonstanterna", " ", 
+            SubscriptBox["lambda", "A"]}]}]}], " ", "&"}], " ", 
+        SubscriptBox["lambda", "B"]}], " ", "&"}], " ", "det", " ", "endast", 
+      " ", "finns", " ", "\[ADoubleDot]mne", " ", "A", " ", "vid", " ", "t"}],
+      "=", "0"}], ",", " ", 
+    RowBox[{"d\[ARing]", " ", "ges", " ", 
+     SubscriptBox["n", "B"], 
+     RowBox[{"(", "t", ")"}], " ", "av", " ", 
+     FractionBox[
+      RowBox[{
+       SuperscriptBox["\[ExponentialE]", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"-", "t"}], " ", 
+          SubscriptBox["lambda", "A"]}], "-", 
+         RowBox[{"t", " ", 
+          SubscriptBox["lambda", "B"]}]}]], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"-", 
+          SuperscriptBox["\[ExponentialE]", 
+           RowBox[{"t", " ", 
+            SubscriptBox["lambda", "A"]}]]}], "+", 
+         SuperscriptBox["\[ExponentialE]", 
+          RowBox[{"t", " ", 
+           SubscriptBox["lambda", "B"]}]]}], ")"}], " ", 
+       SubscriptBox["lambda", "A"]}], 
+      RowBox[{
+       SubscriptBox["lambda", "A"], "-", 
+       SubscriptBox["lambda", "B"]}]]}]}], " ", "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"ClearAll", "[", "\"\<Global`*\>\"", "]"}], "\[IndentingNewLine]", 
+   
+   RowBox[{"Remove", "[", "\"\<Global`*\>\"", "]"}], "\[IndentingNewLine]", 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"eqns1", "=", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{
+        RowBox[{
+         SubscriptBox["n", "A"], "[", "0", "]"}], "\[Equal]", "1"}], ",", 
+       RowBox[{
+        RowBox[{
+         RowBox[{
+          SubscriptBox["n", "A"], "'"}], "[", "t", "]"}], "\[Equal]", 
+        RowBox[{
+         RowBox[{"-", 
+          SubscriptBox["lambda", "A"]}], 
+         RowBox[{
+          SubscriptBox["n", "A"], "[", "t", "]"}]}]}]}], "}"}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"eqns2", "=", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{
+        RowBox[{
+         SubscriptBox["n", "B"], "[", "0", "]"}], "\[Equal]", "0"}], ",", 
+       RowBox[{
+        RowBox[{
+         RowBox[{
+          SubscriptBox["n", "B"], "'"}], "[", "t", "]"}], "\[Equal]", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"-", 
+           SubscriptBox["lambda", "B"]}], 
+          RowBox[{
+           SubscriptBox["n", "B"], "[", "t", "]"}]}], "+", 
+         RowBox[{
+          RowBox[{
+           SubscriptBox["n", "A"], "'"}], "[", "t", "]"}]}]}]}], "}"}]}], 
+    ";"}], "\[IndentingNewLine]", 
+   RowBox[{"sol", "=", 
+    RowBox[{"DSolve", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"eqns1", ",", "eqns2"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{
+         SubscriptBox["n", "A"], "[", "t", "]"}], ",", 
+        RowBox[{
+         SubscriptBox["n", "B"], "[", "t", "]"}]}], "}"}], ",", "t"}], 
+     "]"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.807350919937475*^9, 3.80735100589946*^9}, {
+  3.807351249997713*^9, 3.80735130000706*^9}, {3.8073513379151506`*^9, 
+  3.8073513799823503`*^9}, {3.807351418734083*^9, 
+  3.807351468866637*^9}},ExpressionUUID->"c5b5b762-c709-45ac-b9ee-\
+ad303174afc5"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      SubscriptBox["n", "A"], "[", "t", "]"}], "\[Rule]", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"-", "t"}], " ", 
+       SubscriptBox["lambda", "A"]}]]}], ",", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["n", "B"], "[", "t", "]"}], "\[Rule]", 
+     FractionBox[
+      RowBox[{
+       SuperscriptBox["\[ExponentialE]", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"-", "t"}], " ", 
+          SubscriptBox["lambda", "A"]}], "-", 
+         RowBox[{"t", " ", 
+          SubscriptBox["lambda", "B"]}]}]], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"-", 
+          SuperscriptBox["\[ExponentialE]", 
+           RowBox[{"t", " ", 
+            SubscriptBox["lambda", "A"]}]]}], "+", 
+         SuperscriptBox["\[ExponentialE]", 
+          RowBox[{"t", " ", 
+           SubscriptBox["lambda", "B"]}]]}], ")"}], " ", 
+       SubscriptBox["lambda", "A"]}], 
+      RowBox[{
+       SubscriptBox["lambda", "A"], "-", 
+       SubscriptBox["lambda", "B"]}]]}]}], "}"}], "}"}]], "Output",
+ CellChangeTimes->{{3.807351275146975*^9, 3.807351300959*^9}},
+ CellLabel->"Out[20]=",ExpressionUUID->"84c21cb7-b572-4c28-be8a-d9176e363d5d"]
+}, Open  ]]
+},
+WindowSize->{764, 836},
+WindowMargins->{{Automatic, 0}, {0, Automatic}},
+FrontEndVersion->"12.0 for Linux x86 (64-bit) (April 8, 2019)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 3503, 103, 262, "Input",ExpressionUUID->"c5b5b762-c709-45ac-b9ee-ad303174afc5"],
+Cell[4086, 127, 1259, 37, 63, "Output",ExpressionUUID->"84c21cb7-b572-4c28-be8a-d9176e363d5d"]
+}, Open  ]]
+}
+]
+*)
+

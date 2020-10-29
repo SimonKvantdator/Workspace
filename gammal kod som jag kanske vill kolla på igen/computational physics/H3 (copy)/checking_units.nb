@@ -1,0 +1,216 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      7905,        208]
+NotebookOptionsPosition[      7023,        187]
+NotebookOutlinePosition[      7356,        202]
+CellTagsIndexPosition[      7313,        199]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{"ClearAll", "[", "\"\<Global`*\>\"", "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"\[HBar]", "=", 
+   RowBox[{"Quantity", "[", "\"\<hbar\>\"", "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Print", "[", 
+  RowBox[{"\"\<\[HBar] = \>\"", ",", 
+   RowBox[{
+    RowBox[{"UnitConvert", "[", 
+     RowBox[{"\[HBar]", ",", "\"\<eV * fs\>\""}], "]"}], "//", "N"}]}], 
+  "]"}]}], "Input",
+ CellChangeTimes->{{3.7877205173199663`*^9, 3.787720548440394*^9}, {
+   3.787720595947242*^9, 3.787720623673169*^9}, {3.787720660388679*^9, 
+   3.787720667152062*^9}, {3.787721026060602*^9, 3.78772104465773*^9}, {
+   3.787721108286726*^9, 3.7877211415050983`*^9}, {3.787721235092905*^9, 
+   3.7877213283155518`*^9}, {3.787721364990274*^9, 3.7877214211696453`*^9}, {
+   3.787721459125125*^9, 3.7877214718421583`*^9}, 3.787721538055826*^9, {
+   3.787721706808283*^9, 3.787721773199885*^9}, {3.787739894010107*^9, 
+   3.787739912856464*^9}, {3.7877421442801437`*^9, 3.7877422279627113`*^9}, {
+   3.787742524137506*^9, 3.787742524612221*^9}, 
+   3.7877426009268417`*^9},ExpressionUUID->"4351412e-9e62-489b-ad1b-\
+2f4ee6e01d81"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"d", "\[Element]", 
+   TemplateBox[{},
+    "Reals"]}], "&&", 
+  RowBox[{"d", ">", "0"}], "&&", 
+  RowBox[{"x0", "\[Element]", 
+   TemplateBox[{},
+    "Reals"]}], "&&", 
+  RowBox[{"p0", "\[Element]", 
+   TemplateBox[{},
+    "Reals"]}]}]], "Output",
+ CellChangeTimes->{
+  3.787742162738699*^9, {3.7877422061284933`*^9, 3.787742232296476*^9}, 
+   3.787742354392335*^9, 3.787742498341642*^9},
+ CellLabel->"Out[2]=",ExpressionUUID->"37ef432e-cfaa-423f-ac22-415d4e2d7b93"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\[HBar] = \"\>", "\[InvisibleSpace]", 
+   TemplateBox[{
+    "0.6582119569509066`",RowBox[{"\"fs\"", "\[ThinSpace]", "\"eV\""}],
+     "femtosecond electronvolts",
+     RowBox[{"\"Electronvolts\"", " ", "\"Femtoseconds\""}]},
+    "Quantity"]}],
+  SequenceForm["\[HBar] = ", 
+   Quantity[0.6582119569509066, "Electronvolts" "Femtoseconds"]],
+  Editable->False]], "Print",
+ CellChangeTimes->{
+  3.787721325234384*^9, 3.787721361627872*^9, 3.7877214090179033`*^9, {
+   3.787721572705227*^9, 3.787721595710018*^9}, {3.787721770680017*^9, 
+   3.787721773642138*^9}, 3.787742162752866*^9, {3.787742206136158*^9, 
+   3.787742232305584*^9}, 3.7877423543995256`*^9, 3.787742500190261*^9},
+ CellLabel->
+  "During evaluation of \
+In[1]:=",ExpressionUUID->"26c7b347-a946-4c56-935d-0bbe65e1c07e"]
+}, Open  ]],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"hydrogenMass", "=", 
+   RowBox[{
+    RowBox[{"Entity", "[", 
+     RowBox[{"\"\<Element\>\"", ",", "\"\<Hydrogen\>\""}], "]"}], "[", 
+    RowBox[{"EntityProperty", "[", 
+     RowBox[{"\"\<Element\>\"", ",", "\"\<AtomicMass\>\""}], "]"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Print", "[", 
+  RowBox[{"\"\<hydrogen_mass = \>\"", ",", 
+   RowBox[{"UnitConvert", "[", 
+    RowBox[{"hydrogenMass", ",", "\"\<eV * (fs / \[CapitalARing])^2\>\""}], 
+    "]"}]}], "]"}]}], "Input",
+ CellChangeTimes->{
+  3.787721592344584*^9, {3.787721627528983*^9, 3.7877217007824574`*^9}, 
+   3.7877217768752127`*^9, {3.7877218095717497`*^9, 3.787721812795577*^9}, 
+   3.787742479036549*^9, 3.787742615359764*^9},
+ CellLabel->"In[11]:=",ExpressionUUID->"caefe952-6d8b-4bfc-8a25-1041957d4038"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"hydrogen_mass = \"\>", "\[InvisibleSpace]", 
+   TemplateBox[{"104.4718380990195705682`3.999997384625373",RowBox[{
+       SuperscriptBox["\"fs\"", "2"], "\[InvisibleSpace]", "\"eV\"", 
+       "\[InvisibleSpace]", "\"/\"", "\[InvisibleSpace]", 
+       SuperscriptBox["\"\[CapitalARing]\"", "2"]}],
+     "femtosecond squared electronvolts per \[ARing]ngstr\[ODoubleDot]m \
+squared",FractionBox[
+      RowBox[{"\"Electronvolts\"", " ", 
+        SuperscriptBox["\"Femtoseconds\"", "2"]}], 
+      SuperscriptBox["\"Angstroms\"", "2"]]},
+    "Quantity"]}],
+  SequenceForm["hydrogen_mass = ", 
+   Quantity[
+   104.4718380990195705682`3.999997384625373, "Angstroms"^(-2) 
+    "Electronvolts" "Femtoseconds"^2]],
+  Editable->False]], "Print",
+ CellChangeTimes->{
+  3.787721777301103*^9, 3.787721815920825*^9, 3.7877421628355417`*^9, {
+   3.787742206202886*^9, 3.787742232376384*^9}, 3.787742354463673*^9, 
+   3.7877425020420523`*^9, 3.787742655801025*^9},
+ CellLabel->
+  "During evaluation of \
+In[11]:=",ExpressionUUID->"971e196b-404c-4930-9b49-f5c38888af66"],
+
+Cell[BoxData[{
+ RowBox[{"ClearAll", "[", "\"\<Global`*\>\"", "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"$Assumptions", "=", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"d", "\[Element]", "Reals"}], "&&", 
+     RowBox[{"d", ">", "0"}], "&&", "\[IndentingNewLine]", 
+     RowBox[{"x0", "\[Element]", "Reals"}], "&&", "\[IndentingNewLine]", 
+     RowBox[{"p0", "\[Element]", "Reals"}], "&&", "\[IndentingNewLine]", 
+     RowBox[{"\[HBar]", "\[Element]", "Reals"}], "&&", 
+     RowBox[{"\[HBar]", ">", "0"}]}], ")"}]}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"psiX", "[", "x_", "]"}], ":=", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"1", "/", 
+      RowBox[{"(", 
+       RowBox[{"Pi", " ", 
+        RowBox[{"d", "^", "2"}]}], ")"}]}], ")"}], "^", 
+    RowBox[{"(", 
+     RowBox[{"1", "/", "4"}], ")"}]}], 
+   RowBox[{"Exp", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"x", "-", "x0"}], ")"}], "^", "2"}], "/", 
+     RowBox[{"(", 
+      RowBox[{"2", 
+       RowBox[{"d", "^", "2"}]}], ")"}]}], "]"}], 
+   RowBox[{"Exp", "[", 
+    RowBox[{"I", " ", "p0", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"x", "-", "x0"}], ")"}], "/", "\[HBar]"}]}], 
+    "]"}]}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"psiP", "[", "p_", "]"}], ":=", 
+  RowBox[{"FourierTransform", "[", 
+   RowBox[{
+    RowBox[{"psiX", "[", "x", "]"}], ",", "x", ",", "p"}], "]"}]}]}], "Input",\
+
+ CellChangeTimes->{{3.787739646718287*^9, 3.7877398420960627`*^9}, {
+  3.787742313585631*^9, 3.787742350807575*^9}, {3.78774248160154*^9, 
+  3.787742482209742*^9}, {3.787742529002594*^9, 
+  3.787742552827148*^9}},ExpressionUUID->"f7cd1958-9150-49a1-ae39-\
+5c15c583ce88"],
+
+Cell[BoxData[
+ RowBox[{"psiP", "[", "p", "]"}]], "Input",
+ CellChangeTimes->{{3.7877398316068773`*^9, 3.787739864521278*^9}, {
+  3.7877422645943327`*^9, 3.7877422662490253`*^9}, {3.78774233561696*^9, 
+  3.7877423370024147`*^9}},
+ CellLabel->"In[10]:=",ExpressionUUID->"92c78518-483d-4085-bfcd-691366a078a7"]
+},
+WindowSize->{1533, 845},
+WindowMargins->{{0, Automatic}, {0, Automatic}},
+FrontEndVersion->"12.0 for Linux x86 (64-bit) (April 8, 2019)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 1139, 22, 78, "Input",ExpressionUUID->"4351412e-9e62-489b-ad1b-2f4ee6e01d81"],
+Cell[1722, 46, 500, 15, 35, "Output",ExpressionUUID->"37ef432e-cfaa-423f-ac22-415d4e2d7b93"],
+Cell[2225, 63, 830, 18, 27, "Print",ExpressionUUID->"26c7b347-a946-4c56-935d-0bbe65e1c07e"]
+}, Open  ]],
+Cell[3070, 84, 819, 18, 57, "Input",ExpressionUUID->"caefe952-6d8b-4bfc-8a25-1041957d4038"],
+Cell[3892, 104, 1099, 24, 34, "Print",ExpressionUUID->"971e196b-404c-4930-9b49-f5c38888af66"],
+Cell[4994, 130, 1715, 48, 193, "Input",ExpressionUUID->"f7cd1958-9150-49a1-ae39-5c15c583ce88"],
+Cell[6712, 180, 307, 5, 31, "Input",ExpressionUUID->"92c78518-483d-4085-bfcd-691366a078a7"]
+}
+]
+*)
+

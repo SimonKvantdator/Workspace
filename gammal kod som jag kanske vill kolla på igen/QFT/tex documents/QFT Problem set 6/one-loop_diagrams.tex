@@ -1,0 +1,57 @@
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}{.33\linewidth}
+		\centering
+		\feynmandiagram[small, inline=(o1.base), horizontal=a to b]{
+			a -- [scalar] o1,
+			o1 -- [fermion, half left] o2,
+			o2 -- [fermion, half left] o1,
+			b -- [scalar] o2,
+		};
+		\setcounter{subfigure}{2}
+		\caption{}
+		\label{subfig:one-loop_diagrams:c}
+	\end{subfigure}%
+    \begin{subfigure}{.33\linewidth}
+        \centering
+        \feynmandiagram[small, inline=(o1.base), horizontal=o1 to o2]{
+			a -- [scalar] o1,
+			o1 -- [fermion, quarter right] o2,
+			b -- [scalar] o2,
+			o2 -- [fermion, quarter right] o3,
+			c -- [scalar] o3,
+			o3 -- [fermion, quarter right] o4,
+			d -- [scalar] o4,
+			o4 -- [fermion, quarter right] o1,
+        };
+		\setcounter{subfigure}{4}
+        \caption{}
+        \label{subfig:one-loop_diagrams:e}
+    \end{subfigure}%
+    \begin{subfigure}{.33\linewidth}
+        \centering
+        \feynmandiagram[small, inline=(o1.base), horizontal=a to b]{
+            a -- [fermion] o1,
+			o1 -- [fermion, half left] o2,
+			o2 -- [scalar, half left] o1,
+			o2 -- [fermion] b,
+        };
+        \caption{}
+        \label{subfig:one-loop_diagrams:f}
+    \end{subfigure}
+    \begin{subfigure}{.33\linewidth}
+        \centering
+        \feynmandiagram[small, inline=(o.base), horizontal=o2 to o3]{
+			a -- [fermion] o1,
+			o1 -- [fermion, quarter right] o2,
+			b -- [scalar] o2,
+			o2 -- [fermion, quarter right] o3,
+			o3 -- [fermion] c,
+			o3 -- [scalar, quarter right] o1,
+        };
+        \caption{}
+        \label{subfig:one-loop_diagrams:g}
+    \end{subfigure}
+    \caption{}
+    \label{fig:one-loop_diagrams}
+\end{figure}

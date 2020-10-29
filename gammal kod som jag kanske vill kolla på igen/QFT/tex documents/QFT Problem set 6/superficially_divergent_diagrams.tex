@@ -1,0 +1,91 @@
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}{.33\linewidth}
+        \centering
+        \feynmandiagram[small, inline=(o.base), vertical=a to o]{
+        	o [blob],
+        	i1 -- [draw=none] o,
+            i2 -- [draw=none] o,
+            i3 -- [draw=none] o,
+            i4 -- [draw=none] o,
+        };
+        \caption{$D = 4$}
+        \label{subfig:superficially_divergent_diagrams:a}
+    \end{subfigure}%
+    \begin{subfigure}{.33\linewidth}
+        \centering
+        \feynmandiagram[small, inline=(o.base), horizontal=o to a]{
+        	o [blob],
+        	a -- [scalar] o,
+        	i1 -- [draw=none] o,
+            i2 -- [draw=none] o,
+            i3 -- [draw=none] o,
+        };
+        \caption{$D = 3$}
+        \label{subfig:superficially_divergent_diagrams:b}
+    \end{subfigure}%
+    \begin{subfigure}{.33\linewidth}
+        \centering
+        \feynmandiagram[small, inline=(o.base), horizontal=a to o]{
+        	o [blob],
+        	i1 -- [draw=none] o,
+        	i2 -- [draw=none] o,
+            a -- [scalar] o,
+            b -- [scalar] o,
+        };
+        \caption{$D = 2$}
+        \label{subfig:superficially_divergent_diagrams:c}
+    \end{subfigure}
+    \begin{subfigure}{.33\linewidth}
+        \centering
+        \feynmandiagram[small, inline=(o.base), horizontal=o to a]{
+        	o [blob],
+        	a -- [scalar] o,
+        	b -- [scalar] o,
+            c -- [scalar] o,
+        };
+        \caption{$D = 1$}
+        \label{subfig:superficially_divergent_diagrams:d}
+    \end{subfigure}%
+    \begin{subfigure}{.33\linewidth}
+        \centering
+        \feynmandiagram[small, inline=(o.base), vertical=a to b]{
+        	o [blob],
+        	a -- [scalar] o,
+        	b -- [scalar] o,
+        	a -- [draw=none] b,
+            c -- [scalar] o,
+            d -- [scalar] o,
+        	c -- [draw=none] d,
+        };
+        \caption{$D = 0$}
+        \label{subfig:superficially_divergent_diagrams:e}
+    \end{subfigure}%
+    \begin{subfigure}{.33\linewidth}
+        \centering
+        \feynmandiagram[small, inline=(o.base), horizontal=a to o]{
+        	o [blob],
+        	i1 -- [draw=none] o,
+        	i2 -- [draw=none] o,
+            o -- [fermion] a,
+            b -- [fermion] o,
+        };
+        \caption{$D = 1$}
+        \label{subfig:superficially_divergent_diagrams:f}
+    \end{subfigure}
+    \begin{subfigure}{.33\linewidth}
+        \centering
+        \feynmandiagram[small, inline=(o.base), vertical=a to o]{
+        	o [blob],
+            a -- [scalar] o,
+            o -- [fermion] b,
+            c -- [fermion] o,
+        };
+        \caption{$D = 0$}
+        \label{subfig:superficially_divergent_diagrams:g}
+    \end{subfigure}
+    \caption{
+%    We can translate the diagrams in figure 10.2 in Peskin to the pseduoscalar Yukawa theory by changing the photon propagators to scalar propagators. We have also added the arrows that are not written out in figure 10.2 (the directions of these arrows follow from momentum conservation TODO: DO I KNOW THIS IS TRUE?).
+	}
+    \label{fig:superficially_divergent_diagrams}
+\end{figure}
