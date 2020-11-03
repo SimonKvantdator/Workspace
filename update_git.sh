@@ -39,7 +39,7 @@ cp /home/simon/.config/nvim/init.vim /home/simon/Workspace/.init.vim
 ### Push to git ###
 git add --all
 git commit -m "$(date)"
-git remote add origin https://github.com/SimonKvantdator/Workspace.git
+#git remote add origin https://github.com/SimonKvantdator/Workspace.git
 git branch -M main
 git push -u origin main
 
