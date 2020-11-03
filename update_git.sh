@@ -32,6 +32,9 @@ tempCodeRunnerFile.py
 # Add every file larger than X MB to .gitignore
 find . -size +1M | sed 's|^\./||g' | cat >> .gitignore
 
+# Copy current neovim configs into workspace
+cp /home/simon/.config/nvim/init.vim /home/simon/Workspace/.init.vim
+
 
 ### Push to git ###
 git add --all
