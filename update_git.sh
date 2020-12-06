@@ -26,6 +26,9 @@ tempCodeRunnerFile.py
 /'manim-master (3Blue1Brown)'
 /'Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley'
 
+# Some junk
+/include
+
 */.git
 " >> .gitignore
 
