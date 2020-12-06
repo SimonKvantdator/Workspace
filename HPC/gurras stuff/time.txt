@@ -1,0 +1,5 @@
+10 copies time
+
+real	0m8.251s
+user	0m0.847s
+sys	0m6.833s

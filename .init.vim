@@ -32,6 +32,7 @@ call plug#begin(g:plugged_home)
 	Plug 'Chiel92/vim-autoformat'
 	
 	" LaTeX
+	" Plug 'vim-latex/vim-latex' TODO: use latex-suite
 	Plug 'lervag/vimtex'
 	Plug 'Konfekt/FastFold'
 	Plug 'matze/vim-tex-fold'
@@ -100,6 +101,7 @@ augroup NCM2
 	" When the <Enter> key is pressed while the popup menu is visible, it only
 	" hides the menu. Use this mapping to close the menu and also start a new line.
 	inoremap <expr> <CR> (pumvisible() ? "\<c-y>\<cr>" : "\<CR>")
+	
 	" uncomment this block if you use vimtex for LaTex
 	autocmd Filetype tex call ncm2#register_source({
 		\ 'name': 'vimtex',
