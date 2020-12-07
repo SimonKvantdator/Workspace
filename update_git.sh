@@ -27,7 +27,7 @@ tempCodeRunnerFile.py
 /'Navigating a social world with robot partners: a quantitative cartography of the Uncanny Valley'
 
 # Some junk
-HPC/assignment 1/writing to and reading from hdd and ssd/include
+/HPC/assignment 1/writing to and reading from hdd and ssd/include
 
 */.git
 " >> .gitignore
