@@ -35,6 +35,11 @@ HPC/gurras stuff/A3/newton_attractors_x2.ppm
 HPC/gurras stuff/A3/newton_attractors_x7.ppm
 HPC/gurras stuff/A3/newton_convergence_x2.ppm
 HPC/assignment 1/writing to and reading from hdd and ssd/first_1048576_integers_as_array.bin
+HPC/assignment 1/writing to and reading from hdd and ssd/include/boost/geometry/srs/projections/epsg_traits.hpp
+HPC/assignment 1/writing to and reading from hdd and ssd/include/boost/phoenix/statement/detail/preprocessed/switch_50.hpp
+HPC/assignment 1/writing to and reading from hdd and ssd/include/boost/qvm/gen/swizzle4.hpp
+HPC/assignment 1/writing to and reading from hdd and ssd/include/boost/typeof/vector150.hpp
+HPC/assignment 1/writing to and reading from hdd and ssd/include/boost/typeof/vector200.hpp
 HPC/assignment 1/writing to and reading from hdd and ssd/first_1048576_integers_as_entries.bin
 gammal kod som jag kanske vill kolla på igen/subatomär fysik/tenta 2020-10-09/uppg2/uppg2.jpg
 gammal kod som jag kanske vill kolla på igen/subatomär fysik/tenta 2020-10-09/uppg6/uppg6.jpg
@@ -411,4 +416,3 @@ gammal kod som jag kanske vill kolla på igen/qz_summer_2019/Find M/data_filesOR
 gammal kod som jag kanske vill kolla på igen/qz_summer_2019/.git/objects/pack/pack-84db20bc8c2e0c9550bd594ff09412dd0c6a8aa3.pack
 testing_manjaro.img
 .git/objects/pack/pack-7297ccddf7a6a22a5017345d2011dfcbf015572c.pack
-.git/index
