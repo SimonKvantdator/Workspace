@@ -50,6 +50,12 @@ filetype plugin on
 syntax on
 syntax enable
 
+" Use <ctrl>+j/k/h/l to switch between panes in split mode
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-h> <C-W>h
+map <C-l> <C-W>l
+
 " colorscheme
 " True Color Support if it's avaiable in terminal
 if has("termguicolors")
@@ -125,6 +131,8 @@ let g:ale_echo_msg_error_str = 'E'
 let g:ale_echo_msg_warning_str = 'W'
 let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
 let g:ale_linters = {'python': ['flake8']}
+let g:ale_python_flake8_options = '--ignore=E501' " Disable error message about lines being too long
+
 " Airline
 let g:airline_left_sep  = ''
 let g:airline_right_sep = ''
@@ -140,13 +148,30 @@ set timeout timeoutlen=1500
 autocmd FileType python map <buffer> <F5> :w<CR>:exec '!python3' shellescape(@%, 1)<CR>
 autocmd FileType python imap <buffer> <F5> <esc>:w<CR>:exec '!python3' shellescape(@%, 1)<CR>
 
+" Compile and run C programs with f5
+autocmd FileType c map <buffer> F5 :w<CR>:exec '!make && ./%:r'<CR>
+autocmd FileType c imap <buffer> F5 <esc>:w<CR>:exec '!make && ./%:r'<CR>
+
 " Vimtex Plugin settings
 let g:tex_flavor  = 'latex'
 let g:tex_conceal = ''
 let g:vimtex_fold_manual = 1
 let g:vimtex_latexmk_continuous = 1
 let g:vimtex_compiler_progname = 'nvr'
+let g:vimtex_view_method = 'general'
+let g:vimtex_view_general_viewer = 'zathura'
 let g:syntastic_tex_checkers = ['lacheck']
+
+" Forward Searching in Zathura
+function! SyncTexForward()
+let linenumber=line(".")
+let colnumber=col(".")
+let filename=bufname("%")
+let filenamePDF=filename[:-4]."pdf"
+let execstr="!zathura --synctex-forward " . linenumber . ":" . colnumber . ":" . filename . " " . filenamePDF . "&>/dev/null &"
+exec execstr 
+endfunction
+nmap  :call SyncTexForward()
 
 " LargeFile settings
 let g:LargeFile = 100 " How large (in MB) files should I use the LargeFile script for?
