@@ -23,6 +23,8 @@ tempCodeRunnerFile.py
 
 */.git
 
+HPC/assignment 2/perf.data.old
+HPC/assignment 2/perf.data
 HPC/testing stuff out/celero/CeleroBuild/libcelero.so
 HPC/testing stuff out/algebraic expressions (with celero)/CeleroBuild/libcelero.so
 HPC/gurras stuff/pres/cell_e5
@@ -34,6 +36,7 @@ HPC/gurras stuff/A3/newton_convergence_x1.ppm
 HPC/gurras stuff/A3/newton_attractors_x2.ppm
 HPC/gurras stuff/A3/newton_attractors_x7.ppm
 HPC/gurras stuff/A3/newton_convergence_x2.ppm
+HPC/presentation/CeleroBuild/libcelero.so
 HPC/assignment 1/writing to and reading from hdd and ssd/first_1048576_integers_as_array.bin
 HPC/assignment 1/writing to and reading from hdd and ssd/include/boost/geometry/srs/projections/epsg_traits.hpp
 HPC/assignment 1/writing to and reading from hdd and ssd/include/boost/phoenix/statement/detail/preprocessed/switch_50.hpp
@@ -41,9 +44,11 @@ HPC/assignment 1/writing to and reading from hdd and ssd/include/boost/qvm/gen/s
 HPC/assignment 1/writing to and reading from hdd and ssd/include/boost/typeof/vector150.hpp
 HPC/assignment 1/writing to and reading from hdd and ssd/include/boost/typeof/vector200.hpp
 HPC/assignment 1/writing to and reading from hdd and ssd/first_1048576_integers_as_entries.bin
+HPC/assignment 3/newton_convergence_x7.ppm
 HPC/assignment 3/newton_attractors_x1.ppm
 HPC/assignment 3/newton_convergence_x1.ppm
 HPC/assignment 3/newton_attractors_x2.ppm
+HPC/assignment 3/newton_attractors_x7.ppm
 HPC/assignment 3/newton_attractors_x5.ppm
 HPC/assignment 3/newton_convergence_x5.ppm
 HPC/assignment 3/newton_convergence_x2.ppm

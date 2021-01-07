@@ -63,6 +63,8 @@ size_t nbr_rows_computed = 0; /* Total nbr of rows, between all threads, that ha
 
 typedef u_int8_t attractor_t;
 typedef u_int8_t convergence_t;
+/*typedef size_t attractor_t;*/ // FOR MY OWN MACHINE
+/*typedef size_t convergence_t;*/
 
 typedef struct {
 	size_t initial_row;

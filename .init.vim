@@ -4,6 +4,17 @@ else
 	let g:plugged_home = '~/.vim/plugged'
 endif
 
+set nocompatible
+set wildmenu
+
+set path+=**
+set path+=~/.config/nvim " To be able to find init.vim
+
+" Netrw for visual file browsing
+let g:netrw_banner=0        " disable annoying banner
+let g:netrw_altv=1          " open splits to the right
+let g:netrw_liststyle=3     " tree view
+
 " Plugins List
 call plug#begin(g:plugged_home)
 	" UI related
@@ -15,7 +26,7 @@ call plug#begin(g:plugged_home)
 	" Better Visual Guide
 	Plug 'Yggdroot/indentLine'
 
-	" syntax check
+	" Syntax check
 	Plug 'w0rp/ale'
 	
 	" Autocomplete
@@ -26,13 +37,14 @@ call plug#begin(g:plugged_home)
 	Plug 'ncm2/ncm2-jedi'
 
 	" Comment out blocks
-	Plug 'preservim/nerdcommenter'
+	"Plug 'preservim/nerdcommenter'
+	Plug  'tpope/vim-commentary'
 
 	" Formater
 	Plug 'Chiel92/vim-autoformat'
 	
 	" LaTeX
-	" Plug 'vim-latex/vim-latex' TODO: use latex-suite
+	" Plug 'vim-latex/vim-latex' TODO: use latex-suite?
 	Plug 'lervag/vimtex'
 	Plug 'Konfekt/FastFold'
 	Plug 'matze/vim-tex-fold'
@@ -49,6 +61,9 @@ filetype plugin on
 " UI configuration
 syntax on
 syntax enable
+
+" Do not highlight matching parentheses
+let g:loaded_matchparen=1
 
 " Use <ctrl>+j/k/h/l to switch between panes in split mode
 map <C-j> <C-W>j
@@ -144,17 +159,26 @@ let g:airline_theme = 'miramare'
 let mapleader=","
 set timeout timeoutlen=1500
 
+" Copy to clipboard
+noremap <Leader>y "+y
+noremap <Leader>p "+p
+
+" Map ctrl-backspace to delete the previous word in insert mode.
+imap <C-BS> <C-W>
+
 " Run python scripts with f5
 autocmd FileType python map <buffer> <F5> :w<CR>:exec '!python3' shellescape(@%, 1)<CR>
 autocmd FileType python imap <buffer> <F5> <esc>:w<CR>:exec '!python3' shellescape(@%, 1)<CR>
 
 " Compile and run C programs with f5
-autocmd FileType c map <buffer> F5 :w<CR>:exec '!make && ./%:r'<CR>
-autocmd FileType c imap <buffer> F5 <esc>:w<CR>:exec '!make && ./%:r'<CR>
+autocmd FileType c map  <buffer> <F5>      :w<CR>:exec '!cd ' . shellescape(expand('%:p:h'), 1) . ' && make && ' . shellescape(expand('%:p:r'), 1)<CR>
+autocmd FileType c imap <buffer> <F5> <esc>:w<CR>:exec '!cd ' . shellescape(expand('%:p:h'), 1) . ' && make && ' . shellescape(expand('%:p:r'), 1)<CR>
+
 
 " Vimtex Plugin settings
 let g:tex_flavor  = 'latex'
 let g:tex_conceal = ''
+set conceallevel=0
 let g:vimtex_fold_manual = 1
 let g:vimtex_latexmk_continuous = 1
 let g:vimtex_compiler_progname = 'nvr'

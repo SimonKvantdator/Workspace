@@ -6,6 +6,7 @@ all : $(BINS)
 
 newton: newton.c
 	gcc $(CFLAGS) -o $@ $<
+	#musl-gcc $(CFLAGS) -o $@ $< # FOR MY OWN MACHINE
 
 .PHONY : clean
 clean :
