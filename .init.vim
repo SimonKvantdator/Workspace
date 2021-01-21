@@ -4,16 +4,20 @@ else
 	let g:plugged_home = '~/.vim/plugged'
 endif
 
-set nocompatible
+set nocompatible " We don't care about being backwards compatibility
 set wildmenu
 
-set path+=**
+" Set path for :find
+set path+=./*
+set path+=~/Documents/*
+set path+=~/Workspace/*
 set path+=~/.config/nvim " To be able to find init.vim
+" set wildignore+=~/Workspace/gammal\ kod\ som\ jag\ kanske\ vill\ kolla\ på\ igen/*
 
 " Netrw for visual file browsing
-let g:netrw_banner=0        " disable annoying banner
-let g:netrw_altv=1          " open splits to the right
-let g:netrw_liststyle=3     " tree view
+let g:netrw_banner=0        " Disable annoying banner
+let g:netrw_altv=1          " Open splits to the right
+let g:netrw_liststyle=3     " Tree view
 
 " Plugins List
 call plug#begin(g:plugged_home)
@@ -24,7 +28,7 @@ call plug#begin(g:plugged_home)
     Plug 'franbach/miramare'
 
 	" Better Visual Guide
-	Plug 'Yggdroot/indentLine'
+	" Plug 'Yggdroot/indentLine' " indentLine forces conceallevel=2, which is annoying when writing latex and such
 
 	" Syntax check
 	Plug 'w0rp/ale'
@@ -44,12 +48,15 @@ call plug#begin(g:plugged_home)
 	Plug 'Chiel92/vim-autoformat'
 	
 	" LaTeX
-	" Plug 'vim-latex/vim-latex' TODO: use latex-suite?
 	Plug 'lervag/vimtex'
 	Plug 'Konfekt/FastFold'
 	Plug 'matze/vim-tex-fold'
 
-	" LargeFile
+	" Snippets
+	Plug 'sirver/ultisnips'
+	Plug 'honza/vim-snippets'
+
+	" Turn off syntax highlighting and such for large files
 	Plug 'vim-scripts/LargeFile'
 call plug#end()
 filetype plugin indent on
@@ -71,15 +78,14 @@ map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
 
-" colorscheme
-" True Color Support if it's avaiable in terminal
-if has("termguicolors")
+" Colorscheme
+if has("termguicolors") " True Color Support if it's avaiable in terminal
 	set termguicolors
 endif
 let g:miramare_enable_italic = 1
 let g:miramare_disable_italic_comment = 1
 colorscheme miramare
-" opaque background
+" Opaque background
 " highlight Normal guibg=none
 " highlight NonText guibg=none
 
@@ -94,13 +100,16 @@ set mouse=a
 set noshowmode
 set noshowmatch
 set nolazyredraw
+
 " Turn off backup
 set nobackup
 set noswapfile
 set nowritebackup
+
 " Search configuration
-set ignorecase                    " ignore case when searching
-set smartcase                     " turn on smartcase
+set ignorecase " Ignore case when searching
+set smartcase " Turn on smartcase
+
 " Tab and Indent configuration
 set noexpandtab
 set nocopyindent
@@ -109,13 +118,15 @@ set softtabstop=0
 set shiftwidth=4
 set tabstop=4
 
-" vim-autoformat
+set foldlevelstart=5 " Folds up to level 5 are open by default
+
+" Vim-autoformat
 noremap <F3> :Autoformat<CR>
 
 " NCM2
 augroup NCM2
 	autocmd!
-	" enable ncm2 for all buffers
+	" Enable ncm2 for all buffers
 	autocmd BufEnter * call ncm2#enable_for_buffer()
 	" :help Ncm2PopupOpen for more information
 	set completeopt=noinsert,menuone,noselect
@@ -123,7 +134,7 @@ augroup NCM2
 	" hides the menu. Use this mapping to close the menu and also start a new line.
 	inoremap <expr> <CR> (pumvisible() ? "\<c-y>\<cr>" : "\<CR>")
 	
-	" uncomment this block if you use vimtex for LaTex
+	" Vimtex for LaTeX
 	autocmd Filetype tex call ncm2#register_source({
 		\ 'name': 'vimtex',
 		\ 'priority': 8,
@@ -134,7 +145,7 @@ augroup NCM2
 		\ 'on_complete': ['ncm2#on_complete#omni', 'vimtex#complete#omnifunc'],
 	\ })
 	
-	" cycle through completion list with tab/shift+tab
+	" Cycle through completion list with tab/shift+tab
 	inoremap <expr> <tab> pumvisible() ? "\<c-n>" : "\<tab>"
 	inoremap <expr> <s-tab> pumvisible() ? "\<c-p>" : "\<tab>"
 augroup END
@@ -156,6 +167,11 @@ let airline#extensions#ale#error_symbol = 'E:'
 let airline#extensions#ale#warning_symbol = 'W:'
 let g:airline_theme = 'miramare'
 
+" UltiSnips
+let g:UltiSnipsExpandTrigger = '<C-j>'
+let g:UltiSnipsJumpForwardTrigger = '<C-j>'
+let g:UltiSnipsJumpBackwardTrigger = '<C-shift-j>'
+
 let mapleader=","
 set timeout timeoutlen=1500
 
@@ -163,12 +179,17 @@ set timeout timeoutlen=1500
 noremap <Leader>y "+y
 noremap <Leader>p "+p
 
-" Map ctrl-backspace to delete the previous word in insert mode.
-imap <C-BS> <C-W>
+" Use ctrl-backspace to delete the previous word in insert mode.
+noremap! <C-BS> <C-w>
+noremap! <C-h> <C-w>
 
 " Run python scripts with f5
 autocmd FileType python map <buffer> <F5> :w<CR>:exec '!python3' shellescape(@%, 1)<CR>
 autocmd FileType python imap <buffer> <F5> <esc>:w<CR>:exec '!python3' shellescape(@%, 1)<CR>
+
+" Run bash scripts with f5
+autocmd FileType sh map <buffer> <F5> :w<CR>:!bash %<CR>
+autocmd FileType sh imap <buffer> <F5> <esc>:w<CR>:!bash %<CR>
 
 " Compile and run C programs with f5
 autocmd FileType c map  <buffer> <F5>      :w<CR>:exec '!cd ' . shellescape(expand('%:p:h'), 1) . ' && make && ' . shellescape(expand('%:p:r'), 1)<CR>
@@ -176,15 +197,15 @@ autocmd FileType c imap <buffer> <F5> <esc>:w<CR>:exec '!cd ' . shellescape(expa
 
 
 " Vimtex Plugin settings
-let g:tex_flavor  = 'latex'
-let g:tex_conceal = ''
+let g:tex_flavor='latex'
+let g:tex_conceal=''
 set conceallevel=0
-let g:vimtex_fold_manual = 1
-let g:vimtex_latexmk_continuous = 1
-let g:vimtex_compiler_progname = 'nvr'
-let g:vimtex_view_method = 'general'
-let g:vimtex_view_general_viewer = 'zathura'
-let g:syntastic_tex_checkers = ['lacheck']
+let g:vimtex_fold_manual=1
+let g:vimtex_latexmk_continuous=1
+let g:vimtex_compiler_progname='nvr'
+let g:vimtex_view_method='general'
+let g:vimtex_view_general_viewer='zathura'
+let g:syntastic_tex_checkers=['lacheck']
 
 " Forward Searching in Zathura
 function! SyncTexForward()
