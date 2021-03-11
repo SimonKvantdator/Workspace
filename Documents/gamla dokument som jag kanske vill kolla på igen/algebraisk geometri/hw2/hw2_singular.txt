@@ -1,0 +1,14 @@
+timer = 1;
+system("--ticks-per-sec",1000);
+int t=timer;
+
+ring s = 0, (a, b, c, d, e, f, g, x), dp;
+poly f = x7 + gx6 + fx5 + ex4 + dx3 + cx2 + bx + a;
+poly fx = diff(f, x);
+poly dis = eliminate(ideal(f, fx), x)[1];
+size(dis);
+dis;
+
+t=timer-t;
+t; // time in ms
+

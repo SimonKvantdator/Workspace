@@ -1,0 +1,22 @@
+Master thesis project proposal
+
+Background:
+The Dirac equation is a quantum mechanical wave equation describing massive spin-1/2 particles. It can be formulated in curved space-time. In Thomas Bäckdahl's article 'Second order symmetry operators', he shows, among other things, two equivalent conditions to there being a non-trivial second order symmetry operator of the first kind for the Dirac-Weyl equation. These equivalent conditions are formulated as conditions on the existence of a non-zero Killing spinor of valence (2,2) and (3,1) respectively satisfying some "auxilliary conditions". Here 'symmetry operator' refers to a symmetry of the solution space.
+
+The article uses Mathematica package SymManipulator, which is part of the tensor algebra package xAct, in order to automate complicated and tedious calculations. xAct comprises a suite of free, open source, packages for the Wolfram language, Mathematica, which are modelled on the current geometric approach to General Relativity. Thomas Bäckdahl is author/coauthor of several of these packages: SymManipulator, TexAct, and SpinFrames.
+
+Aim:
+This project aims to investigate, with the help of spinor techniques, what conditions such a curved space-time must satisfy for the solution space of the massive Dirac equation to have certain symmetries. Computer algebra tools such as the xAct package for Mathematica will be used for finding irreducible decompositions. The project is based on the article 'Second order symmetry operators'.
+
+The spinor techniques are described in works such as Robert M Wald's General Relativity and Roger Penrose's Spinors and Space-time Volume 1 and 2. These works will be a starting point for learning about these techniques.
+
+Time plan:
+The plan is that the project runs from 2021-01-18 until around 2021-06-06. With the planning report finished after 5 weeks. The planning report should contain background, preliminary aim, goal, deliminations, method, and a detailed time plan with a week-by-week GANT schedule.
+
+
+
+Beskrivningen ska innehålla bakgrund, syfte, mål och eventuellt metod.
+
+Projektet går ut på att undersöka vad som krävs av en rumstid för existens av symmetrier till massiva Dirac-ekvationen med hjälp av spinor tekniker. Datoralgebra-verktyg som xAct kommer användas bland annat för att hitta irreducibla dekompositioner. Detta baseras på artikeln 'second order symmetry operators'
+
+

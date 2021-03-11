@@ -1,0 +1,55 @@
+% TEMPLATE BY MAGNUS GUSTAVER, 2020. BASED ON THE WORKS BY DAVID FRISK, 2018, WITH UPDATES TO TITLE PAGE AND LAST PAGE
+
+% IMPORT SETTINGS
+\documentclass[english,12pt,a4paper,oneside]{article}
+\input{preamble/preamble}
+
+\begin{document} 
+
+
+% COVER PAGE, TITLE PAGE AND IMPRINT PAGE
+\pagenumbering{roman} % Roman numbering (starting with i (one)) until first main chapter
+\input{titlepage}
+\newpage
+
+
+% START OF MAIN DOCUMENT
+\cleardoublepage
+\setcounter{page}{1}
+\pagenumbering{arabic} % Arabic numbering starting from 1 (one)
+\setlength{\parskip}{0pt plus 1pt}
+
+
+\section{Title}%
+\label{sec:title}
+\title. \subtitle.
+
+
+
+\section{Background}%
+\label{sec:background}
+
+This thesis is based on the article \enquote{Second Order Symmetry Operators} \cite{AndBaeBlu14a}.
+
+
+\section{Time plan}%
+\label{sec:time_plan}
+
+
+
+
+\subsection{Gantt schedule}%
+\label{sub:gantt_schedule}
+
+In \cref{tab:gantt_schedule}, a Gantt schedule shows an overview of the time plan of the project.
+\cite{AndBaeBlu14a}
+\input{tables/gantt_schedule.tex}
+
+
+% REFERENCES / BIBLIOGRAPHY
+\cleardoublepage
+\addcontentsline{toc}{chapter}{Bibliography}
+\bibliographystyle{aipauth4-1}
+\bibliography{bibliography/bibliography}
+
+\end{document}

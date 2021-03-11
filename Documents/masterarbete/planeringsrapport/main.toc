@@ -1,0 +1,5 @@
+\providecommand \autonum@processReference [2]{}
+\babel@toc {english}{}
+\contentsline {section}{\numberline {1}Title}{1}{section.1}%
+\contentsline {section}{\numberline {2}GANTT schedule}{1}{section.2}%
+\contentsline {chapter}{Bibliography}{2}{table.caption.2}%

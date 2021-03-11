@@ -1,0 +1,156 @@
+%! TEX root = /home/simon/Documents/masterarbete/kontinuerlig\ mastertes/main.tex
+% TEMPLATE BY MAGNUS GUSTAVER, 2020
+
+\def\title{Two-spinors and Symmetry Operators}
+\def\subtitle{An Investigation into the Existence of Symmetry Operators for the Massive Dirac Equation using Spinor Techniques and Computer Algebra Tools}
+\def\myname{Simon Stefanus Jacobsson}
+\def\supervisorname{Thomas Bäckdahl}
+\def\examinername{Simone Calogero}
+\def\programme{Physics}
+\def\department{Mathematical Sciences}
+\def\division{Analysis and Probability Theory}
+\def\researchgroup{Mathematical Physics}
+
+
+\ifx\ThesisType\undefined
+Undefined Thesis type in settings.tex
+\else
+  \if\ThesisType M
+    \else
+    \if\ThesisType B
+    \else
+    Define \textbackslash ThesisType as M for master's thesis or B for bachelor thesis in settings.tex
+    \fi
+  \fi
+\fi
+
+% COVER PAGE
+\begin{titlepage}
+\newgeometry{top=3cm, bottom=1cm,
+			left=2.25 cm, right=2.25cm}	% Temporarily change margins		
+			
+%Header Front Page
+\ifx\ThesisType\undefined
+\else
+    \if\ThesisType M
+    \vtop{
+        \null\vspace{-25mm}
+        \centerline{\includegraphics[width=1.18\textwidth]{figures/auxiliary/GrayHeaderPattern.jpg}}
+        \vspace{-2.3cm}
+        \hbox{\hspace{0mm}\includegraphics[height=18mm]{figures/auxiliary/AvancezChalmersU_white_right.eps}}
+        \centerline{\textcolor{headerBrown}{\rule{1.18\textwidth}{4pt}}}
+        \vspace{\paperheight}\vspace{-85mm}
+        \centerline{\textcolor{thesisHeaderColor}{\rule{1.1\textwidth}{0.8pt}}} % Rule after Department
+        \vspace{-\paperheight}\vspace{85mm}
+    }
+    \fi
+    \if\ThesisType B
+    \vtop{
+        \null\vspace{-25mm}
+        \centerline{\includegraphics[width=1.18\textwidth,height=80pt]{figures/auxiliary/GreenHeaderPattern.jpg}}
+        \vspace{-2.3cm}
+        \hbox{\hspace{0mm}\includegraphics[height=18mm]{figures/auxiliary/AvancezChalmers_white_right.eps}}
+        \centerline{\textcolor{headerBrown}{\rule{1.18\textwidth}{4pt}}}
+        \vspace{\paperheight}\vspace{-85mm}
+        \centerline{\textcolor{thesisHeaderColor}{\rule{1.1\textwidth}{0.8pt}}} % Rule after Department
+        \vspace{-\paperheight}\vspace{85mm}
+    }
+    \fi
+\fi
+
+% Cover picture (replace with your own or delete)		
+\begin{figure}[H]
+\centering
+\vspace{1cm}	% Adjust vertical spacing here
+\includegraphics[width=0.9\linewidth]{figures/cover_figure.jpg}
+\end{figure}
+
+% Cover text
+\mbox{}
+\vfill
+\renewcommand{\familydefault}{\sfdefault} \normalfont % Set cover page font
+\textbf{{\Huge \title }} \\[0.5cm]
+{\Large \subtitle }\\[0.5cm]
+Master's thesis in \programme \setlength{\parskip}{1cm}
+
+\noindent
+{\Large \myname} \setlength{\parskip}{1.5cm}
+
+\noindent
+\textcolor{thesisHeaderColor}{\small\textbf{DEPARTMENT OF \MakeUppercase{\department}}}
+\setlength{\parskip}{1mm}
+
+\textsc{Chalmers University of Technology} \\
+{\small Gothenburg, Sweden \the\year \\
+\href{www.chalmers.se}{www.chalmers.se}}\vspace{1.7cm}
+
+\renewcommand{\familydefault}{\rmdefault} \normalfont % Reset standard font
+\end{titlepage}
+
+
+% BACK OF COVER PAGE (BLANK PAGE)
+\newpage
+\restoregeometry
+\thispagestyle{empty}
+\mbox{}
+
+
+% TITLE PAGE
+\newpage
+\thispagestyle{empty}
+\begin{center}
+	\textsc{\large Master's thesis \the\year}\\[4cm]
+	\textbf{\Large \title} \\[1cm]
+	{\large \subtitle}\\[1cm]
+	{\large \MakeUppercase{\myname}}
+	
+	\vfill	
+	% Logotype on titlepage	
+	\begin{figure}[H]
+	\centering
+	% Remove this figure to remove the titlepage logotype
+	\if\ThesisType M
+    \includegraphics[width=0.2\pdfpagewidth]{figures/auxiliary/AvancezChalmersU_black_centered.eps} \\
+    \fi
+    \if\ThesisType B
+    \includegraphics[width=0.2\pdfpagewidth]{figures/auxiliary/AvancezChalmers_black_centered.eps} \\
+    \fi
+	%\includegraphics[width=0.2\pdfpagewidth]{figure/auxiliary/AvancezChalmersU_black_centered.eps} \\
+	\end{figure}	\vspace{5mm}	
+	
+	Department of \department \\
+	\emph{Division of \division }\\
+	\researchgroup\\
+	\textsc{Chalmers University of Technology} \\
+	Gothenburg, Sweden \the\year \\
+\end{center}
+
+
+% IMPRINT PAGE (BACK OF TITLE PAGE)
+\newpage
+\thispagestyle{plain}
+\vspace*{4.5cm}
+\title\\
+\subtitle\\
+\MakeUppercase{\myname} \setlength{\parskip}{1cm}
+
+\copyright ~ \MakeUppercase{\myname}, \the\year. \setlength{\parskip}{1cm}
+
+Supervisor: \supervisorname, \department\\
+Examiner: \examinername, \department \setlength{\parskip}{1cm}
+
+Master's Thesis \the\year\\	
+Department of \department\\
+Division of \division\\
+\researchgroup\\
+Chalmers University of Technology\\
+SE-412 96 Gothenburg\\
+Telephone +46 31 772 1000 \setlength{\parskip}{0.5cm}
+
+\vfill
+% Caption for cover page figure if used, possibly with reference to further information in the report
+Cover: TODO: explain the cover. \setlength{\parskip}{0.5cm}
+
+Typeset in \LaTeX \tagtemp\\
+Printed by Chalmers Reproservice\\
+Gothenburg, Sweden \the\year
