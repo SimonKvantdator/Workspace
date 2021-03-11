@@ -5,7 +5,10 @@
 # Create brand new .gitignore
 rm .gitignore
 touch .gitignore
+chmod u=rwx .gitignore
 
+
+# Fill .gitignore
 echo "
 # LaTeX
 *.aux
@@ -29,11 +32,13 @@ tempCodeRunnerFile.py
 # Some junk
 /HPC/assignment 1/writing to and reading from hdd and ssd/include
 
+# Nestled repos
 */.git
 " >> .gitignore
 
 # Add every file larger than X MB to .gitignore
-find -L . -size +1M | sed 's|^\./||g' | cat >> .gitignore
+cd ~/Workspace
+find -L . -size +20M | sed 's|^\./||g' | cat >> .gitignore
 
 # Copy current neovim configs into workspace
 cp /home/simon/.config/nvim/init.vim /home/simon/Workspace/.init.vim
@@ -42,7 +47,6 @@ cp /home/simon/.config/nvim/init.vim /home/simon/Workspace/.init.vim
 ### Push to git ###
 git add --all
 git commit -m "$(date)"
-#git remote add origin https://github.com/SimonKvantdator/Workspace.git
+# git remote set-url origin https://SimonKvantdator@github.com/SimonKvantdator/Workspace.git
 git branch -M main
 git push -u origin main
-

@@ -15,9 +15,9 @@ set path+=~/.config/nvim " To be able to find init.vim
 " set wildignore+=~/Workspace/gammal\ kod\ som\ jag\ kanske\ vill\ kolla\ på\ igen/*
 
 " Netrw for visual file browsing
-let g:netrw_banner=0        " Disable annoying banner
-let g:netrw_altv=1          " Open splits to the right
-let g:netrw_liststyle=3     " Tree view
+let g:netrw_banner=0 " Disable annoying banner
+let g:netrw_altv=1 " Open splits to the right
+let g:netrw_liststyle=3 " Tree view
 
 " Plugins List
 call plug#begin(g:plugged_home)
@@ -26,9 +26,6 @@ call plug#begin(g:plugged_home)
 	Plug 'vim-airline/vim-airline'
 	Plug 'vim-airline/vim-airline-themes'
     Plug 'franbach/miramare'
-
-	" Better Visual Guide
-	" Plug 'Yggdroot/indentLine' " indentLine forces conceallevel=2, which is annoying when writing latex and such
 
 	" Syntax check
 	Plug 'w0rp/ale'
@@ -41,7 +38,6 @@ call plug#begin(g:plugged_home)
 	Plug 'ncm2/ncm2-jedi'
 
 	" Comment out blocks
-	"Plug 'preservim/nerdcommenter'
 	Plug  'tpope/vim-commentary'
 
 	" Formater
@@ -63,6 +59,14 @@ filetype plugin indent on
 filetype indent off
 filetype plugin on
 
+" There is a bug in UltiSnips that causes NeoVim to freeze a function key in insert mode. This is a workaround.
+if has('nvim')
+    au VimEnter * if exists('#UltiSnips_AutoTrigger')
+        \ |     exe 'au! UltiSnips_AutoTrigger'
+        \ |     aug! UltiSnips_AutoTrigger
+        \ | endif
+endif
+
 
 " Configurations Part
 " UI configuration
@@ -82,9 +86,9 @@ map <C-l> <C-W>l
 if has("termguicolors") " True Color Support if it's avaiable in terminal
 	set termguicolors
 endif
+colorscheme miramare
 let g:miramare_enable_italic = 1
 let g:miramare_disable_italic_comment = 1
-colorscheme miramare
 " Opaque background
 " highlight Normal guibg=none
 " highlight NonText guibg=none
@@ -118,10 +122,10 @@ set softtabstop=0
 set shiftwidth=4
 set tabstop=4
 
-set foldlevelstart=5 " Folds up to level 5 are open by default
+set foldlevelstart=0 " Folds up to level 5 are open by default
 
 " Vim-autoformat
-noremap <F3> :Autoformat<CR>
+" noremap <F3> :Autoformat<CR>
 
 " NCM2
 augroup NCM2
@@ -172,6 +176,9 @@ let g:UltiSnipsExpandTrigger = '<C-j>'
 let g:UltiSnipsJumpForwardTrigger = '<C-j>'
 let g:UltiSnipsJumpBackwardTrigger = '<C-shift-j>'
 
+"Python
+let g:python3_host_prog='python3'
+
 let mapleader=","
 set timeout timeoutlen=1500
 
@@ -207,7 +214,7 @@ let g:vimtex_view_method='general'
 let g:vimtex_view_general_viewer='zathura'
 let g:syntastic_tex_checkers=['lacheck']
 
-" Forward Searching in Zathura
+" Forward Searching in Zathura DOESN'T WORK YET
 function! SyncTexForward()
 let linenumber=line(".")
 let colnumber=col(".")
