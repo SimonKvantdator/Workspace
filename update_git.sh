@@ -45,7 +45,7 @@ cp /home/simon/.config/nvim/init.vim /home/simon/Workspace/.init.vim
 
 
 ### Push to git ###
-git add --all
+git add --ignore-errors --all
 git commit -m "$(date)"
 # git remote set-url origin https://SimonKvantdator@github.com/SimonKvantdator/Workspace.git
 git branch -M main
