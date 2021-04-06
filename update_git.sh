@@ -48,5 +48,9 @@ cp /home/simon/.config/nvim/init.vim /home/simon/Workspace/.init.vim
 git add --ignore-errors --all
 git commit -m "$(date)"
 # git remote set-url origin https://SimonKvantdator@github.com/SimonKvantdator/Workspace.git
+# git remote add usb /media/simon/E908-2BF9/Workspace/
 git branch -M main
 git push -u origin main
+if [ -d "/media/simon/E908-2BF9/Documents/" ]; then
+	git push usb
+fi
