@@ -1036,7 +1036,7 @@ RHSpart[b_]:=b
 
 (* ::Input::Initialization:: *)
 SetAttributes[TexPrintAlignedEquations,HoldFirst];
-Options[TexPrintAlignedEquations]={Labels->False,Punctuation->"."};
+Options[TexPrintAlignedEquations]={Labels->False,LastPunctuation->"."};
 
 
 (* ::Input::Initialization:: *)
@@ -1058,7 +1058,7 @@ RHSBreakPositions=PointBreakingFunction[{MaxRHSWidth},MaxRHSWidth,#1,pagewidth,#
 TexRHS=StringInsert[#1,"\\nonumber\\\\\n&",#2]&@@@(Thread[{TexRHS,RHSBreakPositions}]);
 TexRHS=StringReplace[#,"\n\\nonumber"->"\\nonumber"]&/@TexRHS;
 startString="\\begin{align}\n";
-endString=StringJoin[OptionValue[Punctuation],"\n\\end{align}"];
+endString=StringJoin[OptionValue[LastPunctuation],"\n\\end{align}"];
 StringJoin[startString,StringReplace[StringJoin[Riffle[MapThread[StringJoin[#1,"&",#2, If[And[OptionValue[Labels],NameQ[#3]],StringJoin[" \\label{",TexLabelName[#3],"}"],""]]&,{TexLHS,TexRHS,eqnames}],",\\\\\n"]],",\\\\\n="-> "\\\\\n="],endString]]
 TexPrintAlignedEquations[other_,x___]:=TexPrintAlignedEquations[Evaluate@other,x]
 
