@@ -53,4 +53,5 @@ git branch -M main
 git push -u origin main
 if [ -d "/media/simon/E908-2BF9/Documents/" ]; then
 	git push usb
+	echo "pushed to remote usb"
 fi

@@ -20,11 +20,15 @@
 
 
 (* ::Input::Initialization:: *)
+SetDirectory[NotebookDirectory[]];
+
+
+(* ::Input::Initialization:: *)
 <<xAct`SymManipulator`
 
 
 (* ::Input::Initialization:: *)
-Import["/home/simon/Workspace/masterarbete/TexActModified.m"]
+Import["TexActModified.m"]
 SetOptions[DefFundSpinOperators,ShowValenceInfo->False];
 <<xAct`SpinFrames`
 
