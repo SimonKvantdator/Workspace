@@ -77,9 +77,8 @@
     MultScal[6, SymMult[LambdaCDe, 0, 0][K2Coeff22]], 
     MultScal[-mass, M1Coeff22], MultScal[-3/4, SymMult[K2Coeff22, 2, 0][
       PsiCDe]], MultScal[-3/4, SymMult[K2Coeff22, 0, 2][PsiCDe\[Dagger]]], 
-    CurlDgCDe[K1Coeff31], MultScal[-3, SymH[{K2Coeff22, PhiCDe}, 
-      StrongGenSet[{1, 3, 5, 7}, GenSet[Cycles[{3, 7}], Cycles[{1, 5}]]], 
-      "(15)(37)"]], MultScal[-2/3, TwistCDe[K1Coeff11]]] == 
+    CurlDgCDe[K1Coeff31], MultScal[-3, SymMult[K2Coeff22, 1, 1][PhiCDe]], 
+    MultScal[-2/3, TwistCDe[K1Coeff11]]] == 
    ZeroTensor[{-Spin, -Spin, Spin\[Dagger], Spin\[Dagger]}], 
   TensorPlus[MultScal[(-2*mass^2)/3, L2Coeff13], 
     MultScal[6, SymMult[LambdaCDe, 0, 0][L2Coeff13]], 
@@ -99,8 +98,7 @@
      SymMult[LambdaCDe, 0, 0][N2Coeff22]], MultScal[-3/4, 
      SymMult[N2Coeff22, 2, 0][PsiCDe]], MultScal[-3/4, 
      SymMult[N2Coeff22, 0, 2][PsiCDe\[Dagger]]], CurlCDe[N1Coeff13], 
-    MultScal[-3, SymH[{N2Coeff22, PhiCDe}, StrongGenSet[{1, 3, 5, 7}, 
-       GenSet[Cycles[{3, 7}], Cycles[{1, 5}]]], "(15)(37)"]], 
+    MultScal[-3, SymMult[N2Coeff22, 1, 1][PhiCDe]], 
     MultScal[-2/3, TwistCDe[N1Coeff11]]] == 
    ZeroTensor[{-Spin, -Spin, Spin\[Dagger], Spin\[Dagger]}]}, 
  {TensorPlus[K1Coeff31, MultScal[(-2*mass)/3, M2Coeff31], 
