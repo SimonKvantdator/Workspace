@@ -1044,31 +1044,41 @@ TexLabelName[str_String]:="eq:"<>StringReplace[ToString[str,CharacterEncoding->"
 
 
 (* ::Input::Initialization:: *)
-TexPrintAlignedEquations[eqlist:{eqs___},OptionsPattern[]]:=Module[{TexLHS=TexPrint[xAct`TexAct`Private`LHSpart@#]&/@eqlist,TexRHS=TexPrint[xAct`TexAct`Private`RHSpart@#]&/@eqlist,splittableRHSPositions,splittedRHS,AllWidths,LHSWidths,RHSWidths,MaxRHSWidth,pagewidth,RHSBreakPositions,eqnames={ReleaseHold[ToString/@HoldForm/@Hold[eqs]]}},
-TexLHS=(StringJoin[#,"={}"]&/@TexLHS);
-TexRHS=TexBreak[#,1,TexBreakBy->"Term",TexBreakString->"\n"]&/@TexRHS;
-splittableRHSPositions=SplittingFunction[#,TexBreakAt/.Options[TexBreak],TexBreakInParenthesis/.Options[TexBreak]]&/@TexRHS;
-splittedRHS=StringTake[#1,Thread[{Prepend[#2,1],Append[#2-1,StringLength@#1]}]]&@@@(Thread[{TexRHS,splittableRHSPositions}]);
-AllWidths=TexWidths@@Join[TexLHS,Join@@splittedRHS];
-pagewidth=First@AllWidths;
-LHSWidths=Take[Rest@AllWidths,Length@TexLHS];
-RHSWidths=partitionRagged[Drop[AllWidths,1+Length@TexLHS],Length/@splittedRHS];
-MaxRHSWidth=Round[($TexPrintPageWidth/.latextextwidth->pagewidth)-Max@LHSWidths];
-RHSBreakPositions=PointBreakingFunction[{MaxRHSWidth},MaxRHSWidth,#1,pagewidth,#2]&@@@(Thread[{RHSWidths,splittableRHSPositions}]);
-TexRHS=StringInsert[#1,"\\nonumber\\\\\n&",#2]&@@@(Thread[{TexRHS,RHSBreakPositions}]);
-TexRHS=StringReplace[#,"\n\\nonumber"->"\\nonumber"]&/@TexRHS;
-startString="\\begin{align}\n";
-endString=StringJoin[OptionValue[LastPunctuation],"\n\\end{align}"];
-StringJoin[startString,StringReplace[StringJoin[Riffle[MapThread[StringJoin[#1,"&",#2, If[And[OptionValue[Labels],NameQ[#3]],StringJoin[" \\label{",TexLabelName[#3],"}"],""]]&,{TexLHS,TexRHS,eqnames}],",\\\\\n"]],",\\\\\n="-> "\\\\\n="],endString]]
-TexPrintAlignedEquations[other_,x___]:=TexPrintAlignedEquations[Evaluate@other,x]
+Options[TexPrintAlignedEquations]={Labels->False,LastPunctuation->","};
 
 
 (* ::Input::Initialization:: *)
-TexPrintAlignedExpressions[list_List]:=Module[{Texed=TexPrint/@list},
-Texed=TexBreak[#,1,TexBreakBy->"Term",TexBreakString->"\n"]&/@Texed;
-Texed=TexBreak[#,$TexPrintPageWidth,TexBreakBy->"TexPoint",TexBreakString->"\\nonumber\\\\\n&"]&/@Texed;
-Texed=StringReplace[#,"\n\\nonumber"->"\\nonumber"]&/@Texed;
-StringJoin["\\begin{align}\n&",StringJoin[Riffle[Texed,",\\\\\n&"]],".\n\\end{align}"]]
+TexPrintAlignedEquations[eqlist:{eqs___},OptionsPattern[]]=.
+
+
+(* ::Input::Initialization:: *)
+TexPrintAlignedEquations2[eqlist:{eqs___},uselabelsq_,labellist_ ]:=Module[{TexLHS=TexPrint[xAct`TexAct`Private`LHSpart@#]&/@eqlist,TexRHS=TexPrint[xAct`TexAct`Private`RHSpart@#]&/@eqlist,splittableRHSPositions,splittedRHS,AllWidths,LHSWidths,RHSWidths,MaxRHSWidth,pagewidth,RHSBreakPositions},
+TexLHS=(StringJoin[#,"={}"]&/@TexLHS);
+TexRHS=TexBreak[#,1,TexBreakBy->"Term",TexBreakString->"\n"]&/@TexRHS;
+splittableRHSPositions=xAct`TexAct`Private`SplittingFunction[#,TexBreakAt/.Options[TexBreak],TexBreakInParenthesis/.Options[TexBreak]]&/@TexRHS;
+splittedRHS=StringTake[#1,Thread[{Prepend[#2,1],Append[#2-1,StringLength@#1]}]]&@@@(Thread[{TexRHS,splittableRHSPositions}]);
+AllWidths=xAct`TexAct`Private`TexWidths@@Join[TexLHS,Join@@splittedRHS];
+pagewidth=First@AllWidths;
+LHSWidths=Take[Rest@AllWidths,Length@TexLHS];
+RHSWidths=xAct`TexAct`Private`partitionRagged[Drop[AllWidths,1+Length@TexLHS],Length/@splittedRHS];
+MaxRHSWidth=Round[($TexPrintPageWidth/.latextextwidth->pagewidth)-Max@LHSWidths];
+RHSBreakPositions=xAct`TexAct`Private`PointBreakingFunction[{MaxRHSWidth},MaxRHSWidth,#1,pagewidth,#2]&@@@(Thread[{RHSWidths,splittableRHSPositions}]);
+TexRHS=StringInsert[#1,"\\nonumber\\\\\n&",#2]&@@@(Thread[{TexRHS,RHSBreakPositions}]);
+TexRHS=StringReplace[#,"\n\\nonumber"->"\\nonumber"]&/@TexRHS;
+StringJoin["\\begin{align}\n",StringReplace[StringJoin[Riffle[MapThread[StringJoin[#1,"&",#2, If[uselabelsq,StringJoin[" \\label{",#3,"}"],""]]&,{TexLHS,TexRHS,labellist}],",\\\\\n"]],",\\\\\n="-> "\\\\\n="],OptionValue[TexPrintAlignedEquations,LastPunctuation]<>"\n\\end{align}"]]
+
+
+(* ::Input::Initialization:: *)
+TexPrintAlignedEquations[eqlist:{eqs___},OptionsPattern[]]:=Module[{eqnames={ReleaseHold[ToString/@HoldForm/@Hold[eqs]]},labellist},
+labellist=If[And[OptionValue[Labels],NameQ[#]],TexLabelName[#],""]&/@eqnames;
+TexPrintAlignedEquations2[eqlist,OptionValue[Labels],labellist]]
+
+
+(* ::Input::Initialization:: *)
+TexPrintAlignedEquations[eqlist_,OptionsPattern[]]:=Module[{eqlistname=TexLabelName@ToString@HoldForm[eqlist],labellist},
+labellist=StringJoin[eqlistname,ToString[#]]&/@Range[Length[eqlist]];
+TexPrintAlignedEquations2[eqlist,OptionValue[Labels],labellist]
+]/;And[NameQ@ToString@HoldForm[eqlist],Head[eqlist]==List]
 
 
 (* ::Input::Initialization:: *)
