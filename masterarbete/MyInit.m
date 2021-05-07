@@ -139,11 +139,11 @@ With[{unprimedpos=Select[Range@Length@slotsTT,(UpIndex[slotsTT[[#]]]==spin)&],pr
 
 
 (* ::Input::Initialization:: *)
-Tex[\[Epsilon]\[Dagger]]^="\\bar\\epsilon";
+Tex[\[Epsilon]\[Dagger]]^="\\conjugate\\epsilon";
 
 
 (* ::Input::Initialization:: *)
-Tex[PsiCDe\[Dagger]]^="\\bar\\Psi";
+Tex[PsiCDe\[Dagger]]^="\\conjugate\\Psi";
 
 
 (* ::Input::Initialization:: *)
@@ -152,6 +152,10 @@ SetOptions[TexBreak,TexBreakString->" \\nonumber \\\\ \n &"];
 
 (* ::Input::Initialization:: *)
 Off[ValidateSymbol::"capital"]
+
+
+(* ::Input::Initialization:: *)
+SetOptions[DefFundSpinOperators,ShowValenceInfo->False]
 
 
 (* ::Input::Initialization:: *)
@@ -1144,6 +1148,8 @@ MultScal[(l-1),SymMult[PsiCDe\[Dagger],0,2][TT]],
 MultScal[k,SymMult[PhiCDe,1,1][TT]],
 MultScal[-(l+2),SymMult[LambdaCDe,0,0][TT]]
 ]]/;EnoughIndsQSpin[TT,1,1];
+CommuteOp[CurlDgCDe,CurlCDe,DivCDe,TwistCDe]^=CurlDgCDe[CurlCDe[TT_?xTensorQ]]:>With[{k=NumOfUnprimedSlots[Spin]@TT,l=NumOfPrimedSlots[Spin]@TT},TensorPlus[MultScal[-(((1+k) (1+l))/(2+k+l)),DivCDe[TwistCDe[TT]]],MultScal[(k (2+k) (1+l))/((1+k) (2+k+l)),TwistCDe[DivCDe[TT]]],MultScal[((2+k) (-1+l) (1+l))/(2+k+l),SymMult[PsiCDe\[Dagger],0,2][TT]],MultScal[(k (2+k) (1+l))/(2+k+l),SymMult[PhiCDe,1,1][TT]],MultScal[-(((2+k) (1+l) (2+l))/(2+k+l)),SymMult[LambdaCDe,0,0][TT]],MultScal[((-1+k) k (1+l))/(2+k+l),SymMult[PsiCDe,2,0][TT]],MultScal[(k l (1+l))/(2+k+l),SymMult[PhiCDe,1,1][TT]],MultScal[-((k (2+k) (1+l))/(2+k+l)),SymMult[LambdaCDe,0,0][TT]]]]/;EnoughIndsQSpin[TT,0,1];
+CommuteOp[CurlCDe,CurlDgCDe,DivCDe,TwistCDe]^=CurlCDe[CurlDgCDe[TT_?xTensorQ]]:>With[{k=NumOfUnprimedSlots[Spin]@TT,l=NumOfPrimedSlots[Spin]@TT},TensorPlus[MultScal[-(((1+k) (1+l))/(2+k+l)),DivCDe[TwistCDe[TT]]],MultScal[((1+k) l (2+l))/((1+l) (2+k+l)),TwistCDe[DivCDe[TT]]],MultScal[((-1+k) (1+k) (2+l))/(2+k+l),SymMult[PsiCDe,2,0][TT]],MultScal[((1+k) l (2+l))/(2+k+l),SymMult[PhiCDe,1,1][TT]],MultScal[-(((1+k) (2+k) (2+l))/(2+k+l)),SymMult[LambdaCDe,0,0][TT]],MultScal[((1+k) (-1+l) l)/(2+k+l),SymMult[PsiCDe\[Dagger],0,2][TT]],MultScal[(k (1+k) l)/(2+k+l),SymMult[PhiCDe,1,1][TT]],MultScal[-(((1+k) l (2+l))/(2+k+l)),SymMult[LambdaCDe,0,0][TT]]]]/;EnoughIndsQSpin[TT,1,0];
 
 
 (* ::Input::Initialization:: *)
