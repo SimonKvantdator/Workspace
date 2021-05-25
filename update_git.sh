@@ -47,7 +47,7 @@ cp /home/simon/.config/i3/config /home/simon/Workspace/.config
 
 ### Push to git ###
 # git remote add origin https://github.com/SimonKvantdator/Workspace.git  # HTTPS adress
-git remote set-url origin git@github.com:SimonKvantdator/Workspace.git  # SSH adress
+# git remote add origin git@github.com:SimonKvantdator/Workspace.git  # SSH adress
 # git remote add usb /media/simon/E908-2BF9/Workspace/
 git add --ignore-errors --all
 git commit -m "$(date)"
