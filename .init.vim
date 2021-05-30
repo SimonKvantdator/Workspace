@@ -54,6 +54,9 @@ call plug#begin(g:plugged_home)
 
 	" Turn off syntax highlighting and such for large files
 	Plug 'vim-scripts/LargeFile'
+
+	" User defined modes
+	Plug 'Iron-E/nvim-libmodal'
 call plug#end()
 filetype plugin indent on
 filetype indent off
@@ -227,3 +230,20 @@ nmap  :call SyncTexForward()
 
 " LargeFile settings
 let g:LargeFile = 100 " How large (in MB) files should I use the LargeFile script for?
+
+" User defined scroll mode, where j and k are mapped to ctrl-y and ctrl-e
+ nnoremap gs :call <sid>scrollMode()<cr>
+let s:scrollModeRecurse = 0
+let s:scrollModeCombos = {
+	\   'j': 'normal ',
+	\   'J': 'normal 5',
+	\   'k': 'normal ',
+	\   'K': 'normal 5',
+	\   'g': 'normal gg',
+	\   'G': 'normal G',
+	\}
+function! s:scrollMode()
+	let s:scrollModeRecurse += 1
+	call libmodal#Enter('SCROLLMODE' . s:scrollModeRecurse, s:scrollModeCombos)
+	let s:scrollModeRecurse -= 1
+endfunction
