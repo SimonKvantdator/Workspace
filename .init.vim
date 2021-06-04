@@ -57,6 +57,9 @@ call plug#begin(g:plugged_home)
 
 	" User defined modes
 	Plug 'Iron-E/nvim-libmodal'
+
+	" Smooth scrolling with <C-u>, <C-d>, <C-b>, and <C-f> (and gg and G if you want.
+	Plug 'psliwka/vim-smoothie'
 call plug#end()
 filetype plugin indent on
 filetype indent off
@@ -236,10 +239,10 @@ let g:LargeFile = 100 " How large (in MB) files should I use the LargeFile scrip
 let s:scrollModeRecurse = 0
 let s:scrollModeCombos = {
 	\   'j': 'normal ',
-	\   'J': 'normal 5',
+	\   'J': 'normal ',
 	\   'k': 'normal ',
-	\   'K': 'normal 5',
-	\   'g': 'normal gg',
+	\   'K': 'normal ',
+	\   'gg': 'normal gg',
 	\   'G': 'normal G',
 	\}
 function! s:scrollMode()
