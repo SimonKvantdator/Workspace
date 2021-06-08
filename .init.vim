@@ -9,6 +9,7 @@ set wildmenu
 
 " Set path for :find
 set path+=./*
+set path+=~/*
 set path+=~/Documents/*
 set path+=~/Workspace/*
 set path+=~/.config/nvim " To be able to find init.vim
@@ -127,6 +128,7 @@ set nopreserveindent
 set softtabstop=0
 set shiftwidth=4
 set tabstop=4
+autocmd FileType python setlocal noexpandtab " Otherwise, some python plugin overrules noexpandtab
 
 set foldlevelstart=0 " Folds up to level 5 are open by default
 
@@ -197,9 +199,8 @@ noremap! <C-BS> <C-w>
 noremap! <C-h> <C-w>
 
 " Run python scripts with f5
-autocmd FileType python map <buffer> <F5> :w<CR>:exec '!python3' shellescape(@%, 1)<CR>
-autocmd FileType python imap <buffer> <F5> <esc>:w<CR>:exec '!python3' shellescape(@%, 1)<CR>
-
+autocmd FileType python map <buffer> <F5>       :w<CR>:exec '!cd ' . shellescape(expand('%:p:h'), 1) . ' && python3' shellescape(expand('%:t'), 1)<CR>
+autocmd FileType python imap <buffer> <F5> <esc>:w<CR>:exec '!cd ' . shellescape(expand('%:p:h'), 1) . ' && python3' shellescape(expand('%:t'), 1)<CR>
 " Run bash scripts with f5
 autocmd FileType sh map <buffer> <F5> :w<CR>:!bash %<CR>
 autocmd FileType sh imap <buffer> <F5> <esc>:w<CR>:!bash %<CR>
@@ -208,7 +209,8 @@ autocmd FileType sh imap <buffer> <F5> <esc>:w<CR>:!bash %<CR>
 autocmd FileType c map  <buffer> <F5>      :w<CR>:exec '!cd ' . shellescape(expand('%:p:h'), 1) . ' && make && ' . shellescape(expand('%:p:r'), 1)<CR>
 autocmd FileType c imap <buffer> <F5> <esc>:w<CR>:exec '!cd ' . shellescape(expand('%:p:h'), 1) . ' && make && ' . shellescape(expand('%:p:r'), 1)<CR>
 
-
+" Expand tabs to 4 spaces in Haskell
+autocmd FileType haskell setlocal expandtab 
 " Vimtex Plugin settings
 let g:tex_flavor='latex'
 let g:tex_conceal=''
@@ -221,15 +223,15 @@ let g:vimtex_view_general_viewer='zathura'
 let g:syntastic_tex_checkers=['lacheck']
 
 " Forward Searching in Zathura DOESN'T WORK YET
-function! SyncTexForward()
-let linenumber=line(".")
-let colnumber=col(".")
-let filename=bufname("%")
-let filenamePDF=filename[:-4]."pdf"
-let execstr="!zathura --synctex-forward " . linenumber . ":" . colnumber . ":" . filename . " " . filenamePDF . "&>/dev/null &"
-exec execstr 
-endfunction
-nmap  :call SyncTexForward()
+" function! SyncTexForward()
+" let linenumber=line(".")
+" let colnumber=col(".")
+" let filename=bufname("%")
+" let filenamePDF=filename[:-4]."pdf"
+" let execstr="!zathura --synctex-forward " . linenumber . ":" . colnumber . ":" . filename . " " . filenamePDF . "&>/dev/null &"
+" exec execstr 
+" endfunction
+" nmap  :call SyncTexForward()
 
 " LargeFile settings
 let g:LargeFile = 100 " How large (in MB) files should I use the LargeFile script for?
