@@ -1,0 +1,2465 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     83525,       2457]
+NotebookOptionsPosition[     82283,       2427]
+NotebookOutlinePosition[     82659,       2443]
+CellTagsIndexPosition[     82616,       2440]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{"Run", " ", "simplify_", "1", "st_order", 
+    RowBox[{"_conditions", ".", "nb"}], " ", "in", " ", "the", " ", "same", 
+    " ", "kernel", " ", 
+    RowBox[{"first", "!"}]}], " ", "*)"}], "\[IndentingNewLine]", 
+  RowBox[{"DefSpinor", "[", 
+   RowBox[{
+    RowBox[{"KK", "[", 
+     RowBox[{
+      RowBox[{"-", "A"}], ",", 
+      RowBox[{"-", "A\[Dagger]"}], ",", 
+      RowBox[{"-", "B"}], ",", 
+      RowBox[{"-", "B\[Dagger]"}]}], "]"}], ",", "M4", ",", 
+    RowBox[{"JoinSGS", "[", 
+     RowBox[{
+      RowBox[{"Symmetric", "[", 
+       RowBox[{"{", 
+        RowBox[{"1", ",", "3"}], "}"}], "]"}], ",", " ", 
+      RowBox[{"Symmetric", "[", 
+       RowBox[{"{", 
+        RowBox[{"2", ",", "4"}], "}"}], "]"}]}], "]"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.8327430966915407`*^9, 3.8327431201369467`*^9}, {
+   3.832743155591982*^9, 3.832743185534966*^9}, {3.8327457831683903`*^9, 
+   3.832745807482399*^9}, {3.832745846745728*^9, 3.83274587971343*^9}, 
+   3.832745923052861*^9, {3.832746357198757*^9, 3.8327463620553217`*^9}},
+ CellLabel->
+  "In[209]:=",ExpressionUUID->"572709a2-1bb3-43be-a2a5-29fc4f9413cd"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "ValidateSymbol","used",
+   "\"Symbol \\!\\(\\*RowBox[{\\\"\\\\\\\"KK\\\\\\\"\\\"}]\\) is already used \
+\\!\\(\\*RowBox[{\\\"\\\\\\\"as a tensor\\\\\\\"\\\"}]\\).\"",2,209,5,
+   22909528823583284240,"Local","xAct`xCore`ValidateSymbol"},
+  "MessageTemplate2"]], "Message", "MSG",
+ CellChangeTimes->{{3.8327509894144793`*^9, 3.832751013442387*^9}},
+ CellLabel->
+  "During evaluation of \
+In[209]:=",ExpressionUUID->"36b6b76f-a31d-424d-a862-16ca281c12df"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{"CDe", "[", 
+     RowBox[{
+      RowBox[{"-", "A"}], ",", 
+      RowBox[{"-", "A\[Dagger]"}]}], "]"}], "[", 
+    RowBox[{"KK", "[", 
+     RowBox[{
+      RowBox[{"-", "B"}], ",", 
+      RowBox[{"-", "B\[Dagger]"}], ",", 
+      RowBox[{"-", "C"}], ",", 
+      RowBox[{"-", "C\[Dagger]"}]}], "]"}], "]"}], "+", 
+   RowBox[{
+    RowBox[{"CDe", "[", 
+     RowBox[{
+      RowBox[{"-", "B"}], ",", 
+      RowBox[{"-", "B\[Dagger]"}]}], "]"}], "[", 
+    RowBox[{"KK", "[", 
+     RowBox[{
+      RowBox[{"-", "A"}], ",", 
+      RowBox[{"-", "A\[Dagger]"}], ",", 
+      RowBox[{"-", "C"}], ",", 
+      RowBox[{"-", "C\[Dagger]"}]}], "]"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"%", "\[Equal]", 
+  RowBox[{"(", 
+   RowBox[{"%", "/.", 
+    RowBox[{"EqToRule", "[", 
+     RowBox[{
+      RowBox[{"KK", "[", 
+       RowBox[{
+        RowBox[{"-", "A"}], ",", 
+        RowBox[{"-", "A\[Dagger]"}], ",", 
+        RowBox[{"-", "B"}], ",", 
+        RowBox[{"-", "B\[Dagger]"}]}], "]"}], "\[Equal]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"\[Epsilon]", "[", 
+         RowBox[{
+          RowBox[{"-", "A"}], ",", 
+          RowBox[{"-", "B"}]}], "]"}], 
+        RowBox[{"TT", "[", 
+         RowBox[{
+          RowBox[{"-", "A\[Dagger]"}], ",", 
+          RowBox[{"-", "B\[Dagger]"}]}], "]"}]}], "+", 
+       RowBox[{
+        RowBox[{"\[Epsilon]\[Dagger]", "[", 
+         RowBox[{
+          RowBox[{"-", "A\[Dagger]"}], ",", 
+          RowBox[{"-", "B\[Dagger]"}]}], "]"}], 
+        RowBox[{"UU", "[", 
+         RowBox[{
+          RowBox[{"-", "A"}], ",", 
+          RowBox[{"-", "B"}]}], "]"}]}]}]}], "]"}]}], ")"}]}]}], "Input",
+ CellChangeTimes->{{3.832743225009356*^9, 3.832743332218628*^9}, {
+   3.83274342188865*^9, 3.8327434435117483`*^9}, {3.832743482239421*^9, 
+   3.83274351334184*^9}, {3.832744991331387*^9, 3.832744993256892*^9}, {
+   3.83274592674113*^9, 3.832745928693384*^9}, 3.832745991817151*^9, {
+   3.832750717462878*^9, 3.8327507308681517`*^9}, {3.8327510010122232`*^9, 
+   3.832751002878186*^9}},
+ CellLabel->
+  "In[210]:=",ExpressionUUID->"b7482dd9-d1ec-4ccc-9ea7-cf2ec7e9554b"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   InterpretationBox[
+    StyleBox[
+     RowBox[{
+      SubsuperscriptBox["\[EmptyDownTriangle]", 
+       RowBox[{"AA", "'"}], "  "], GridBox[{
+        {"KK", 
+         StyleBox[GridBox[{
+            {" ", " ", " ", " "},
+            {"B", 
+             RowBox[{"B", "'"}], "C", 
+             RowBox[{"C", "'"}]}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}]}],
+     ShowAutoStyles->False,
+     AutoSpacing->False],
+    $CellContext`CDe[-$CellContext`A, -$CellContext`A\[Dagger]][
+     $CellContext`KK[-$CellContext`B, -$CellContext`B\[Dagger], -
+      C, -$CellContext`C\[Dagger]]],
+    Editable->False], "+", 
+   InterpretationBox[
+    StyleBox[
+     RowBox[{
+      SubsuperscriptBox["\[EmptyDownTriangle]", 
+       RowBox[{"BB", "'"}], "  "], GridBox[{
+        {"KK", 
+         StyleBox[GridBox[{
+            {" ", " ", " ", " "},
+            {"A", 
+             RowBox[{"A", "'"}], "C", 
+             RowBox[{"C", "'"}]}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}]}],
+     ShowAutoStyles->False,
+     AutoSpacing->False],
+    $CellContext`CDe[-$CellContext`B, -$CellContext`B\[Dagger]][
+     $CellContext`KK[-$CellContext`A, -$CellContext`A\[Dagger], -
+      C, -$CellContext`C\[Dagger]]],
+    Editable->False]}], "\[Equal]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"-", 
+     InterpretationBox[
+      StyleBox[GridBox[{
+         {"\[Epsilon]", 
+          StyleBox[GridBox[{
+             {" ", " "},
+             {"C", "B"}
+            },
+            GridBoxSpacings->{"Columns" -> {
+                Offset[0.], {
+                 Offset[0.034999999999999996`]}, 
+                Offset[0.]}, "Rows" -> {{
+                 Offset[0.]}}}],
+           FontSize->Rational[39, 4]]}
+        },
+        GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+        GridBoxSpacings->{"Columns" -> {
+            Offset[0.27999999999999997`], {
+             Offset[0.034999999999999996`]}, 
+            Offset[0.27999999999999997`]}, "Rows" -> {
+            Offset[0.2], {
+             Offset[0.4]}, 
+            Offset[0.2]}}],
+       ShowAutoStyles->False,
+       AutoSpacing->False],
+      $CellContext`\[Epsilon][-C, -$CellContext`B],
+      Editable->False]}], " ", 
+    RowBox[{"(", 
+     InterpretationBox[
+      StyleBox[
+       RowBox[{
+        SubsuperscriptBox["\[EmptyDownTriangle]", 
+         RowBox[{"AA", "'"}], "  "], GridBox[{
+          {
+           UnderscriptBox["T", 
+            RowBox[{"0", ",", "2"}]], 
+           StyleBox[GridBox[{
+              {" ", " "},
+              {
+               RowBox[{"B", "'"}], 
+               RowBox[{"C", "'"}]}
+             },
+             GridBoxSpacings->{"Columns" -> {
+                 Offset[0.], {
+                  Offset[0.034999999999999996`]}, 
+                 Offset[0.]}, "Rows" -> {{
+                  Offset[0.]}}}],
+            FontSize->Rational[39, 4]]}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxSpacings->{"Columns" -> {
+             Offset[0.27999999999999997`], {
+              Offset[0.034999999999999996`]}, 
+             Offset[0.27999999999999997`]}, "Rows" -> {
+             Offset[0.2], {
+              Offset[0.4]}, 
+             Offset[0.2]}}]}],
+       ShowAutoStyles->False,
+       AutoSpacing->False],
+      $CellContext`CDe[-$CellContext`A, -$CellContext`A\[Dagger]][
+       $CellContext`TT[-$CellContext`B\[Dagger], -$CellContext`C\[Dagger]]],
+      Editable->False], ")"}]}], "-", 
+   RowBox[{
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {
+         OverscriptBox["\[Epsilon]", "_"], 
+         StyleBox[GridBox[{
+            {" ", " "},
+            {
+             RowBox[{"C", "'"}], 
+             RowBox[{"B", "'"}]}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`\[Epsilon]\[Dagger][-$CellContext`C\[Dagger], \
+-$CellContext`B\[Dagger]],
+     Editable->False], " ", 
+    RowBox[{"(", 
+     InterpretationBox[
+      StyleBox[
+       RowBox[{
+        SubsuperscriptBox["\[EmptyDownTriangle]", 
+         RowBox[{"AA", "'"}], "  "], GridBox[{
+          {
+           UnderscriptBox["U", 
+            RowBox[{"2", ",", "0"}]], 
+           StyleBox[GridBox[{
+              {" ", " "},
+              {"B", "C"}
+             },
+             GridBoxSpacings->{"Columns" -> {
+                 Offset[0.], {
+                  Offset[0.034999999999999996`]}, 
+                 Offset[0.]}, "Rows" -> {{
+                  Offset[0.]}}}],
+            FontSize->Rational[39, 4]]}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxSpacings->{"Columns" -> {
+             Offset[0.27999999999999997`], {
+              Offset[0.034999999999999996`]}, 
+             Offset[0.27999999999999997`]}, "Rows" -> {
+             Offset[0.2], {
+              Offset[0.4]}, 
+             Offset[0.2]}}]}],
+       ShowAutoStyles->False,
+       AutoSpacing->False],
+      $CellContext`CDe[-$CellContext`A, -$CellContext`A\[Dagger]][
+       $CellContext`UU[-$CellContext`B, -C]],
+      Editable->False], ")"}]}], "-", 
+   RowBox[{
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {"\[Epsilon]", 
+         StyleBox[GridBox[{
+            {" ", " "},
+            {"C", "A"}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`\[Epsilon][-C, -$CellContext`A],
+     Editable->False], " ", 
+    RowBox[{"(", 
+     InterpretationBox[
+      StyleBox[
+       RowBox[{
+        SubsuperscriptBox["\[EmptyDownTriangle]", 
+         RowBox[{"BB", "'"}], "  "], GridBox[{
+          {
+           UnderscriptBox["T", 
+            RowBox[{"0", ",", "2"}]], 
+           StyleBox[GridBox[{
+              {" ", " "},
+              {
+               RowBox[{"A", "'"}], 
+               RowBox[{"C", "'"}]}
+             },
+             GridBoxSpacings->{"Columns" -> {
+                 Offset[0.], {
+                  Offset[0.034999999999999996`]}, 
+                 Offset[0.]}, "Rows" -> {{
+                  Offset[0.]}}}],
+            FontSize->Rational[39, 4]]}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxSpacings->{"Columns" -> {
+             Offset[0.27999999999999997`], {
+              Offset[0.034999999999999996`]}, 
+             Offset[0.27999999999999997`]}, "Rows" -> {
+             Offset[0.2], {
+              Offset[0.4]}, 
+             Offset[0.2]}}]}],
+       ShowAutoStyles->False,
+       AutoSpacing->False],
+      $CellContext`CDe[-$CellContext`B, -$CellContext`B\[Dagger]][
+       $CellContext`TT[-$CellContext`A\[Dagger], -$CellContext`C\[Dagger]]],
+      Editable->False], ")"}]}], "-", 
+   RowBox[{
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {
+         OverscriptBox["\[Epsilon]", "_"], 
+         StyleBox[GridBox[{
+            {" ", " "},
+            {
+             RowBox[{"C", "'"}], 
+             RowBox[{"A", "'"}]}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`\[Epsilon]\[Dagger][-$CellContext`C\[Dagger], \
+-$CellContext`A\[Dagger]],
+     Editable->False], " ", 
+    RowBox[{"(", 
+     InterpretationBox[
+      StyleBox[
+       RowBox[{
+        SubsuperscriptBox["\[EmptyDownTriangle]", 
+         RowBox[{"BB", "'"}], "  "], GridBox[{
+          {
+           UnderscriptBox["U", 
+            RowBox[{"2", ",", "0"}]], 
+           StyleBox[GridBox[{
+              {" ", " "},
+              {"A", "C"}
+             },
+             GridBoxSpacings->{"Columns" -> {
+                 Offset[0.], {
+                  Offset[0.034999999999999996`]}, 
+                 Offset[0.]}, "Rows" -> {{
+                  Offset[0.]}}}],
+            FontSize->Rational[39, 4]]}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxSpacings->{"Columns" -> {
+             Offset[0.27999999999999997`], {
+              Offset[0.034999999999999996`]}, 
+             Offset[0.27999999999999997`]}, "Rows" -> {
+             Offset[0.2], {
+              Offset[0.4]}, 
+             Offset[0.2]}}]}],
+       ShowAutoStyles->False,
+       AutoSpacing->False],
+      $CellContext`CDe[-$CellContext`B, -$CellContext`B\[Dagger]][
+       $CellContext`UU[-$CellContext`A, -C]],
+      Editable->False], ")"}]}]}]}]], "Output",
+ CellChangeTimes->{
+  3.8327435167950993`*^9, 3.832743613020208*^9, {3.8327437197915993`*^9, 
+   3.832743745644726*^9}, {3.8327439937183313`*^9, 3.8327440721581917`*^9}, 
+   3.832744190366852*^9, 3.832744255623436*^9, 3.832744482575107*^9, 
+   3.832744580552627*^9, 3.832744709984828*^9, 3.832744763561981*^9, {
+   3.832744997249818*^9, 3.832745007404944*^9}, {3.8327451927926397`*^9, 
+   3.832745201556625*^9}, 3.8327455826601477`*^9, 3.832745826036578*^9, 
+   3.832745898671524*^9, 3.832745934880986*^9, {3.83274599230945*^9, 
+   3.832746020617176*^9}, {3.832750727993062*^9, 3.832750731366531*^9}, {
+   3.832750989524345*^9, 3.832751013512128*^9}},
+ CellLabel->
+  "Out[211]=",ExpressionUUID->"f2a1f6c6-4e94-4bf6-bc43-edd165519d42"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"%", "/.", 
+   RowBox[{"Flatten", "[", 
+    RowBox[{"EqToRule", "/@", 
+     RowBox[{"{", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"IrrDecomposeCovD", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"CDe", "[", 
+           RowBox[{
+            RowBox[{"-", "A"}], ",", 
+            RowBox[{"-", "A\[Dagger]"}]}], "]"}], "[", 
+          RowBox[{"TT", "[", 
+           RowBox[{
+            RowBox[{"-", "B\[Dagger]"}], ",", 
+            RowBox[{"-", "C\[Dagger]"}]}], "]"}], "]"}], ",", 
+         RowBox[{"ResultType", "\[Rule]", "\"\<Equation\>\""}]}], "]"}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"IrrDecomposeCovD", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"CDe", "[", 
+           RowBox[{
+            RowBox[{"-", "A"}], ",", 
+            RowBox[{"-", "A\[Dagger]"}]}], "]"}], "[", 
+          RowBox[{"UU", "[", 
+           RowBox[{
+            RowBox[{"-", "B"}], ",", 
+            RowBox[{"-", "C"}]}], "]"}], "]"}], ",", 
+         RowBox[{"ResultType", "\[Rule]", "\"\<Equation\>\""}]}], "]"}]}], 
+      "\[IndentingNewLine]", "}"}]}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"%", "//", "ExpandSym"}], "//", "Expand"}]}], "Input",
+ CellChangeTimes->{{3.832743569290187*^9, 3.8327435777751083`*^9}, {
+  3.832743611166691*^9, 3.8327437436068277`*^9}, {3.832745554409112*^9, 
+  3.832745558875947*^9}, {3.832746015515895*^9, 3.8327460246005163`*^9}},
+ CellLabel->
+  "In[212]:=",ExpressionUUID->"8cfb81cf-22cd-4019-9cdc-6e20ae02cd73"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   InterpretationBox[
+    StyleBox[
+     RowBox[{
+      SubsuperscriptBox["\[EmptyDownTriangle]", 
+       RowBox[{"AA", "'"}], "  "], GridBox[{
+        {"KK", 
+         StyleBox[GridBox[{
+            {" ", " ", " ", " "},
+            {"B", 
+             RowBox[{"B", "'"}], "C", 
+             RowBox[{"C", "'"}]}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}]}],
+     ShowAutoStyles->False,
+     AutoSpacing->False],
+    $CellContext`CDe[-$CellContext`A, -$CellContext`A\[Dagger]][
+     $CellContext`KK[-$CellContext`B, -$CellContext`B\[Dagger], -
+      C, -$CellContext`C\[Dagger]]],
+    Editable->False], "+", 
+   InterpretationBox[
+    StyleBox[
+     RowBox[{
+      SubsuperscriptBox["\[EmptyDownTriangle]", 
+       RowBox[{"BB", "'"}], "  "], GridBox[{
+        {"KK", 
+         StyleBox[GridBox[{
+            {" ", " ", " ", " "},
+            {"A", 
+             RowBox[{"A", "'"}], "C", 
+             RowBox[{"C", "'"}]}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}]}],
+     ShowAutoStyles->False,
+     AutoSpacing->False],
+    $CellContext`CDe[-$CellContext`B, -$CellContext`B\[Dagger]][
+     $CellContext`KK[-$CellContext`A, -$CellContext`A\[Dagger], -
+      C, -$CellContext`C\[Dagger]]],
+    Editable->False]}], "\[Equal]", 
+  RowBox[{
+   RowBox[{
+    FractionBox["1", "3"], " ", 
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {"\[Epsilon]", 
+         StyleBox[GridBox[{
+            {" ", " "},
+            {"C", "B"}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`\[Epsilon][-C, -$CellContext`B],
+     Editable->False], " ", 
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {
+         OverscriptBox["\[Epsilon]", "_"], 
+         StyleBox[GridBox[{
+            {" ", " "},
+            {
+             RowBox[{"A", "'"}], 
+             RowBox[{"C", "'"}]}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`\[Epsilon]\[Dagger][-$CellContext`A\[Dagger], \
+-$CellContext`C\[Dagger]],
+     Editable->False], " ", 
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {
+         RowBox[{
+          SubscriptBox["\[ScriptCapitalC]", 
+           RowBox[{
+            TagBox["0",
+             DisplayForm], ",", 
+            TagBox["2",
+             DisplayForm]}]], 
+          UnderscriptBox["T", 
+           RowBox[{"0", ",", "2"}]]}], 
+         StyleBox[GridBox[{
+            {" ", " "},
+            {"A", 
+             RowBox[{"B", "'"}]}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`CurlCDe[$CellContext`TT][-$CellContext`A, -$CellContext`B\
+\[Dagger]],
+     Editable->False]}], "+", 
+   RowBox[{
+    FractionBox["1", "3"], " ", 
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {"\[Epsilon]", 
+         StyleBox[GridBox[{
+            {" ", " "},
+            {"C", "B"}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`\[Epsilon][-C, -$CellContext`B],
+     Editable->False], " ", 
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {
+         OverscriptBox["\[Epsilon]", "_"], 
+         StyleBox[GridBox[{
+            {" ", " "},
+            {
+             RowBox[{"A", "'"}], 
+             RowBox[{"B", "'"}]}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`\[Epsilon]\[Dagger][-$CellContext`A\[Dagger], \
+-$CellContext`B\[Dagger]],
+     Editable->False], " ", 
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {
+         RowBox[{
+          SubscriptBox["\[ScriptCapitalC]", 
+           RowBox[{
+            TagBox["0",
+             DisplayForm], ",", 
+            TagBox["2",
+             DisplayForm]}]], 
+          UnderscriptBox["T", 
+           RowBox[{"0", ",", "2"}]]}], 
+         StyleBox[GridBox[{
+            {" ", " "},
+            {"A", 
+             RowBox[{"C", "'"}]}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`CurlCDe[$CellContext`TT][-$CellContext`A, -$CellContext`C\
+\[Dagger]],
+     Editable->False]}], "+", 
+   RowBox[{
+    FractionBox["1", "3"], " ", 
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {"\[Epsilon]", 
+         StyleBox[GridBox[{
+            {" ", " "},
+            {"C", "A"}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`\[Epsilon][-C, -$CellContext`A],
+     Editable->False], " ", 
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {
+         OverscriptBox["\[Epsilon]", "_"], 
+         StyleBox[GridBox[{
+            {" ", " "},
+            {
+             RowBox[{"B", "'"}], 
+             RowBox[{"C", "'"}]}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`\[Epsilon]\[Dagger][-$CellContext`B\[Dagger], \
+-$CellContext`C\[Dagger]],
+     Editable->False], " ", 
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {
+         RowBox[{
+          SubscriptBox["\[ScriptCapitalC]", 
+           RowBox[{
+            TagBox["0",
+             DisplayForm], ",", 
+            TagBox["2",
+             DisplayForm]}]], 
+          UnderscriptBox["T", 
+           RowBox[{"0", ",", "2"}]]}], 
+         StyleBox[GridBox[{
+            {" ", " "},
+            {"B", 
+             RowBox[{"A", "'"}]}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`CurlCDe[$CellContext`TT][-$CellContext`B, -$CellContext`A\
+\[Dagger]],
+     Editable->False]}], "+", 
+   RowBox[{
+    FractionBox["1", "3"], " ", 
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {"\[Epsilon]", 
+         StyleBox[GridBox[{
+            {" ", " "},
+            {"C", "A"}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`\[Epsilon][-C, -$CellContext`A],
+     Editable->False], " ", 
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {
+         OverscriptBox["\[Epsilon]", "_"], 
+         StyleBox[GridBox[{
+            {" ", " "},
+            {
+             RowBox[{"B", "'"}], 
+             RowBox[{"A", "'"}]}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`\[Epsilon]\[Dagger][-$CellContext`B\[Dagger], \
+-$CellContext`A\[Dagger]],
+     Editable->False], " ", 
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {
+         RowBox[{
+          SubscriptBox["\[ScriptCapitalC]", 
+           RowBox[{
+            TagBox["0",
+             DisplayForm], ",", 
+            TagBox["2",
+             DisplayForm]}]], 
+          UnderscriptBox["T", 
+           RowBox[{"0", ",", "2"}]]}], 
+         StyleBox[GridBox[{
+            {" ", " "},
+            {"B", 
+             RowBox[{"C", "'"}]}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`CurlCDe[$CellContext`TT][-$CellContext`B, -$CellContext`C\
+\[Dagger]],
+     Editable->False]}], "+", 
+   RowBox[{
+    FractionBox["1", "3"], " ", 
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {"\[Epsilon]", 
+         StyleBox[GridBox[{
+            {" ", " "},
+            {"B", "C"}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`\[Epsilon][-$CellContext`B, -C],
+     Editable->False], " ", 
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {
+         OverscriptBox["\[Epsilon]", "_"], 
+         StyleBox[GridBox[{
+            {" ", " "},
+            {
+             RowBox[{"C", "'"}], 
+             RowBox[{"A", "'"}]}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`\[Epsilon]\[Dagger][-$CellContext`C\[Dagger], \
+-$CellContext`A\[Dagger]],
+     Editable->False], " ", 
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {
+         RowBox[{
+          SubsuperscriptBox["\[ScriptCapitalC]", 
+           RowBox[{
+            TagBox["2",
+             DisplayForm], ",", 
+            TagBox["0",
+             DisplayForm]}], "\[Dagger]"], 
+          UnderscriptBox["U", 
+           RowBox[{"2", ",", "0"}]]}], 
+         StyleBox[GridBox[{
+            {" ", " "},
+            {"A", 
+             RowBox[{"B", "'"}]}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`CurlDgCDe[$CellContext`UU][-$CellContext`A, -$CellContext`B\
+\[Dagger]],
+     Editable->False]}], "+", 
+   RowBox[{
+    FractionBox["1", "3"], " ", 
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {"\[Epsilon]", 
+         StyleBox[GridBox[{
+            {" ", " "},
+            {"A", "C"}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`\[Epsilon][-$CellContext`A, -C],
+     Editable->False], " ", 
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {
+         OverscriptBox["\[Epsilon]", "_"], 
+         StyleBox[GridBox[{
+            {" ", " "},
+            {
+             RowBox[{"C", "'"}], 
+             RowBox[{"B", "'"}]}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`\[Epsilon]\[Dagger][-$CellContext`C\[Dagger], \
+-$CellContext`B\[Dagger]],
+     Editable->False], " ", 
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {
+         RowBox[{
+          SubsuperscriptBox["\[ScriptCapitalC]", 
+           RowBox[{
+            TagBox["2",
+             DisplayForm], ",", 
+            TagBox["0",
+             DisplayForm]}], "\[Dagger]"], 
+          UnderscriptBox["U", 
+           RowBox[{"2", ",", "0"}]]}], 
+         StyleBox[GridBox[{
+            {" ", " "},
+            {"B", 
+             RowBox[{"A", "'"}]}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`CurlDgCDe[$CellContext`UU][-$CellContext`B, -$CellContext`A\
+\[Dagger]],
+     Editable->False]}], "+", 
+   RowBox[{
+    FractionBox["1", "3"], " ", 
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {"\[Epsilon]", 
+         StyleBox[GridBox[{
+            {" ", " "},
+            {"A", "B"}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`\[Epsilon][-$CellContext`A, -$CellContext`B],
+     Editable->False], " ", 
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {
+         OverscriptBox["\[Epsilon]", "_"], 
+         StyleBox[GridBox[{
+            {" ", " "},
+            {
+             RowBox[{"C", "'"}], 
+             RowBox[{"B", "'"}]}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`\[Epsilon]\[Dagger][-$CellContext`C\[Dagger], \
+-$CellContext`B\[Dagger]],
+     Editable->False], " ", 
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {
+         RowBox[{
+          SubsuperscriptBox["\[ScriptCapitalC]", 
+           RowBox[{
+            TagBox["2",
+             DisplayForm], ",", 
+            TagBox["0",
+             DisplayForm]}], "\[Dagger]"], 
+          UnderscriptBox["U", 
+           RowBox[{"2", ",", "0"}]]}], 
+         StyleBox[GridBox[{
+            {" ", " "},
+            {"C", 
+             RowBox[{"A", "'"}]}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`CurlDgCDe[$CellContext`UU][-C, -$CellContext`A\[Dagger]],
+     Editable->False]}], "+", 
+   RowBox[{
+    FractionBox["1", "3"], " ", 
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {"\[Epsilon]", 
+         StyleBox[GridBox[{
+            {" ", " "},
+            {"B", "A"}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`\[Epsilon][-$CellContext`B, -$CellContext`A],
+     Editable->False], " ", 
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {
+         OverscriptBox["\[Epsilon]", "_"], 
+         StyleBox[GridBox[{
+            {" ", " "},
+            {
+             RowBox[{"C", "'"}], 
+             RowBox[{"A", "'"}]}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`\[Epsilon]\[Dagger][-$CellContext`C\[Dagger], \
+-$CellContext`A\[Dagger]],
+     Editable->False], " ", 
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {
+         RowBox[{
+          SubsuperscriptBox["\[ScriptCapitalC]", 
+           RowBox[{
+            TagBox["2",
+             DisplayForm], ",", 
+            TagBox["0",
+             DisplayForm]}], "\[Dagger]"], 
+          UnderscriptBox["U", 
+           RowBox[{"2", ",", "0"}]]}], 
+         StyleBox[GridBox[{
+            {" ", " "},
+            {"C", 
+             RowBox[{"B", "'"}]}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`CurlDgCDe[$CellContext`UU][-C, -$CellContext`B\[Dagger]],
+     Editable->False]}], "-", 
+   RowBox[{
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {"\[Epsilon]", 
+         StyleBox[GridBox[{
+            {" ", " "},
+            {"C", "B"}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`\[Epsilon][-C, -$CellContext`B],
+     Editable->False], " ", 
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {
+         RowBox[{
+          SubscriptBox["\[ScriptCapitalT]", 
+           RowBox[{
+            TagBox["0",
+             DisplayForm], ",", 
+            TagBox["2",
+             DisplayForm]}]], 
+          UnderscriptBox["T", 
+           RowBox[{"0", ",", "2"}]]}], 
+         StyleBox[GridBox[{
+            {" ", " ", " ", " "},
+            {"A", 
+             RowBox[{"A", "'"}], 
+             RowBox[{"B", "'"}], 
+             RowBox[{"C", "'"}]}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`TwistCDe[$CellContext`TT][-$CellContext`A, -$CellContext`A\
+\[Dagger], -$CellContext`B\[Dagger], -$CellContext`C\[Dagger]],
+     Editable->False]}], "-", 
+   RowBox[{
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {"\[Epsilon]", 
+         StyleBox[GridBox[{
+            {" ", " "},
+            {"C", "A"}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`\[Epsilon][-C, -$CellContext`A],
+     Editable->False], " ", 
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {
+         RowBox[{
+          SubscriptBox["\[ScriptCapitalT]", 
+           RowBox[{
+            TagBox["0",
+             DisplayForm], ",", 
+            TagBox["2",
+             DisplayForm]}]], 
+          UnderscriptBox["T", 
+           RowBox[{"0", ",", "2"}]]}], 
+         StyleBox[GridBox[{
+            {" ", " ", " ", " "},
+            {"B", 
+             RowBox[{"B", "'"}], 
+             RowBox[{"A", "'"}], 
+             RowBox[{"C", "'"}]}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`TwistCDe[$CellContext`TT][-$CellContext`B, -$CellContext`B\
+\[Dagger], -$CellContext`A\[Dagger], -$CellContext`C\[Dagger]],
+     Editable->False]}], "-", 
+   RowBox[{
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {
+         OverscriptBox["\[Epsilon]", "_"], 
+         StyleBox[GridBox[{
+            {" ", " "},
+            {
+             RowBox[{"C", "'"}], 
+             RowBox[{"B", "'"}]}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`\[Epsilon]\[Dagger][-$CellContext`C\[Dagger], \
+-$CellContext`B\[Dagger]],
+     Editable->False], " ", 
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {
+         RowBox[{
+          SubscriptBox["\[ScriptCapitalT]", 
+           RowBox[{
+            TagBox["2",
+             DisplayForm], ",", 
+            TagBox["0",
+             DisplayForm]}]], 
+          UnderscriptBox["U", 
+           RowBox[{"2", ",", "0"}]]}], 
+         StyleBox[GridBox[{
+            {" ", " ", " ", " "},
+            {"A", "B", "C", 
+             RowBox[{"A", "'"}]}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`TwistCDe[$CellContext`UU][-$CellContext`A, -$CellContext`B, \
+-C, -$CellContext`A\[Dagger]],
+     Editable->False]}], "-", 
+   RowBox[{
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {
+         OverscriptBox["\[Epsilon]", "_"], 
+         StyleBox[GridBox[{
+            {" ", " "},
+            {
+             RowBox[{"C", "'"}], 
+             RowBox[{"A", "'"}]}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`\[Epsilon]\[Dagger][-$CellContext`C\[Dagger], \
+-$CellContext`A\[Dagger]],
+     Editable->False], " ", 
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {
+         RowBox[{
+          SubscriptBox["\[ScriptCapitalT]", 
+           RowBox[{
+            TagBox["2",
+             DisplayForm], ",", 
+            TagBox["0",
+             DisplayForm]}]], 
+          UnderscriptBox["U", 
+           RowBox[{"2", ",", "0"}]]}], 
+         StyleBox[GridBox[{
+            {" ", " ", " ", " "},
+            {"B", "A", "C", 
+             RowBox[{"B", "'"}]}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`TwistCDe[$CellContext`UU][-$CellContext`B, -$CellContext`A, \
+-C, -$CellContext`B\[Dagger]],
+     Editable->False]}]}]}]], "Output",
+ CellChangeTimes->{{3.832743574578353*^9, 3.8327435782256107`*^9}, {
+   3.832743718250587*^9, 3.832743746631172*^9}, {3.832743994798565*^9, 
+   3.8327440728780813`*^9}, 3.8327441910845127`*^9, 3.832744256224702*^9, 
+   3.832744483797427*^9, 3.832744581641097*^9, 3.8327447100486298`*^9, 
+   3.8327447636111717`*^9, {3.832744997306716*^9, 3.8327450074635353`*^9}, {
+   3.832745192840209*^9, 3.832745201601143*^9}, {3.832745556286748*^9, 
+   3.8327455837533293`*^9}, 3.832745826077155*^9, 3.832745898710116*^9, {
+   3.832745994886697*^9, 3.832746025081954*^9}, 3.832750735829793*^9, {
+   3.832750989645338*^9, 3.8327510135770082`*^9}},
+ CellLabel->
+  "Out[213]=",ExpressionUUID->"2a2ea726-3ec8-446e-85f5-8a56993ad64f"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"GiveIndicesToTensor", "/@", 
+   RowBox[{"order0ConditionsSimplified", "[", 
+    RowBox[{"[", "6", "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"%%", "/.", 
+   RowBox[{"EqToRule", "[", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"%", "[", 
+      RowBox[{"[", 
+       RowBox[{"1", ",", "1"}], "]"}], "]"}], "\[Equal]", 
+     RowBox[{"-", 
+      RowBox[{"%", "[", 
+       RowBox[{"[", 
+        RowBox[{"1", ",", "2"}], "]"}], "]"}]}]}], "\[IndentingNewLine]", 
+    "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"%", "//", "ToCanonicalSym"}]}], "Input",
+ CellChangeTimes->{{3.832743947161997*^9, 3.832744053120543*^9}, {
+   3.8327441015421057`*^9, 3.832744253293387*^9}, 3.832744477891741*^9, {
+   3.8327445731630793`*^9, 3.832744576309216*^9}, {3.832744699131867*^9, 
+   3.832744699314349*^9}, 3.832744761068269*^9, 3.832745005453329*^9, {
+   3.832745190069668*^9, 3.8327451983720007`*^9}, {3.832745565790884*^9, 
+   3.83274557487217*^9}, {3.832750987272585*^9, 3.8327510109793053`*^9}},
+ CellLabel->
+  "In[214]:=",ExpressionUUID->"74a7f4e2-40c9-45f4-b2ea-f6f5291177e9"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   InterpretationBox[
+    StyleBox[
+     RowBox[{
+      SubsuperscriptBox["\[EmptyDownTriangle]", 
+       RowBox[{"AA", "'"}], "  "], GridBox[{
+        {"KK", 
+         StyleBox[GridBox[{
+            {" ", " ", " ", " "},
+            {"B", 
+             RowBox[{"B", "'"}], "C", 
+             RowBox[{"C", "'"}]}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}]}],
+     ShowAutoStyles->False,
+     AutoSpacing->False],
+    $CellContext`CDe[-$CellContext`A, -$CellContext`A\[Dagger]][
+     $CellContext`KK[-$CellContext`B, -$CellContext`B\[Dagger], -
+      C, -$CellContext`C\[Dagger]]],
+    Editable->False], "+", 
+   InterpretationBox[
+    StyleBox[
+     RowBox[{
+      SubsuperscriptBox["\[EmptyDownTriangle]", 
+       RowBox[{"BB", "'"}], "  "], GridBox[{
+        {"KK", 
+         StyleBox[GridBox[{
+            {" ", " ", " ", " "},
+            {"A", 
+             RowBox[{"A", "'"}], "C", 
+             RowBox[{"C", "'"}]}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}]}],
+     ShowAutoStyles->False,
+     AutoSpacing->False],
+    $CellContext`CDe[-$CellContext`B, -$CellContext`B\[Dagger]][
+     $CellContext`KK[-$CellContext`A, -$CellContext`A\[Dagger], -
+      C, -$CellContext`C\[Dagger]]],
+    Editable->False]}], "\[Equal]", 
+  RowBox[{
+   RowBox[{
+    FractionBox["1", "3"], " ", 
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {"\[Epsilon]", 
+         StyleBox[GridBox[{
+            {" ", " "},
+            {"B", "C"}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`\[Epsilon][-$CellContext`B, -C],
+     Editable->False], " ", 
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {
+         OverscriptBox["\[Epsilon]", "_"], 
+         StyleBox[GridBox[{
+            {" ", " "},
+            {
+             RowBox[{"A", "'"}], 
+             RowBox[{"B", "'"}]}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`\[Epsilon]\[Dagger][-$CellContext`A\[Dagger], \
+-$CellContext`B\[Dagger]],
+     Editable->False], " ", 
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {
+         RowBox[{
+          SubsuperscriptBox["\[ScriptCapitalC]", 
+           RowBox[{
+            TagBox["2",
+             DisplayForm], ",", 
+            TagBox["0",
+             DisplayForm]}], "\[Dagger]"], 
+          UnderscriptBox["U", 
+           RowBox[{"2", ",", "0"}]]}], 
+         StyleBox[GridBox[{
+            {" ", " "},
+            {"A", 
+             RowBox[{"C", "'"}]}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`CurlDgCDe[$CellContext`UU][-$CellContext`A, -$CellContext`C\
+\[Dagger]],
+     Editable->False]}], "-", 
+   RowBox[{
+    FractionBox["1", "3"], " ", 
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {"\[Epsilon]", 
+         StyleBox[GridBox[{
+            {" ", " "},
+            {"A", "C"}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`\[Epsilon][-$CellContext`A, -C],
+     Editable->False], " ", 
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {
+         OverscriptBox["\[Epsilon]", "_"], 
+         StyleBox[GridBox[{
+            {" ", " "},
+            {
+             RowBox[{"A", "'"}], 
+             RowBox[{"B", "'"}]}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`\[Epsilon]\[Dagger][-$CellContext`A\[Dagger], \
+-$CellContext`B\[Dagger]],
+     Editable->False], " ", 
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {
+         RowBox[{
+          SubsuperscriptBox["\[ScriptCapitalC]", 
+           RowBox[{
+            TagBox["2",
+             DisplayForm], ",", 
+            TagBox["0",
+             DisplayForm]}], "\[Dagger]"], 
+          UnderscriptBox["U", 
+           RowBox[{"2", ",", "0"}]]}], 
+         StyleBox[GridBox[{
+            {" ", " "},
+            {"B", 
+             RowBox[{"C", "'"}]}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`CurlDgCDe[$CellContext`UU][-$CellContext`B, -$CellContext`C\
+\[Dagger]],
+     Editable->False]}], "-", 
+   RowBox[{
+    FractionBox["1", "3"], " ", 
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {"\[Epsilon]", 
+         StyleBox[GridBox[{
+            {" ", " "},
+            {"A", "B"}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`\[Epsilon][-$CellContext`A, -$CellContext`B],
+     Editable->False], " ", 
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {
+         OverscriptBox["\[Epsilon]", "_"], 
+         StyleBox[GridBox[{
+            {" ", " "},
+            {
+             RowBox[{"B", "'"}], 
+             RowBox[{"C", "'"}]}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`\[Epsilon]\[Dagger][-$CellContext`B\[Dagger], \
+-$CellContext`C\[Dagger]],
+     Editable->False], " ", 
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {
+         RowBox[{
+          SubsuperscriptBox["\[ScriptCapitalC]", 
+           RowBox[{
+            TagBox["2",
+             DisplayForm], ",", 
+            TagBox["0",
+             DisplayForm]}], "\[Dagger]"], 
+          UnderscriptBox["U", 
+           RowBox[{"2", ",", "0"}]]}], 
+         StyleBox[GridBox[{
+            {" ", " "},
+            {"C", 
+             RowBox[{"A", "'"}]}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`CurlDgCDe[$CellContext`UU][-C, -$CellContext`A\[Dagger]],
+     Editable->False]}], "+", 
+   RowBox[{
+    FractionBox["1", "3"], " ", 
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {"\[Epsilon]", 
+         StyleBox[GridBox[{
+            {" ", " "},
+            {"A", "B"}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`\[Epsilon][-$CellContext`A, -$CellContext`B],
+     Editable->False], " ", 
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {
+         OverscriptBox["\[Epsilon]", "_"], 
+         StyleBox[GridBox[{
+            {" ", " "},
+            {
+             RowBox[{"A", "'"}], 
+             RowBox[{"C", "'"}]}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`\[Epsilon]\[Dagger][-$CellContext`A\[Dagger], \
+-$CellContext`C\[Dagger]],
+     Editable->False], " ", 
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {
+         RowBox[{
+          SubsuperscriptBox["\[ScriptCapitalC]", 
+           RowBox[{
+            TagBox["2",
+             DisplayForm], ",", 
+            TagBox["0",
+             DisplayForm]}], "\[Dagger]"], 
+          UnderscriptBox["U", 
+           RowBox[{"2", ",", "0"}]]}], 
+         StyleBox[GridBox[{
+            {" ", " "},
+            {"C", 
+             RowBox[{"B", "'"}]}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`CurlDgCDe[$CellContext`UU][-C, -$CellContext`B\[Dagger]],
+     Editable->False]}], "+", 
+   RowBox[{
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {"\[Epsilon]", 
+         StyleBox[GridBox[{
+            {" ", " "},
+            {"B", "C"}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`\[Epsilon][-$CellContext`B, -C],
+     Editable->False], " ", 
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {
+         RowBox[{
+          SubscriptBox["\[ScriptCapitalT]", 
+           RowBox[{
+            TagBox["0",
+             DisplayForm], ",", 
+            TagBox["2",
+             DisplayForm]}]], 
+          UnderscriptBox["T", 
+           RowBox[{"0", ",", "2"}]]}], 
+         StyleBox[GridBox[{
+            {" ", " ", " ", " "},
+            {"A", 
+             RowBox[{"A", "'"}], 
+             RowBox[{"B", "'"}], 
+             RowBox[{"C", "'"}]}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`TwistCDe[$CellContext`TT][-$CellContext`A, -$CellContext`A\
+\[Dagger], -$CellContext`B\[Dagger], -$CellContext`C\[Dagger]],
+     Editable->False]}], "+", 
+   RowBox[{
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {"\[Epsilon]", 
+         StyleBox[GridBox[{
+            {" ", " "},
+            {"A", "C"}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`\[Epsilon][-$CellContext`A, -C],
+     Editable->False], " ", 
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {
+         RowBox[{
+          SubscriptBox["\[ScriptCapitalT]", 
+           RowBox[{
+            TagBox["0",
+             DisplayForm], ",", 
+            TagBox["2",
+             DisplayForm]}]], 
+          UnderscriptBox["T", 
+           RowBox[{"0", ",", "2"}]]}], 
+         StyleBox[GridBox[{
+            {" ", " ", " ", " "},
+            {"B", 
+             RowBox[{"A", "'"}], 
+             RowBox[{"B", "'"}], 
+             RowBox[{"C", "'"}]}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`TwistCDe[$CellContext`TT][-$CellContext`B, -$CellContext`A\
+\[Dagger], -$CellContext`B\[Dagger], -$CellContext`C\[Dagger]],
+     Editable->False]}], "+", 
+   RowBox[{
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {
+         OverscriptBox["\[Epsilon]", "_"], 
+         StyleBox[GridBox[{
+            {" ", " "},
+            {
+             RowBox[{"B", "'"}], 
+             RowBox[{"C", "'"}]}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`\[Epsilon]\[Dagger][-$CellContext`B\[Dagger], \
+-$CellContext`C\[Dagger]],
+     Editable->False], " ", 
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {
+         RowBox[{
+          SubscriptBox["\[ScriptCapitalT]", 
+           RowBox[{
+            TagBox["2",
+             DisplayForm], ",", 
+            TagBox["0",
+             DisplayForm]}]], 
+          UnderscriptBox["U", 
+           RowBox[{"2", ",", "0"}]]}], 
+         StyleBox[GridBox[{
+            {" ", " ", " ", " "},
+            {"A", "B", "C", 
+             RowBox[{"A", "'"}]}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`TwistCDe[$CellContext`UU][-$CellContext`A, -$CellContext`B, \
+-C, -$CellContext`A\[Dagger]],
+     Editable->False]}], "+", 
+   RowBox[{
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {
+         OverscriptBox["\[Epsilon]", "_"], 
+         StyleBox[GridBox[{
+            {" ", " "},
+            {
+             RowBox[{"A", "'"}], 
+             RowBox[{"C", "'"}]}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`\[Epsilon]\[Dagger][-$CellContext`A\[Dagger], \
+-$CellContext`C\[Dagger]],
+     Editable->False], " ", 
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {
+         RowBox[{
+          SubscriptBox["\[ScriptCapitalT]", 
+           RowBox[{
+            TagBox["2",
+             DisplayForm], ",", 
+            TagBox["0",
+             DisplayForm]}]], 
+          UnderscriptBox["U", 
+           RowBox[{"2", ",", "0"}]]}], 
+         StyleBox[GridBox[{
+            {" ", " ", " ", " "},
+            {"A", "B", "C", 
+             RowBox[{"B", "'"}]}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`TwistCDe[$CellContext`UU][-$CellContext`A, -$CellContext`B, \
+-C, -$CellContext`B\[Dagger]],
+     Editable->False]}]}]}]], "Output",
+ CellChangeTimes->{{3.832743979713211*^9, 3.832744075440239*^9}, {
+   3.832744137313057*^9, 3.832744142278504*^9}, {3.8327441926478357`*^9, 
+   3.83274425747546*^9}, 3.832744488660946*^9, 3.832744583104579*^9, {
+   3.8327447019351997`*^9, 3.8327447101447906`*^9}, 3.832744763702075*^9, {
+   3.832744997407053*^9, 3.83274500756426*^9}, 3.8327452016884823`*^9, {
+   3.832745566897547*^9, 3.832745585730732*^9}, 3.832745826132201*^9, 
+   3.832745898766653*^9, 3.832745997328463*^9, 3.832750738675071*^9, {
+   3.83275098975268*^9, 3.832751013693967*^9}},
+ CellLabel->
+  "Out[216]=",ExpressionUUID->"2b66a2a8-4b0e-467d-bd58-a7376ab9d555"]
+}, Open  ]],
+
+Cell[TextData[{
+ "The first two terms have a factor ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["\[Epsilon]", 
+    RowBox[{"B", "[", "C"}]], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "48bfa536-92d6-4e10-92d9-db4bdc29dfaf"],
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["U", 
+    RowBox[{
+     RowBox[{"A", "]"}], 
+     RowBox[{"C", "'"}]}]], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "fb6df40b-6a0b-4332-84c6-dddd0dd41a73"],
+ " and are hence proportional to ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["\[Epsilon]", "ABC"], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "e7f05e59-53ab-40fc-88b2-1da1659cce40"],
+ ", and are hence 0. The two terms after that have a factor  ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox[
+    OverscriptBox["\[Epsilon]", "_"], 
+    RowBox[{
+     RowBox[{"C", "'"}], "[", 
+     RowBox[{"B", "'"}]}]], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "73aaacb8-b09c-4192-9f15-8676675e2402"],
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["U", 
+    RowBox[{
+     RowBox[{"|", "A", "|", 
+      RowBox[{"A", "'"}]}], "]"}]], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "d871e623-8c95-42d5-8b9e-5424ff4d28cb"],
+ " and is hence also 0. The last four terms are all 0 by U and T being \
+Killing spinors."
+}], "Text",
+ CellChangeTimes->{{3.832746881780932*^9, 3.83274698664986*^9}, {
+  3.8327470456201763`*^9, 3.832747103611979*^9}, {3.832750432180114*^9, 
+  3.832750698865979*^9}, {3.832750742710759*^9, 
+  3.8327507507440853`*^9}},ExpressionUUID->"65a1ede6-3bd4-4718-9ad9-\
+5c3a3569a1c6"]
+},
+WindowSize->{634, 999},
+WindowMargins->{{3, Automatic}, {Automatic, -1021}},
+TaggingRules->{"TryRealOnly" -> False},
+FrontEndVersion->"12.0 for Linux x86 (64-bit) (April 8, 2019)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 1173, 28, 101, "Input",ExpressionUUID->"572709a2-1bb3-43be-a2a5-29fc4f9413cd"],
+Cell[1756, 52, 484, 10, 23, "Message",ExpressionUUID->"36b6b76f-a31d-424d-a862-16ca281c12df"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2277, 67, 2160, 63, 124, "Input",ExpressionUUID->"b7482dd9-d1ec-4ccc-9ea7-cf2ec7e9554b"],
+Cell[4440, 132, 11846, 334, 76, "Output",ExpressionUUID->"f2a1f6c6-4e94-4bf6-bc43-edd165519d42"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[16323, 471, 1544, 39, 170, "Input",ExpressionUUID->"8cfb81cf-22cd-4019-9cdc-6e20ae02cd73"],
+Cell[17870, 512, 37078, 1106, 269, "Output",ExpressionUUID->"2a2ea726-3ec8-446e-85f5-8a56993ad64f"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[54985, 1623, 1134, 25, 124, "Input",ExpressionUUID->"74a7f4e2-40c9-45f4-b2ea-f6f5291177e9"],
+Cell[56122, 1650, 24511, 725, 187, "Output",ExpressionUUID->"2b66a2a8-4b0e-467d-bd58-a7376ab9d555"]
+}, Open  ]],
+Cell[80648, 2378, 1631, 47, 87, "Text",ExpressionUUID->"65a1ede6-3bd4-4718-9ad9-5c3a3569a1c6"]
+}
+]
+*)
+

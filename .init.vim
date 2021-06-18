@@ -59,8 +59,8 @@ call plug#begin(g:plugged_home)
 	" User defined modes
 	Plug 'Iron-E/nvim-libmodal'
 
-	" Smooth scrolling with <C-u>, <C-d>, <C-b>, and <C-f> (and gg and G if you want.
-	Plug 'psliwka/vim-smoothie'
+	" Smooth scrolling with <C-u>, <C-d>, <C-b>, and <C-f> (and gg and G if you want).
+	Plug 'psliwka/vim-smoothie' " This is probably the best plugin for smooth scrolling
 call plug#end()
 filetype plugin indent on
 filetype indent off
@@ -100,7 +100,6 @@ let g:miramare_disable_italic_comment = 1
 " highlight Normal guibg=none
 " highlight NonText guibg=none
 
-
 if has("gui_running")
 	set guicursor=n-v-c-sm:block,i-ci-ve:block,r-cr-o:blocks
 endif
@@ -111,6 +110,11 @@ set mouse=a
 set noshowmode
 set noshowmatch
 set nolazyredraw
+set wrap
+
+" Don't automatically insert newline when writing long lines
+set textwidth=0
+autocmd FileType vim setlocal textwidth=0
 
 " Turn off backup
 set nobackup
@@ -123,12 +127,13 @@ set smartcase " Turn on smartcase
 
 " Tab and Indent configuration
 set noexpandtab
+autocmd FileType python setlocal noexpandtab " Otherwise, some python plugin overrules noexpandtab
+autocmd FileType haskell setlocal expandtab " Expand tabs to 4 spaces in Haskell since there tabs have meaning
 set nocopyindent
 set nopreserveindent
 set softtabstop=0
 set shiftwidth=4
 set tabstop=4
-autocmd FileType python setlocal noexpandtab " Otherwise, some python plugin overrules noexpandtab
 
 set foldlevelstart=0 " Folds up to level 5 are open by default
 
@@ -187,6 +192,9 @@ let g:UltiSnipsJumpBackwardTrigger = '<C-shift-j>'
 "Python
 let g:python3_host_prog='python3'
 
+" Vim-smoothie
+let g:smoothie_no_default_mappings = 1 " Don't overwrite existing keybinds
+
 let mapleader=","
 set timeout timeoutlen=1500
 
@@ -209,8 +217,6 @@ autocmd FileType sh imap <buffer> <F5> <esc>:w<CR>:!bash %<CR>
 autocmd FileType c map  <buffer> <F5>      :w<CR>:exec '!cd ' . shellescape(expand('%:p:h'), 1) . ' && make && ' . shellescape(expand('%:p:r'), 1)<CR>
 autocmd FileType c imap <buffer> <F5> <esc>:w<CR>:exec '!cd ' . shellescape(expand('%:p:h'), 1) . ' && make && ' . shellescape(expand('%:p:r'), 1)<CR>
 
-" Expand tabs to 4 spaces in Haskell
-autocmd FileType haskell setlocal expandtab 
 " Vimtex Plugin settings
 let g:tex_flavor='latex'
 let g:tex_conceal=''
@@ -233,17 +239,20 @@ let g:syntastic_tex_checkers=['lacheck']
 " endfunction
 " nmap  :call SyncTexForward()
 
-" LargeFile settings
+" LargeFile
 let g:LargeFile = 100 " How large (in MB) files should I use the LargeFile script for?
 
-" User defined scroll mode, where j and k are mapped to ctrl-y and ctrl-e
- nnoremap gs :call <sid>scrollMode()<cr>
+
+" User defined scroll mode, where j/k scroll one line up/down and J/K scroll half a page up/down using vim-smoothie
+nnoremap gs :call <sid>scrollMode()<CR>
+noremap g :call smoothie#upwards()<CR>
+noremap g :call smoothie#downwards()<CR>
 let s:scrollModeRecurse = 0
 let s:scrollModeCombos = {
 	\   'j': 'normal ',
-	\   'J': 'normal ',
+	\   'J': 'normal g',
 	\   'k': 'normal ',
-	\   'K': 'normal ',
+	\   'K': 'normal g',
 	\   'gg': 'normal gg',
 	\   'G': 'normal G',
 	\}
