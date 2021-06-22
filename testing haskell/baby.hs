@@ -1,3 +1,5 @@
+import qualified Data.Map as Map
+
 doubleMe :: Int -> Int
 doubleMe x = 2 * x
 
@@ -40,3 +42,9 @@ quicksort (x:xs) = (quicksort (filter (< x) xs)) ++ [x] ++ (quicksort (filter (>
 multVecWithScalars :: Num a => (a, a) -> [a] -> (a, a)
 multVecWithScalars = foldl (.*)
 
+
+addTwoPolynomials :: Num a => [a] -> [a] -> [a]
+addTwoPolynomials x y = zipWith (+) x y
+
+addSeveralPolynomials :: Num a => [[a]] -> [a]
+addSeveralPolynomials x = foldr1 addTwoPolynomials x
