@@ -48,3 +48,4 @@ addTwoPolynomials x y = zipWith (+) x y
 
 addSeveralPolynomials :: Num a => [[a]] -> [a]
 addSeveralPolynomials x = foldr1 addTwoPolynomials x
+

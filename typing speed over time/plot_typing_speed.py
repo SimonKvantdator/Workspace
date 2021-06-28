@@ -26,7 +26,7 @@ with open('typing-data.json', 'r') as myfile:
 # Get mass and time values from data
 nbr_sessions = len(data)
 session_idxs = np.array([i for i in range(0, nbr_sessions)])
-speeds = np.array([float(data[i]['speed']) for i in range(0, nbr_sessions)])
+speeds = np.array([float(data[i]['errors']) for i in range(0, nbr_sessions)])
 
 # Perform Gaussian process regression
 input_dim = 1
