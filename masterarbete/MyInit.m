@@ -29,7 +29,6 @@ SetDirectory[NotebookDirectory[]];
 
 (* ::Input::Initialization:: *)
 Import["TexActModified.m"]
-SetOptions[DefFundSpinOperators,ShowValenceInfo->False];
 <<xAct`SpinFrames`
 
 
